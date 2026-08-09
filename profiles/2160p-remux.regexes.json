@@ -1,0 +1,1857 @@
+[
+  {
+    "name": "0BSiDiAN",
+    "pattern": "/(?<=^|[\\s.-])0BSiDiAN\\b/i",
+    "score": 0
+  },
+  {
+    "name": "3D",
+    "pattern": "/(?<=\\b[12]\\d{3}\\b).*\\b((Bluray|BD)?3D|((H(alf)?|F(ull)?).?)?(O(ver)?.?U(nder)?|S(ide)?[\\W_]?B(y)?.?S(ide)?))\\b/i",
+    "score": 0
+  },
+  {
+    "name": "3L",
+    "pattern": "/(?<=^|[\\s.-])3L\\b/i",
+    "score": 0
+  },
+  {
+    "name": "4K4U",
+    "pattern": "/(?<=^|[\\s.-])4K4U\\b/i",
+    "score": 0
+  },
+  {
+    "name": "4KDVS",
+    "pattern": "/(?<=^|[\\s.-])4KDVS\\b/i",
+    "score": 0
+  },
+  {
+    "name": "576p",
+    "pattern": "/\\b(576p)\\b/i",
+    "score": 0
+  },
+  {
+    "name": "7.1 Surround",
+    "pattern": "/\\D7\\.1\\D/i",
+    "score": 0
+  },
+  {
+    "name": "AAC",
+    "pattern": "/\\bAAC(\\b|\\d)/i",
+    "score": 0
+  },
+  {
+    "name": "ABM",
+    "pattern": "/(?<=^|[\\s.-])ABM\\b/i",
+    "score": 0
+  },
+  {
+    "name": "AI Movie Upscale",
+    "pattern": "/(?<=\\b[12]\\d{3}\\b).*(\\b(AI)\\b)/i",
+    "score": 0
+  },
+  {
+    "name": "AI TV Upscale",
+    "pattern": "/(?<=\\bS\\d+\\b).*(\\b(AI)\\b)/i",
+    "score": 0
+  },
+  {
+    "name": "AJP69",
+    "pattern": "/(?<=^|[\\s.-])AJP69\\b/i",
+    "score": 0
+  },
+  {
+    "name": "AOC",
+    "pattern": "/(?<=^|[\\s.-])AOC\\b/i",
+    "score": 0
+  },
+  {
+    "name": "APEX",
+    "pattern": "/(?<=^|[\\s.-])APEX\\b/i",
+    "score": 0
+  },
+  {
+    "name": "AROMA",
+    "pattern": "/(?<=^|[\\s.-])AROMA\\b/i",
+    "score": 0
+  },
+  {
+    "name": "ASD87",
+    "pattern": "/(?<=^|[\\s.-])ASD87\\b/i",
+    "score": 0
+  },
+  {
+    "name": "ATELiER",
+    "pattern": "/(?<=^|[\\s.-])ATELiER\\b/i",
+    "score": 0
+  },
+  {
+    "name": "AV1",
+    "pattern": "/\\bAV1\\b/i",
+    "score": 0
+  },
+  {
+    "name": "AVC",
+    "pattern": "/[xh][ ._-]?264|\\bAVC(\\b|\\d)/i",
+    "score": 0
+  },
+  {
+    "name": "Amazon Prime",
+    "pattern": "/\\bAMZN\\b|\\bAMAZON[ ._-]WEB[ ._-]?(DL|RIP)?\\b/i",
+    "score": 0
+  },
+  {
+    "name": "American Sign Language",
+    "pattern": "/\\b(ASL)\\b/i",
+    "score": 0
+  },
+  {
+    "name": "Apple TV+",
+    "pattern": "/\\b(ATVP|ATV|APTV|Apple TV\\+)\\s*\\b/i",
+    "score": 0
+  },
+  {
+    "name": "Atmos",
+    "pattern": "/\\bATMOS|DDPA(\\b|\\d)/i",
+    "score": 0
+  },
+  {
+    "name": "Atmos (Missing)",
+    "pattern": "/\\bATMOS(\\b|\\d)/i",
+    "score": 0
+  },
+  {
+    "name": "Audio Description",
+    "pattern": "/\\b(Audio[ ._-]Description)\\b/i",
+    "score": 0
+  },
+  {
+    "name": "BAT1",
+    "pattern": "/(?<=^|[\\s.-])BAT1\\b/i",
+    "score": 0
+  },
+  {
+    "name": "BBC iPlayer",
+    "pattern": "/\\b(iP)\\b/i",
+    "score": 0
+  },
+  {
+    "name": "BHDStudio",
+    "pattern": "/(?<=^|[\\s.-])BHDStudio\\b/i",
+    "score": 0
+  },
+  {
+    "name": "BLASPHEMY",
+    "pattern": "/(?<=^|[\\s.-])BLASPHEMY\\b/i",
+    "score": 0
+  },
+  {
+    "name": "BLOOM",
+    "pattern": "/(?<=^|[\\s.-])BLOOM\\b/i",
+    "score": 0
+  },
+  {
+    "name": "BLURANiUM",
+    "pattern": "/(?<=^|[\\s.-])BLURANiUM\\b/i",
+    "score": 0
+  },
+  {
+    "name": "BLUTONiUM",
+    "pattern": "/(?<=^|[\\s.-])BLUTONiUM\\b/i",
+    "score": 0
+  },
+  {
+    "name": "BMF",
+    "pattern": "/(?<=^|[\\s.-])BMF\\b/i",
+    "score": 0
+  },
+  {
+    "name": "BOLS",
+    "pattern": "/(?<=^|[\\s.-])BOLS\\b/i",
+    "score": 0
+  },
+  {
+    "name": "BRUTE",
+    "pattern": "/(?<=^|[\\s.-])BRUTE\\b/i",
+    "score": 0
+  },
+  {
+    "name": "BSTD",
+    "pattern": "/(?<=^|[\\s.-])BSTD\\b/i",
+    "score": 0
+  },
+  {
+    "name": "BTM",
+    "pattern": "/(?<=^|[\\s.-])(BEN[ ._-]THE[ ._-]MEN|BEN|BTM)\\b/i",
+    "score": 0
+  },
+  {
+    "name": "BTN",
+    "pattern": "/(?<=^|[\\s.-])BTN\\b/i",
+    "score": 0
+  },
+  {
+    "name": "BTN Atmos",
+    "pattern": "/\\bTrue[ .-]?HDA[ .-]?[57]\\.1/i",
+    "score": 0
+  },
+  {
+    "name": "BTW",
+    "pattern": "/(?<=^|[\\s.-])BTW\\b/i",
+    "score": 0
+  },
+  {
+    "name": "BV",
+    "pattern": "/(?<=^|[\\s.-])BV\\b/i",
+    "score": 0
+  },
+  {
+    "name": "BYNDR",
+    "pattern": "/(?<=^|[\\s.-])BYNDR\\b/i",
+    "score": 0
+  },
+  {
+    "name": "BakedFEL",
+    "pattern": "/(?<=^|[\\s.-])BakedFEL\\b/i",
+    "score": 0
+  },
+  {
+    "name": "Basic HDR Formats",
+    "pattern": "/\\bHDR(\\b|\\d)|\\b(DV|Dovi|Dolby[ .]?Vision|HLG|PQ(10)?)\\b/i",
+    "score": 0
+  },
+  {
+    "name": "Better Theatricals",
+    "pattern": "/^\\b(terminator.?2|alien[^s].*?1979|star.wars.*?(4k|19)(77)|.*?\\bempire.strikes.back|.*?\\breturn.of.the.jedi|apocalypse.now|the.exorcist.*?1973|donnie.darko|amadeus|payback.*?1999|payback.straight.up.*?2006|almost.famous)\\b/i",
+    "score": 0
+  },
+  {
+    "name": "BeyondHD",
+    "pattern": "/(?<=^|[\\s.-])BeyondHD\\b/i",
+    "score": 0
+  },
+  {
+    "name": "BiTOR",
+    "pattern": "/(?<=^|[\\s.-])BiTOR\\b/i",
+    "score": 0
+  },
+  {
+    "name": "BiZKiT",
+    "pattern": "/(?<=^|[\\s.-])BiZKiT\\b/i",
+    "score": 0
+  },
+  {
+    "name": "Black & White",
+    "pattern": "/(?<=\\b[12]\\d{3}\\b).*\\b((B(lack)?[ ._-]?(out|(and|[n&])?[ ._-]?(W(hite)?|Chrome))))\\b(?!$)/i",
+    "score": 0
+  },
+  {
+    "name": "Black American Sign Language",
+    "pattern": "/\\b(BASL)\\b/i",
+    "score": 0
+  },
+  {
+    "name": "BlzT",
+    "pattern": "/(?<=^|[\\s.-])BlzT\\b/i",
+    "score": 0
+  },
+  {
+    "name": "Bravia Core",
+    "pattern": "/\\bBCORE\\b|\\bCORE[ ._-]WEB[ ._-]?(DL|RIP)?\\b/i",
+    "score": 0
+  },
+  {
+    "name": "British Sign Language",
+    "pattern": "/\\b(BSL)\\b/i",
+    "score": 0
+  },
+  {
+    "name": "CAM",
+    "pattern": "/(?<=\\b[12]\\d{3}\\b).*(\\b(CAM[ ._-]?(Rip)?|DVD[ ._-]?(SCR(EENER)?)|HD[ ._-]?(CAM|SCR|TC|TS)|SCREENER|TELE(CINE|SYNC)|WORKPRINT)\\b)/i",
+    "score": 0
+  },
+  {
+    "name": "CART",
+    "pattern": "/(?<=^|[\\s.-])CART\\b/i",
+    "score": 0
+  },
+  {
+    "name": "CBFM",
+    "pattern": "/(?<=^|[\\s.-])CBFM\\b/i",
+    "score": 0
+  },
+  {
+    "name": "CHD",
+    "pattern": "/(?<=^|[\\s.-])CHD\\b/i",
+    "score": 0
+  },
+  {
+    "name": "CJ",
+    "pattern": "/(?<=^|[\\s.-])CJ\\b/i",
+    "score": 0
+  },
+  {
+    "name": "CLASSiCALHD",
+    "pattern": "/(?<=^|[\\s.-])CLASSiCALHD\\b/i",
+    "score": 0
+  },
+  {
+    "name": "CMRG",
+    "pattern": "/(?<=^|[\\s.-])CM(a)?R(io)?G\\b/i",
+    "score": 0
+  },
+  {
+    "name": "CREATiVE24",
+    "pattern": "/(?<=^|[\\s.-])CREATiVE24\\b/i",
+    "score": 0
+  },
+  {
+    "name": "CRFW",
+    "pattern": "/(?<=^|[\\s.-])CRFW\\b/i",
+    "score": 0
+  },
+  {
+    "name": "CRUD",
+    "pattern": "/(?<=^|[\\s.-])CRUD\\b/i",
+    "score": 0
+  },
+  {
+    "name": "CRX",
+    "pattern": "/(?<=^|[\\s.-])CRX\\b/i",
+    "score": 0
+  },
+  {
+    "name": "CRiSC",
+    "pattern": "/(?<=^|[\\s.-])CRiSC\\b/i",
+    "score": 0
+  },
+  {
+    "name": "CYPHER",
+    "pattern": "/(?<=^|[\\s.-])CYPHER\\b/i",
+    "score": 0
+  },
+  {
+    "name": "CasStudio",
+    "pattern": "/(?<=^|[\\s.-])CasStudio\\b/i",
+    "score": 0
+  },
+  {
+    "name": "Casius08",
+    "pattern": "/(?<=^|[\\s.-])Casius08\\b/i",
+    "score": 0
+  },
+  {
+    "name": "Chotab",
+    "pattern": "/(?<=^|[\\s.-])Chotab\\b/i",
+    "score": 0
+  },
+  {
+    "name": "CiNEPHiLES",
+    "pattern": "/(?<=^|[\\s.-])CiNEPHiLES\\b/i",
+    "score": 0
+  },
+  {
+    "name": "Cinefeel",
+    "pattern": "/(?<=^|[\\s.-])Cinefeel\\b/i",
+    "score": 0
+  },
+  {
+    "name": "Color",
+    "pattern": "/(?<=\\b[12]\\d{3}\\b).*\\b((No|Minus)[ ._-]?Colou?r)\\b(?!$)/i",
+    "score": 0
+  },
+  {
+    "name": "Crave",
+    "pattern": "/\\bCRAV\\b|\\bCRAVE[ ._-]WEB[ ._-]?(DL|RIP)?\\b/i",
+    "score": 0
+  },
+  {
+    "name": "Criterion Channel",
+    "pattern": "/\\b(CRiT)\\b/i",
+    "score": 0
+  },
+  {
+    "name": "CtrlHD",
+    "pattern": "/(?<=^|[\\s.-])CtrlHD\\b/i",
+    "score": 0
+  },
+  {
+    "name": "D-Z0N3",
+    "pattern": "/(?<=^|[\\s.-])D-Z0N3\\b/i",
+    "score": 0
+  },
+  {
+    "name": "DARKFLiX",
+    "pattern": "/(?<=^|[\\s.-])DARKFLiX\\b/i",
+    "score": 0
+  },
+  {
+    "name": "DEFLATE",
+    "pattern": "/(?<=^|[\\s.-])DEFLATE\\b/i",
+    "score": 0
+  },
+  {
+    "name": "DEPTH",
+    "pattern": "/(?<=^|[\\s.-])DEPTH\\b/i",
+    "score": 0
+  },
+  {
+    "name": "DON",
+    "pattern": "/(?<=^|[\\s.-])DON\\b/i",
+    "score": 0
+  },
+  {
+    "name": "DRX",
+    "pattern": "/(?<=^|[\\s.-])DRX\\b/i",
+    "score": 0
+  },
+  {
+    "name": "DTS",
+    "pattern": "/\\bDTS(\\b|\\d)/i",
+    "score": 0
+  },
+  {
+    "name": "DTS Basic",
+    "pattern": "/DTS[ .]?[1-9]/i",
+    "score": 0
+  },
+  {
+    "name": "DTS-ES",
+    "pattern": "/dts[-. ]?es\\b/i",
+    "score": 0
+  },
+  {
+    "name": "DTS-HD HRA",
+    "pattern": "/dts[-. ]?(hd[. ]?)?(hra?|hi\\b)/i",
+    "score": 0
+  },
+  {
+    "name": "DTS-HD HRA ES",
+    "pattern": "/dts[-. ]?(es|(hd[. ]?)?(hr|hi))/i",
+    "score": 0
+  },
+  {
+    "name": "DTS-HD MA",
+    "pattern": "/\\b(dts[-_. ]?(ma|hd([-_. ]?ma)?|xll))(\\b|\\d)/i",
+    "score": 0
+  },
+  {
+    "name": "DTS-X",
+    "pattern": "/\\b(dts[-_. :]?x)\\b(?!\\d)/i",
+    "score": 0
+  },
+  {
+    "name": "Dariush",
+    "pattern": "/(?<=^|[\\s.-])Dariush\\b/i",
+    "score": 0
+  },
+  {
+    "name": "Darkness & Light",
+    "pattern": "/(?<=\\b[12]\\d{3}\\b).*\\b(Darkness?[ ._-]?(and|&)[ ._-]?(Light))\\b(?!$)/i",
+    "score": 0
+  },
+  {
+    "name": "DeViSiVE",
+    "pattern": "/(?<=^|[\\s.-])DeViSiVE\\b/i",
+    "score": 0
+  },
+  {
+    "name": "DepraveD",
+    "pattern": "/(?<=^|[\\s.-])DepraveD\\b/i",
+    "score": 0
+  },
+  {
+    "name": "Disney+",
+    "pattern": "/\\b(dsnp|dsny(p)?|disney\\+)\\s*\\b/i",
+    "score": 0
+  },
+  {
+    "name": "Dolby Digital",
+    "pattern": "/\\bDD[^a-z+]|(?<!e-?)\\b(ac-?3)\\b/i",
+    "score": 0
+  },
+  {
+    "name": "Dolby Digital +",
+    "pattern": "/\\bDD[P+]|\\b(e[-_. ]?ac3)\\b/i",
+    "score": 0
+  },
+  {
+    "name": "Dolby Vision",
+    "pattern": "/\\b(DV|Dovi|Dolby[ .]?Vision)\\b/i",
+    "score": 0
+  },
+  {
+    "name": "Dolby Vision (Without Fallback)",
+    "pattern": "/(?<=^(?!.*(HDR|HULU|REMUX|BLURAY)).*?)\\b(DV|Dovi|Dolby[ .]?Vision)\\b/i",
+    "score": 0
+  },
+  {
+    "name": "Dropout TV",
+    "pattern": "/\\b(DRPO)\\b/i",
+    "score": 0
+  },
+  {
+    "name": "Dual Audio",
+    "pattern": "/\\bDual[ ._-]?(Audio)?\\b|\\b(JA|ZH|KO)(?= ?\\+ ?.*?\\b(EN))|\\b(EN)(?= ?\\+ ?.*?\\b(JA|ZH|KO))\\b/i",
+    "score": 0
+  },
+  {
+    "name": "E",
+    "pattern": "/(?<=^|[\\s.-])E\\b/i",
+    "score": 0
+  },
+  {
+    "name": "E.N.D",
+    "pattern": "/(?<=^|[\\s.-])E.N.D\\b/i",
+    "score": 0
+  },
+  {
+    "name": "E1",
+    "pattern": "/(?<=^|[\\s.-])E1\\b/i",
+    "score": 0
+  },
+  {
+    "name": "EA",
+    "pattern": "/(?<=^|[\\s.-])EA\\b/i",
+    "score": 0
+  },
+  {
+    "name": "EDPH",
+    "pattern": "/(?<=^|[\\s.-])EDPH\\b/i",
+    "score": 0
+  },
+  {
+    "name": "ENDSkY",
+    "pattern": "/(?<=^|[\\s.-])ENDSkY\\b/i",
+    "score": 0
+  },
+  {
+    "name": "EPSiLON",
+    "pattern": "/(?<=^|[\\s.-])EPSiLON\\b/i",
+    "score": 0
+  },
+  {
+    "name": "ESiR",
+    "pattern": "/(?<=^|[\\s.-])ESiR\\b/i",
+    "score": 0
+  },
+  {
+    "name": "EXCiSION",
+    "pattern": "/(?<=^|[\\s.-])EXCiSION\\b/i",
+    "score": 0
+  },
+  {
+    "name": "EbP",
+    "pattern": "/(?<=^|[\\s.-])EbP\\b/i",
+    "score": 0
+  },
+  {
+    "name": "EuReKA",
+    "pattern": "/(?<=^|[\\s.-])EuReKA\\b/i",
+    "score": 0
+  },
+  {
+    "name": "Extended Clip",
+    "pattern": "/\\b(extended.?clip)\\b/i",
+    "score": 0
+  },
+  {
+    "name": "Extended Edition",
+    "pattern": "/(?<=\\b[12]\\d{3}\\b).*\\b(Extended)(\\b|\\d)/i",
+    "score": 0
+  },
+  {
+    "name": "FGT",
+    "pattern": "/(?<=^|[\\s.-])FGT\\b/i",
+    "score": 0
+  },
+  {
+    "name": "FLAC",
+    "pattern": "/\\bFLAC(\\b|\\d)/i",
+    "score": 0
+  },
+  {
+    "name": "FLUX",
+    "pattern": "/(?<=^|[\\s.-])FLUX\\b/i",
+    "score": 0
+  },
+  {
+    "name": "Flights",
+    "pattern": "/(?<=^|[\\s.-])Flights\\b/i",
+    "score": 0
+  },
+  {
+    "name": "FoRM",
+    "pattern": "/(?<=^|[\\s.-])FoRM\\b/i",
+    "score": 0
+  },
+  {
+    "name": "FraMeSToR",
+    "pattern": "/(?<=^|[\\s.-])FraMeSToR\\b/i",
+    "score": 0
+  },
+  {
+    "name": "Full Disc",
+    "pattern": "/^(?!.*\\b((?<!HD[._ -]|HD)DVD|BDRip|MKV|XviD|WMV|d3g|BDREMUX|REMUX|^(?=.*1080p)(?=.*HEVC)|[xh][-_. ]?26[45]|German.*DL|((?<=\\d{4}).*German.*(DL)?)(?=.*\\b(AVC|HEVC|VC[-_. ]?1|MVC|MPEG[-_. ]?2)\\b))\\b)(((?=.*\\b(Blu[-_. ]?ray|BD|HD[-_. ]?DVD)\\b)(?=.*\\b(AVC|HEVC|VC[-_. ]?1|MVC|MPEG[-_. ]?2|BDMV|ISO)\\b))|^((?=.*\\b(^((?=.*\\b((.*_)?COMPLETE.*|Dis[ck])\\b)(?=.*(Blu[-_. ]?ray|HD[-_. ]?DVD)))|3D[-_. ]?BD|BR[-_. ]?DISK|Full[-_. ]?Blu[-_. ]?ray|^((?=.*((BD|UHD)[-_. ]?(25|50|66|100|ISO)))))))).*|(DVD9|DVD5|NTSC|PAL|VOB IFO|VC-1|AVC|MPEG-2|\\bCOMPLETE[-.\\s]?(?:UHD[-.\\s])?BLU[-.\\s]?RAY\\b|\\bCOMPLETE BLURAY\\b|\\bBR-Disk\\b)/i",
+    "score": 0
+  },
+  {
+    "name": "GALAXY",
+    "pattern": "/(?<=^|[\\s.-])GALAXY\\b/i",
+    "score": 0
+  },
+  {
+    "name": "GALVANiZE",
+    "pattern": "/(?<=^|[\\s.-])GALVANiZE\\b/i",
+    "score": 0
+  },
+  {
+    "name": "GNOME",
+    "pattern": "/(?<=^|[\\s.-])GNOME\\b/i",
+    "score": 0
+  },
+  {
+    "name": "GRiMM",
+    "pattern": "/(?<=^|[\\s.-])GRiMM\\b/i",
+    "score": 0
+  },
+  {
+    "name": "GS88",
+    "pattern": "/(?<=^|[\\s.-])GS88\\b/i",
+    "score": 0
+  },
+  {
+    "name": "GZ",
+    "pattern": "/(?<=^|[\\s.-])GZ\\b/i",
+    "score": 0
+  },
+  {
+    "name": "Geek",
+    "pattern": "/(?<=^|[\\s.-])Geek\\b/i",
+    "score": 0
+  },
+  {
+    "name": "German DL",
+    "pattern": "/(?=.*\\bGERMAN\\b)(?=.*\\b(?<!WEB-)[DM]L\\b).*/i",
+    "score": 0
+  },
+  {
+    "name": "Google TV",
+    "pattern": "/\\b(PLAY)\\b[ ._-]web[ ._-]?(dl|rip)?\\b/i",
+    "score": 0
+  },
+  {
+    "name": "Google TV Rename",
+    "pattern": "/\\[(PLAY)\\b|\\b(PLAY)\\]/i",
+    "score": 0
+  },
+  {
+    "name": "Grayscale",
+    "pattern": "/(?<=\\b[12]\\d{3}\\b).*\\b(Gr[ae]y([ ._-]?(scale))?)\\b(?!$)/i",
+    "score": 0
+  },
+  {
+    "name": "HANDJOB",
+    "pattern": "/(?<=^|[\\s.-])HANDJOB\\b/i",
+    "score": 0
+  },
+  {
+    "name": "HBO Max",
+    "pattern": "/\\b(HMAX|HBOM)\\b|\\bHBO[ ._-]?MAX[ ._-]WEB[ ._-]?(DL|RIP)\\b/i",
+    "score": 0
+  },
+  {
+    "name": "HDC",
+    "pattern": "/(?<=^|[\\s.-])HDC\\b/i",
+    "score": 0
+  },
+  {
+    "name": "HDMaNiAcS",
+    "pattern": "/(?<=^|[\\s.-])HDMaNiAcS\\b/i",
+    "score": 0
+  },
+  {
+    "name": "HDR",
+    "pattern": "/\\b(HDR(10|(?!\\d))|HLG|PQ(10)?)\\b/i",
+    "score": 0
+  },
+  {
+    "name": "HDR10 (Negation)",
+    "pattern": "/(?<=^|[\\s.-])BHDStudio\\b/i",
+    "score": 0
+  },
+  {
+    "name": "HDR10+",
+    "pattern": "/\\bHDR10.?(\\+|P(lus)?\\b)/i",
+    "score": 0
+  },
+  {
+    "name": "HDS",
+    "pattern": "/(?<=^|[\\s.-])HDS\\b/i",
+    "score": 0
+  },
+  {
+    "name": "HDTV",
+    "pattern": "/\\b(HDTV)\\b/i",
+    "score": 0
+  },
+  {
+    "name": "HEVC",
+    "pattern": "/[xh][ ._-]?265|\\bHEVC(\\b|\\d)/i",
+    "score": 0
+  },
+  {
+    "name": "HHWEB",
+    "pattern": "/(?<=^|[\\s.-])HHWEB\\b/i",
+    "score": 0
+  },
+  {
+    "name": "HONE",
+    "pattern": "/(?<=^|[\\s.-])HONE\\b/i",
+    "score": 0
+  },
+  {
+    "name": "HQMUX",
+    "pattern": "/(?<=^|[\\s.-])HQMUX\\b/i",
+    "score": 0
+  },
+  {
+    "name": "HR",
+    "pattern": "/(?<=^|[\\s.-])HR\\b/i",
+    "score": 0
+  },
+  {
+    "name": "HaB",
+    "pattern": "/(?<=^|[\\s.-])HaB\\b/i",
+    "score": 0
+  },
+  {
+    "name": "HiDt",
+    "pattern": "/(?<=^|[\\s.-])HiDt\\b/i",
+    "score": 0
+  },
+  {
+    "name": "HiFi",
+    "pattern": "/(?<=^|[\\s.-])HiFi\\b/i",
+    "score": 0
+  },
+  {
+    "name": "HiP",
+    "pattern": "/(?<=^|[\\s.-])HiP\\b/i",
+    "score": 0
+  },
+  {
+    "name": "Hotstar",
+    "pattern": "/\\b(HTSR)\\b/i",
+    "score": 0
+  },
+  {
+    "name": "Hulu",
+    "pattern": "/\\b(Hulu)\\b/i",
+    "score": 0
+  },
+  {
+    "name": "IDE",
+    "pattern": "/(?<=^|[\\s.-])IDE\\b/i",
+    "score": 0
+  },
+  {
+    "name": "IMAX",
+    "pattern": "/\\b((?<!NON.?)IMAX)\\b/i",
+    "score": 0
+  },
+  {
+    "name": "IMNEWHERE",
+    "pattern": "/(?<=^|[\\s.-])IMNEWHERE\\b/i",
+    "score": 0
+  },
+  {
+    "name": "Ivandro",
+    "pattern": "/(?<=^|[\\s.-])Ivandro\\b/i",
+    "score": 0
+  },
+  {
+    "name": "JustWatch",
+    "pattern": "/(?<=^|[\\s.-])JustWatch\\b/i",
+    "score": 0
+  },
+  {
+    "name": "KASHMiR",
+    "pattern": "/(?<=^|[\\s.-])KASHMiR\\b/i",
+    "score": 0
+  },
+  {
+    "name": "KC",
+    "pattern": "/(?<=^|[\\s.-])KC\\b/i",
+    "score": 0
+  },
+  {
+    "name": "KHN",
+    "pattern": "/(?<=^|[\\s.-])KHN\\b/i",
+    "score": 0
+  },
+  {
+    "name": "KRaLiMaRKo",
+    "pattern": "/(?<=^|[\\s.-])KRaLiMaRKo\\b/i",
+    "score": 0
+  },
+  {
+    "name": "KiNGS",
+    "pattern": "/(?<=^|[\\s.-])KiNGS\\b/i",
+    "score": 0
+  },
+  {
+    "name": "KiNGSMAN",
+    "pattern": "/(?<=^|[\\s.-])KiNGSMAN\\b/i",
+    "score": 0
+  },
+  {
+    "name": "Kitsune",
+    "pattern": "/(?<=^|[\\s.-])Kitsune\\b/i",
+    "score": 0
+  },
+  {
+    "name": "KnG",
+    "pattern": "/(?<=^|[\\s.-])KnG\\b/i",
+    "score": 0
+  },
+  {
+    "name": "LAMA",
+    "pattern": "/(?<=^|[\\s.-])LAMA\\b/i",
+    "score": 0
+  },
+  {
+    "name": "LAZY",
+    "pattern": "/(?<=^|[\\s.-])LAZY\\b/i",
+    "score": 0
+  },
+  {
+    "name": "LEGi0N",
+    "pattern": "/(?<=^|[\\s.-])LEGi0N\\b/i",
+    "score": 0
+  },
+  {
+    "name": "LESTiN",
+    "pattern": "/(?<=^|[\\s.-])LESTiN\\b/i",
+    "score": 0
+  },
+  {
+    "name": "LM",
+    "pattern": "/(?<=^|[\\s.-])LM\\b/i",
+    "score": 0
+  },
+  {
+    "name": "LiNG",
+    "pattern": "/(?<=^|[\\s.-])LiNG\\b/i",
+    "score": 0
+  },
+  {
+    "name": "LoRD",
+    "pattern": "/(?<=^|[\\s.-])LoRD\\b/i",
+    "score": 0
+  },
+  {
+    "name": "LolHD",
+    "pattern": "/(?<=^|[\\s.-])LolHD\\b/i",
+    "score": 0
+  },
+  {
+    "name": "Lulz",
+    "pattern": "/(?<=^|[\\s.-])Lulz\\b/i",
+    "score": 0
+  },
+  {
+    "name": "MADSKY",
+    "pattern": "/(?<=^|[\\s.-])MADSKY\\b/i",
+    "score": 0
+  },
+  {
+    "name": "MAMA",
+    "pattern": "/(?<=^|[\\s.-])MAMA\\b/i",
+    "score": 0
+  },
+  {
+    "name": "MTeam",
+    "pattern": "/(?<=^|[\\s.-])MTeam\\b/i",
+    "score": 0
+  },
+  {
+    "name": "MZABI",
+    "pattern": "/(?<=^|[\\s.-])MZABI\\b/i",
+    "score": 0
+  },
+  {
+    "name": "MaG",
+    "pattern": "/(?<=^|[\\s.-])MaG\\b/i",
+    "score": 0
+  },
+  {
+    "name": "MainFrame",
+    "pattern": "/(?<=^|[\\s.-])MainFrame\\b/i",
+    "score": 0
+  },
+  {
+    "name": "Max",
+    "pattern": "/\\b((?<!hbo[ ._-])max)\\b(?=[ ._-]web[ ._-]?(dl|rip)\\b)/i",
+    "score": 0
+  },
+  {
+    "name": "Max Rename",
+    "pattern": "/\\[(MAX)\\b|\\b(MAX)\\]/i",
+    "score": 0
+  },
+  {
+    "name": "MgB",
+    "pattern": "/(?<=^|[\\s.-])MgB\\b/i",
+    "score": 0
+  },
+  {
+    "name": "Monochrome",
+    "pattern": "/(?<=\\b[12]\\d{3}\\b).*\\b(Monochrome)\\b(?!$)/i",
+    "score": 0
+  },
+  {
+    "name": "Movie Extras",
+    "pattern": "/(?<=\\b[12]\\d{3}\\b).*(\\b|\\.)\\b(Extras?|Bonus|Extended[ ._-]Clip|Special Feature[s]?)\\b/i",
+    "score": 0
+  },
+  {
+    "name": "Movies Anywhere",
+    "pattern": "/\\b(?<!dts[ .-]?hd[ .-]?)(MA|YKW)\\b(?=.*\\bweb[ ._-]?(dl|rip)\\b)/i",
+    "score": 0
+  },
+  {
+    "name": "Mubi",
+    "pattern": "/\\b(MUBI)\\b/i",
+    "score": 0
+  },
+  {
+    "name": "NAHOM",
+    "pattern": "/(?<=^|[\\s.-])NAHOM\\b/i",
+    "score": 0
+  },
+  {
+    "name": "NCmt",
+    "pattern": "/(?<=^|[\\s.-])NCmt\\b/i",
+    "score": 0
+  },
+  {
+    "name": "NIMA4K",
+    "pattern": "/(?<=^|[\\s.-])NIMA4K\\b/i",
+    "score": 0
+  },
+  {
+    "name": "NINJACENTRAL",
+    "pattern": "/(?<=^|[\\s.-])NINJACENTRAL\\b/i",
+    "score": 0
+  },
+  {
+    "name": "NOSiViD",
+    "pattern": "/(?<=^|[\\s.-])NOSiViD\\b/i",
+    "score": 0
+  },
+  {
+    "name": "NPMS",
+    "pattern": "/(?<=^|[\\s.-])NPMS\\b/i",
+    "score": 0
+  },
+  {
+    "name": "NTG",
+    "pattern": "/(?<=^|[\\s.-])NTG\\b/i",
+    "score": 0
+  },
+  {
+    "name": "NTb",
+    "pattern": "/(?<=^|[\\s.-])NTb\\b/i",
+    "score": 0
+  },
+  {
+    "name": "NaNi",
+    "pattern": "/(?<=^|[\\s.-])NaNi\\b/i",
+    "score": 0
+  },
+  {
+    "name": "Natuyuki",
+    "pattern": "/(?<=^|[\\s.-])Natuyuki\\b/i",
+    "score": 0
+  },
+  {
+    "name": "Netflix",
+    "pattern": "/\\b(NF|Netflix)\\b/i",
+    "score": 0
+  },
+  {
+    "name": "NhaNc3",
+    "pattern": "/(?<=^|[\\s.-])NhaNc3\\b/i",
+    "score": 0
+  },
+  {
+    "name": "NiBuRu",
+    "pattern": "/(?<=^|[\\s.-])NiBuRu\\b/i",
+    "score": 0
+  },
+  {
+    "name": "NiCEHEVC",
+    "pattern": "/(?<=^|[\\s.-])NiCEHEVC\\b/i",
+    "score": 0
+  },
+  {
+    "name": "NiP",
+    "pattern": "/(?<=^|[\\s.-])NiP\\b/i",
+    "score": 0
+  },
+  {
+    "name": "NoGroup",
+    "pattern": "/(?<=^|[\\s.-])NoGr(ou)?p\\b/i",
+    "score": 0
+  },
+  {
+    "name": "Noir",
+    "pattern": "/(?<=\\b[12]\\d{3}\\b).*\\b(Noir)\\b(?!$)/i",
+    "score": 0
+  },
+  {
+    "name": "Now",
+    "pattern": "/\\b(now)\\b[ ._-]web[ ._-]?(dl|rip)?\\b/i",
+    "score": 0
+  },
+  {
+    "name": "Now Rename",
+    "pattern": "/\\[(NOW)\\b|\\b(NOW)\\]/i",
+    "score": 0
+  },
+  {
+    "name": "NyHD",
+    "pattern": "/(?<=^|[\\s.-])NyHD\\b/i",
+    "score": 0
+  },
+  {
+    "name": "OEPlus",
+    "pattern": "/(?<=^|[\\s.-])OEPlus\\b/i",
+    "score": 0
+  },
+  {
+    "name": "OFT",
+    "pattern": "/(?<=^|[\\s.-])OFT\\b/i",
+    "score": 0
+  },
+  {
+    "name": "ORBiT",
+    "pattern": "/(?<=^|[\\s.-])ORBiT\\b/i",
+    "score": 0
+  },
+  {
+    "name": "ORiGEN",
+    "pattern": "/(?<=^|[\\s.-])ORiGEN\\b/i",
+    "score": 0
+  },
+  {
+    "name": "OnlyWeb",
+    "pattern": "/(?<=^|[\\s.-])OnlyWeb\\b/i",
+    "score": 0
+  },
+  {
+    "name": "Open Matte",
+    "pattern": "/\\b(Open[ ._-]?Matte)\\b/i",
+    "score": 0
+  },
+  {
+    "name": "Opus",
+    "pattern": "/\\bOPUS(\\b|\\d)(?!.*[ ._-](\\d{3,4}p))/i",
+    "score": 0
+  },
+  {
+    "name": "Opus (Negation)",
+    "pattern": "/(?<=^|[\\s.-])OPUS\\b/i",
+    "score": 0
+  },
+  {
+    "name": "P0W4HD",
+    "pattern": "/(?<=^|[\\s.-])P0W4HD\\b/i",
+    "score": 0
+  },
+  {
+    "name": "PCM",
+    "pattern": "/\\b(l?)PCM(\\b|\\d)/i",
+    "score": 0
+  },
+  {
+    "name": "PHOENiX",
+    "pattern": "/(?<=^|[\\s.-])PHOENiX\\b/i",
+    "score": 0
+  },
+  {
+    "name": "PLUTONiUM",
+    "pattern": "/(?<=^|[\\s.-])PLUTONiUM\\b/i",
+    "score": 0
+  },
+  {
+    "name": "PMI",
+    "pattern": "/(?<=^|[\\s.-])PMI\\b/i",
+    "score": 0
+  },
+  {
+    "name": "PP",
+    "pattern": "/(?<=^|[\\s.-])PP\\b/i",
+    "score": 0
+  },
+  {
+    "name": "PTP",
+    "pattern": "/(?<=^|[\\s.-])PTP\\b/i",
+    "score": 0
+  },
+  {
+    "name": "PTer",
+    "pattern": "/(?<=^|[\\s.-])PTer\\b/i",
+    "score": 0
+  },
+  {
+    "name": "Paramount+",
+    "pattern": "/\\b(PMTP|Paramount Plus)\\b/i",
+    "score": 0
+  },
+  {
+    "name": "Peacock TV",
+    "pattern": "/\\bPCOK\\b|\\bPeacock[ ._-]WEB[ ._-]?(DL|RIP)?\\b/i",
+    "score": 0
+  },
+  {
+    "name": "Penumbra",
+    "pattern": "/(?<=^|[\\s.-])Penumbra\\b/i",
+    "score": 0
+  },
+  {
+    "name": "PiRAMiDHEAD",
+    "pattern": "/(?<=^|[\\s.-])PiRAMiDHEAD\\b/i",
+    "score": 0
+  },
+  {
+    "name": "PmP",
+    "pattern": "/(?<=^|[\\s.-])PmP\\b/i",
+    "score": 0
+  },
+  {
+    "name": "Positive",
+    "pattern": "/(?<=^|[\\s.-])Positive\\b/i",
+    "score": 0
+  },
+  {
+    "name": "Prestige",
+    "pattern": "/(?<=^|[\\s.-])Prestige\\b/i",
+    "score": 0
+  },
+  {
+    "name": "PrimeFix",
+    "pattern": "/(?<=^|[\\s.-])PrimeFix\\b/i",
+    "score": 0
+  },
+  {
+    "name": "PuTao",
+    "pattern": "/(?<=^|[\\s.-])PuTao\\b/i",
+    "score": 0
+  },
+  {
+    "name": "QOQ",
+    "pattern": "/(?<=^|[\\s.-])QOQ\\b/i",
+    "score": 0
+  },
+  {
+    "name": "RARBG",
+    "pattern": "/(?<=^|[\\s.-])RARBG\\b/i",
+    "score": 0
+  },
+  {
+    "name": "RAWR",
+    "pattern": "/(?<=^|[\\s.-])RAWR\\b/i",
+    "score": 0
+  },
+  {
+    "name": "REBORN",
+    "pattern": "/(?<=^|[\\s.-])REBORN\\b/i",
+    "score": 0
+  },
+  {
+    "name": "RO",
+    "pattern": "/(?<=^|[\\s.-])RO\\b/i",
+    "score": 0
+  },
+  {
+    "name": "ROCCaT",
+    "pattern": "/(?<=^|[\\s.-])ROCCaT\\b/i",
+    "score": 0
+  },
+  {
+    "name": "ROCiNANTE",
+    "pattern": "/(?<=^|[\\s.-])ROCiNANTE\\b/i",
+    "score": 0
+  },
+  {
+    "name": "RTN",
+    "pattern": "/(?<=^|[\\s.-])RTN\\b/i",
+    "score": 0
+  },
+  {
+    "name": "RandomBytes",
+    "pattern": "/(?<=^|[\\s.-])RandomBytes\\b/i",
+    "score": 0
+  },
+  {
+    "name": "Release Group (Missing)",
+    "pattern": "/./i",
+    "score": 0
+  },
+  {
+    "name": "Remux",
+    "pattern": "/\\b(Remux)\\b/i",
+    "score": 0
+  },
+  {
+    "name": "Repack1",
+    "pattern": "/\\b(re(pack|rip)|proper)\\b/i",
+    "score": 0
+  },
+  {
+    "name": "Repack2",
+    "pattern": "/\\b(real[\\s.]?(re(pack|rip)|proper)|(re(pack|rip)|proper)2)\\b/i",
+    "score": 0
+  },
+  {
+    "name": "Repack3",
+    "pattern": "/\\b(real[\\s.]?real[\\s.]?(re(pack|rip)|proper)|(re(pack|rip)|proper)3)\\b/i",
+    "score": 0
+  },
+  {
+    "name": "RiCO",
+    "pattern": "/(?<=^|[\\s.-])RiCO\\b/i",
+    "score": 0
+  },
+  {
+    "name": "Roku",
+    "pattern": "/\\b(ROKU)\\b/i",
+    "score": 0
+  },
+  {
+    "name": "Rose3Thorn",
+    "pattern": "/(?<=^|[\\s.-])Rose3Thorn\\b/i",
+    "score": 0
+  },
+  {
+    "name": "SA89",
+    "pattern": "/(?<=^|[\\s.-])SA89\\b/i",
+    "score": 0
+  },
+  {
+    "name": "SDR",
+    "pattern": "/\\bSDR\\b/i",
+    "score": 0
+  },
+  {
+    "name": "SHD",
+    "pattern": "/(?<=^|[\\s.-])SHD\\b/i",
+    "score": 0
+  },
+  {
+    "name": "SM737",
+    "pattern": "/(?<=^|[\\s.-])SM737\\b/i",
+    "score": 0
+  },
+  {
+    "name": "SMURF",
+    "pattern": "/(?<=^|[\\s.-])SMURF\\b/i",
+    "score": 0
+  },
+  {
+    "name": "SOP",
+    "pattern": "/(?<=^|[\\s.-])SOP\\b/i",
+    "score": 0
+  },
+  {
+    "name": "SPHD",
+    "pattern": "/(?<=^|[\\s.-])SPHD\\b/i",
+    "score": 0
+  },
+  {
+    "name": "SPiRiT",
+    "pattern": "/(?<=^|[\\s.-])SPiRiT\\b/i",
+    "score": 0
+  },
+  {
+    "name": "STUTTERSHIT",
+    "pattern": "/(?<=^|[\\s.-])STUTTERSHIT\\b/i",
+    "score": 0
+  },
+  {
+    "name": "SURCODE",
+    "pattern": "/(?<=^|[\\s.-])SURCODE\\b/i",
+    "score": 0
+  },
+  {
+    "name": "SaNcTi",
+    "pattern": "/(?<=^|[\\s.-])SaNcTi\\b/i",
+    "score": 0
+  },
+  {
+    "name": "SasukeducK",
+    "pattern": "/(?<=^|[\\s.-])SasukeducK\\b/i",
+    "score": 0
+  },
+  {
+    "name": "SbR",
+    "pattern": "/(?<=^|[\\s.-])SbR\\b/i",
+    "score": 0
+  },
+  {
+    "name": "ShieldBearer",
+    "pattern": "/(?<=^|[\\s.-])ShieldBearer\\b/i",
+    "score": 0
+  },
+  {
+    "name": "Showtime",
+    "pattern": "/\\b(sho|showtime)\\b[ ._-]web[ ._-]?(dl|rip)?\\b/i",
+    "score": 0
+  },
+  {
+    "name": "Showtime Rename",
+    "pattern": "/\\[(SHO)\\b|\\b(SHO)\\]/i",
+    "score": 0
+  },
+  {
+    "name": "Shush Cut",
+    "pattern": "/(?<=\\b[12]\\d{3}\\b).*\\b(Shush[ ._-]?Cut)\\b(?!$)/i",
+    "score": 0
+  },
+  {
+    "name": "SiC",
+    "pattern": "/(?<=^|[\\s.-])SiC\\b/i",
+    "score": 0
+  },
+  {
+    "name": "SiCFoI",
+    "pattern": "/(?<=^|[\\s.-])SiCFoI\\b/i",
+    "score": 0
+  },
+  {
+    "name": "SiGLA",
+    "pattern": "/(?<=^|[\\s.-])SiGLA\\b/i",
+    "score": 0
+  },
+  {
+    "name": "SiGMA",
+    "pattern": "/(?<=^|[\\s.-])SiGMA\\b/i",
+    "score": 0
+  },
+  {
+    "name": "SiMPLE",
+    "pattern": "/(?<=^|[\\s.-])SiMPLE\\b/i",
+    "score": 0
+  },
+  {
+    "name": "Sing Along",
+    "pattern": "/(?<=\\b[12]\\d{3}\\b).*\\b(Sing[-_. ]Along)\\b/i",
+    "score": 0
+  },
+  {
+    "name": "Skazhutin",
+    "pattern": "/(?<=^|[\\s.-])Skazhutin\\b/i",
+    "score": 0
+  },
+  {
+    "name": "SkyShowTime",
+    "pattern": "/\\b(SKST)\\b/i",
+    "score": 0
+  },
+  {
+    "name": "Slappy",
+    "pattern": "/(?<=^|[\\s.-])Slappy\\b/i",
+    "score": 0
+  },
+  {
+    "name": "SoLaR",
+    "pattern": "/(?<=^|[\\s.-])SoLaR\\b/i",
+    "score": 0
+  },
+  {
+    "name": "Softboat",
+    "pattern": "/(?<=^|[\\s.-])Softboat\\b/i",
+    "score": 0
+  },
+  {
+    "name": "Special Edition",
+    "pattern": "/(?<=\\b[12]\\d{3}\\b).*\\b(Cut|Directors|DC|Extended|Special|Uncensored|Uncut|Unrated|Version|(?<!{)Edition)(\\b|\\d)/i",
+    "score": 0
+  },
+  {
+    "name": "Stan",
+    "pattern": "/\\b(stan)\\b[ ._-]web[ ._-]?(dl|rip)?\\b/i",
+    "score": 0
+  },
+  {
+    "name": "Stan Rename",
+    "pattern": "/\\[(STAN)\\b|\\b(STAN)\\]/i",
+    "score": 0
+  },
+  {
+    "name": "SumVision",
+    "pattern": "/(?<=^|[\\s.-])SumVision\\b/i",
+    "score": 0
+  },
+  {
+    "name": "SwAgLaNdEr",
+    "pattern": "/(?<=^|[\\s.-])SwAgLaNdEr\\b/i",
+    "score": 0
+  },
+  {
+    "name": "TBB",
+    "pattern": "/(?<=^|[\\s.-])TBB\\b/i",
+    "score": 0
+  },
+  {
+    "name": "TDD",
+    "pattern": "/(?<=^|[\\s.-])TDD\\b/i",
+    "score": 0
+  },
+  {
+    "name": "TEKNO3D",
+    "pattern": "/(?<=^|[\\s.-])TEKNO3D\\b/i",
+    "score": 0
+  },
+  {
+    "name": "TEPES",
+    "pattern": "/(?<=^|[\\s.-])TEPES\\b/i",
+    "score": 0
+  },
+  {
+    "name": "TOMMY",
+    "pattern": "/(?<=^|[\\s.-])TOMMY\\b/i",
+    "score": 0
+  },
+  {
+    "name": "TRiToN",
+    "pattern": "/(?<=^|[\\s.-])TRiToN\\b/i",
+    "score": 0
+  },
+  {
+    "name": "TURG",
+    "pattern": "/(?<=^|[\\s.-])TURG\\b/i",
+    "score": 0
+  },
+  {
+    "name": "TV Extras",
+    "pattern": "/(?<=\\bS\\d+\\b).*\\b(Extras|Bonus|Extended[ ._-]Clip)\\b/i",
+    "score": 0
+  },
+  {
+    "name": "TVSmash",
+    "pattern": "/(?<=^|[\\s.-])TVSmash\\b/i",
+    "score": 0
+  },
+  {
+    "name": "TayTo",
+    "pattern": "/(?<=^|[\\s.-])TayTo\\b/i",
+    "score": 0
+  },
+  {
+    "name": "TeamSyndicate",
+    "pattern": "/(?<=^|[\\s.-])TeamSyndicate\\b/i",
+    "score": 0
+  },
+  {
+    "name": "Telly",
+    "pattern": "/(?<=^|[\\s.-])Telly\\b/i",
+    "score": 0
+  },
+  {
+    "name": "ThD",
+    "pattern": "/(?<=^|[\\s.-])ThD\\b/i",
+    "score": 0
+  },
+  {
+    "name": "TheFarm",
+    "pattern": "/(?<=^|[\\s.-])TheFarm\\b/i",
+    "score": 0
+  },
+  {
+    "name": "Theatrical Edition",
+    "pattern": "/(?<=\\b[12]\\d{3}\\b).*\\b(Theatrical)(\\b|\\d)/i",
+    "score": 0
+  },
+  {
+    "name": "TnP",
+    "pattern": "/(?<=^|[\\s.-])TnP\\b/i",
+    "score": 0
+  },
+  {
+    "name": "TrueHD",
+    "pattern": "/True[ .-]?HD[ .-]?/i",
+    "score": 0
+  },
+  {
+    "name": "TvR",
+    "pattern": "/(?<=^|[\\s.-])TvR\\b/i",
+    "score": 0
+  },
+  {
+    "name": "UHD Bluray",
+    "pattern": "/\\bUHD[-_.\\s]?Blu[-]?Ray\\b/i",
+    "score": 0
+  },
+  {
+    "name": "UHD Bluray Release Groups",
+    "pattern": "/(?<=^|[\\s.-])(AJP69|ATELiER|BakedFEL|BMF|BRUTE|BSTD|BV|c0kE|CART|Chotab|CJ|coffee|CRiSC|CRX|CtrlHD|Dariush|de[42]|decibel|DON|D-Z0N3|E.N.D|E1|EA|EDPH|EbP|ESiR|EXCiSION|faBR|FoRM|FraMeSToR|GALAXY|Geek|GS88|GZ|hdalx|HDMaNiAcS|HiDt|HiFi|HiP|IDE|iFT|KASHMiR|Kitsune|LiNG|LolHD|LoRD|luvBB|NCmt|NiBuRu|nmd|NTb|NyHD|ORBiT|ORiGEN|Penumbra|playHD|Positive|PTer|PuTao|REBORN|RiCO|rightSIZE|RO|rttr|SA89|SaNcTi|SbR|SiMPLE|Softboat|SoLaR|SOP|SPHD|TayTo|TBB|TDD|TeamSyndicate|TnP|VLAD|VietHD|W4NK3R|WiLF|WMING|xander|ZIMBO|ZoroSenpai|ZQ)\\b/i",
+    "score": 0
+  },
+  {
+    "name": "UHD WEBRip Release Groups",
+    "pattern": "/(?<=^|[\\s.-])(AJP69|ATELiER|BMF|BRUTE|BSTD|BV|c0kE|Chotab|CJ|coffee|CRiSC|CRX|CtrlHD|Dariush|de[42]|decibel|DON|D-Z0N3|E.N.D|E1|EA|EDPH|EbP|ESiR|EXCiSION|FoRM|FraMeSToR|GALAXY|Geek|GS88|hdalx|HDMaNiAcS|HiDt|HiFi|HiP|IDE|iFT|KASHMiR|Kitsune|LiNG|LolHD|LoRD|luvBB|NCmt|NiBuRu|nmd|NyHD|ORiGEN|Penumbra|playHD|Positive|PTer|REBORN|RiCO|rightSIZE|RO|rttr|SA89|SaNcTi|SbR|SiMPLE|SoLaR|SOP|SPHD|TayTo|TBB|TDD|TeamSyndicate|TnP|VLAD|VietHD|W4NK3R|WiLF|WMING|xander|ZIMBO|ZoroSenpai|ZQ)\\b/i",
+    "score": 0
+  },
+  {
+    "name": "UnKn0wn",
+    "pattern": "/(?<=^|[\\s.-])UnKn0wn\\b/i",
+    "score": 0
+  },
+  {
+    "name": "Upscale",
+    "pattern": "/(Up[-\\.\\s]?scale|Re[-\\.\\s]?Grade|\\bAIUS\\b|AI[-\\.\\s]?enhanced)/i",
+    "score": 0
+  },
+  {
+    "name": "VD0N",
+    "pattern": "/(?<=^|[\\s.-])VD0N\\b/i",
+    "score": 0
+  },
+  {
+    "name": "VECTOR",
+    "pattern": "/(?<=^|[\\s.-])VECTOR\\b/i",
+    "score": 0
+  },
+  {
+    "name": "VLAD",
+    "pattern": "/(?<=^|[\\s.-])VLAD\\b/i",
+    "score": 0
+  },
+  {
+    "name": "VP9",
+    "pattern": "/\\bVP9\\b/i",
+    "score": 0
+  },
+  {
+    "name": "VVC",
+    "pattern": "/[xh][ ._-]?266|\\bVVC(\\b|\\d)/i",
+    "score": 0
+  },
+  {
+    "name": "ViETNAM",
+    "pattern": "/(?<=^|[\\s.-])ViETNAM\\b/i",
+    "score": 0
+  },
+  {
+    "name": "ViSTA",
+    "pattern": "/(?<=^|[\\s.-])ViSTA\\b/i",
+    "score": 0
+  },
+  {
+    "name": "ViSUM",
+    "pattern": "/(?<=^|[\\s.-])ViSUM\\b/i",
+    "score": 0
+  },
+  {
+    "name": "VietHD",
+    "pattern": "/(?<=^|[\\s.-])VietHD\\b/i",
+    "score": 0
+  },
+  {
+    "name": "VisionXpert",
+    "pattern": "/(?<=^|[\\s.-])VisionXpert\\b/i",
+    "score": 0
+  },
+  {
+    "name": "W4NK3R",
+    "pattern": "/(?<=^|[\\s.-])W4NK3R\\b/i",
+    "score": 0
+  },
+  {
+    "name": "WATCHABLE",
+    "pattern": "/(?<=^|[\\s.-])WATCHABLE\\b/i",
+    "score": 0
+  },
+  {
+    "name": "WEB-DL",
+    "pattern": "/\\b(WEB[ ._-]?DL)\\b/i",
+    "score": 0
+  },
+  {
+    "name": "WELP",
+    "pattern": "/(?<=^|[\\s.-])WELP\\b/i",
+    "score": 0
+  },
+  {
+    "name": "WMING",
+    "pattern": "/(?<=^|[\\s.-])WMING\\b/i",
+    "score": 0
+  },
+  {
+    "name": "WiKi",
+    "pattern": "/(?<=^|[\\s.-])WiKi\\b/i",
+    "score": 0
+  },
+  {
+    "name": "WiLDCAT",
+    "pattern": "/(?<=^|[\\s.-])WiLDCAT\\b/i",
+    "score": 0
+  },
+  {
+    "name": "WiLF",
+    "pattern": "/(?<=^|[\\s.-])WiLF\\b/i",
+    "score": 0
+  },
+  {
+    "name": "XEBEC",
+    "pattern": "/(?<=^|[\\s.-])XEBEC\\b/i",
+    "score": 0
+  },
+  {
+    "name": "Xvid",
+    "pattern": "/\\b(Xvid)\\b/i",
+    "score": 0
+  },
+  {
+    "name": "YIFY",
+    "pattern": "/(?<=^|[\\s.-])YIFY\\b/i",
+    "score": 0
+  },
+  {
+    "name": "YTS",
+    "pattern": "/(?<=^|[\\s.-])YTS(.(AG|BZ|LT|MX))?\\b/i",
+    "score": 0
+  },
+  {
+    "name": "ZIMBO",
+    "pattern": "/(?<=^|[\\s.-])ZIMBO\\b/i",
+    "score": 0
+  },
+  {
+    "name": "ZQ",
+    "pattern": "/(?<=^|[\\s.-])ZQ\\b/i",
+    "score": 0
+  },
+  {
+    "name": "ZoroSenpai",
+    "pattern": "/(?<=^|[\\s.-])ZoroSenpai\\b/i",
+    "score": 0
+  },
+  {
+    "name": "alfaHD",
+    "pattern": "/(?<=^|[\\s.-])alfaHD\\b/i",
+    "score": 0
+  },
+  {
+    "name": "b0mbardiers",
+    "pattern": "/(?<=^|[\\s.-])b0mbardiers\\b/i",
+    "score": 0
+  },
+  {
+    "name": "c0kE",
+    "pattern": "/(?<=^|[\\s.-])c0kE\\b/i",
+    "score": 0
+  },
+  {
+    "name": "coffee",
+    "pattern": "/(?<=^|[\\s.-])coffee\\b/i",
+    "score": 0
+  },
+  {
+    "name": "d3g",
+    "pattern": "/(?<=^|[\\s.-])d3g\\b/i",
+    "score": 0
+  },
+  {
+    "name": "dB",
+    "pattern": "/(?<=^|[\\s.-])dB\\b/i",
+    "score": 0
+  },
+  {
+    "name": "de[42]",
+    "pattern": "/(?<=^|[\\s.-])de[42]\\b/i",
+    "score": 0
+  },
+  {
+    "name": "decibeL",
+    "pattern": "/(?<=^|[\\s.-])decibeL\\b/i",
+    "score": 0
+  },
+  {
+    "name": "dkore",
+    "pattern": "/(?<=^|[\\s.-])dkore\\b/i",
+    "score": 0
+  },
+  {
+    "name": "eXterminator",
+    "pattern": "/(?<=^|[\\s.-])eXterminator\\b/i",
+    "score": 0
+  },
+  {
+    "name": "faBR",
+    "pattern": "/(?<=^|[\\s.-])faBR\\b/i",
+    "score": 0
+  },
+  {
+    "name": "h265",
+    "pattern": "/[h][ ._-]?265/i",
+    "score": 0
+  },
+  {
+    "name": "hallowed",
+    "pattern": "/(?<=^|[\\s.-])hallowed\\b/i",
+    "score": 0
+  },
+  {
+    "name": "hdalx",
+    "pattern": "/(?<=^|[\\s.-])hdalx\\b/i",
+    "score": 0
+  },
+  {
+    "name": "iFT",
+    "pattern": "/(?<=^|[\\s.-])iFT\\b/i",
+    "score": 0
+  },
+  {
+    "name": "iLoveHD",
+    "pattern": "/(?<=^|[\\s.-])iLoveHD\\b/i",
+    "score": 0
+  },
+  {
+    "name": "iON",
+    "pattern": "/(?<=^|[\\s.-])iON\\b/i",
+    "score": 0
+  },
+  {
+    "name": "iTunes",
+    "pattern": "/\\b(it|itunes)\\b(?=[ ._-]web[ ._-]?(dl|rip)\\b)/i",
+    "score": 0
+  },
+  {
+    "name": "iTunes Rename",
+    "pattern": "/\\[(iT)(?![+])\\b|\\b(?<![+])(iT)\\]/i",
+    "score": 0
+  },
+  {
+    "name": "j3rico",
+    "pattern": "/(?<=^|[\\s.-])j3rico\\b/i",
+    "score": 0
+  },
+  {
+    "name": "jennaortegaUHD",
+    "pattern": "/(?<=^|[\\s.-])jennaortega(UHD)?\\b/i",
+    "score": 0
+  },
+  {
+    "name": "jff",
+    "pattern": "/(?<=^|[\\s.-])jff\\b/i",
+    "score": 0
+  },
+  {
+    "name": "luvBB",
+    "pattern": "/(?<=^|[\\s.-])luvBB\\b/i",
+    "score": 0
+  },
+  {
+    "name": "maniac",
+    "pattern": "/(?<=^|[\\s.-])maniac\\b/i",
+    "score": 0
+  },
+  {
+    "name": "monkee",
+    "pattern": "/(?<=^|[\\s.-])monkee\\b/i",
+    "score": 0
+  },
+  {
+    "name": "nikt0",
+    "pattern": "/(?<=^|[\\s.-])nikt0\\b/i",
+    "score": 0
+  },
+  {
+    "name": "nmd",
+    "pattern": "/(?<=^|[\\s.-])nmd\\b/i",
+    "score": 0
+  },
+  {
+    "name": "pcroland",
+    "pattern": "/(?<=^|[\\s.-])pcroland\\b/i",
+    "score": 0
+  },
+  {
+    "name": "playBD",
+    "pattern": "/(?<=^|[\\s.-])playBD\\b/i",
+    "score": 0
+  },
+  {
+    "name": "playHD",
+    "pattern": "/(?<=^|[\\s.-])playHD\\b/i",
+    "score": 0
+  },
+  {
+    "name": "playSD",
+    "pattern": "/(?<=^|[\\s.-])playSD\\b/i",
+    "score": 0
+  },
+  {
+    "name": "playWEB",
+    "pattern": "/(?<=^|[\\s.-])playWEB\\b/i",
+    "score": 0
+  },
+  {
+    "name": "pmHD",
+    "pattern": "/(?<=^|[\\s.-])pmHD\\b/i",
+    "score": 0
+  },
+  {
+    "name": "rbb",
+    "pattern": "/(?<=^|[\\s.-])rbb\\b/i",
+    "score": 0
+  },
+  {
+    "name": "rightSIZE",
+    "pattern": "/(?<=^|[\\s.-])rightSIZE\\b/i",
+    "score": 0
+  },
+  {
+    "name": "rttr",
+    "pattern": "/(?<=^|[\\s.-])rttr\\b/i",
+    "score": 0
+  },
+  {
+    "name": "tarunk9c",
+    "pattern": "/(?<=^|[\\s.-])tarunk9c\\b/i",
+    "score": 0
+  },
+  {
+    "name": "tokar86a",
+    "pattern": "/(?<=^|[\\s.-])tokar86a\\b/i",
+    "score": 0
+  },
+  {
+    "name": "x0r",
+    "pattern": "/(?<=^|[\\s.-])x0r\\b/i",
+    "score": 0
+  },
+  {
+    "name": "x264",
+    "pattern": "/^(?!.*remux).*[xh][ ._-]?264/i",
+    "score": 0
+  },
+  {
+    "name": "x265",
+    "pattern": "/^(?!.*remux).*([x][ ._-]?265|\\bHEVC(\\b|\\d))/i",
+    "score": 0
+  },
+  {
+    "name": "x265 (Efficient)",
+    "pattern": "/^(?!.*remux).*([xh][ ._-]?265|\\bHEVC(\\b|\\d))/i",
+    "score": 0
+  },
+  {
+    "name": "xander",
+    "pattern": "/(?<=^|[\\s.-])xander\\b/i",
+    "score": 0
+  }
+]

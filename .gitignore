@@ -1,0 +1,6 @@
+# build-time deps cloned by build_db.py (schema + database snapshots)
+.deps/
+
+# python caches
+__pycache__/
+*.pyc
