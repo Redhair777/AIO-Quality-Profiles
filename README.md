@@ -108,23 +108,6 @@ name maps to one `regexMatched(...)` reference.
   (`precomputer.ts`), so Radarr's per-field regex matching (title vs edition vs
   release group) cannot be reproduced exactly — a regex matches wherever the
   token appears in the file name.
-- AIOStreams' `language()` filter accepts `'Original'`, which resolves
-  dynamically **per item** to that item's original language: during filtering a
-  stream whose audio language matches the media's original language is tagged
-  `Original` (see AIOStreams changelog v2.22.0, *"add 'Original' option in
-  language filters"*), and the synthetic tag is removed from the final output.
-  A Dictionarry language condition on `Original` therefore maps like any other
-  language value: `language(base, 'Original')` when it must be present, or
-  `negate(language(base, 'Original'), base)` when it must be absent. In
-  particular `Not Original or English` now correctly expresses *neither
-  Original nor English* as
-  `negate(merge(language(streams, 'Original'), language(streams, 'English')), streams)`.
-- `year` and `size` conditions are unsupported (the Dictionarry snapshot has no
-  `condition_years`/`condition_sizes` rows; size has no AIOStreams equivalent in
-  this SEL shape) and `indexer_flag` has no AIOStreams equivalent — none of the
-  indexer-flag custom formats are assigned to these profiles anyway.
-- Scores from rankings are **additive** on top of the normal streaming pipeline;
-  the expressions also select the streams they rank.
 
 ## CI
 
