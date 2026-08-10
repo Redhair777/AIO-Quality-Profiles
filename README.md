@@ -31,7 +31,7 @@ Only add one profile's pair of links at a time — mixing multiple profiles' exp
 - Average TV Sizes ~ 2 to 4gb per Episode
 - TV Quality Ranking ~ 7/10
 
-Stream expression: `https://raw.githubusercontent.com/Redhair777/AIO-Quality-Profiles/main/profiles/1080p-balanced.expressions.json`
+Stream expression: `https://raw.githubusercontent.com/Redhair777/AIO-Quality-Profiles/main/profiles/1080p-balanced.expressions.json`  
 Regex: `https://raw.githubusercontent.com/Redhair777/AIO-Quality-Profiles/main/profiles/1080p-balanced.regexes.json`
 
 ### 1080p Compact
@@ -41,7 +41,7 @@ Regex: `https://raw.githubusercontent.com/Redhair777/AIO-Quality-Profiles/main/p
 - Average TV Sizes ~ 1 to 2gb per Episode
 - TV Quality Ranking ~ 4/10
 
-Stream expression: `https://raw.githubusercontent.com/Redhair777/AIO-Quality-Profiles/main/profiles/1080p-compact.expressions.json`
+Stream expression: `https://raw.githubusercontent.com/Redhair777/AIO-Quality-Profiles/main/profiles/1080p-compact.expressions.json`  
 Regex: `https://raw.githubusercontent.com/Redhair777/AIO-Quality-Profiles/main/profiles/1080p-compact.regexes.json`
 
 ### 1080p Efficient
@@ -51,7 +51,7 @@ Regex: `https://raw.githubusercontent.com/Redhair777/AIO-Quality-Profiles/main/p
 - Average TV Sizes ~ 2 to 3gb per Episode
 - TV Quality Ranking ~ 6/10
 
-Stream expression: `https://raw.githubusercontent.com/Redhair777/AIO-Quality-Profiles/main/profiles/1080p-efficient.expressions.json`
+Stream expression: `https://raw.githubusercontent.com/Redhair777/AIO-Quality-Profiles/main/profiles/1080p-efficient.expressions.json`  
 Regex: `https://raw.githubusercontent.com/Redhair777/AIO-Quality-Profiles/main/profiles/1080p-efficient.regexes.json`
 
 ### 1080p Quality
@@ -61,7 +61,7 @@ Regex: `https://raw.githubusercontent.com/Redhair777/AIO-Quality-Profiles/main/p
 - Average TV Sizes ~ 4 to 8gb per Episode
 - TV Quality Ranking ~ 8/10
 
-Stream expression: `https://raw.githubusercontent.com/Redhair777/AIO-Quality-Profiles/main/profiles/1080p-quality.expressions.json`
+Stream expression: `https://raw.githubusercontent.com/Redhair777/AIO-Quality-Profiles/main/profiles/1080p-quality.expressions.json`  
 Regex: `https://raw.githubusercontent.com/Redhair777/AIO-Quality-Profiles/main/profiles/1080p-quality.regexes.json`
 
 ### 1080p Quality HDR
@@ -71,7 +71,7 @@ Regex: `https://raw.githubusercontent.com/Redhair777/AIO-Quality-Profiles/main/p
 - Average TV Sizes ~ 4 to 10gb per Episode
 - TV Quality Ranking ~ 9/10
 
-Stream expression: `https://raw.githubusercontent.com/Redhair777/AIO-Quality-Profiles/main/profiles/1080p-quality-hdr.expressions.json`
+Stream expression: `https://raw.githubusercontent.com/Redhair777/AIO-Quality-Profiles/main/profiles/1080p-quality-hdr.expressions.json`  
 Regex: `https://raw.githubusercontent.com/Redhair777/AIO-Quality-Profiles/main/profiles/1080p-quality-hdr.regexes.json`
 
 ### 1080p Remux
@@ -81,7 +81,7 @@ Regex: `https://raw.githubusercontent.com/Redhair777/AIO-Quality-Profiles/main/p
 - Average TV Sizes ~ 6 to 12gb per Episode
 - TV Quality Ranking ~ 10/10
 
-Stream expression: `https://raw.githubusercontent.com/Redhair777/AIO-Quality-Profiles/main/profiles/1080p-remux.expressions.json`
+Stream expression: `https://raw.githubusercontent.com/Redhair777/AIO-Quality-Profiles/main/profiles/1080p-remux.expressions.json`  
 Regex: `https://raw.githubusercontent.com/Redhair777/AIO-Quality-Profiles/main/profiles/1080p-remux.regexes.json`
 
 ### 2160p Balanced
@@ -91,7 +91,7 @@ Regex: `https://raw.githubusercontent.com/Redhair777/AIO-Quality-Profiles/main/p
 - Average TV Sizes ~ 5 to 15gb per Episode
 - TV Quality Ranking ~ 8/10
 
-Stream expression: `https://raw.githubusercontent.com/Redhair777/AIO-Quality-Profiles/main/profiles/2160p-balanced.expressions.json`
+Stream expression: `https://raw.githubusercontent.com/Redhair777/AIO-Quality-Profiles/main/profiles/2160p-balanced.expressions.json`  
 Regex: `https://raw.githubusercontent.com/Redhair777/AIO-Quality-Profiles/main/profiles/2160p-balanced.regexes.json`
 
 ### 2160p Efficient
@@ -101,7 +101,7 @@ Regex: `https://raw.githubusercontent.com/Redhair777/AIO-Quality-Profiles/main/p
 - Average TV Sizes ~ 4 to 12gb per Episode
 - TV Ranking ~ 6/10
 
-Stream expression: `https://raw.githubusercontent.com/Redhair777/AIO-Quality-Profiles/main/profiles/2160p-efficient.expressions.json`
+Stream expression: `https://raw.githubusercontent.com/Redhair777/AIO-Quality-Profiles/main/profiles/2160p-efficient.expressions.json`  
 Regex: `https://raw.githubusercontent.com/Redhair777/AIO-Quality-Profiles/main/profiles/2160p-efficient.regexes.json`
 
 ### 2160p Quality
@@ -111,7 +111,7 @@ Regex: `https://raw.githubusercontent.com/Redhair777/AIO-Quality-Profiles/main/p
 - Average TV Sizes ~ 10 to 20gb per Episode
 - TV Quality Ranking ~ 9/10
 
-Stream expression: `https://raw.githubusercontent.com/Redhair777/AIO-Quality-Profiles/main/profiles/2160p-quality.expressions.json`
+Stream expression: `https://raw.githubusercontent.com/Redhair777/AIO-Quality-Profiles/main/profiles/2160p-quality.expressions.json`  
 Regex: `https://raw.githubusercontent.com/Redhair777/AIO-Quality-Profiles/main/profiles/2160p-quality.regexes.json`
 
 ### 2160p Remux
@@ -121,7 +121,7 @@ Regex: `https://raw.githubusercontent.com/Redhair777/AIO-Quality-Profiles/main/p
 - Average TV Sizes ~ 15 to 30gb per Episode
 - TV Quality Ranking ~ 10/10
 
-Stream expression: `https://raw.githubusercontent.com/Redhair777/AIO-Quality-Profiles/main/profiles/2160p-remux.expressions.json`
+Stream expression: `https://raw.githubusercontent.com/Redhair777/AIO-Quality-Profiles/main/profiles/2160p-remux.expressions.json`  
 Regex: `https://raw.githubusercontent.com/Redhair777/AIO-Quality-Profiles/main/profiles/2160p-remux.regexes.json`
 
 ### 720p Quality
@@ -131,7 +131,7 @@ Regex: `https://raw.githubusercontent.com/Redhair777/AIO-Quality-Profiles/main/p
 - Average TV Sizes ~ 2 to 4gb per Episode
 - TV Quality Ranking ~ 5/10
 
-Stream expression: `https://raw.githubusercontent.com/Redhair777/AIO-Quality-Profiles/main/profiles/720p-quality.expressions.json`
+Stream expression: `https://raw.githubusercontent.com/Redhair777/AIO-Quality-Profiles/main/profiles/720p-quality.expressions.json`  
 Regex: `https://raw.githubusercontent.com/Redhair777/AIO-Quality-Profiles/main/profiles/720p-quality.regexes.json`
 
 ### Anime 1080p (Dumpstarr)
@@ -140,7 +140,7 @@ Based on the TRaSH Guides Anime Profile, focusing on media that has Dual Audio.
 - Prefers Dual Audio media (English + original language) by default. For original-language-only, remove the Dual Audio custom format and set language preference separately. To always prefer Dual Audio, raise the Dual Audio format's score.
 - Source: [Dumpstarr/Database](https://github.com/Dumpstarr/Database)
 
-Stream expression: `https://raw.githubusercontent.com/Redhair777/AIO-Quality-Profiles/main/profiles/anime-1080p.expressions.json`
+Stream expression: `https://raw.githubusercontent.com/Redhair777/AIO-Quality-Profiles/main/profiles/anime-1080p.expressions.json`  
 Regex: `https://raw.githubusercontent.com/Redhair777/AIO-Quality-Profiles/main/profiles/anime-1080p.regexes.json`
 
 ### [Anime] Remux-1080p (trash-pcd)
@@ -148,7 +148,7 @@ Anime profile covering SDTV, DVD, HDTV 720p/1080p, WEBDL 480p/720p/1080p, Bluray
 - Capped at 1080p — 2160p tiers are present in the source data but disabled.
 - Source: [Dictionarry-Hub/trash-pcd](https://github.com/Dictionarry-Hub/trash-pcd) (TRaSH Guides, converted to PCD format)
 
-Stream expression: `https://raw.githubusercontent.com/Redhair777/AIO-Quality-Profiles/main/profiles/anime-remux-1080p.expressions.json`
+Stream expression: `https://raw.githubusercontent.com/Redhair777/AIO-Quality-Profiles/main/profiles/anime-remux-1080p.expressions.json`  
 Regex: `https://raw.githubusercontent.com/Redhair777/AIO-Quality-Profiles/main/profiles/anime-remux-1080p.regexes.json`
 
 ---
