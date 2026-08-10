@@ -62,10 +62,6 @@ RELEASE_TYPE_TO_MODE: dict[str, str] = {
 
 REGEX_TYPES = {"release_title", "release_group", "edition"}
 
-# AIOStreams does not detect an 'Original' language, so a condition that
-# *requires* the release to be 'Original' can never pass on any side.
-UNDETECTABLE_LANGUAGE = "Original"
-
 
 class CFError(Exception):
     """A custom format (or one side of it) cannot be emitted."""
@@ -279,23 +275,15 @@ def build_atoms(condition: dict, cf: str, patterns: dict[str, str],
         for v in values:
             lang = v.get("language")
             except_lang = v.get("except", False)
-            # passes == (language present)  <=>  except == negate
+            # matches == (language present)  <=>  except == negate ('except'
+            # rows and negated conditions both want the language ABSENT).
             want_present = except_lang == negate
-            if lang == UNDETECTABLE_LANGUAGE:
-                if want_present:
-                    # can never pass in AIOStreams; fatal only in a required group
-                    atoms.append({"required": required, "impossible": True,
-                                  "negate": False, "sel": "BASE"})
-                # wanting 'Original' absent is trivially true -> drop
-                continue
-            if want_present:
-                sel = f"language(BASE, {json.dumps(lang)})"
-            else:
-                sel = f"negate(language(BASE, {json.dumps(lang)}), BASE)"
+            # 'Original' resolves per-item to that item's own original
+            # language, so it filters exactly like any other language value.
+            sel = f"language(BASE, {json.dumps(lang)})"
             atoms.append({"required": required, "impossible": False,
-                          "negate": False, "sel": sel})
+                          "negate": not want_present, "sel": sel})
         if not atoms:
-            # all language atoms dropped as trivially satisfied -> matches all
             atoms = [{"required": required, "impossible": False,
                       "negate": False, "sel": "BASE"}]
         return atoms
@@ -303,12 +291,21 @@ def build_atoms(condition: dict, cf: str, patterns: dict[str, str],
     raise CFError(f"unsupported condition type '{ctype}'")
 
 
-def group_expression(atoms: list[dict], base: str) -> str:
+def group_expression(atoms: list[dict], base: str, ctype: str = "") -> str:
     """Combine one type group into a single SEL string (raises CFError)."""
     required = [a for a in atoms if a["required"]]
     if required:
         if any(a.get("impossible") for a in required):
             raise CFError("a required condition can never pass on this side")
+        # Several required language atoms all demanding the ABSENCE of their
+        # value combine via De Morgan: (NOT a AND NOT b) == NOT (a OR b) ==
+        # one negated merge, instead of nested negates chained through
+        # `current`. Scoped to language so other formats' existing output is
+        # preserved.
+        if (ctype == "language" and len(required) > 1
+                and all(a["negate"] for a in required)):
+            inner = ", ".join(render(a["sel"], base) for a in required)
+            return f"negate(merge({inner}), {base})"
         current = base
         for a in required:
             current = apply_negate(render(a["sel"], current), a["negate"], current)
@@ -341,7 +338,7 @@ def build_expression(condition_cf: dict[str, list[dict]], cf: str, side: str,
 
     current = "streams"
     for ctype in sorted(groups):
-        current = group_expression(groups[ctype], current)
+        current = group_expression(groups[ctype], current, ctype)
     return current
 
 

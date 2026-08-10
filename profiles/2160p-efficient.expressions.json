@@ -1015,12 +1015,12 @@
     "enabled": true
   },
   {
-    "expression": "/*#Radarr*/ /*Not Original or English*/ queryType=='movie' ? negate(language(streams, \"English\"), streams) : []",
+    "expression": "/*#Radarr*/ /*Not Original or English*/ queryType=='movie' ? negate(merge(language(streams, \"Original\"), language(streams, \"English\")), streams) : []",
     "score": -999999,
     "enabled": true
   },
   {
-    "expression": "/*#Sonarr*/ /*Not Original or English*/ queryType=='series' ? negate(language(streams, \"English\"), streams) : []",
+    "expression": "/*#Sonarr*/ /*Not Original or English*/ queryType=='series' ? negate(merge(language(streams, \"Original\"), language(streams, \"English\")), streams) : []",
     "score": -999999,
     "enabled": true
   },
