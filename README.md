@@ -1,116 +1,172 @@
-# AIO-Quality-Profiles
+# AIO Quality Profiles
 
-Dictionarry quality profiles converted into AIOStreams **Synced** format.
+Dictionarry quality profiles, converted into [AIOStreams](https://github.com/Viren070/AIOStreams) **Stream Expression Language (SEL)** and **Regex Filter** synced JSON. Each profile below is a direct 1:1 conversion of its source quality profile's custom formats and scores — nothing rescaled, nothing re-weighted.
 
-The official [Dictionarry-Hub](https://github.com/Dictionarry-Hub) quality profiles
-(`1080p Compact`, `2160p Efficient`, …) are translated into AIOStreams
-"ranked" files so a Stremio/AIOStreams setup can taste TV/movie results the same
-way Radarr/Sonarr do when scoring releases against those profiles.
+Sources:
+- **Dictionarry** (11 profiles) — [github.com/Dictionarry-Hub/database](https://github.com/Dictionarry-Hub/database)
+- **Dumpstarr** (1 anime profile) — [github.com/Dumpstarr/Database](https://github.com/Dumpstarr/Database)
+- **trash-pcd** (1 anime profile) — [github.com/Dictionarry-Hub/trash-pcd](https://github.com/Dictionarry-Hub/trash-pcd)
 
-## Files
+All three are rebuilt and re-synced automatically once a day — see [Automation](#automation) below.
 
-```
-build_db.py   # rebuild the Dictionarry relational snapshot into SQLite
-convert.py    # snapshot -> profiles/<slug>.{expressions,regexes}.json
-profiles/     # generated AIOStreams Synced files, one pair per quality profile
-```
+For the original, authoritative documentation on how these profiles are designed and what they target, see the **[Dictionarry Quality Profile guide](https://v2.dictionarry.dev/quality-profile)**.
 
-For each quality profile two files are emitted:
+## How to use
 
-| File | AIOStreams Synced section |
-| --- | --- |
-| `profiles/<slug>.expressions.json` | ranked stream expressions (`userLimits.sel.urls`) |
-| `profiles/<slug>.regexes.json` | ranked regex patterns (`userLimits.regex.patternsUrls`) |
+In AIOStreams:
+1. **Filters → Regex → Synced URLs** → add the profile's **Regex** link
+2. **Filters → Stream Expressions → Synced URLs** → add the profile's **Stream Expression** link
+3. **Sorting** → add **Stream Expression Score** to your sort order (nothing scores without this)
 
-`expressions.json` items carry `queryType` guards, so a single profile produces
-one movie (Radarr) and one series (Sonarr) item per custom format, with the
-per-side score the arr app would give it.
+Only add one profile's pair of links at a time — mixing multiple profiles' expressions together will combine their scoring, not let you pick between them.
 
-## Quick start (source of truth on GitHub)
+---
 
-1. Install AIOStreams (self-hosted or managed).
-2. In AIOStreams, add the Synced URLs for the profile you want, e.g.:
-   - `…/profiles/2160p-efficient.expressions.json`
-   - `…/profiles/2160p-efficient.regexes.json`
-   - *(use the raw GitHub URL of the file in this repo)*
-3. Apply the ranked scores in AIOStreams sorting (the expressions carry your
-   app's custom-format scores).
+## Master List
 
-## Regenerating
+### 1080p Balanced
+1080p Balanced targets consistent & immutable 1080p WEB-DLs using the Streaming Source and Audio Formats to determine the level of Transparency.
+- Average Movie Sizes ~ 4 to 8gb per Movie
+- Movie Quality Ranking ~ 6/10
+- Average TV Sizes ~ 2 to 4gb per Episode
+- TV Quality Ranking ~ 7/10
 
-```bash
-python3 build_db.py            # clones schema+database deps, builds .deps/dictionarry.sqlite
-python3 convert.py             # writes profiles/*.json
-```
+Stream expression: `https://raw.githubusercontent.com/Redhair777/AIO-Quality-Profiles/main/profiles/1080p-balanced.expressions.json`
+Regex: `https://raw.githubusercontent.com/Redhair777/AIO-Quality-Profiles/main/profiles/1080p-balanced.regexes.json`
 
-`convert.py --node <path>` JS-compiles every emitted regex; invalid regexes are
-dropped and the custom formats that reference them degrade to "no match".
+### 1080p Compact
+1080p Compact targets low to medium quality x265 Bluray and WEB Encodes.
+- Average Movie Sizes ~ 3 to 6gb per Movie
+- Movie Quality Ranking ~ 4/10
+- Average TV Sizes ~ 1 to 2gb per Episode
+- TV Quality Ranking ~ 4/10
 
-## How the conversion works
+Stream expression: `https://raw.githubusercontent.com/Redhair777/AIO-Quality-Profiles/main/profiles/1080p-compact.expressions.json`
+Regex: `https://raw.githubusercontent.com/Redhair777/AIO-Quality-Profiles/main/profiles/1080p-compact.regexes.json`
 
-### Condition semantics (mirrors Profilarr / Radarr / Sonarr)
+### 1080p Efficient
+1080p Efficient targets high quality x265 Bluray and WEB Encodes.
+- Average Movie Sizes ~ 6 to 12gb per Movie
+- Movie Quality Ranking ~ 7/10
+- Average TV Sizes ~ 2 to 3gb per Episode
+- TV Quality Ranking ~ 6/10
 
-- Conditions are filtered per arr side: `'all'` or the matching side;
-  `quality_modifier` conditions are dropped for sonarr, `release_type` for radarr.
-- Conditions are grouped **by type**; different types are AND-ed.
-- Within a type group:
-  - if **any** condition is required → **all required** conditions must pass
-    and the optional ones in that group are **ignored**;
-  - if **none** is required → **at least one** must pass (OR, via `merge`).
-- A condition's `negate` flag inverts its own match (`negate(...)`).
+Stream expression: `https://raw.githubusercontent.com/Redhair777/AIO-Quality-Profiles/main/profiles/1080p-efficient.expressions.json`
+Regex: `https://raw.githubusercontent.com/Redhair777/AIO-Quality-Profiles/main/profiles/1080p-efficient.regexes.json`
 
-### Type mapping
+### 1080p Quality
+1080p Quality utilizes the Golden Popcorn Performance Index to target Transparent x264 1080p Encodes.
+- Average Movie Sizes ~ 10 to 15gb per Movie
+- Movie Quality Ranking ~ 8/10
+- Average TV Sizes ~ 4 to 8gb per Episode
+- TV Quality Ranking ~ 8/10
 
-| Dictionarry type | AIOStreams SEL |
-| --- | --- |
-| `resolution` | `resolution(streams, '2160p', …)` |
-| `source` | `quality(streams, 'BluRay', 'BluRay REMUX', …)` |
-| `quality_modifier` | `quality(streams, …)` |
-| `release_type` | `seasonPack(streams, 'seasonPack')` |
-| `language` | `language(streams, …)` / `negate(language(...), streams)`; `'Original'` resolves per-item to the release's own original language |
-| `release_title`, `release_group`, `edition` | `regexMatched(streams, 'Regex Name')` |
-| `year`, `size`, `indexer_flag` | **skipped** (unsupported / unused in these profiles) |
+Stream expression: `https://raw.githubusercontent.com/Redhair777/AIO-Quality-Profiles/main/profiles/1080p-quality.expressions.json`
+Regex: `https://raw.githubusercontent.com/Redhair777/AIO-Quality-Profiles/main/profiles/1080p-quality.regexes.json`
 
-Source values cover multiple AIOStreams qualities:
+### 1080p Quality HDR
+1080p Quality HDR utilizes the Golden Popcorn Performance Index to target Transparent x265 HDR 1080p Encodes.
+- Average Movie Sizes ~ 10 to 20gb per Movie
+- Movie Quality Ranking ~ 9/10
+- Average TV Sizes ~ 4 to 10gb per Episode
+- TV Quality Ranking ~ 9/10
 
-| source | qualities |
-| --- | --- |
-| `television` | `HDTV` |
-| `web_dl` | `WEB-DL` |
-| `webrip` | `WEBRip` |
-| `dvd` | `DVDRip`, `DVD REMUX` |
-| `bluray` | `BluRay`, `BluRay REMUX` |
-| `bluray_raw` | `BluRay` |
+Stream expression: `https://raw.githubusercontent.com/Redhair777/AIO-Quality-Profiles/main/profiles/1080p-quality-hdr.expressions.json`
+Regex: `https://raw.githubusercontent.com/Redhair777/AIO-Quality-Profiles/main/profiles/1080p-quality-hdr.regexes.json`
 
-| modifier | qualities |
-| --- | --- |
-| `remux` | `BluRay REMUX`, `DVD REMUX` |
-| `brdisk` | `BluRay` (approximation — AIOStreams has no BR-DISK quality) |
+### 1080p Remux
+1080p Remux utilizes Audio Formats to prioritise high quality Lossless HD Blurays with a fallback to Transparent Bluray Encodes.
+- Average Movie Sizes ~ 20 to 30gb per Movie
+- Movie Quality Ranking ~ 10/10
+- Average TV Sizes ~ 6 to 12gb per Episode
+- TV Quality Ranking ~ 10/10
 
-### Scoring
+Stream expression: `https://raw.githubusercontent.com/Redhair777/AIO-Quality-Profiles/main/profiles/1080p-remux.expressions.json`
+Regex: `https://raw.githubusercontent.com/Redhair777/AIO-Quality-Profiles/main/profiles/1080p-remux.regexes.json`
 
-Each profile/CF row carries a score per arr type. Per-side score resolution:
-side-specific score if present, otherwise the `'all'` score. Because one ranked
-expression item has a single `score`, each custom format is split into up to two
-items — `queryType=='movie'` with the Radarr score and `queryType=='series'`
-with the Sonarr score.
+### 2160p Balanced
+2160p Balanced targets consistent & immutable 2160p WEB-DLs w/ Lossy Audio.
+- Average Movie Sizes ~ 15 to 30gb per Movie
+- Movie Quality Ranking ~ 8/10
+- Average TV Sizes ~ 5 to 15gb per Episode
+- TV Quality Ranking ~ 8/10
 
-### Regexes
+Stream expression: `https://raw.githubusercontent.com/Redhair777/AIO-Quality-Profiles/main/profiles/2160p-balanced.expressions.json`
+Regex: `https://raw.githubusercontent.com/Redhair777/AIO-Quality-Profiles/main/profiles/2160p-balanced.regexes.json`
 
-Radarr compiles every regex specification with `RegexOptions.IgnoreCase`, so
-patterns are emitted with the `i` flag (`/pattern/i`). Inline `(?i)` toggles are
-no-ops under that flag and are stripped (JS `RegExp` rejects them). One regex
-name maps to one `regexMatched(...)` reference.
+### 2160p Efficient
+2160p Efficient targets consistent & immutable 2160p WEB-DLs w/ Lossy Audio. Specialized Fallback to 1080p Efficient.
+- Average Movie Sizes ~ 15 to 30gb per Movie
+- Movie Quality Ranking ~ 6/10
+- Average TV Sizes ~ 4 to 12gb per Episode
+- TV Ranking ~ 6/10
+
+Stream expression: `https://raw.githubusercontent.com/Redhair777/AIO-Quality-Profiles/main/profiles/2160p-efficient.expressions.json`
+Regex: `https://raw.githubusercontent.com/Redhair777/AIO-Quality-Profiles/main/profiles/2160p-efficient.regexes.json`
+
+### 2160p Quality
+2160p Quality utilizes the Encode Efficiency Index metric at a 60% target ratio to prioritize Transparent x265 4K Encodes.
+- Average Movie Sizes ~ 30 to 50gb per Movie
+- Movie Quality Ranking ~ 9/10
+- Average TV Sizes ~ 10 to 20gb per Episode
+- TV Quality Ranking ~ 9/10
+
+Stream expression: `https://raw.githubusercontent.com/Redhair777/AIO-Quality-Profiles/main/profiles/2160p-quality.expressions.json`
+Regex: `https://raw.githubusercontent.com/Redhair777/AIO-Quality-Profiles/main/profiles/2160p-quality.regexes.json`
+
+### 2160p Remux
+2160p Remux utilizes Video / Audio Formats to prioritise high quality lossless copies of UHD Blurays.
+- Average Movie Sizes ~ 40 to 60gb per Movie
+- Movie Quality Ranking ~ 10/10
+- Average TV Sizes ~ 15 to 30gb per Episode
+- TV Quality Ranking ~ 10/10
+
+Stream expression: `https://raw.githubusercontent.com/Redhair777/AIO-Quality-Profiles/main/profiles/2160p-remux.expressions.json`
+Regex: `https://raw.githubusercontent.com/Redhair777/AIO-Quality-Profiles/main/profiles/2160p-remux.regexes.json`
+
+### 720p Quality
+720p Quality utilizes the Golden Popcorn Performance Index to target Transparent x264 720p Encodes.
+- Average Movie Sizes ~ 4 to 8gb per Movie
+- Movie Quality Ranking ~ 5/10
+- Average TV Sizes ~ 2 to 4gb per Episode
+- TV Quality Ranking ~ 5/10
+
+Stream expression: `https://raw.githubusercontent.com/Redhair777/AIO-Quality-Profiles/main/profiles/720p-quality.expressions.json`
+Regex: `https://raw.githubusercontent.com/Redhair777/AIO-Quality-Profiles/main/profiles/720p-quality.regexes.json`
+
+### Anime 1080p (Dumpstarr)
+Based on the TRaSH Guides Anime Profile, focusing on media that has Dual Audio.
+- Grabs between SDTV and 1080p Bluray.
+- Prefers Dual Audio media (English + original language) by default. For original-language-only, remove the Dual Audio custom format and set language preference separately. To always prefer Dual Audio, raise the Dual Audio format's score.
+- Source: [Dumpstarr/Database](https://github.com/Dumpstarr/Database)
+
+Stream expression: `https://raw.githubusercontent.com/Redhair777/AIO-Quality-Profiles/main/profiles/anime-1080p.expressions.json`
+Regex: `https://raw.githubusercontent.com/Redhair777/AIO-Quality-Profiles/main/profiles/anime-1080p.regexes.json`
+
+### [Anime] Remux-1080p (trash-pcd)
+Anime profile covering SDTV, DVD, HDTV 720p/1080p, WEBDL 480p/720p/1080p, Bluray 480p/576p/720p/1080p, and Remux 1080p.
+- Capped at 1080p — 2160p tiers are present in the source data but disabled.
+- Source: [Dictionarry-Hub/trash-pcd](https://github.com/Dictionarry-Hub/trash-pcd) (TRaSH Guides, converted to PCD format)
+
+Stream expression: `https://raw.githubusercontent.com/Redhair777/AIO-Quality-Profiles/main/profiles/anime-remux-1080p.expressions.json`
+Regex: `https://raw.githubusercontent.com/Redhair777/AIO-Quality-Profiles/main/profiles/anime-remux-1080p.regexes.json`
+
+---
+
+## Automation
+
+`.github/workflows/sync.yml` runs once a day (`0 3 * * *` UTC, plus manual `workflow_dispatch`):
+1. Rebuilds a SQLite snapshot from each source's PCD ops (Dictionarry, Dumpstarr, trash-pcd), replayed against the shared [Dictionarry-Hub/schema](https://github.com/Dictionarry-Hub/schema)
+2. Reconverts all 13 profiles to SEL/Regex JSON
+3. Commits `profiles/*.json` only if the regenerated output actually differs from what's committed
+
+AIOStreams picks up changes automatically on its own sync interval once you've added the links above — no manual re-download needed.
 
 ## Known fidelity limits
 
-- AIOStreams ranked regexes match against **filename and folder name only**
-  (`precomputer.ts`), so Radarr's per-field regex matching (title vs edition vs
-  release group) cannot be reproduced exactly — a regex matches wherever the
-  token appears in the file name.
+A small number of conditions in the source data have no SEL equivalent and are intentionally skipped rather than approximated:
+- `indexer_flag` (e.g. freeleech, PTP Golden Popcorn) — no SEL filter function exists for indexer flags
+- `year` — no SEL filter function exists for release year
+- `size` / per-quality size limits — not present as scored conditions in any of these 13 profiles' source data
 
-## CI
-
-`.github/workflows/sync.yml` re-runs `build_db.py` + `convert.py` on a schedule
-and commits any changed profile files, keeping this repo synced with upstream
-Dictionarry data.
+`'Original'` as a language value **is** supported (`language(streams, 'Original')`), resolved dynamically per-item by AIOStreams.
