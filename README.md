@@ -67,7 +67,7 @@ dropped and the custom formats that reference them degrade to "no match".
 | `source` | `quality(streams, 'BluRay', 'BluRay REMUX', …)` |
 | `quality_modifier` | `quality(streams, …)` |
 | `release_type` | `seasonPack(streams, 'seasonPack')` |
-| `language` | `language(streams, …)` / `negate(language(...), streams)` |
+| `language` | `language(streams, …)` / `negate(language(...), streams)`; `'Original'` resolves per-item to the release's own original language |
 | `release_title`, `release_group`, `edition` | `regexMatched(streams, 'Regex Name')` |
 | `year`, `size`, `indexer_flag` | **skipped** (unsupported / unused in these profiles) |
 
@@ -108,10 +108,17 @@ name maps to one `regexMatched(...)` reference.
   (`precomputer.ts`), so Radarr's per-field regex matching (title vs edition vs
   release group) cannot be reproduced exactly — a regex matches wherever the
   token appears in the file name.
-- AIOStreams cannot detect an *Original* language. A condition that wants the
-  release to *be* 'Original' can never pass and the custom format is skipped on
-  that side; a condition that wants it *absent* is trivially satisfied and
-  dropped (the `Not Original or English` format therefore only checks English).
+- AIOStreams' `language()` filter accepts `'Original'`, which resolves
+  dynamically **per item** to that item's original language: during filtering a
+  stream whose audio language matches the media's original language is tagged
+  `Original` (see AIOStreams changelog v2.22.0, *"add 'Original' option in
+  language filters"*), and the synthetic tag is removed from the final output.
+  A Dictionarry language condition on `Original` therefore maps like any other
+  language value: `language(base, 'Original')` when it must be present, or
+  `negate(language(base, 'Original'), base)` when it must be absent. In
+  particular `Not Original or English` now correctly expresses *neither
+  Original nor English* as
+  `negate(merge(language(streams, 'Original'), language(streams, 'English')), streams)`.
 - `year` and `size` conditions are unsupported (the Dictionarry snapshot has no
   `condition_years`/`condition_sizes` rows; size has no AIOStreams equivalent in
   this SEL shape) and `indexer_flag` has no AIOStreams equivalent — none of the
