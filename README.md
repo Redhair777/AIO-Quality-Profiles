@@ -9,7 +9,7 @@ Sources:
 
 All three are rebuilt and re-synced automatically once a day — see [Automation](#automation) below.
 
-For the original, authoritative documentation on how these profiles are designed and what they target, see the **[Dictionarry Quality Profile guide](https://v2.dictionarry.dev/quality-profile)**.
+For the original documentation on how these profiles are designed and what they target, see the **[Dictionarry Quality Profile guide](https://v2.dictionarry.dev/quality-profile)**.
 
 ## How to use
 
