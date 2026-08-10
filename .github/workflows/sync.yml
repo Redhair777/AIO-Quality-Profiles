@@ -3,9 +3,7 @@ name: Sync profiles
 on:
   workflow_dispatch:
   schedule:
-    - cron: '0 * * * *' # hourly
-  push:
-    branches: [main]
+    - cron: '0 3 * * *' # run once every 24 hours at 03:00 UTC
 
 permissions:
   contents: write
