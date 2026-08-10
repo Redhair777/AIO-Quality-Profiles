@@ -3,8 +3,8 @@
 
 Clones (or reuses) two upstream dependencies:
   - Dictionarry-Hub/schema   (DDL: ops/0.schema.sql .. 3.quality-group-member-position.sql)
-  - a Profilarr PCD database, either Dictionarry-Hub/database or
-    Dumpstarr/Database (both: data ops/0..N.sql migrations, same schema)
+  - a Profilarr PCD database: Dictionarry-Hub/database, Dumpstarr/Database, or
+    Dictionarry-Hub/trash-pcd (each: data ops/0..N.sql migrations, same schema)
 
 Then replays schema ops, then database ops, each in strict numeric-prefix order,
 into a local SQLite file. Foreign keys are enabled so the cascading deletes used
@@ -25,6 +25,13 @@ SCHEMA_REPO = "https://github.com/Dictionarry-Hub/schema.git"
 DATABASE_REPOS = {
     "dictionarry": "https://github.com/Dictionarry-Hub/database.git",
     "dumpstarr": "https://github.com/Dumpstarr/Database.git",
+    "trash-pcd": "https://github.com/Dictionarry-Hub/trash-pcd.git",
+}
+# source name -> subdirectory of --deps the cloned repo lives in.
+DATABASE_DIRS = {
+    "dictionarry": "database",
+    "dumpstarr": "dumpstarr",
+    "trash-pcd": "trash-pcd",
 }
 
 HERE = Path(__file__).resolve().parent
@@ -64,11 +71,21 @@ def replay_dir(db: sqlite3.Connection, ops_dir: Path, kind: str) -> None:
     """
     insert_re = re.compile(r"\bINSERT INTO\b", re.IGNORECASE)
     sqls = sorted(ops_dir.glob("*.sql"), key=lambda p: numeric_key(p.name))
+    failures: list[str] = []
     for path in sqls:
         sql = path.read_text()
         sql = insert_re.sub("INSERT OR REPLACE INTO", sql)
-        db.executescript(sql)
-    print(f"[build_db] replayed {len(sqls)} {kind} op file(s) from {ops_dir}")
+        try:
+            db.executescript(sql)
+        except sqlite3.Error as exc:
+            failures.append(f"{path.name}: {exc}")
+    if failures:
+        raise RuntimeError(
+            f"replay failed for {len(failures)} {kind} op file(s):\n"
+            + "\n".join(failures)
+        )
+    print(f"[build_db] replayed {len(sqls)} {kind} op file(s) from {ops_dir},"
+          f" {len(failures)} failure(s)")
 
 
 def numeric_key(name: str) -> int:
@@ -82,7 +99,7 @@ def numeric_key(name: str) -> int:
 def build(deps_dir: Path, db_path: Path, source: str = "dictionarry") -> None:
     deps_dir.mkdir(parents=True, exist_ok=True)
     schema_dir = deps_dir / "schema"
-    database_dir = deps_dir / ("database" if source == "dictionarry" else "dumpstarr")
+    database_dir = deps_dir / DATABASE_DIRS[source]
 
     clone_or_update(SCHEMA_REPO, schema_dir)
     clone_or_update(DATABASE_REPOS[source], database_dir)
@@ -116,8 +133,10 @@ def main() -> None:
         "--source",
         choices=sorted(DATABASE_REPOS),
         default="dictionarry",
-        help="Profilarr PCD database to replay (default: dictionarry)."
-        " dumpstarr uses Dumpstarr/Database with the same Dictionarry-Hub/schema.",
+        help="Profilarr PCD database to replay (default: dictionarry). Valid"
+        " sources: dictionarry (Dictionarry-Hub/database), dumpstarr"
+        " (Dumpstarr/Database), trash-pcd (Dictionarry-Hub/trash-pcd); all use"
+        " the same Dictionarry-Hub/schema.",
     )
     parser.add_argument(
         "--db",

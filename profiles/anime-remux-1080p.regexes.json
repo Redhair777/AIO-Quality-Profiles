@@ -1,0 +1,2257 @@
+[
+  {
+    "name": "$tore-Chill",
+    "pattern": "/\\b(\\$tore-Chill)\\b/i",
+    "score": 0
+  },
+  {
+    "name": "0neshot",
+    "pattern": "/\\b(0neshot)\\b/i",
+    "score": 0
+  },
+  {
+    "name": "0x539",
+    "pattern": "/\\b(0x539)\\b/i",
+    "score": 0
+  },
+  {
+    "name": "10bit",
+    "pattern": "/10[.-]?bit/i",
+    "score": 0
+  },
+  {
+    "name": "12GaugeShotgun",
+    "pattern": "/^(12GaugeShotgun)$/i",
+    "score": 0
+  },
+  {
+    "name": "224",
+    "pattern": "/\\[224\\]|-224\\b/i",
+    "score": 0
+  },
+  {
+    "name": "3L",
+    "pattern": "/^(3L)$/i",
+    "score": 0
+  },
+  {
+    "name": "9volt",
+    "pattern": "/\\b(9volt)\\b/i",
+    "score": 0
+  },
+  {
+    "name": "A-Destiny",
+    "pattern": "/\\b(A-Destiny)\\b/i",
+    "score": 0
+  },
+  {
+    "name": "ABEMA",
+    "pattern": "/\\b(ABEMA[ ._-]?(TV)?)\\b/i",
+    "score": 0
+  },
+  {
+    "name": "ABdex",
+    "pattern": "/\\b(ABdex)\\b/i",
+    "score": 0
+  },
+  {
+    "name": "AC",
+    "pattern": "/\\[AC\\]|-AC$/i",
+    "score": 0
+  },
+  {
+    "name": "ADN",
+    "pattern": "/\\b(ADN)\\b/i",
+    "score": 0
+  },
+  {
+    "name": "ANE",
+    "pattern": "/\\[ANE\\]|-ANE$/i",
+    "score": 0
+  },
+  {
+    "name": "AOmundson",
+    "pattern": "/\\b(AOmundson)\\b/i",
+    "score": 0
+  },
+  {
+    "name": "ARC",
+    "pattern": "/\\[ARC\\]|-ARC\\b/i",
+    "score": 0
+  },
+  {
+    "name": "AREY",
+    "pattern": "/\\b(AREY)\\b/i",
+    "score": 0
+  },
+  {
+    "name": "ASC",
+    "pattern": "/\\b(ASC)\\b/i",
+    "score": 0
+  },
+  {
+    "name": "ASW",
+    "pattern": "/\\b(ASW)\\b/i",
+    "score": 0
+  },
+  {
+    "name": "ATELiER",
+    "pattern": "/^(ATELiER)$/i",
+    "score": 0
+  },
+  {
+    "name": "AV1",
+    "pattern": "/\\bAV1\\b/i",
+    "score": 0
+  },
+  {
+    "name": "AceAres",
+    "pattern": "/\\b(AceAres)\\b/i",
+    "score": 0
+  },
+  {
+    "name": "Aergia",
+    "pattern": "/\\[Aergia\\]|-Aergia(?!-raws)\\b/i",
+    "score": 0
+  },
+  {
+    "name": "Afro",
+    "pattern": "/\\[Afro\\]|-Afro\\b/i",
+    "score": 0
+  },
+  {
+    "name": "AhmadDev",
+    "pattern": "/\\b(AhmadDev)\\b/i",
+    "score": 0
+  },
+  {
+    "name": "AkihitoSubs",
+    "pattern": "/\\b(AkihitoSubs)\\b/i",
+    "score": 0
+  },
+  {
+    "name": "Almighty",
+    "pattern": "/\\[Almighty\\]|-Almighty\\b/i",
+    "score": 0
+  },
+  {
+    "name": "Amazon",
+    "pattern": "/\\b(amzn|amazon(hd)?)\\b/i",
+    "score": 0
+  },
+  {
+    "name": "AniVoid",
+    "pattern": "/\\b(AniVoid)\\b/i",
+    "score": 0
+  },
+  {
+    "name": "Anime Chap",
+    "pattern": "/\\b(Anime[ .-]?Chap)\\b/i",
+    "score": 0
+  },
+  {
+    "name": "Anime Land",
+    "pattern": "/\\b(Anime[ .-]?Land)\\b/i",
+    "score": 0
+  },
+  {
+    "name": "Anime Time",
+    "pattern": "/\\b(Anime[ .-]?Time)\\b/i",
+    "score": 0
+  },
+  {
+    "name": "AnimeDynastyEN",
+    "pattern": "/\\b(AnimeDynastyEN)\\b/i",
+    "score": 0
+  },
+  {
+    "name": "AnimeKuro",
+    "pattern": "/\\b(AnimeKuro)\\b/i",
+    "score": 0
+  },
+  {
+    "name": "AnimeRG",
+    "pattern": "/\\b(AnimeRG)\\b/i",
+    "score": 0
+  },
+  {
+    "name": "AnimeTR",
+    "pattern": "/\\b(AnimeTR)\\b/i",
+    "score": 0
+  },
+  {
+    "name": "Animesubs",
+    "pattern": "/\\b(Animesubs)\\b/i",
+    "score": 0
+  },
+  {
+    "name": "Animorphs",
+    "pattern": "/\\b(Animorphs)\\b/i",
+    "score": 0
+  },
+  {
+    "name": "Anitsu",
+    "pattern": "/\\b(Anitsu)\\b/i",
+    "score": 0
+  },
+  {
+    "name": "AnoZu",
+    "pattern": "/\\b(AnoZu)\\b/i",
+    "score": 0
+  },
+  {
+    "name": "ArataEnc",
+    "pattern": "/\\b(ArataEnc)\\b/i",
+    "score": 0
+  },
+  {
+    "name": "Arg0",
+    "pattern": "/\\b(Arg0)\\b/i",
+    "score": 0
+  },
+  {
+    "name": "Ari",
+    "pattern": "/^\\[Ari\\]|-Ari$/i",
+    "score": 0
+  },
+  {
+    "name": "Arid",
+    "pattern": "/\\[Arid\\]|-Arid\\b/i",
+    "score": 0
+  },
+  {
+    "name": "Arukoru",
+    "pattern": "/\\b(Arukoru)\\b/i",
+    "score": 0
+  },
+  {
+    "name": "Asakura",
+    "pattern": "/\\[Asakura\\]|-Asakura\\b/i",
+    "score": 0
+  },
+  {
+    "name": "Asenshi",
+    "pattern": "/\\b(Asenshi)\\b/i",
+    "score": 0
+  },
+  {
+    "name": "AsukaRaws",
+    "pattern": "/Asuka[ ._-]?(Raws)/i",
+    "score": 0
+  },
+  {
+    "name": "B-Global",
+    "pattern": "/\\b(B[ .-]?Global)\\b/i",
+    "score": 0
+  },
+  {
+    "name": "B00BA",
+    "pattern": "/\\b(B00BA)\\b/i",
+    "score": 0
+  },
+  {
+    "name": "BBT-RMX",
+    "pattern": "/\\b(BBT-RMX)\\b/i",
+    "score": 0
+  },
+  {
+    "name": "BJX",
+    "pattern": "/\\b(BJX)\\b/i",
+    "score": 0
+  },
+  {
+    "name": "BKC",
+    "pattern": "/\\b(BKC)\\b/i",
+    "score": 0
+  },
+  {
+    "name": "BLURANiUM",
+    "pattern": "/^(BLURANiUM)$/i",
+    "score": 0
+  },
+  {
+    "name": "BMF",
+    "pattern": "/^(BMF)$/i",
+    "score": 0
+  },
+  {
+    "name": "Baws",
+    "pattern": "/\\b(Baws|McBalls)\\b/i",
+    "score": 0
+  },
+  {
+    "name": "Baws (2)",
+    "pattern": "/\\b(Baws)\\b/i",
+    "score": 0
+  },
+  {
+    "name": "Beatrice",
+    "pattern": "/\\[Beatrice\\]|-Beatrice(?!-raws)\\b/i",
+    "score": 0
+  },
+  {
+    "name": "Beatrice-Raws",
+    "pattern": "/Beatrice[ ._-]?(Raws)/i",
+    "score": 0
+  },
+  {
+    "name": "BiRJU",
+    "pattern": "/\\b(BiRJU)\\b/i",
+    "score": 0
+  },
+  {
+    "name": "BiZKiT",
+    "pattern": "/^(BiZKiT)$/i",
+    "score": 0
+  },
+  {
+    "name": "Bilibili",
+    "pattern": "/\\b(Bili(bili)?)\\b/i",
+    "score": 0
+  },
+  {
+    "name": "BlackLuster",
+    "pattern": "/\\b(BlackLuster)\\b/i",
+    "score": 0
+  },
+  {
+    "name": "BlackRose",
+    "pattern": "/\\b(BlackRose)\\b/i",
+    "score": 0
+  },
+  {
+    "name": "BlueLobster",
+    "pattern": "/\\b(BlueLobster)\\b/i",
+    "score": 0
+  },
+  {
+    "name": "BlurayDesuYo",
+    "pattern": "/\\b(BlurayDesuYo)\\b/i",
+    "score": 0
+  },
+  {
+    "name": "Bolshevik",
+    "pattern": "/\\[Bolshevik\\]|-Bolshevik\\b/i",
+    "score": 0
+  },
+  {
+    "name": "Brrrrrrr",
+    "pattern": "/\\b(Brrrrrrr)\\b/i",
+    "score": 0
+  },
+  {
+    "name": "Bunny-Apocalypse",
+    "pattern": "/\\b(Bunny-Apocalypse)\\b/i",
+    "score": 0
+  },
+  {
+    "name": "CBB",
+    "pattern": "/\\b(CBB)\\b/i",
+    "score": 0
+  },
+  {
+    "name": "CBT",
+    "pattern": "/\\b(CBT)\\b/i",
+    "score": 0
+  },
+  {
+    "name": "CRUCiBLE",
+    "pattern": "/\\[CRUCiBLE\\]|-CRUCiBLE\\b/i",
+    "score": 0
+  },
+  {
+    "name": "CTR",
+    "pattern": "/\\b(CTR)\\b/i",
+    "score": 0
+  },
+  {
+    "name": "CUNNY",
+    "pattern": "/\\b(CUNNY)\\b/i",
+    "score": 0
+  },
+  {
+    "name": "Cait-Sidhe",
+    "pattern": "/\\b(Cait-Sidhe)\\b/i",
+    "score": 0
+  },
+  {
+    "name": "CameEsp",
+    "pattern": "/\\b(CameEsp)\\b/i",
+    "score": 0
+  },
+  {
+    "name": "Cat66",
+    "pattern": "/\\b(Cat66)\\b/i",
+    "score": 0
+  },
+  {
+    "name": "Cerberus",
+    "pattern": "/\\[Cerberus\\]|-Cerberus\\b/i",
+    "score": 0
+  },
+  {
+    "name": "Chihiro",
+    "pattern": "/\\[Chihiro\\]|-Chihiro\\b/i",
+    "score": 0
+  },
+  {
+    "name": "Chimera",
+    "pattern": "/\\[Chimera\\]|-Chimera\\b/i",
+    "score": 0
+  },
+  {
+    "name": "ChucksMux",
+    "pattern": "/\\b(ChucksMux)\\b/i",
+    "score": 0
+  },
+  {
+    "name": "CiNEPHiLES",
+    "pattern": "/^(CiNEPHiLES)$/i",
+    "score": 0
+  },
+  {
+    "name": "Cleo",
+    "pattern": "/\\[Cleo\\]|-Cleo/i",
+    "score": 0
+  },
+  {
+    "name": "Commie",
+    "pattern": "/\\b(Commie)\\b/i",
+    "score": 0
+  },
+  {
+    "name": "Crow",
+    "pattern": "/\\[Crow\\]|-Crow\\b/i",
+    "score": 0
+  },
+  {
+    "name": "Crunchyroll",
+    "pattern": "/\\b(C(runchy)?[ .-]?R(oll)?)\\b/i",
+    "score": 0
+  },
+  {
+    "name": "CsS",
+    "pattern": "/\\b(CsS)\\b/i",
+    "score": 0
+  },
+  {
+    "name": "CuaP",
+    "pattern": "/\\b(CuaP)\\b/i",
+    "score": 0
+  },
+  {
+    "name": "Cunnysseur",
+    "pattern": "/\\b(Cunnysseur)\\b/i",
+    "score": 0
+  },
+  {
+    "name": "CyC",
+    "pattern": "/\\b(CyC)\\b/i",
+    "score": 0
+  },
+  {
+    "name": "Cyan",
+    "pattern": "/\\[Cyan\\]|-Cyan\\b/i",
+    "score": 0
+  },
+  {
+    "name": "Cytox",
+    "pattern": "/\\b(Cytox)\\b/i",
+    "score": 0
+  },
+  {
+    "name": "D4C",
+    "pattern": "/\\b(D4C)\\b/i",
+    "score": 0
+  },
+  {
+    "name": "DARKFLiX",
+    "pattern": "/\\b(DARKFLiX)\\b/i",
+    "score": 0
+  },
+  {
+    "name": "DB",
+    "pattern": "/\\[DB\\]/i",
+    "score": 0
+  },
+  {
+    "name": "DBArabic",
+    "pattern": "/\\b(DBArabic)\\b/i",
+    "score": 0
+  },
+  {
+    "name": "DIY",
+    "pattern": "/\\[DIY\\]|-DIY\\b/i",
+    "score": 0
+  },
+  {
+    "name": "DKB",
+    "pattern": "/\\b(DKB)\\b/i",
+    "score": 0
+  },
+  {
+    "name": "DP",
+    "pattern": "/\\b(DP)\\b/i",
+    "score": 0
+  },
+  {
+    "name": "Daddy-Raws",
+    "pattern": "/Daddy[ ._-]?(Raws)/i",
+    "score": 0
+  },
+  {
+    "name": "DaddySubs",
+    "pattern": "/\\[Daddy(Subs)?\\]|-Daddy(Subs)?\\b/i",
+    "score": 0
+  },
+  {
+    "name": "Dae",
+    "pattern": "/\\b(Dae)\\b/i",
+    "score": 0
+  },
+  {
+    "name": "Dae (2)",
+    "pattern": "/\\[Dae\\]|-Dae\\b/i",
+    "score": 0
+  },
+  {
+    "name": "DameDesuYo",
+    "pattern": "/\\b(DameDesuYo)\\b/i",
+    "score": 0
+  },
+  {
+    "name": "Datte13",
+    "pattern": "/\\b(Datte13)\\b/i",
+    "score": 0
+  },
+  {
+    "name": "Deadmau- RAWS",
+    "pattern": "/\\b(Deadmau[ .-]?[ .-]?RAWS)\\b/i",
+    "score": 0
+  },
+  {
+    "name": "Dekinai",
+    "pattern": "/\\[Dekinai\\]|-Dekinai\\b/i",
+    "score": 0
+  },
+  {
+    "name": "DemiHuman",
+    "pattern": "/\\b(DemiHuman)\\b/i",
+    "score": 0
+  },
+  {
+    "name": "Disney+",
+    "pattern": "/\\b(dsnp|dsny|disney|Disney\\+)\\b/i",
+    "score": 0
+  },
+  {
+    "name": "Doc",
+    "pattern": "/\\[Doc\\]|-Doc\\b/i",
+    "score": 0
+  },
+  {
+    "name": "Doki",
+    "pattern": "/\\[Doki\\]|-Doki\\b/i",
+    "score": 0
+  },
+  {
+    "name": "Dooky",
+    "pattern": "/\\b(Dooky)\\b/i",
+    "score": 0
+  },
+  {
+    "name": "Drag",
+    "pattern": "/\\[Drag\\]|-Drag\\b/i",
+    "score": 0
+  },
+  {
+    "name": "Dragon-Releases",
+    "pattern": "/\\b(Dragon-Releases)\\b/i",
+    "score": 0
+  },
+  {
+    "name": "DragsterPS",
+    "pattern": "/\\b(DragsterPS)\\b/i",
+    "score": 0
+  },
+  {
+    "name": "DsunS",
+    "pattern": "/\\b(DsunS)\\b/i",
+    "score": 0
+  },
+  {
+    "name": "Dual Audio",
+    "pattern": "/dual[ ._-]?(audio)|[([]dual[\\])]|\\b(JA|ZH|KO)(?= ?\\+ ?.*?\\b(EN))|\\b(EN)(?= ?\\+ ?.*?\\b(JA|ZH|KO))|\\b(Japanese|Chinese|Korean) ?[ ._\\+&-] ?\\b(English)|\\b(English) ?[ ._\\+&-] ?\\b(Japanese|Chinese|Korean)|\\b(\\d{3,4}(p|i)|4K|U(ltra)?HD)\\b.*\\b(DUAL)\\b(?!.*\\(|\\))/i",
+    "score": 0
+  },
+  {
+    "name": "Dubbed",
+    "pattern": "/^(?!.*(Dual|Multi)[-_. ]?Audio).*((?<!multi-)\\b(dub(bed)?)\\b|(funi|eng(lish)?)_?dub)/i",
+    "score": 0
+  },
+  {
+    "name": "EDGE",
+    "pattern": "/\\[EDGE\\]|-EDGE\\b/i",
+    "score": 0
+  },
+  {
+    "name": "EJF",
+    "pattern": "/\\b(EJF)\\b/i",
+    "score": 0
+  },
+  {
+    "name": "EMBER",
+    "pattern": "/\\[EMBER\\]|-EMBER\\b/i",
+    "score": 0
+  },
+  {
+    "name": "EPSiLON",
+    "pattern": "/^(EPSiLON)$/i",
+    "score": 0
+  },
+  {
+    "name": "EXP",
+    "pattern": "/\\[EXP\\]|-EXP\\b/i",
+    "score": 0
+  },
+  {
+    "name": "Emmid",
+    "pattern": "/\\[Emmid\\]|-Emmid\\b/i",
+    "score": 0
+  },
+  {
+    "name": "Erai-Raws",
+    "pattern": "/\\b(Erai-raws)\\b/i",
+    "score": 0
+  },
+  {
+    "name": "ExREN",
+    "pattern": "/\\b(ExREN)\\b/i",
+    "score": 0
+  },
+  {
+    "name": "Exiled-Destiny",
+    "pattern": "/\\b(Exiled-Destiny|E-D)\\b/i",
+    "score": 0
+  },
+  {
+    "name": "FAV",
+    "pattern": "/\\[FAV\\]|-FAV\\b/i",
+    "score": 0
+  },
+  {
+    "name": "FFF",
+    "pattern": "/\\b(FFF)\\b/i",
+    "score": 0
+  },
+  {
+    "name": "FLE",
+    "pattern": "/\\b(FLE)\\b/i",
+    "score": 0
+  },
+  {
+    "name": "FateSucks",
+    "pattern": "/\\b(FateSucks)\\b/i",
+    "score": 0
+  },
+  {
+    "name": "Final8",
+    "pattern": "/\\b(Final8)\\b/i",
+    "score": 0
+  },
+  {
+    "name": "Fish",
+    "pattern": "/\\b((Baked|Dead|Space)Fish)\\b/i",
+    "score": 0
+  },
+  {
+    "name": "Flugel",
+    "pattern": "/\\b(Flugel)\\b/i",
+    "score": 0
+  },
+  {
+    "name": "Foxtrot",
+    "pattern": "/\\[Foxtrot\\]|-Foxtrot\\b/i",
+    "score": 0
+  },
+  {
+    "name": "FraMeSToR (2)",
+    "pattern": "/^(FraMeSToR)$/i",
+    "score": 0
+  },
+  {
+    "name": "Freehold",
+    "pattern": "/\\b(Freehold)\\b/i",
+    "score": 0
+  },
+  {
+    "name": "Fumi-Raws",
+    "pattern": "/Fumi[ ._-]?(Raws)/i",
+    "score": 0
+  },
+  {
+    "name": "FunArts",
+    "pattern": "/\\b(FunArts)\\b/i",
+    "score": 0
+  },
+  {
+    "name": "Funimation",
+    "pattern": "/\\b(FUNi(mation)?)\\b/i",
+    "score": 0
+  },
+  {
+    "name": "GERMini",
+    "pattern": "/\\b(GERMini)\\b/i",
+    "score": 0
+  },
+  {
+    "name": "GHOST",
+    "pattern": "/\\[GHOST\\]|-GHOST\\b/i",
+    "score": 0
+  },
+  {
+    "name": "GHS",
+    "pattern": "/\\b(GHS)\\b/i",
+    "score": 0
+  },
+  {
+    "name": "GJM",
+    "pattern": "/\\b(GJM)\\b/i",
+    "score": 0
+  },
+  {
+    "name": "GSK_kun",
+    "pattern": "/\\b(GSK[._-]kun)\\b/i",
+    "score": 0
+  },
+  {
+    "name": "GST",
+    "pattern": "/\\b(GST)\\b/i",
+    "score": 0
+  },
+  {
+    "name": "Gao",
+    "pattern": "/\\[Gao\\]|-Gao\\b/i",
+    "score": 0
+  },
+  {
+    "name": "Geonope",
+    "pattern": "/\\b(Geonope)\\b/i",
+    "score": 0
+  },
+  {
+    "name": "GetItTwisted",
+    "pattern": "/\\b(GetItTwisted)\\b/i",
+    "score": 0
+  },
+  {
+    "name": "Golumpa",
+    "pattern": "/\\b(Golumpa)\\b/i",
+    "score": 0
+  },
+  {
+    "name": "HAV1T",
+    "pattern": "/\\b(HAV1T)\\b/i",
+    "score": 0
+  },
+  {
+    "name": "HENiL",
+    "pattern": "/\\b(HENiL)\\b/i",
+    "score": 0
+  },
+  {
+    "name": "HIDIVE",
+    "pattern": "/\\b(HIDI(VE)?)\\b/i",
+    "score": 0
+  },
+  {
+    "name": "HR",
+    "pattern": "/\\[HR\\]|-HR\\b/i",
+    "score": 0
+  },
+  {
+    "name": "Hakata Ramen",
+    "pattern": "/\\b(Hakata[ .-]?Ramen)\\b/i",
+    "score": 0
+  },
+  {
+    "name": "Half-Baked",
+    "pattern": "/\\b(Half-Baked)\\b/i",
+    "score": 0
+  },
+  {
+    "name": "Hall_of_C",
+    "pattern": "/\\b(Hall_of_C)\\b/i",
+    "score": 0
+  },
+  {
+    "name": "Hark0N",
+    "pattern": "/\\b(Hark0N)\\b/i",
+    "score": 0
+  },
+  {
+    "name": "HatSubs",
+    "pattern": "/\\b(HatSubs)\\b/i",
+    "score": 0
+  },
+  {
+    "name": "Hatsuyuki",
+    "pattern": "/\\[Hatsuyuki\\]|-Hatsuyuki\\b/i",
+    "score": 0
+  },
+  {
+    "name": "Headpatter",
+    "pattern": "/\\[Headpatter\\]|-Headpatter\\b/i",
+    "score": 0
+  },
+  {
+    "name": "HiFi",
+    "pattern": "/^(HiFi)$/i",
+    "score": 0
+  },
+  {
+    "name": "Hitoku",
+    "pattern": "/\\[Hitoku\\]|-Hitoku\\b/i",
+    "score": 0
+  },
+  {
+    "name": "HollowRoxas",
+    "pattern": "/\\b(HollowRoxas)\\b/i",
+    "score": 0
+  },
+  {
+    "name": "Holomux",
+    "pattern": "/\\b(Holomux)\\b/i",
+    "score": 0
+  },
+  {
+    "name": "HorribleRips",
+    "pattern": "/\\b(HorribleRips)\\b/i",
+    "score": 0
+  },
+  {
+    "name": "HorribleSubs",
+    "pattern": "/\\b(HorribleSubs)\\b/i",
+    "score": 0
+  },
+  {
+    "name": "ICEBLUE",
+    "pattern": "/\\b(ICEBLUE)\\b/i",
+    "score": 0
+  },
+  {
+    "name": "IK",
+    "pattern": "/\\b(IK)\\b/i",
+    "score": 0
+  },
+  {
+    "name": "Inka-Subs",
+    "pattern": "/\\b(Inka-Subs)\\b/i",
+    "score": 0
+  },
+  {
+    "name": "IrizaRaws",
+    "pattern": "/Iriza[ ._-]?(Raws)/i",
+    "score": 0
+  },
+  {
+    "name": "Iznjie Biznjie",
+    "pattern": "/\\b(Iznjie[ .-]Biznjie)\\b/i",
+    "score": 0
+  },
+  {
+    "name": "JOHNTiTOR",
+    "pattern": "/\\b(JOHNTiTOR)\\b/i",
+    "score": 0
+  },
+  {
+    "name": "JacobSwaggedUp",
+    "pattern": "/\\b(JacobSwaggedUp)\\b/i",
+    "score": 0
+  },
+  {
+    "name": "Johnny-englishsubs",
+    "pattern": "/\\b(Johnny-englishsubs)\\b/i",
+    "score": 0
+  },
+  {
+    "name": "Judas",
+    "pattern": "/\\[Judas\\]|-Judas/i",
+    "score": 0
+  },
+  {
+    "name": "Judgement",
+    "pattern": "/\\[Judgment\\]|-Judgment\\b/i",
+    "score": 0
+  },
+  {
+    "name": "JySzE",
+    "pattern": "/\\b(JySzE)\\b/i",
+    "score": 0
+  },
+  {
+    "name": "KAN3D2M",
+    "pattern": "/\\b(KAN3D2M)\\b/i",
+    "score": 0
+  },
+  {
+    "name": "KEKMASTERS",
+    "pattern": "/\\b(KEKMASTERS)\\b/i",
+    "score": 0
+  },
+  {
+    "name": "KH",
+    "pattern": "/\\b(KH)\\b/i",
+    "score": 0
+  },
+  {
+    "name": "KQRM",
+    "pattern": "/\\b(KQRM)\\b/i",
+    "score": 0
+  },
+  {
+    "name": "KRP",
+    "pattern": "/\\b(KRP)\\b/i",
+    "score": 0
+  },
+  {
+    "name": "KRaLiMaRKo",
+    "pattern": "/^(KRaLiMaRKo)$/i",
+    "score": 0
+  },
+  {
+    "name": "KS (Not Dual Audio)",
+    "pattern": "/^(?!.*(dual[ ._-]?audio|[([]dual[\\])]|(JA|ZH|KO)\\+EN|EN\\+(JA|ZH|KO))).*\\bKS\\b/i",
+    "score": 0
+  },
+  {
+    "name": "KaiDubs (Not Dual Audio)",
+    "pattern": "/^(?!.*(dual[ ._-]?audio|[([]dual[\\])]|(JA|ZH|KO)\\+EN|EN\\+(JA|ZH|KO))).*\\b(KaiDubs)\\b/i",
+    "score": 0
+  },
+  {
+    "name": "Kaleido",
+    "pattern": "/\\b(Kaleido)\\b/i",
+    "score": 0
+  },
+  {
+    "name": "Kaleido-subs",
+    "pattern": "/\\b(Kaleido-subs)\\b/i",
+    "score": 0
+  },
+  {
+    "name": "Kallango",
+    "pattern": "/\\[Kallango\\]|-Kallango\\b/i",
+    "score": 0
+  },
+  {
+    "name": "Kametsu",
+    "pattern": "/\\b(Kametsu)\\b/i",
+    "score": 0
+  },
+  {
+    "name": "KamiFS",
+    "pattern": "/\\b(KamiFS)\\b/i",
+    "score": 0
+  },
+  {
+    "name": "Kanjouteki",
+    "pattern": "/\\b(Kanjouteki)\\b/i",
+    "score": 0
+  },
+  {
+    "name": "Kantai",
+    "pattern": "/\\[Kantai\\]|-Kantai\\b/i",
+    "score": 0
+  },
+  {
+    "name": "KawaSubs",
+    "pattern": "/\\b(KawaSubs)\\b/i",
+    "score": 0
+  },
+  {
+    "name": "Kawaiika-Raws",
+    "pattern": "/Kawaiika[ ._-]?(Raws)/i",
+    "score": 0
+  },
+  {
+    "name": "Kawatare",
+    "pattern": "/\\[Kawatare\\]|-Kawatare\\b/i",
+    "score": 0
+  },
+  {
+    "name": "Kirion",
+    "pattern": "/\\b(Kirion)\\b/i",
+    "score": 0
+  },
+  {
+    "name": "Kitsune",
+    "pattern": "/\\[Kitsune\\]|-Kitsune\\b/i",
+    "score": 0
+  },
+  {
+    "name": "KiyoshiStar",
+    "pattern": "/\\b(KS|KiyoshiStar)\\b/i",
+    "score": 0
+  },
+  {
+    "name": "Koi-Raws",
+    "pattern": "/Koi[ ._-]?(Raws)/i",
+    "score": 0
+  },
+  {
+    "name": "Koten_Gars",
+    "pattern": "/\\b(Koten[ ._-]Gars)\\b/i",
+    "score": 0
+  },
+  {
+    "name": "Kulot",
+    "pattern": "/\\b(Kulot)\\b/i",
+    "score": 0
+  },
+  {
+    "name": "LCE",
+    "pattern": "/\\b(LCE)\\b/i",
+    "score": 0
+  },
+  {
+    "name": "LYS1TH3A",
+    "pattern": "/\\b(LYS1TH3A)\\b/i",
+    "score": 0
+  },
+  {
+    "name": "LaCroiX",
+    "pattern": "/\\b(LaCroiX)\\b/i",
+    "score": 0
+  },
+  {
+    "name": "LazyRemux",
+    "pattern": "/\\b(LazyRemux)\\b/i",
+    "score": 0
+  },
+  {
+    "name": "Legion",
+    "pattern": "/\\[Legion\\]|-Legion\\b/i",
+    "score": 0
+  },
+  {
+    "name": "Lia",
+    "pattern": "/\\[Lia\\]|-Lia\\b/i",
+    "score": 0
+  },
+  {
+    "name": "Lilith-Raws",
+    "pattern": "/Lilith[ ._-]?(Raws)/i",
+    "score": 0
+  },
+  {
+    "name": "LoliHouse",
+    "pattern": "/\\b(LoliHouse)\\b/i",
+    "score": 0
+  },
+  {
+    "name": "LostYears",
+    "pattern": "/\\b(LostYears)\\b/i",
+    "score": 0
+  },
+  {
+    "name": "LowPower-Raws",
+    "pattern": "/LowPower[ ._-]?(Raws)/i",
+    "score": 0
+  },
+  {
+    "name": "Lulu",
+    "pattern": "/\\[Lulu\\]|-Lulu\\b/i",
+    "score": 0
+  },
+  {
+    "name": "M@nI",
+    "pattern": "/\\b(M@nI)\\b/i",
+    "score": 0
+  },
+  {
+    "name": "MALD",
+    "pattern": "/\\b(MALD)\\b/i",
+    "score": 0
+  },
+  {
+    "name": "MC",
+    "pattern": "/\\b(MC)\\b/i",
+    "score": 0
+  },
+  {
+    "name": "MD",
+    "pattern": "/\\[MD\\]|-MD\\b/i",
+    "score": 0
+  },
+  {
+    "name": "MGD",
+    "pattern": "/\\b(MGD)\\b/i",
+    "score": 0
+  },
+  {
+    "name": "MK",
+    "pattern": "/\\b(MK)\\b/i",
+    "score": 0
+  },
+  {
+    "name": "MTBB",
+    "pattern": "/\\b(MTBB)\\b/i",
+    "score": 0
+  },
+  {
+    "name": "Man.K",
+    "pattern": "/\\b(Man\\.K)\\b/i",
+    "score": 0
+  },
+  {
+    "name": "Maximus",
+    "pattern": "/\\[Maximus\\]|-Maximus\\b/i",
+    "score": 0
+  },
+  {
+    "name": "McBalls",
+    "pattern": "/\\b(McBalls)\\b/i",
+    "score": 0
+  },
+  {
+    "name": "Meakes",
+    "pattern": "/\\b(Meakes)\\b/i",
+    "score": 0
+  },
+  {
+    "name": "Mehul",
+    "pattern": "/\\[Mehul\\]|-Mehul\\b/i",
+    "score": 0
+  },
+  {
+    "name": "Metal",
+    "pattern": "/\\[Metal\\]|-Metal\\b/i",
+    "score": 0
+  },
+  {
+    "name": "Metaljerk",
+    "pattern": "/\\b(Metaljerk)\\b/i",
+    "score": 0
+  },
+  {
+    "name": "MiniFreeza",
+    "pattern": "/\\b(MiniFreeza)\\b/i",
+    "score": 0
+  },
+  {
+    "name": "MiniMTBB",
+    "pattern": "/\\b(MiniMTBB)\\b/i",
+    "score": 0
+  },
+  {
+    "name": "MiniTheatre",
+    "pattern": "/\\b(MiniTheatre)\\b/i",
+    "score": 0
+  },
+  {
+    "name": "MinisCuba",
+    "pattern": "/\\b(MinisCuba)\\b/i",
+    "score": 0
+  },
+  {
+    "name": "Mites",
+    "pattern": "/\\b(Mites)\\b/i",
+    "score": 0
+  },
+  {
+    "name": "Modders Bay",
+    "pattern": "/\\b(Modders[ .-]?Bay)\\b/i",
+    "score": 0
+  },
+  {
+    "name": "Moozzi2",
+    "pattern": "/\\b(Moozzi2)\\b/i",
+    "score": 0
+  },
+  {
+    "name": "Moxie",
+    "pattern": "/\\[Moxie\\]|-Moxie\\b/i",
+    "score": 0
+  },
+  {
+    "name": "Mr. Deadpool",
+    "pattern": "/\\b(Mr\\.Deadpool)\\b/i",
+    "score": 0
+  },
+  {
+    "name": "Mysteria",
+    "pattern": "/\\[Mysteria\\]|-Mysteria\\b/i",
+    "score": 0
+  },
+  {
+    "name": "NAN0",
+    "pattern": "/(?<=remux).*\\b(NAN0)\\b/i",
+    "score": 0
+  },
+  {
+    "name": "NC-Raws",
+    "pattern": "/NC[ ._-]?(Raws)/i",
+    "score": 0
+  },
+  {
+    "name": "NCmt",
+    "pattern": "/^(NCmt)$/i",
+    "score": 0
+  },
+  {
+    "name": "NH",
+    "pattern": "/\\b(NH)\\b/i",
+    "score": 0
+  },
+  {
+    "name": "NS",
+    "pattern": "/\\b(NS)\\b/i",
+    "score": 0
+  },
+  {
+    "name": "NTRM",
+    "pattern": "/\\b(NTRM)\\b/i",
+    "score": 0
+  },
+  {
+    "name": "NTRX",
+    "pattern": "/\\b(NTRX)\\b/i",
+    "score": 0
+  },
+  {
+    "name": "NTW",
+    "pattern": "/\\b(NTW)\\b/i",
+    "score": 0
+  },
+  {
+    "name": "NTb",
+    "pattern": "/^(NTb)$/i",
+    "score": 0
+  },
+  {
+    "name": "NanDesuKa",
+    "pattern": "/\\b(NanDesuKa)\\b/i",
+    "score": 0
+  },
+  {
+    "name": "NanakoRaws",
+    "pattern": "/Nanako[ ._-]?(Raws)/i",
+    "score": 0
+  },
+  {
+    "name": "NemDiggers",
+    "pattern": "/\\b(NemDiggers)\\b/i",
+    "score": 0
+  },
+  {
+    "name": "Nep_Blanc",
+    "pattern": "/\\b(Nep[ ._-]Blanc)\\b/i",
+    "score": 0
+  },
+  {
+    "name": "Netaro",
+    "pattern": "/\\b(Netaro)\\b/i",
+    "score": 0
+  },
+  {
+    "name": "Netflix",
+    "pattern": "/\\b(nf|netflix(u?hd)?)\\b/i",
+    "score": 0
+  },
+  {
+    "name": "New-raws",
+    "pattern": "/New[ ._-]?(raws)/i",
+    "score": 0
+  },
+  {
+    "name": "Noiy",
+    "pattern": "/\\b(Noiy)\\b/i",
+    "score": 0
+  },
+  {
+    "name": "Nokou",
+    "pattern": "/\\b(Nokou)\\b/i",
+    "score": 0
+  },
+  {
+    "name": "NoobSubs",
+    "pattern": "/\\b(N[eo][wo]b[ ._-]?Subs)\\b/i",
+    "score": 0
+  },
+  {
+    "name": "Not Higher Versions",
+    "pattern": "/(\\b|\\d)(v[3-4])\\b|\\b((repack|proper)[23])\\b|\\bREAL\\.(REAL\\.)?(PROPER|REPACK)\\b/i",
+    "score": 0
+  },
+  {
+    "name": "Not Higher Versions (2)",
+    "pattern": "/(\\b|\\d)(v[4])\\b|\\b((repack|proper)3)\\b|\\bREAL\\.(REAL\\.)(PROPER|REPACK)\\b/i",
+    "score": 0
+  },
+  {
+    "name": "Not Single Language Only",
+    "pattern": "/\\[(JA|ZH|KO)\\]/i",
+    "score": 0
+  },
+  {
+    "name": "Not-Vodes",
+    "pattern": "/\\[Not-Vodes\\]|-Not-Vodes\\b/i",
+    "score": 0
+  },
+  {
+    "name": "Nyanpasu",
+    "pattern": "/\\b(Nyanpasu)\\b/i",
+    "score": 0
+  },
+  {
+    "name": "OZR",
+    "pattern": "/\\b(OZR)\\b/i",
+    "score": 0
+  },
+  {
+    "name": "Ohys-Raws",
+    "pattern": "/Ohys[ ._-]?(Raws)/i",
+    "score": 0
+  },
+  {
+    "name": "Okay-Subs",
+    "pattern": "/\\b(Okay-Subs)\\b/i",
+    "score": 0
+  },
+  {
+    "name": "OldCastle",
+    "pattern": "/\\b(OldCastle)\\b/i",
+    "score": 0
+  },
+  {
+    "name": "Orphan",
+    "pattern": "/\\[Orphan\\]|-Orphan\\b/i",
+    "score": 0
+  },
+  {
+    "name": "P9",
+    "pattern": "/\\b(P9)\\b/i",
+    "score": 0
+  },
+  {
+    "name": "PMR",
+    "pattern": "/^(?=.*\\b(PMR)\\b)(?=.*\\b(Remux)\\b)/i",
+    "score": 0
+  },
+  {
+    "name": "PTP",
+    "pattern": "/^(PTP)$/i",
+    "score": 0
+  },
+  {
+    "name": "PTer",
+    "pattern": "/^(PTer)$/i",
+    "score": 0
+  },
+  {
+    "name": "Pandoratv-Raws",
+    "pattern": "/Pandoratv[ ._-]?(Raws)/i",
+    "score": 0
+  },
+  {
+    "name": "Pantsu",
+    "pattern": "/\\[Pantsu\\]|-Pantsu\\b/i",
+    "score": 0
+  },
+  {
+    "name": "Pao",
+    "pattern": "/\\[Pao\\]|-Pao\\b/i",
+    "score": 0
+  },
+  {
+    "name": "PiRAMiDHEAD",
+    "pattern": "/^(PiRAMiDHEAD)$/i",
+    "score": 0
+  },
+  {
+    "name": "Pixel",
+    "pattern": "/\\[Pixel\\]|-Pixel\\b/i",
+    "score": 0
+  },
+  {
+    "name": "Pizza",
+    "pattern": "/\\[Pizza\\]|-Pizza\\b/i",
+    "score": 0
+  },
+  {
+    "name": "Plex Friendly",
+    "pattern": "/\\b(Plex[ .-]?Friendly)\\b/i",
+    "score": 0
+  },
+  {
+    "name": "PmP",
+    "pattern": "/^(PmP)$/i",
+    "score": 0
+  },
+  {
+    "name": "PnPSubs",
+    "pattern": "/\\b(PnPSubs)\\b/i",
+    "score": 0
+  },
+  {
+    "name": "Polarwindz",
+    "pattern": "/\\b(Polarwindz)\\b/i",
+    "score": 0
+  },
+  {
+    "name": "Pookie",
+    "pattern": "/\\b(Pookie)\\b/i",
+    "score": 0
+  },
+  {
+    "name": "Prof",
+    "pattern": "/\\[Prof\\]|-Prof\\b/i",
+    "score": 0
+  },
+  {
+    "name": "Project-gxs",
+    "pattern": "/\\b(Project-gxs)\\b/i",
+    "score": 0
+  },
+  {
+    "name": "PuyaSubs",
+    "pattern": "/\\b(PuyaSubs)\\b/i",
+    "score": 0
+  },
+  {
+    "name": "QCE",
+    "pattern": "/\\b(QCE)\\b/i",
+    "score": 0
+  },
+  {
+    "name": "QM",
+    "pattern": "/\\b(QM)\\b/i",
+    "score": 0
+  },
+  {
+    "name": "QaS",
+    "pattern": "/\\b(QAS)\\b/i",
+    "score": 0
+  },
+  {
+    "name": "Quetzal",
+    "pattern": "/\\b(Quetzal)\\b/i",
+    "score": 0
+  },
+  {
+    "name": "RAI",
+    "pattern": "/\\b(RAI)\\b/i",
+    "score": 0
+  },
+  {
+    "name": "RASETSU",
+    "pattern": "/\\b(RASETSU)\\b/i",
+    "score": 0
+  },
+  {
+    "name": "REVO",
+    "pattern": "/\\b(REVO)\\b/i",
+    "score": 0
+  },
+  {
+    "name": "RMX",
+    "pattern": "/\\b(RMX)\\b/i",
+    "score": 0
+  },
+  {
+    "name": "RUDY",
+    "pattern": "/\\[RUDY\\]|-RUDY\\b/i",
+    "score": 0
+  },
+  {
+    "name": "RaiN",
+    "pattern": "/\\[RaiN\\]|-RaiN\\b/i",
+    "score": 0
+  },
+  {
+    "name": "Rando235",
+    "pattern": "/\\b(Rando235)\\b/i",
+    "score": 0
+  },
+  {
+    "name": "Ranger",
+    "pattern": "/\\[Ranger\\]|-Ranger\\b/i",
+    "score": 0
+  },
+  {
+    "name": "Rapta",
+    "pattern": "/\\[Rapta\\]|-Rapta\\b/i",
+    "score": 0
+  },
+  {
+    "name": "Raw Files",
+    "pattern": "/\\b(M2TS|BDMV|BDVD)\\b/i",
+    "score": 0
+  },
+  {
+    "name": "Raws-Maji",
+    "pattern": "/\\b(Raws-Maji)\\b/i",
+    "score": 0
+  },
+  {
+    "name": "Raze",
+    "pattern": "/\\[Raze\\]|-Raze\\b/i",
+    "score": 0
+  },
+  {
+    "name": "Reaktor",
+    "pattern": "/\\b(Reaktor)\\b/i",
+    "score": 0
+  },
+  {
+    "name": "ReinForce",
+    "pattern": "/\\b(ReinForce)\\b/i",
+    "score": 0
+  },
+  {
+    "name": "Reza",
+    "pattern": "/\\b(Reza)\\b/i",
+    "score": 0
+  },
+  {
+    "name": "RightShiftBy2",
+    "pattern": "/\\b(RightShiftBy2)\\b/i",
+    "score": 0
+  },
+  {
+    "name": "Rip Time",
+    "pattern": "/\\b(Rip[ .-]?Time)\\b/i",
+    "score": 0
+  },
+  {
+    "name": "SAD",
+    "pattern": "/\\[SAD\\]|-SAD\\b/i",
+    "score": 0
+  },
+  {
+    "name": "SCP-2223",
+    "pattern": "/\\b(SCP-2223)\\b/i",
+    "score": 0
+  },
+  {
+    "name": "SCY",
+    "pattern": "/\\b(SCY)\\b/i",
+    "score": 0
+  },
+  {
+    "name": "SEV",
+    "pattern": "/\\b(SEV)\\b/i",
+    "score": 0
+  },
+  {
+    "name": "SEiN",
+    "pattern": "/\\[SEiN\\]|-SEiN\\b/i",
+    "score": 0
+  },
+  {
+    "name": "SHFS",
+    "pattern": "/\\b(SHFS)\\b/i",
+    "score": 0
+  },
+  {
+    "name": "SLAX",
+    "pattern": "/\\b(SLAX)\\b/i",
+    "score": 0
+  },
+  {
+    "name": "SRW",
+    "pattern": "/\\b(SRW)\\b/i",
+    "score": 0
+  },
+  {
+    "name": "SSA",
+    "pattern": "/\\b(SSA)\\b/i",
+    "score": 0
+  },
+  {
+    "name": "SUBFRENCH",
+    "pattern": "/\\b(SUBFR(A|ENCH)?)\\b/i",
+    "score": 0
+  },
+  {
+    "name": "SURFINBIRD",
+    "pattern": "/^(SURFINBIRD)$/i",
+    "score": 0
+  },
+  {
+    "name": "Salieri",
+    "pattern": "/\\b(Salieri)\\b/i",
+    "score": 0
+  },
+  {
+    "name": "Samir755",
+    "pattern": "/\\b(Samir755)\\b/i",
+    "score": 0
+  },
+  {
+    "name": "SanKyuu",
+    "pattern": "/\\b(SanKyuu)\\b/i",
+    "score": 0
+  },
+  {
+    "name": "Scryous-Raws",
+    "pattern": "/Scryous[ ._-]?(Raws)/i",
+    "score": 0
+  },
+  {
+    "name": "Seicher-Raws",
+    "pattern": "/Seicher[ ._-]?(Raws)/i",
+    "score": 0
+  },
+  {
+    "name": "Sekkon",
+    "pattern": "/\\b(Sekkon)\\b/i",
+    "score": 0
+  },
+  {
+    "name": "Senjou",
+    "pattern": "/\\[Senjou\\]|-Senjou\\b/i",
+    "score": 0
+  },
+  {
+    "name": "Serendipity",
+    "pattern": "/\\[Serendipity\\]|-Serendipity\\b/i",
+    "score": 0
+  },
+  {
+    "name": "Setsugen",
+    "pattern": "/\\b(Setsugen)\\b/i",
+    "score": 0
+  },
+  {
+    "name": "Shimatta",
+    "pattern": "/\\b(Shimatta)\\b/i",
+    "score": 0
+  },
+  {
+    "name": "Shiniori-Raws",
+    "pattern": "/Shiniori[ ._-]?(Raws)/i",
+    "score": 0
+  },
+  {
+    "name": "Shirσ",
+    "pattern": "/\\b(Shirσ)\\b/i",
+    "score": 0
+  },
+  {
+    "name": "SiCFoI",
+    "pattern": "/^(SiCFoI)$/i",
+    "score": 0
+  },
+  {
+    "name": "Slyfox",
+    "pattern": "/\\b(Slyfox)\\b/i",
+    "score": 0
+  },
+  {
+    "name": "Smoke",
+    "pattern": "/\\[Smoke\\]|-Smoke\\b/i",
+    "score": 0
+  },
+  {
+    "name": "SoLCE",
+    "pattern": "/\\b(SoLCE)\\b/i",
+    "score": 0
+  },
+  {
+    "name": "SoM",
+    "pattern": "/\\[SoM\\]|-SoM\\b/i",
+    "score": 0
+  },
+  {
+    "name": "SobsPlease",
+    "pattern": "/\\b(SobsPlease)\\b/i",
+    "score": 0
+  },
+  {
+    "name": "Sokudo",
+    "pattern": "/\\[Sokudo\\]|-Sokudo\\b/i",
+    "score": 0
+  },
+  {
+    "name": "Some-Stuffs",
+    "pattern": "/\\b(Some-Stuffs)\\b/i",
+    "score": 0
+  },
+  {
+    "name": "Spirale",
+    "pattern": "/\\b(Spirale)\\b/i",
+    "score": 0
+  },
+  {
+    "name": "Starbez",
+    "pattern": "/\\b(Starbez)\\b/i",
+    "score": 0
+  },
+  {
+    "name": "StrayGods",
+    "pattern": "/\\b(StrayGods)\\b/i",
+    "score": 0
+  },
+  {
+    "name": "SubsMix",
+    "pattern": "/\\b(SubsMix)\\b/i",
+    "score": 0
+  },
+  {
+    "name": "SubsPlease",
+    "pattern": "/\\b(SubsPlease)\\b/i",
+    "score": 0
+  },
+  {
+    "name": "SubsPlus+",
+    "pattern": "/\\b(SubsPlus\\+?)\\b/i",
+    "score": 0
+  },
+  {
+    "name": "Suki Desu",
+    "pattern": "/\\[Suki[ .-]?Desu\\]|-Suki[ .-]?Desu\\b/i",
+    "score": 0
+  },
+  {
+    "name": "SumVision",
+    "pattern": "/^(SumVision)$/i",
+    "score": 0
+  },
+  {
+    "name": "Sylvar",
+    "pattern": "/\\b(Sylvar)\\b/i",
+    "score": 0
+  },
+  {
+    "name": "TEPES",
+    "pattern": "/^(TEPES)$/i",
+    "score": 0
+  },
+  {
+    "name": "THORA",
+    "pattern": "/\\b(THORA)\\b/i",
+    "score": 0
+  },
+  {
+    "name": "TOA",
+    "pattern": "/^(TOA)$/i",
+    "score": 0
+  },
+  {
+    "name": "TOPKEK",
+    "pattern": "/\\b(TOPKEK)\\b/i",
+    "score": 0
+  },
+  {
+    "name": "TRiToN",
+    "pattern": "/^(TRiToN)$/i",
+    "score": 0
+  },
+  {
+    "name": "TTGA",
+    "pattern": "/\\b(TTGA)\\b/i",
+    "score": 0
+  },
+  {
+    "name": "TeamTurquoize",
+    "pattern": "/\\b(TeamTurquoize)\\b/i",
+    "score": 0
+  },
+  {
+    "name": "Tenrai Sensei",
+    "pattern": "/\\b(Tenrai[ .-]?Sensei)\\b/i",
+    "score": 0
+  },
+  {
+    "name": "Tenshi",
+    "pattern": "/\\[tenshi\\]|-tenshi$/i",
+    "score": 0
+  },
+  {
+    "name": "Thighs",
+    "pattern": "/\\[Thighs\\]|-Thighs\\b/i",
+    "score": 0
+  },
+  {
+    "name": "TnF",
+    "pattern": "/\\b(TnF)\\b/i",
+    "score": 0
+  },
+  {
+    "name": "ToonsHub",
+    "pattern": "/\\b(ToonsHub)\\b/i",
+    "score": 0
+  },
+  {
+    "name": "Trix",
+    "pattern": "/\\[Trix\\]|-Trix\\b/i",
+    "score": 0
+  },
+  {
+    "name": "Tsundere",
+    "pattern": "/\\[Tsundere\\]|-Tsundere(?!-)\\b/i",
+    "score": 0
+  },
+  {
+    "name": "U3-Web",
+    "pattern": "/\\b(U3-Web)\\b/i",
+    "score": 0
+  },
+  {
+    "name": "UDF",
+    "pattern": "/\\b(UDF)\\b/i",
+    "score": 0
+  },
+  {
+    "name": "UNBIASED",
+    "pattern": "/\\[UNBIASED\\]|-UNBIASED\\b/i",
+    "score": 0
+  },
+  {
+    "name": "UQW",
+    "pattern": "/\\b(UQW)\\b/i",
+    "score": 0
+  },
+  {
+    "name": "URANIME",
+    "pattern": "/\\b(URANIME)\\b/i",
+    "score": 0
+  },
+  {
+    "name": "USD",
+    "pattern": "/\\[USD\\]|-USD\\b/i",
+    "score": 0
+  },
+  {
+    "name": "UltraRemux",
+    "pattern": "/\\b(UltraRemux)\\b/i",
+    "score": 0
+  },
+  {
+    "name": "Uncensored",
+    "pattern": "/\\b(Uncut|Unrated|Uncensored|AT[-_. ]?X)\\b/i",
+    "score": 0
+  },
+  {
+    "name": "VARYG",
+    "pattern": "/\\b(VARYG)\\b/i",
+    "score": 0
+  },
+  {
+    "name": "VOSTFR",
+    "pattern": "/\\b(VOST.*?FR(E|A)?)\\b/i",
+    "score": 0
+  },
+  {
+    "name": "VRV",
+    "pattern": "/\\b(VRV)\\b/i",
+    "score": 0
+  },
+  {
+    "name": "VULCAN",
+    "pattern": "/\\[VULCAN\\]|-VULCAN\\b/i",
+    "score": 0
+  },
+  {
+    "name": "Valenciano",
+    "pattern": "/\\b(Valenciano)\\b/i",
+    "score": 0
+  },
+  {
+    "name": "Vanilla",
+    "pattern": "/\\[Vanilla\\]|-Vanilla\\b/i",
+    "score": 0
+  },
+  {
+    "name": "VipapkStudios",
+    "pattern": "/\\b(VipapkStudios)\\b/i",
+    "score": 0
+  },
+  {
+    "name": "Virtuality",
+    "pattern": "/\\b(Virtuality)\\b/i",
+    "score": 0
+  },
+  {
+    "name": "Vivid",
+    "pattern": "/\\[Vivid\\]|-Vivid\\b/i",
+    "score": 0
+  },
+  {
+    "name": "Vodes",
+    "pattern": "/\\[Vodes\\]|(?<!Not)-Vodes\\b/i",
+    "score": 0
+  },
+  {
+    "name": "WAP",
+    "pattern": "/\\b(WAP)\\b/i",
+    "score": 0
+  },
+  {
+    "name": "WBDP",
+    "pattern": "/\\b(WBDP)\\b/i",
+    "score": 0
+  },
+  {
+    "name": "WKN",
+    "pattern": "/\\b(WKN|Waka(nim)?)\\b/i",
+    "score": 0
+  },
+  {
+    "name": "WSE",
+    "pattern": "/\\b(WSE)\\b/i",
+    "score": 0
+  },
+  {
+    "name": "Wardevil",
+    "pattern": "/\\[Wardevil\\]|-Wardevil\\b/i",
+    "score": 0
+  },
+  {
+    "name": "WiLDCAT",
+    "pattern": "/^(WiLDCAT)$/i",
+    "score": 0
+  },
+  {
+    "name": "WtF Anime",
+    "pattern": "/\\b(WtF[ ._-]?Anime)\\b/i",
+    "score": 0
+  },
+  {
+    "name": "YURASUKA",
+    "pattern": "/\\[YURASUKA\\]|-YURASUKA\\b/i",
+    "score": 0
+  },
+  {
+    "name": "YURI",
+    "pattern": "/\\[YURI\\]|-YURI\\b/i",
+    "score": 0
+  },
+  {
+    "name": "Yabai_Desu_NeRandomRemux",
+    "pattern": "/\\b(Yabai_Desu_NeRandomRemux)\\b/i",
+    "score": 0
+  },
+  {
+    "name": "YakuboEncodes",
+    "pattern": "/\\b(YakuboEncodes)\\b/i",
+    "score": 0
+  },
+  {
+    "name": "Yameii",
+    "pattern": "/\\[Yameii\\]|-Yameii\\b/i",
+    "score": 0
+  },
+  {
+    "name": "Yoghurt",
+    "pattern": "/\\b(Yoghurt)\\b/i",
+    "score": 0
+  },
+  {
+    "name": "YuiSubs",
+    "pattern": "/\\b(YuiSubs)\\b/i",
+    "score": 0
+  },
+  {
+    "name": "Yuki",
+    "pattern": "/\\[Yuki\\]|-Yuki\\b/i",
+    "score": 0
+  },
+  {
+    "name": "Yun",
+    "pattern": "/\\[Yun\\]|-Yun\\b/i",
+    "score": 0
+  },
+  {
+    "name": "Z4ST1N",
+    "pattern": "/\\b(Z4ST1N)\\b/i",
+    "score": 0
+  },
+  {
+    "name": "ZQ",
+    "pattern": "/^(ZQ)$/i",
+    "score": 0
+  },
+  {
+    "name": "ZR",
+    "pattern": "/\\b(ZR)\\b|-ZR-/i",
+    "score": 0
+  },
+  {
+    "name": "ZR (2)",
+    "pattern": "/\\b(ZR)\\b/i",
+    "score": 0
+  },
+  {
+    "name": "ZeroBuild",
+    "pattern": "/\\b(ZeroBuild)\\b/i",
+    "score": 0
+  },
+  {
+    "name": "ZigZag",
+    "pattern": "/\\[ZigZag\\]|-ZigZab\b/i",
+    "score": 0
+  },
+  {
+    "name": "aRMX",
+    "pattern": "/\\b(aRMX)\\b/i",
+    "score": 0
+  },
+  {
+    "name": "bonkai77",
+    "pattern": "/\\b(bonkai77)\\b/i",
+    "score": 0
+  },
+  {
+    "name": "cappybara",
+    "pattern": "/\\[cappybara\\]|-cappybara\\b/i",
+    "score": 0
+  },
+  {
+    "name": "deanzel",
+    "pattern": "/\\b(deanzel)\\b/i",
+    "score": 0
+  },
+  {
+    "name": "decibeL",
+    "pattern": "/^(decibeL)$/i",
+    "score": 0
+  },
+  {
+    "name": "derp",
+    "pattern": "/\\[derp\\]|-derp\\b/i",
+    "score": 0
+  },
+  {
+    "name": "eldon",
+    "pattern": "/\\b(eldon)\\b/i",
+    "score": 0
+  },
+  {
+    "name": "fig",
+    "pattern": "/\\[fig\\]|-fig\\b/i",
+    "score": 0
+  },
+  {
+    "name": "grimf",
+    "pattern": "/\\b(grimf)\\b/i",
+    "score": 0
+  },
+  {
+    "name": "hchcsen",
+    "pattern": "/\\b(hchcsen)\\b/i",
+    "score": 0
+  },
+  {
+    "name": "hi10p",
+    "pattern": "/hi10p/i",
+    "score": 0
+  },
+  {
+    "name": "hydes",
+    "pattern": "/\\b(hydes)\\b/i",
+    "score": 0
+  },
+  {
+    "name": "iAHD",
+    "pattern": "/\\b(iAHD)\\b/i",
+    "score": 0
+  },
+  {
+    "name": "iFT",
+    "pattern": "/^(iFT)$/i",
+    "score": 0
+  },
+  {
+    "name": "iKaos",
+    "pattern": "/\\b(iKaos)\\b/i",
+    "score": 0
+  },
+  {
+    "name": "iPUNISHER",
+    "pattern": "/\\b(iPUNISHER)\\b/i",
+    "score": 0
+  },
+  {
+    "name": "inid4c",
+    "pattern": "/\\b(inid4c)\\b/i",
+    "score": 0
+  },
+  {
+    "name": "karios",
+    "pattern": "/\\b(karios)\\b/i",
+    "score": 0
+  },
+  {
+    "name": "km",
+    "pattern": "/\\[km\\]|-km\\b/i",
+    "score": 0
+  },
+  {
+    "name": "koala",
+    "pattern": "/\\[koala\\]|-koala\\b/i",
+    "score": 0
+  },
+  {
+    "name": "kuchikirukia",
+    "pattern": "/\\b(kuchikirukia)\\b/i",
+    "score": 0
+  },
+  {
+    "name": "mal lu zen",
+    "pattern": "/\\b(mal[ .-]lu[ .-]zen)\\b/i",
+    "score": 0
+  },
+  {
+    "name": "mdcx",
+    "pattern": "/\\b(mdcx)\\b/i",
+    "score": 0
+  },
+  {
+    "name": "mottoj",
+    "pattern": "/\\b(mottoj)\\b/i",
+    "score": 0
+  },
+  {
+    "name": "naiyas",
+    "pattern": "/\\[naiyas\\]|-naiyas\\b/i",
+    "score": 0
+  },
+  {
+    "name": "neko-kBaraka",
+    "pattern": "/\\b(neko-kBaraka)\\b/i",
+    "score": 0
+  },
+  {
+    "name": "neko-raws",
+    "pattern": "/neko[ ._-]?(raws)/i",
+    "score": 0
+  },
+  {
+    "name": "nekotan",
+    "pattern": "/\\b(nekotan)\\b/i",
+    "score": 0
+  },
+  {
+    "name": "neoHEVC",
+    "pattern": "/\\b(neoHEVC)\\b/i",
+    "score": 0
+  },
+  {
+    "name": "npz",
+    "pattern": "/\\b(npz)\\b/i",
+    "score": 0
+  },
+  {
+    "name": "o7",
+    "pattern": "/\\b(o7)\\b/i",
+    "score": 0
+  },
+  {
+    "name": "orz",
+    "pattern": "/\\b(orz)\\b/i",
+    "score": 0
+  },
+  {
+    "name": "phazer11",
+    "pattern": "/\\b(phazer11)\\b/i",
+    "score": 0
+  },
+  {
+    "name": "playBD",
+    "pattern": "/^(playBD)$/i",
+    "score": 0
+  },
+  {
+    "name": "playWEB",
+    "pattern": "/\\b(playWEB)\\b/i",
+    "score": 0
+  },
+  {
+    "name": "pog42",
+    "pattern": "/\\b(pog42)\\b/i",
+    "score": 0
+  },
+  {
+    "name": "sam",
+    "pattern": "/\\[sam\\]|-sam\\b/i",
+    "score": 0
+  },
+  {
+    "name": "sekkusu&ok",
+    "pattern": "/\\b(sekkusu&ok)\\b/i",
+    "score": 0
+  },
+  {
+    "name": "sgt",
+    "pattern": "/\\[sgt\\]|-sgt\\b/i",
+    "score": 0
+  },
+  {
+    "name": "shincaps",
+    "pattern": "/\\b(shincaps)\\b/i",
+    "score": 0
+  },
+  {
+    "name": "smol",
+    "pattern": "/\\[smol\\]|-smol\\b/i",
+    "score": 0
+  },
+  {
+    "name": "torenter69",
+    "pattern": "/\\b(torenter69)\\b/i",
+    "score": 0
+  },
+  {
+    "name": "uP",
+    "pattern": "/\\[uP\\]/i",
+    "score": 0
+  },
+  {
+    "name": "uba",
+    "pattern": "/\\[uba\\]|-uba\\b/i",
+    "score": 0
+  },
+  {
+    "name": "v0",
+    "pattern": "/(\\b|\\d)(v0)\\b/i",
+    "score": 0
+  },
+  {
+    "name": "v1",
+    "pattern": "/(\\b|\\d)(v1)\\b/i",
+    "score": 0
+  },
+  {
+    "name": "v2",
+    "pattern": "/(\\b|\\d)(v2)\\b|\\b(Repack|Proper|Rerip)\\b/i",
+    "score": 0
+  },
+  {
+    "name": "v3",
+    "pattern": "/(\\b|\\d)(v3)\\b|\\b((repack|proper)2)\\b|\\b(REAL\\.(PROPER|REPACK))\\b/i",
+    "score": 0
+  },
+  {
+    "name": "v4",
+    "pattern": "/(\\b|\\d)(v4)\\b|\\b((repack|proper)3)\\b|\\b(REAL\\.REAL\\.(PROPER|REPACK))\\b/i",
+    "score": 0
+  },
+  {
+    "name": "xiao-av1",
+    "pattern": "/\\b(xiao-av1)\\b/i",
+    "score": 0
+  },
+  {
+    "name": "youshikibi",
+    "pattern": "/\\b(youshikibi)\\b/i",
+    "score": 0
+  },
+  {
+    "name": "zza",
+    "pattern": "/\\[zza\\]|-zza\\b/i",
+    "score": 0
+  }
+]

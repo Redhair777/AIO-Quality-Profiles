@@ -40,6 +40,7 @@ OUT_DIR = HERE / "profiles"
 SOURCE_DBS = {
     "dictionarry": HERE / ".deps" / "dictionarry.sqlite",
     "dumpstarr": HERE / ".deps" / "dumpstarr.sqlite",
+    "trash-pcd": HERE / ".deps" / "trash-pcd.sqlite",
 }
 
 # Source value -> AIOStreams quality names (canonical spelling; the engine

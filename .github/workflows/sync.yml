@@ -43,6 +43,12 @@ jobs:
       - name: Convert Dumpstarr anime profile
         run: python3 convert.py --db .deps/dumpstarr.sqlite --out profiles --profile "Anime 1080p"
 
+      - name: Build trash-pcd snapshot
+        run: python3 build_db.py --deps .deps --source trash-pcd --db .deps/trash-pcd.sqlite
+
+      - name: Convert trash-pcd anime remux profile
+        run: python3 convert.py --db .deps/trash-pcd.sqlite --out profiles --profile "[Anime] Remux-1080p"
+
       - name: Sanity check outputs
         run: |
           python3 - <<'EOF'
@@ -50,7 +56,7 @@ jobs:
           import sys
           exprs = glob.glob('profiles/*.expressions.json')
           regexes = glob.glob('profiles/*.regexes.json')
-          assert len(exprs) == len(regexes) and exprs, 'unexpected output set'
+          assert len(exprs) == len(regexes) == 13, 'unexpected output set'
           for f in exprs + regexes:
               data = json.load(open(f))
               assert isinstance(data, list), f'{f} is not a list'
@@ -68,5 +74,5 @@ jobs:
             echo 'no profile changes to commit'
             exit 0
           fi
-          git commit -m 'chore(profiles): sync from Dictionarry'
+          git commit -m 'chore(profiles): sync from Dictionarry, Dumpstarr, trash-pcd'
           git push origin main
