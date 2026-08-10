@@ -18,7 +18,7 @@ In AIOStreams:
 2. **Filters → Stream Expressions → Synced URLs** → add the profile's **Stream Expression** link
 3. **Sorting** → add **Stream Expression Score** to your sort order (nothing scores without this)
 
-Only add one profile's pair of links at a time — mixing multiple profiles' expressions together will combine their scoring, not let you pick between them.
+Only add one movie/series and one anime profile at a time — mixing multiple profiles of the same category will combine their scoring and cause double scoring and other issues.
 
 ---
 
