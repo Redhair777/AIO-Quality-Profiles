@@ -36,6 +36,12 @@ from pathlib import Path
 HERE = Path(__file__).resolve().parent
 OUT_DIR = HERE / "profiles"
 
+# Profilarr PCD db default paths mirroring build_db.py's --source.
+SOURCE_DBS = {
+    "dictionarry": HERE / ".deps" / "dictionarry.sqlite",
+    "dumpstarr": HERE / ".deps" / "dumpstarr.sqlite",
+}
+
 # Source value -> AIOStreams quality names (canonical spelling; the engine
 # compares case-insensitively). A Dictionarry source covers several qualities.
 SOURCE_TO_QUALITIES: dict[str, list[str]] = {
@@ -174,13 +180,50 @@ def load_regexes(db: sqlite3.Connection) -> dict[str, str]:
     }
 
 
+def _escape_leading_rbracket(pattern: str) -> str:
+    """Translate .NET's positional ']'-as-first-member class idiom to JS.
+
+    In .NET, ']' as the very first member of a character class ('[]...]')
+    is a literal ']'. JS has no such positional escape: '[]' is an empty
+    class, and a ')' after it is an unmatched group. Escape the leading ']'
+    so the class keeps matching the same member set ('[])]' -> '[\\])]').
+    """
+    out: list[str] = []
+    in_class = False
+    i = 0
+    n = len(pattern)
+    while i < n:
+        ch = pattern[i]
+        if ch == "\\" and i + 1 < n:
+            out.append(ch + pattern[i + 1])
+            i += 2
+            continue
+        if not in_class:
+            if ch == "[":
+                if i + 1 < n and pattern[i + 1] == "]":
+                    out.append("[\\]")
+                    in_class = True
+                    i += 2
+                    continue
+                in_class = True
+            out.append(ch)
+            i += 1
+            continue
+        if ch == "]":
+            in_class = False
+        out.append(ch)
+        i += 1
+    return "".join(out)
+
+
 def sanitize_pattern(pattern: str) -> str:
     """Make a Dictionarry (.NET) pattern safe for a JS RegExp.
 
     Radarr compiles every spec with RegexOptions.IgnoreCase, so inline
     '(?i)' toggles are no-ops and are removed (JS RegExp rejects them).
     """
-    return pattern.replace("(?i)", "")
+    pattern = pattern.replace("(?i)", "")
+    return _escape_leading_rbracket(pattern)
 
 
 # ------------------------------------------------------------- SEL building
@@ -471,12 +514,24 @@ def convert_profile(db: sqlite3.Connection, profile: str, out_dir: Path,
 def main() -> None:
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument(
-        "--db", type=Path, default=HERE / ".deps" / "dictionarry.sqlite",
-        help="path to the rebuilt Dictionarry SQLite snapshot",
+        "--source",
+        choices=sorted(SOURCE_DBS),
+        default="dictionarry",
+        help="Profilarr PCD database the snapshot came from (default: dictionarry)."
+        " Selects the default --db path, exactly mirroring build_db.py --source.",
+    )
+    parser.add_argument(
+        "--db", type=Path, default=None,
+        help="path to the rebuilt SQLite snapshot (default: .deps/<source>.sqlite)",
     )
     parser.add_argument(
         "--out", type=Path, default=OUT_DIR,
         help="output directory (default: profiles/)",
+    )
+    parser.add_argument(
+        "--profile", action="append", metavar="NAME",
+        help="convert only the named quality profile(s); may be repeated"
+        " (default: all profiles in the snapshot)",
     )
     parser.add_argument(
         "--node",
@@ -485,6 +540,8 @@ def main() -> None:
     )
     args = parser.parse_args()
 
+    if args.db is None:
+        args.db = SOURCE_DBS[args.source]
     if not args.db.exists():
         sys.exit(f"[convert] snapshot not found: {args.db} (run build_db.py first)")
 
@@ -500,8 +557,17 @@ def main() -> None:
         print(f"[convert] invalid regexes (referencing CFs degrade): "
               f"{sorted(invalid)}", file=sys.stderr)
 
+    profiles = iter_profiles(db)
+    if args.profile:
+        wanted = set(args.profile)
+        missing = wanted - set(profiles)
+        if missing:
+            sys.exit(f"[convert] unknown profile(s): {sorted(missing)}\n"
+                     f"  available: {sorted(profiles)}")
+        profiles = [p for p in profiles if p in wanted]
+
     total = {"expressions": 0, "regexes": 0, "skipped": 0}
-    for profile in iter_profiles(db):
+    for profile in profiles:
         stats = convert_profile(
             db, profile, args.out, all_conditions, patterns, regexes, invalid,
         )

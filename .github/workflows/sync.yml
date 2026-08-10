@@ -34,8 +34,14 @@ jobs:
       - name: Build Dictionarry snapshot
         run: python3 build_db.py --deps .deps --db .deps/dictionarry.sqlite
 
-      - name: Convert profiles
+      - name: Convert Dictionarry profiles
         run: python3 convert.py --db .deps/dictionarry.sqlite --out profiles
+
+      - name: Build Dumpstarr snapshot
+        run: python3 build_db.py --deps .deps --source dumpstarr --db .deps/dumpstarr.sqlite
+
+      - name: Convert Dumpstarr anime profile
+        run: python3 convert.py --db .deps/dumpstarr.sqlite --out profiles --profile "Anime 1080p"
 
       - name: Sanity check outputs
         run: |
