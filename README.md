@@ -16,7 +16,7 @@ For the original documentation on how these profiles are designed and what they 
 In AIOStreams:
 1. **Filters → Regex → Synced URLs** → add the profile's **Regex** link
 2. **Filters → Stream Expressions → Synced URLs** → add the profile's **Stream Expression** link
-3. **Sorting** → add **Stream Expression Score** to your sort order (nothing scores without this)
+3. **Sorting** → Make sure **Stream Expression Score** is present in your sort order (nothing scores without this). For example `Resultion -> Quality -> SEL Score`
 
 Only add one movie/series and one anime profile at a time — mixing multiple profiles of the same category will combine their scoring and cause double scoring and other issues.
 
