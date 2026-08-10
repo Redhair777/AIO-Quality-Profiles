@@ -162,11 +162,3 @@ Regex: `https://raw.githubusercontent.com/Redhair777/AIO-Quality-Profiles/main/p
 
 AIOStreams picks up changes automatically on its own sync interval once you've added the links above — no manual re-download needed.
 
-## Known fidelity limits
-
-A small number of conditions in the source data have no SEL equivalent and are intentionally skipped rather than approximated:
-- `indexer_flag` (e.g. freeleech, PTP Golden Popcorn) — no SEL filter function exists for indexer flags
-- `year` — no SEL filter function exists for release year
-- `size` / per-quality size limits — not present as scored conditions in any of these 13 profiles' source data
-
-`'Original'` as a language value **is** supported (`language(streams, 'Original')`), resolved dynamically per-item by AIOStreams.
