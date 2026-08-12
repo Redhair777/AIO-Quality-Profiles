@@ -529,11 +529,14 @@ def _collapse_negate_chain(node: _SelNode) -> bool:
         rm, base = cur.args
         if not (rm.kind == "call" and rm.name == "regexMatched"):
             break
-        if not rm.args or not all(_plain_str(a) is not None for a in rm.args[1:]):
+        if len(rm.args) != 2:  # already-collapsed multi-name rm is not a fresh link
             break
         if _render_sel(rm.args[0]) != _render_sel(base):
             break
-        names.extend(n for n in (_plain_str(a) for a in rm.args[1:]) if n is not None)
+        name = _plain_str(rm.args[1])
+        if name is None:
+            break
+        names.append(name)
         cur = base
     if len(names) < 2:
         return False
