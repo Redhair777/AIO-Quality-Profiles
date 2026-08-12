@@ -535,13 +535,23 @@
     "enabled": true
   },
   {
+    "expression": "/*#Radarr*/ /*ATV*/ queryType=='movie' ? merge(quality(regexMatched(streams, \"Apple TV\"), \"WEB-DL\"), quality(regexMatched(streams, \"Apple TV\"), \"WEBRip\")) : []",
+    "score": 2000,
+    "enabled": true
+  },
+  {
+    "expression": "/*#Sonarr*/ /*ATV*/ queryType=='series' ? merge(quality(regexMatched(streams, \"Apple TV\"), \"WEB-DL\"), quality(regexMatched(streams, \"Apple TV\"), \"WEBRip\")) : []",
+    "score": 2000,
+    "enabled": true
+  },
+  {
     "expression": "/*#Radarr*/ /*ATVP*/ queryType=='movie' ? merge(quality(regexMatched(streams, \"Apple TV+\"), \"WEB-DL\"), quality(regexMatched(streams, \"Apple TV+\"), \"WEBRip\")) : []",
     "score": 2000,
     "enabled": true
   },
   {
     "expression": "/*#Sonarr*/ /*ATVP*/ queryType=='series' ? merge(quality(regexMatched(streams, \"Apple TV+\"), \"WEB-DL\"), quality(regexMatched(streams, \"Apple TV+\"), \"WEBRip\")) : []",
-    "score": 2000,
+    "score": 3000,
     "enabled": true
   },
   {
@@ -555,7 +565,7 @@
     "enabled": true
   },
   {
-    "expression": "/*#Sonarr*/ /*Amazon Channel Enhancement*/ queryType=='series' ? negate(resolution(regexMatched(regexMatched(streams, \"OnlyWeb\", \"GRiMM\", \"PrimeFix\", \"ViSTA\", \"PMI\"), \"Amazon Prime\"), \"2160p\"), regexMatched(regexMatched(streams, \"OnlyWeb\", \"GRiMM\", \"PrimeFix\", \"ViSTA\", \"PMI\"), \"Amazon Prime\")) : []",
+    "expression": "/*#Sonarr*/ /*Amazon Channel Enhancement*/ queryType=='series' ? negate(resolution(regexMatched(regexMatched(streams, \"OnlyWeb\", \"GRiMM\", \"PrimeFix\"), \"Amazon Prime\"), \"2160p\"), regexMatched(regexMatched(streams, \"OnlyWeb\", \"GRiMM\", \"PrimeFix\"), \"Amazon Prime\")) : []",
     "score": -3000,
     "enabled": true
   },
@@ -640,12 +650,12 @@
     "enabled": true
   },
   {
-    "expression": "/*#Radarr*/ /*Banned Language Groups*/ queryType=='movie' ? regexMatched(streams, \"CYPHER\", \"TURG\", \"NIMA4K\", \"pmHD\", \"TvR\", \"tokar86a\", \"KiNGSMAN\") : []",
+    "expression": "/*#Radarr*/ /*Banned Language Groups*/ queryType=='movie' ? regexMatched(streams, \"CYPHER\", \"TURG\", \"NIMA4K\", \"pmHD\", \"TvR\", \"tokar86a\", \"KiNGSMAN\", \"4kHdHub\", \"CPTN5DW\", \"PMI\", \"ViSTA\") : []",
     "score": -999999,
     "enabled": true
   },
   {
-    "expression": "/*#Sonarr*/ /*Banned Language Groups*/ queryType=='series' ? regexMatched(streams, \"CYPHER\", \"TURG\", \"NIMA4K\", \"pmHD\", \"TvR\", \"tokar86a\", \"KiNGSMAN\") : []",
+    "expression": "/*#Sonarr*/ /*Banned Language Groups*/ queryType=='series' ? regexMatched(streams, \"CYPHER\", \"TURG\", \"NIMA4K\", \"pmHD\", \"TvR\", \"tokar86a\", \"KiNGSMAN\", \"4kHdHub\", \"CPTN5DW\", \"PMI\", \"ViSTA\") : []",
     "score": -999999,
     "enabled": true
   },
@@ -721,7 +731,7 @@
   },
   {
     "expression": "/*#Sonarr*/ /*DSNP*/ queryType=='series' ? merge(quality(regexMatched(streams, \"Disney+\"), \"WEB-DL\"), quality(regexMatched(streams, \"Disney+\"), \"WEBRip\")) : []",
-    "score": 3000,
+    "score": 2000,
     "enabled": true
   },
   {
@@ -812,11 +822,6 @@
   {
     "expression": "/*#Sonarr*/ /*DVD Remux*/ queryType=='series' ? quality(regexMatched(streams, \"Remux\"), \"DVDRip\", \"DVD REMUX\") : []",
     "score": 220000,
-    "enabled": true
-  },
-  {
-    "expression": "/*#Sonarr*/ /*Disney+ Enhancement*/ queryType=='series' ? negate(resolution(regexMatched(streams, \"Disney+\"), \"2160p\"), regexMatched(streams, \"Disney+\")) : []",
-    "score": -1000,
     "enabled": true
   },
   {
@@ -1031,7 +1036,7 @@
   },
   {
     "expression": "/*#Sonarr*/ /*NF*/ queryType=='series' ? merge(quality(regexMatched(streams, \"Netflix\"), \"WEB-DL\"), quality(regexMatched(streams, \"Netflix\"), \"WEBRip\")) : []",
-    "score": 1000,
+    "score": 3000,
     "enabled": true
   },
   {
@@ -1042,6 +1047,11 @@
   {
     "expression": "/*#Sonarr*/ /*NOW*/ queryType=='series' ? merge(quality(regexMatched(streams, \"Now\", \"Now Rename\"), \"WEB-DL\"), quality(regexMatched(streams, \"Now\", \"Now Rename\"), \"WEBRip\")) : []",
     "score": 0,
+    "enabled": true
+  },
+  {
+    "expression": "/*#Sonarr*/ /*Netflix Enhancement*/ queryType=='series' ? negate(resolution(regexMatched(streams, \"Netflix\"), \"2160p\"), regexMatched(streams, \"Netflix\")) : []",
+    "score": -2000,
     "enabled": true
   },
   {

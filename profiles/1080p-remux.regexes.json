@@ -20,6 +20,11 @@
     "score": 0
   },
   {
+    "name": "4kHdHub",
+    "pattern": "/(?<=^|[\\s.-])4kHdHub\\b/i",
+    "score": 0
+  },
+  {
     "name": "576p",
     "pattern": "/\\b(576p)\\b/i",
     "score": 0
@@ -95,8 +100,13 @@
     "score": 0
   },
   {
+    "name": "Apple TV",
+    "pattern": "/\\b(ATV)\\b/i",
+    "score": 0
+  },
+  {
     "name": "Apple TV+",
-    "pattern": "/\\b(ATVP|ATV|APTV|Apple TV\\+)\\s*\\b/i",
+    "pattern": "/\\b(ATVP|APTV|Apple TV\\+)\\s*\\b/i",
     "score": 0
   },
   {
@@ -277,6 +287,11 @@
   {
     "name": "CMRG",
     "pattern": "/(?<=^|[\\s.-])CM(a)?R(io)?G\\b/i",
+    "score": 0
+  },
+  {
+    "name": "CPTN5DW",
+    "pattern": "/(?<=^|[\\s.-])CPTN5DW\\b/i",
     "score": 0
   },
   {

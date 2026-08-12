@@ -350,13 +350,23 @@
     "enabled": true
   },
   {
+    "expression": "/*#Radarr*/ /*ATV*/ queryType=='movie' ? merge(quality(regexMatched(streams, \"Apple TV\"), \"WEB-DL\"), quality(regexMatched(streams, \"Apple TV\"), \"WEBRip\")) : []",
+    "score": 2000,
+    "enabled": true
+  },
+  {
+    "expression": "/*#Sonarr*/ /*ATV*/ queryType=='series' ? merge(quality(regexMatched(streams, \"Apple TV\"), \"WEB-DL\"), quality(regexMatched(streams, \"Apple TV\"), \"WEBRip\")) : []",
+    "score": 2000,
+    "enabled": true
+  },
+  {
     "expression": "/*#Radarr*/ /*ATVP*/ queryType=='movie' ? merge(quality(regexMatched(streams, \"Apple TV+\"), \"WEB-DL\"), quality(regexMatched(streams, \"Apple TV+\"), \"WEBRip\")) : []",
     "score": 2000,
     "enabled": true
   },
   {
     "expression": "/*#Sonarr*/ /*ATVP*/ queryType=='series' ? merge(quality(regexMatched(streams, \"Apple TV+\"), \"WEB-DL\"), quality(regexMatched(streams, \"Apple TV+\"), \"WEBRip\")) : []",
-    "score": 2000,
+    "score": 3000,
     "enabled": true
   },
   {
@@ -370,7 +380,7 @@
     "enabled": true
   },
   {
-    "expression": "/*#Sonarr*/ /*Amazon Channel Enhancement*/ queryType=='series' ? negate(resolution(regexMatched(regexMatched(streams, \"OnlyWeb\", \"GRiMM\", \"PrimeFix\", \"ViSTA\", \"PMI\"), \"Amazon Prime\"), \"2160p\"), regexMatched(regexMatched(streams, \"OnlyWeb\", \"GRiMM\", \"PrimeFix\", \"ViSTA\", \"PMI\"), \"Amazon Prime\")) : []",
+    "expression": "/*#Sonarr*/ /*Amazon Channel Enhancement*/ queryType=='series' ? negate(resolution(regexMatched(regexMatched(streams, \"OnlyWeb\", \"GRiMM\", \"PrimeFix\"), \"Amazon Prime\"), \"2160p\"), regexMatched(regexMatched(streams, \"OnlyWeb\", \"GRiMM\", \"PrimeFix\"), \"Amazon Prime\")) : []",
     "score": -3000,
     "enabled": true
   },
@@ -425,12 +435,12 @@
     "enabled": true
   },
   {
-    "expression": "/*#Radarr*/ /*Banned Language Groups*/ queryType=='movie' ? regexMatched(streams, \"CYPHER\", \"TURG\", \"NIMA4K\", \"pmHD\", \"TvR\", \"tokar86a\", \"KiNGSMAN\") : []",
+    "expression": "/*#Radarr*/ /*Banned Language Groups*/ queryType=='movie' ? regexMatched(streams, \"CYPHER\", \"TURG\", \"NIMA4K\", \"pmHD\", \"TvR\", \"tokar86a\", \"KiNGSMAN\", \"4kHdHub\", \"CPTN5DW\", \"PMI\", \"ViSTA\") : []",
     "score": -999999,
     "enabled": true
   },
   {
-    "expression": "/*#Sonarr*/ /*Banned Language Groups*/ queryType=='series' ? regexMatched(streams, \"CYPHER\", \"TURG\", \"NIMA4K\", \"pmHD\", \"TvR\", \"tokar86a\", \"KiNGSMAN\") : []",
+    "expression": "/*#Sonarr*/ /*Banned Language Groups*/ queryType=='series' ? regexMatched(streams, \"CYPHER\", \"TURG\", \"NIMA4K\", \"pmHD\", \"TvR\", \"tokar86a\", \"KiNGSMAN\", \"4kHdHub\", \"CPTN5DW\", \"PMI\", \"ViSTA\") : []",
     "score": -999999,
     "enabled": true
   },
