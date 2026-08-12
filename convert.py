@@ -20,6 +20,11 @@ its own score. Regexes referenced by a profile are emitted with the 'i' flag
 
 Verification: expression items are structurally validated (comment/quote/paren
 balance) and regexes are JS-compiled with Node when available.
+
+Size: emitted expression items are passed through collapse_expression(), a
+deterministic, semantics-preserving pass that collapses OR-of-name merges into
+multi-name regexMatched calls, folds chained negate-regexMatched blocks, and
+strips the redundant grouping parens the builders add per call argument.
 """
 
 from __future__ import annotations
@@ -386,6 +391,213 @@ def build_expression(condition_cf: dict[str, list[dict]], cf: str, side: str,
     return current
 
 
+# ------------------------------------------------------------- SEL collapse
+
+class _SelNode:
+    __slots__ = ("kind", "name", "args", "value")
+
+    def __init__(self, kind, name=None, args=None, value=None):
+        self.kind = kind
+        self.name = name
+        self.args = args or []
+        self.value = value
+
+
+def _parse_sel(s: str, i: int) -> tuple[_SelNode, int]:
+    """Recursive-descent parse of a nested-call SEL body (no infix ops)."""
+    n = len(s)
+    while i < n and s[i] in " \t\r\n":
+        i += 1
+    if i >= n:
+        raise ValueError("unexpected end of expression")
+    c = s[i]
+    if c == "(":
+        inner, j = _parse_sel(s, i + 1)
+        while j < n and s[j] in " \t\r\n":
+            j += 1
+        if j < n and s[j] == ")":
+            j += 1
+        return inner, j
+    if c in "\"'":
+        quote = c
+        j = i + 1
+        buf: list[str] = []
+        while j < n:
+            ch = s[j]
+            if ch == "\\":
+                buf.append(s[j:j + 2])
+                j += 2
+                continue
+            if ch == quote:
+                j += 1
+                break
+            buf.append(ch)
+            j += 1
+        return _SelNode("str", value=quote + "".join(buf) + quote), j
+    if c == "[":
+        j = i
+        depth = 0
+        while j < n:
+            if s[j] == "[":
+                depth += 1
+            elif s[j] == "]":
+                depth -= 1
+                if depth == 0:
+                    j += 1
+                    break
+            j += 1
+        return _SelNode("list"), j
+    if c.isalpha() or c == "_":
+        j = i
+        while j < n and (s[j].isalnum() or s[j] == "_"):
+            j += 1
+        name = s[i:j]
+        k = j
+        while k < n and s[k] in " \t\r\n":
+            k += 1
+        if k < n and s[k] == "(":
+            args: list[_SelNode] = []
+            k += 1
+            while True:
+                while k < n and s[k] in " \t\r\n":
+                    k += 1
+                if s[k] == ")":
+                    k += 1
+                    break
+                arg, k = _parse_sel(s, k)
+                args.append(arg)
+                while k < n and s[k] in " \t\r\n":
+                    k += 1
+                if k < n and s[k] == ",":
+                    k += 1
+                    continue
+                if k < n and s[k] == ")":
+                    k += 1
+                    break
+                raise ValueError(f"malformed argument list at offset {k}")
+            return _SelNode("call", name=name, args=args), k
+        return _SelNode("ident", name=name), j
+    raise ValueError(f"unexpected character {c!r} at offset {i}")
+
+
+def _render_sel(node: _SelNode) -> str:
+    if node.kind == "str":
+        return node.value
+    if node.kind == "ident":
+        return node.name
+    if node.kind == "list":
+        return "[]"
+    return f"{node.name}({', '.join(_render_sel(a) for a in node.args)})"
+
+
+def _plain_str(node: _SelNode) -> str | None:
+    """The inner text of a plain double-quoted string, else None."""
+    if node.kind != "str" or not (node.value.startswith('"')
+                                  and node.value.endswith('"')):
+        return None
+    inner = node.value[1:-1]
+    if '"' in inner:
+        return None
+    return inner
+
+
+def _regex_name(node: _SelNode) -> str | None:
+    """The name string if node is exactly regexMatched(streams, \"name\")."""
+    if node.kind != "call" or node.name != "regexMatched":
+        return None
+    if len(node.args) != 2:
+        return None
+    base, val = node.args
+    if base.kind != "ident" or base.name != "streams":
+        return None
+    return _plain_str(val)
+
+
+def _collapse_negate_chain(node: _SelNode) -> bool:
+    """Collapse negate(regexMatched(cur, n_i), cur) chains produced by chained
+    required conditions into one negate(regexMatched(base, n_1..n_k), base).
+
+    Runs on the raw tree before child collapse so the twin copies of `cur`
+    (regexMatched's first arg vs negate's second arg) still render identically.
+    Semantics: negate(match, base) == base AND NOT match, so chaining
+    `cur = negate(regexMatched(cur, n_i), cur)` is exactly
+    `base AND NOT (n_1 OR ... OR n_k)`.
+    """
+    cur = node
+    names: list[str] = []
+    while cur.kind == "call" and cur.name == "negate" and len(cur.args) == 2:
+        rm, base = cur.args
+        if not (rm.kind == "call" and rm.name == "regexMatched"):
+            break
+        if not rm.args or not all(_plain_str(a) is not None for a in rm.args[1:]):
+            break
+        if _render_sel(rm.args[0]) != _render_sel(base):
+            break
+        names.extend(n for n in (_plain_str(a) for a in rm.args[1:]) if n is not None)
+        cur = base
+    if len(names) < 2:
+        return False
+    names = list(reversed(names))
+    node.kind = "call"
+    node.name = "negate"
+    node.args = [
+        _SelNode("call", name="regexMatched",
+                 args=[cur] + [_SelNode("str", value=f'"{n}"') for n in names]),
+        cur,
+    ]
+    return True
+
+
+def _optimize_sel_node(node: _SelNode) -> None:
+    if node.kind != "call":
+        return
+    if node.name == "negate" and len(node.args) == 2 and _collapse_negate_chain(node):
+        for a in node.args:
+            _optimize_sel_node(a)
+        return
+    for a in node.args:
+        _optimize_sel_node(a)
+    if node.name == "merge":
+        names = [_regex_name(a) for a in node.args]
+        if len(node.args) >= 2 and all(n is not None for n in names):
+            node.name = "regexMatched"
+            node.args = [_SelNode("ident", name="streams")] + [
+                _SelNode("str", value=f'"{n}"') for n in names
+            ]
+
+
+_EXPR_BODY_RE = re.compile(
+    r"^(.*queryType=='(movie|series)' \? )(.*)( : \[\])$", re.S)
+
+
+def collapse_expression(expression: str) -> str:
+    """Deterministic SEL size reduction on a generated expression item.
+
+    Two idempotent rewrites, both semantics-preserving:
+      - merge(regexMatched(streams, n1), regexMatched(streams, n2), ...)
+        -> regexMatched(streams, n1, n2, ...)   (OR of name matches)
+      - negate(regexMatched(cur, n_i), cur) chains
+        -> negate(regexMatched(base, n_1, ..., n_k), base)
+    plus removal of the redundant grouping parens the builders add around
+    every call argument. Unknown shapes are returned untouched.
+    """
+    m = _EXPR_BODY_RE.match(expression)
+    if not m:
+        return expression
+    prefix, body, suffix = m.group(1), m.group(3), m.group(4)
+    try:
+        node, end = _parse_sel(body, 0)
+    except ValueError:
+        return expression
+    k = end
+    while k < len(body) and body[k] in " \t\r\n":
+        k += 1
+    if k != len(body):
+        return expression
+    _optimize_sel_node(node)
+    return prefix + _render_sel(node) + suffix
+
+
 # ------------------------------------------------------------------ output
 
 def to_expression_item(guard: str, label: str, name: str, expr: str,
@@ -491,6 +703,7 @@ def convert_profile(db: sqlite3.Connection, profile: str, out_dir: Path,
                 continue
 
             item = to_expression_item(guard, label, cf, expr, score)
+            item["expression"] = collapse_expression(item["expression"])
             if not sel_balanced(item["expression"]):
                 stats["skipped"].append(f"{cf} [{side}]: unbalanced SEL")
                 continue
