@@ -50,6 +50,11 @@
     "score": 0
   },
   {
+    "name": "ACEM",
+    "pattern": "/^(ACEM)$/i",
+    "score": 0
+  },
+  {
     "name": "ADN",
     "pattern": "/\\b(ADN)\\b/i",
     "score": 0

@@ -270,12 +270,12 @@
     "enabled": true
   },
   {
-    "expression": "/*#Radarr*/ /*Dumpstarr LQ Groups*/ queryType=='movie' ? regexMatched(streams, \"E\", \"LUCY\", \"POWER\", \"TARDiS\", \"Tofu4U\", \"Pikanet128\", \"NLKIDS\", \"HiggsBoson\", \"JFF\", \"DUDU\", \"FIEND\", \"GGEZ\", \"T3KASHi\") : []",
+    "expression": "/*#Radarr*/ /*Dumpstarr LQ Groups*/ queryType=='movie' ? regexMatched(streams, \"E\", \"LUCY\", \"POWER\", \"TARDiS\", \"Tofu4U\", \"Pikanet128\", \"NLKIDS\", \"HiggsBoson\", \"JFF\", \"DUDU\", \"FIEND\", \"GGEZ\", \"T3KASHi\", \"ACEM\") : []",
     "score": -10000,
     "enabled": true
   },
   {
-    "expression": "/*#Sonarr*/ /*Dumpstarr LQ Groups*/ queryType=='series' ? regexMatched(streams, \"E\", \"LUCY\", \"POWER\", \"TARDiS\", \"Tofu4U\", \"Pikanet128\", \"NLKIDS\", \"HiggsBoson\", \"JFF\", \"DUDU\", \"FIEND\", \"GGEZ\", \"T3KASHi\") : []",
+    "expression": "/*#Sonarr*/ /*Dumpstarr LQ Groups*/ queryType=='series' ? regexMatched(streams, \"E\", \"LUCY\", \"POWER\", \"TARDiS\", \"Tofu4U\", \"Pikanet128\", \"NLKIDS\", \"HiggsBoson\", \"JFF\", \"DUDU\", \"FIEND\", \"GGEZ\", \"T3KASHi\", \"ACEM\") : []",
     "score": -10000,
     "enabled": true
   },
