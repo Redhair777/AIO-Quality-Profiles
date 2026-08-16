@@ -1,7 +1,0 @@
-[
-  {
-    "expression": "/*#Sonarr*/ /*Anime Web Tier 04*/ queryType=='anime.series' ? merge(quality(regexMatched(streams, \"Erai-Raws\", \"ToonsHub\", \"VARYG\"), \"HDTV\"), quality(regexMatched(streams, \"Erai-Raws\", \"ToonsHub\", \"VARYG\"), \"WEB-DL\"), quality(regexMatched(streams, \"Erai-Raws\", \"ToonsHub\", \"VARYG\"), \"WEBRip\")) : []",
-    "score": 777777,
-    "enabled": true
-  }
-]
