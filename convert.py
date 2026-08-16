@@ -15,8 +15,11 @@ Condition semantics mirror Profilarr's evaluator (and Radarr/Sonarr):
 
 Scoring: a profile/CF can carry a per-side score; each side is emitted as a
 separate ranked expression item guarded by queryType ('movie'/'series') carrying
-its own score. Regexes referenced by a profile are emitted with the 'i' flag
-(Radarr compiles all specs with RegexOptions.IgnoreCase).
+its own score. Anime profiles (see is_anime_profile) are guarded by
+'anime.movie'/'anime.series' instead, so they only fire for anime-scoped
+queries and never cross-score plain movie/series content. Regexes referenced
+by a profile are emitted with the 'i' flag (Radarr compiles all specs with
+RegexOptions.IgnoreCase).
 
 Verification: expression items are structurally validated (comment/quote/paren
 balance) and regexes are JS-compiled with Node when available.
@@ -84,6 +87,26 @@ class CFError(Exception):
 def slugify(name: str) -> str:
     slug = re.sub(r"[^a-z0-9]+", "-", name.lower()).strip("-")
     return slug or "profile"
+
+
+def is_anime_profile(profile: str) -> bool:
+    """True for anime-scoped quality profiles (Dumpstarr 'Anime 1080p',
+    trash-pcd '[Anime] Remux-1080p').
+
+    Anime profiles must branch on queryType=='anime.movie'/'anime.series'
+    (the AIOStreams anime query types) instead of plain 'movie'/'series',
+    otherwise they also fire for, and cross-score, non-anime content. Kept
+    here in convert.py (not patched into the JSON) so every regeneration -
+    including the automated daily sync - preserves the scoping.
+    """
+    return "anime" in profile.lower()
+
+
+def guards_for_profile(profile: str) -> tuple[str, str]:
+    """The queryType guards emitted for radarr/sonarr sides of a profile."""
+    if is_anime_profile(profile):
+        return "anime.movie", "anime.series"
+    return "movie", "series"
 
 
 def iter_profiles(db: sqlite3.Connection) -> list[str]:
@@ -570,7 +593,8 @@ def _optimize_sel_node(node: _SelNode) -> None:
 
 
 _EXPR_BODY_RE = re.compile(
-    r"^(.*queryType=='(movie|series)' \? )(.*)( : \[\])$", re.S)
+    r"^(.*queryType=='(anime\.movie|anime\.series|movie|series)' \? )(.*)( : \[\])$",
+    re.S)
 
 
 def collapse_expression(expression: str) -> str:
@@ -677,6 +701,7 @@ def convert_profile(db: sqlite3.Connection, profile: str, out_dir: Path,
                     invalid: set[str]) -> dict:
     scores = profile_scores(db, profile)
     slug = slugify(profile)
+    guard_movie, guard_series = guards_for_profile(profile)
 
     items: list[dict] = []
     used_regex_names: set[str] = set()
@@ -691,8 +716,8 @@ def convert_profile(db: sqlite3.Connection, profile: str, out_dir: Path,
 
     for cf in sorted(scores):
         for side, label, guard in (
-            ("radarr", "Radarr", "movie"),
-            ("sonarr", "Sonarr", "series"),
+            ("radarr", "Radarr", guard_movie),
+            ("sonarr", "Sonarr", guard_series),
         ):
             score = effective_score(scores[cf], side)
             if score is None:
