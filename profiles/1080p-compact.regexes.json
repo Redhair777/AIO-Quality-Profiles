@@ -255,6 +255,11 @@
     "score": 0
   },
   {
+    "name": "CRiME",
+    "pattern": "/(?<=^|[\\s.-])CRiME\\b/i",
+    "score": 0
+  },
+  {
     "name": "CRiSC",
     "pattern": "/(?<=^|[\\s.-])CRiSC\\b/i",
     "score": 0
@@ -557,6 +562,11 @@
   {
     "name": "HBO Max",
     "pattern": "/\\b(HMAX|HBOM)\\b|\\bHBO[ ._-]?MAX[ ._-]WEB[ ._-]?(DL|RIP)\\b/i",
+    "score": 0
+  },
+  {
+    "name": "HDL",
+    "pattern": "/(?<=^|[\\s.-])HDL\\b/i",
     "score": 0
   },
   {
@@ -915,6 +925,11 @@
     "score": 0
   },
   {
+    "name": "OmertaHD",
+    "pattern": "/(?<=^|[\\s.-])OmertaHD\\b/i",
+    "score": 0
+  },
+  {
     "name": "OnlyWeb",
     "pattern": "/(?<=^|[\\s.-])OnlyWeb\\b/i",
     "score": 0
@@ -1032,6 +1047,11 @@
   {
     "name": "REBORN",
     "pattern": "/(?<=^|[\\s.-])REBORN\\b/i",
+    "score": 0
+  },
+  {
+    "name": "REPTiLE",
+    "pattern": "/(?<=^|[\\s.-])REPTiLE\\b/i",
     "score": 0
   },
   {
@@ -1217,6 +1237,11 @@
   {
     "name": "Stan Rename",
     "pattern": "/\\[(STAN)\\b|\\b(STAN)\\]/i",
+    "score": 0
+  },
+  {
+    "name": "SuBHD",
+    "pattern": "/(?<=^|[\\s.-])SuBHD\\b/i",
     "score": 0
   },
   {
