@@ -435,6 +435,11 @@
     "score": 0
   },
   {
+    "name": "Eby",
+    "pattern": "/(?<=^|[\\s.-])Eby\\b/i",
+    "score": 0
+  },
+  {
     "name": "EuReKA",
     "pattern": "/(?<=^|[\\s.-])EuReKA\\b/i",
     "score": 0
@@ -447,6 +452,11 @@
   {
     "name": "Extended Edition",
     "pattern": "/(?<=\\b[12]\\d{3}\\b).*\\b(Extended)(\\b|\\d)/i",
+    "score": 0
+  },
+  {
+    "name": "FANDANGO",
+    "pattern": "/(?<=^|[\\s.-])FANDANGO\\b/i",
     "score": 0
   },
   {
@@ -565,6 +575,16 @@
     "score": 0
   },
   {
+    "name": "HDV",
+    "pattern": "/(?<=^|[\\s.-])HDV\\b/i",
+    "score": 0
+  },
+  {
+    "name": "HDv0T",
+    "pattern": "/(?<=^|[\\s.-])HDv0T\\b/i",
+    "score": 0
+  },
+  {
     "name": "HHWEB",
     "pattern": "/(?<=^|[\\s.-])HHWEB\\b/i",
     "score": 0
@@ -660,6 +680,11 @@
     "score": 0
   },
   {
+    "name": "Krispy",
+    "pattern": "/(?<=^|[\\s.-])Krispy\\b/i",
+    "score": 0
+  },
+  {
     "name": "LAMA",
     "pattern": "/(?<=^|[\\s.-])LAMA\\b/i",
     "score": 0
@@ -702,6 +727,11 @@
   {
     "name": "MAMA",
     "pattern": "/(?<=^|[\\s.-])MAMA\\b/i",
+    "score": 0
+  },
+  {
+    "name": "MDR",
+    "pattern": "/(?<=^|[\\s.-])MDR\\b/i",
     "score": 0
   },
   {
@@ -830,6 +860,11 @@
     "score": 0
   },
   {
+    "name": "NorTV",
+    "pattern": "/(?<=^|[\\s.-])NorTV\\b/i",
+    "score": 0
+  },
+  {
     "name": "Now",
     "pattern": "/\\b(now)\\b[ ._-]web[ ._-]?(dl|rip)?\\b/i",
     "score": 0
@@ -922,6 +957,16 @@
   {
     "name": "Peacock TV",
     "pattern": "/\\bPCOK\\b|\\bPeacock[ ._-]WEB[ ._-]?(DL|RIP)?\\b/i",
+    "score": 0
+  },
+  {
+    "name": "PerfectionHD",
+    "pattern": "/(?<=^|[\\s.-])PerfectionHD\\b/i",
+    "score": 0
+  },
+  {
+    "name": "PiPicK",
+    "pattern": "/(?<=^|[\\s.-])PiPicK\\b/i",
     "score": 0
   },
   {
@@ -1100,6 +1145,11 @@
     "score": 0
   },
   {
+    "name": "SillyBird",
+    "pattern": "/(?<=^|[\\s.-])SillyBird\\b/i",
+    "score": 0
+  },
+  {
     "name": "Sing Along",
     "pattern": "/(?<=\\b[12]\\d{3}\\b).*\\b(Sing[-_. ]Along)\\b/i",
     "score": 0
@@ -1227,6 +1277,11 @@
   {
     "name": "TnP",
     "pattern": "/(?<=^|[\\s.-])TnP\\b/i",
+    "score": 0
+  },
+  {
+    "name": "ToK",
+    "pattern": "/(?<=^|[\\s.-])ToK\\b/i",
     "score": 0
   },
   {
@@ -1407,6 +1462,11 @@
   {
     "name": "iFT",
     "pattern": "/(?<=^|[\\s.-])iFT\\b/i",
+    "score": 0
+  },
+  {
+    "name": "iNFLiKTED",
+    "pattern": "/(?<=^|[\\s.-])iNFLiKTED\\b/i",
     "score": 0
   },
   {

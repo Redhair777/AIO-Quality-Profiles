@@ -505,6 +505,11 @@
     "score": 0
   },
   {
+    "name": "EBCP",
+    "pattern": "/(?<=^|[\\s.-])EBCP\\b/i",
+    "score": 0
+  },
+  {
     "name": "EDPH",
     "pattern": "/(?<=^|[\\s.-])EDPH\\b/i",
     "score": 0
@@ -535,6 +540,11 @@
     "score": 0
   },
   {
+    "name": "Eby",
+    "pattern": "/(?<=^|[\\s.-])Eby\\b/i",
+    "score": 0
+  },
+  {
     "name": "EuReKA",
     "pattern": "/(?<=^|[\\s.-])EuReKA\\b/i",
     "score": 0
@@ -547,6 +557,11 @@
   {
     "name": "Extended Edition",
     "pattern": "/(?<=\\b[12]\\d{3}\\b).*\\b(Extended)(\\b|\\d)/i",
+    "score": 0
+  },
+  {
+    "name": "FANDANGO",
+    "pattern": "/(?<=^|[\\s.-])FANDANGO\\b/i",
     "score": 0
   },
   {
@@ -595,6 +610,11 @@
     "score": 0
   },
   {
+    "name": "GL",
+    "pattern": "/(?<=^|[\\s.-])GL\\b/i",
+    "score": 0
+  },
+  {
     "name": "GNOME",
     "pattern": "/(?<=^|[\\s.-])GNOME\\b/i",
     "score": 0
@@ -637,6 +657,11 @@
   {
     "name": "Grayscale",
     "pattern": "/(?<=\\b[12]\\d{3}\\b).*\\b(Gr[ae]y([ ._-]?(scale))?)\\b(?!$)/i",
+    "score": 0
+  },
+  {
+    "name": "H@M",
+    "pattern": "/(?<=^|[\\s.-])H@M\\b/i",
     "score": 0
   },
   {
@@ -685,8 +710,18 @@
     "score": 0
   },
   {
+    "name": "HDV",
+    "pattern": "/(?<=^|[\\s.-])HDV\\b/i",
+    "score": 0
+  },
+  {
     "name": "HDmonSK",
     "pattern": "/(?<=^|[\\s.-])HDmonSK\\b/i",
+    "score": 0
+  },
+  {
+    "name": "HDv0T",
+    "pattern": "/(?<=^|[\\s.-])HDv0T\\b/i",
     "score": 0
   },
   {
@@ -805,6 +840,11 @@
     "score": 0
   },
   {
+    "name": "Krispy",
+    "pattern": "/(?<=^|[\\s.-])Krispy\\b/i",
+    "score": 0
+  },
+  {
     "name": "LAMA",
     "pattern": "/(?<=^|[\\s.-])LAMA\\b/i",
     "score": 0
@@ -852,6 +892,11 @@
   {
     "name": "MAMA",
     "pattern": "/(?<=^|[\\s.-])MAMA\\b/i",
+    "score": 0
+  },
+  {
+    "name": "MDR",
+    "pattern": "/(?<=^|[\\s.-])MDR\\b/i",
     "score": 0
   },
   {
@@ -990,6 +1035,11 @@
     "score": 0
   },
   {
+    "name": "NorTV",
+    "pattern": "/(?<=^|[\\s.-])NorTV\\b/i",
+    "score": 0
+  },
+  {
     "name": "Now",
     "pattern": "/\\b(now)\\b[ ._-]web[ ._-]?(dl|rip)?\\b/i",
     "score": 0
@@ -1107,6 +1157,16 @@
   {
     "name": "Penumbra",
     "pattern": "/(?<=^|[\\s.-])Penumbra\\b/i",
+    "score": 0
+  },
+  {
+    "name": "PerfectionHD",
+    "pattern": "/(?<=^|[\\s.-])PerfectionHD\\b/i",
+    "score": 0
+  },
+  {
+    "name": "PiPicK",
+    "pattern": "/(?<=^|[\\s.-])PiPicK\\b/i",
     "score": 0
   },
   {
@@ -1330,6 +1390,11 @@
     "score": 0
   },
   {
+    "name": "SillyBird",
+    "pattern": "/(?<=^|[\\s.-])SillyBird\\b/i",
+    "score": 0
+  },
+  {
     "name": "Sing Along",
     "pattern": "/(?<=\\b[12]\\d{3}\\b).*\\b(Sing[-_. ]Along)\\b/i",
     "score": 0
@@ -1470,6 +1535,11 @@
     "score": 0
   },
   {
+    "name": "ToK",
+    "pattern": "/(?<=^|[\\s.-])ToK\\b/i",
+    "score": 0
+  },
+  {
     "name": "TrueHD",
     "pattern": "/True[ .-]?HD[ .-]?/i",
     "score": 0
@@ -1565,6 +1635,11 @@
     "score": 0
   },
   {
+    "name": "VorteX",
+    "pattern": "/(?<=^|[\\s.-])VorteX\\b/i",
+    "score": 0
+  },
+  {
     "name": "W4NK3R",
     "pattern": "/(?<=^|[\\s.-])W4NK3R\\b/i",
     "score": 0
@@ -1635,6 +1710,11 @@
     "score": 0
   },
   {
+    "name": "aNDy",
+    "pattern": "/(?<=^|[\\s.-])aNDy\\b/i",
+    "score": 0
+  },
+  {
     "name": "alfaHD",
     "pattern": "/(?<=^|[\\s.-])alfaHD\\b/i",
     "score": 0
@@ -1702,6 +1782,11 @@
   {
     "name": "iLoveHD",
     "pattern": "/(?<=^|[\\s.-])iLoveHD\\b/i",
+    "score": 0
+  },
+  {
+    "name": "iNFLiKTED",
+    "pattern": "/(?<=^|[\\s.-])iNFLiKTED\\b/i",
     "score": 0
   },
   {
