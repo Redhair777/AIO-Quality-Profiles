@@ -330,12 +330,12 @@
     "enabled": true
   },
   {
-    "expression": "/*#Radarr*/ /*720p HDTV Tier 3*/ queryType=='movie' ? quality(resolution(regexMatched(regexMatched(streams, \"HANDJOB\"), \"HDTV\"), \"1080p\"), \"HDTV\") : []",
+    "expression": "/*#Radarr*/ /*720p HDTV Tier 3*/ queryType=='movie' ? quality(resolution(regexMatched(regexMatched(streams, \"HANDJOB\"), \"HDTV\"), \"720p\"), \"HDTV\") : []",
     "score": 20000,
     "enabled": true
   },
   {
-    "expression": "/*#Sonarr*/ /*720p HDTV Tier 3*/ queryType=='series' ? quality(resolution(regexMatched(regexMatched(streams, \"HANDJOB\"), \"HDTV\"), \"1080p\"), \"HDTV\") : []",
+    "expression": "/*#Sonarr*/ /*720p HDTV Tier 3*/ queryType=='series' ? quality(resolution(regexMatched(regexMatched(streams, \"HANDJOB\"), \"HDTV\"), \"720p\"), \"HDTV\") : []",
     "score": 20000,
     "enabled": true
   },
