@@ -231,7 +231,7 @@
   },
   {
     "name": "CAM",
-    "pattern": "/(?<=\\b[12]\\d{3}\\b).*(\\b(CAM[ ._-]?(Rip)?|DVD[ ._-]?(SCR(EENER)?)|HD[ ._-]?(CAM|SCR|TC|TS)|SCREENER|TELE(CINE|SYNC)|WORKPRINT)\\b)/i",
+    "pattern": "/(?<=\\b[12]\\d{3}\\b).*(\\b(CAM[ ._-]?(Rip)?|DCP(RIP)?|DVD[ ._-]?(SCR(EENER)?)|HD[ ._-]?(CAM|SCR|TC|TS)|SCREENER|TELE(CINE|SYNC)|WORKPRINT)\\b)/i",
     "score": 0
   },
   {
