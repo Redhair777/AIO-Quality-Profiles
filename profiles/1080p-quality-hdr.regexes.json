@@ -120,6 +120,11 @@
     "score": 0
   },
   {
+    "name": "BBW",
+    "pattern": "/(?<=^|[\\s.-])BBW\\b/i",
+    "score": 0
+  },
+  {
     "name": "BHDStudio",
     "pattern": "/(?<=^|[\\s.-])BHDStudio\\b/i",
     "score": 0
@@ -470,6 +475,11 @@
     "score": 0
   },
   {
+    "name": "E76",
+    "pattern": "/(?<=^|[\\s.-])E76\\b/i",
+    "score": 0
+  },
+  {
     "name": "EA",
     "pattern": "/(?<=^|[\\s.-])EA\\b/i",
     "score": 0
@@ -542,6 +552,11 @@
   {
     "name": "FLUX",
     "pattern": "/(?<=^|[\\s.-])FLUX\\b/i",
+    "score": 0
+  },
+  {
+    "name": "FTO",
+    "pattern": "/(?<=^|[\\s.-])FTO\\b/i",
     "score": 0
   },
   {
@@ -690,6 +705,11 @@
     "score": 0
   },
   {
+    "name": "HDxT",
+    "pattern": "/(?<=^|[\\s.-])HDxT\\b/i",
+    "score": 0
+  },
+  {
     "name": "HHWEB",
     "pattern": "/(?<=^|[\\s.-])HHWEB\\b/i",
     "score": 0
@@ -757,6 +777,11 @@
   {
     "name": "Ivandro",
     "pattern": "/(?<=^|[\\s.-])Ivandro\\b/i",
+    "score": 0
+  },
+  {
+    "name": "JewelBox",
+    "pattern": "/(?<=^|[\\s.-])JewelBox\\b/i",
     "score": 0
   },
   {
@@ -847,6 +872,11 @@
   {
     "name": "MDR",
     "pattern": "/(?<=^|[\\s.-])MDR\\b/i",
+    "score": 0
+  },
+  {
+    "name": "MKu",
+    "pattern": "/(?<=^|[\\s.-])MKu\\b/i",
     "score": 0
   },
   {
@@ -1005,6 +1035,11 @@
     "score": 0
   },
   {
+    "name": "OB1",
+    "pattern": "/(?<=^|[\\s.-])OB1\\b/i",
+    "score": 0
+  },
+  {
     "name": "OEPlus",
     "pattern": "/(?<=^|[\\s.-])OEPlus\\b/i",
     "score": 0
@@ -1047,6 +1082,11 @@
   {
     "name": "Opus (Negation)",
     "pattern": "/(?<=^|[\\s.-])OPUS\\b/i",
+    "score": 0
+  },
+  {
+    "name": "Otaibi",
+    "pattern": "/(?<=^|[\\s.-])Otaibi\\b/i",
     "score": 0
   },
   {
@@ -1147,6 +1187,11 @@
   {
     "name": "RAWR",
     "pattern": "/(?<=^|[\\s.-])RAWR\\b/i",
+    "score": 0
+  },
+  {
+    "name": "RDK123",
+    "pattern": "/(?<=^|[\\s.-])RDK123\\b/i",
     "score": 0
   },
   {
@@ -1490,6 +1535,11 @@
     "score": 0
   },
   {
+    "name": "Uld",
+    "pattern": "/(?<=^|[\\s.-])Uld\\b/i",
+    "score": 0
+  },
+  {
     "name": "UnKn0wn",
     "pattern": "/(?<=^|[\\s.-])UnKn0wn\\b/i",
     "score": 0
@@ -1620,6 +1670,11 @@
     "score": 0
   },
   {
+    "name": "ZAL",
+    "pattern": "/(?<=^|[\\s.-])ZAL\\b/i",
+    "score": 0
+  },
+  {
     "name": "ZIMBO",
     "pattern": "/(?<=^|[\\s.-])ZIMBO\\b/i",
     "score": 0
@@ -1627,6 +1682,11 @@
   {
     "name": "ZQ",
     "pattern": "/(?<=^|[\\s.-])ZQ\\b/i",
+    "score": 0
+  },
+  {
+    "name": "ZiNC",
+    "pattern": "/(?<=^|[\\s.-])ZiNC\\b/i",
     "score": 0
   },
   {
@@ -1702,6 +1762,11 @@
   {
     "name": "iFT",
     "pattern": "/(?<=^|[\\s.-])iFT\\b/i",
+    "score": 0
+  },
+  {
+    "name": "iLL",
+    "pattern": "/(?<=^|[\\s.-])iLL\\b/i",
     "score": 0
   },
   {
