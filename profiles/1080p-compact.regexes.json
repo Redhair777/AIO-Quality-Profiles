@@ -240,6 +240,11 @@
     "score": 0
   },
   {
+    "name": "CONSORTiUM",
+    "pattern": "/(?<=^|[\\s.-])CONSORTiUM\\b/i",
+    "score": 0
+  },
+  {
     "name": "CPTN5DW",
     "pattern": "/(?<=^|[\\s.-])CPTN5DW\\b/i",
     "score": 0
@@ -397,6 +402,11 @@
   {
     "name": "DepraveD",
     "pattern": "/(?<=^|[\\s.-])DepraveD\\b/i",
+    "score": 0
+  },
+  {
+    "name": "DiRTY",
+    "pattern": "/(?<=^|[\\s.-])DiRTY\\b/i",
     "score": 0
   },
   {
@@ -575,6 +585,11 @@
     "score": 0
   },
   {
+    "name": "GrapeHD",
+    "pattern": "/(?<=^|[\\s.-])GrapeHD\\b/i",
+    "score": 0
+  },
+  {
     "name": "Grayscale",
     "pattern": "/(?<=\\b[12]\\d{3}\\b).*\\b(Gr[ae]y([ ._-]?(scale))?)\\b(?!$)/i",
     "score": 0
@@ -700,6 +715,11 @@
     "score": 0
   },
   {
+    "name": "IMF",
+    "pattern": "/(?<=^|[\\s.-])IMF\\b/i",
+    "score": 0
+  },
+  {
     "name": "IMNEWHERE",
     "pattern": "/(?<=^|[\\s.-])IMNEWHERE\\b/i",
     "score": 0
@@ -807,6 +827,11 @@
   {
     "name": "MAMA",
     "pattern": "/(?<=^|[\\s.-])MAMA\\b/i",
+    "score": 0
+  },
+  {
+    "name": "MCR",
+    "pattern": "/(?<=^|[\\s.-])MCR\\b/i",
     "score": 0
   },
   {
@@ -950,6 +975,11 @@
     "score": 0
   },
   {
+    "name": "NoVA",
+    "pattern": "/(?<=^|[\\s.-])NoVA\\b/i",
+    "score": 0
+  },
+  {
     "name": "Noir",
     "pattern": "/(?<=\\b[12]\\d{3}\\b).*\\b(Noir)\\b(?!$)/i",
     "score": 0
@@ -972,6 +1002,11 @@
   {
     "name": "NyHD",
     "pattern": "/(?<=^|[\\s.-])NyHD\\b/i",
+    "score": 0
+  },
+  {
+    "name": "O2STK",
+    "pattern": "/(?<=^|[\\s.-])O2STK\\b/i",
     "score": 0
   },
   {
@@ -1315,8 +1350,18 @@
     "score": 0
   },
   {
+    "name": "SpaceHD",
+    "pattern": "/(?<=^|[\\s.-])SpaceHD\\b/i",
+    "score": 0
+  },
+  {
     "name": "Special Edition",
     "pattern": "/(?<=\\b[12]\\d{3}\\b).*\\b(Cut|Directors|DC|Extended|Special|Uncensored|Uncut|Unrated|Version|(?<!{)Edition)(\\b|\\d)/i",
+    "score": 0
+  },
+  {
+    "name": "Spekt0r",
+    "pattern": "/(?<=^|[\\s.-])Spekt0r\\b/i",
     "score": 0
   },
   {
@@ -1555,6 +1600,11 @@
     "score": 0
   },
   {
+    "name": "WiHD",
+    "pattern": "/(?<=^|[\\s.-])WiHD\\b/i",
+    "score": 0
+  },
+  {
     "name": "WiKi",
     "pattern": "/(?<=^|[\\s.-])WiKi\\b/i",
     "score": 0
@@ -1667,6 +1717,11 @@
   {
     "name": "dkore",
     "pattern": "/(?<=^|[\\s.-])dkore\\b/i",
+    "score": 0
+  },
+  {
+    "name": "eckomega",
+    "pattern": "/(?<=^|[\\s.-])eckomega\\b/i",
     "score": 0
   },
   {

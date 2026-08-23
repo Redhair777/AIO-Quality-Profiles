@@ -270,6 +270,11 @@
     "score": 0
   },
   {
+    "name": "CONSORTiUM",
+    "pattern": "/(?<=^|[\\s.-])CONSORTiUM\\b/i",
+    "score": 0
+  },
+  {
     "name": "CPTN5DW",
     "pattern": "/(?<=^|[\\s.-])CPTN5DW\\b/i",
     "score": 0
@@ -422,6 +427,11 @@
   {
     "name": "DepraveD",
     "pattern": "/(?<=^|[\\s.-])DepraveD\\b/i",
+    "score": 0
+  },
+  {
+    "name": "DiRTY",
+    "pattern": "/(?<=^|[\\s.-])DiRTY\\b/i",
     "score": 0
   },
   {
@@ -600,6 +610,11 @@
     "score": 0
   },
   {
+    "name": "GR",
+    "pattern": "/(?<=^|[\\s.-])GR\\b/i",
+    "score": 0
+  },
+  {
     "name": "GRiMM",
     "pattern": "/(?<=^|[\\s.-])GRiMM\\b/i",
     "score": 0
@@ -632,6 +647,11 @@
   {
     "name": "Google TV Rename",
     "pattern": "/\\[(PLAY)\\b|\\b(PLAY)\\]/i",
+    "score": 0
+  },
+  {
+    "name": "GrapeHD",
+    "pattern": "/(?<=^|[\\s.-])GrapeHD\\b/i",
     "score": 0
   },
   {
@@ -770,6 +790,11 @@
     "score": 0
   },
   {
+    "name": "IMF",
+    "pattern": "/(?<=^|[\\s.-])IMF\\b/i",
+    "score": 0
+  },
+  {
     "name": "IMNEWHERE",
     "pattern": "/(?<=^|[\\s.-])IMNEWHERE\\b/i",
     "score": 0
@@ -777,6 +802,11 @@
   {
     "name": "Ivandro",
     "pattern": "/(?<=^|[\\s.-])Ivandro\\b/i",
+    "score": 0
+  },
+  {
+    "name": "JM",
+    "pattern": "/(?<=^|[\\s.-])JM\\b/i",
     "score": 0
   },
   {
@@ -870,6 +900,11 @@
     "score": 0
   },
   {
+    "name": "MCR",
+    "pattern": "/(?<=^|[\\s.-])MCR\\b/i",
+    "score": 0
+  },
+  {
     "name": "MDR",
     "pattern": "/(?<=^|[\\s.-])MDR\\b/i",
     "score": 0
@@ -916,7 +951,7 @@
   },
   {
     "name": "Movie Extras",
-    "pattern": "/(?<=\\b[12]\\d{3}\\b).*(\\b|\\.)\\b(Extras?|Bonus|Extended[ ._-]Clip|Special Feature[s]?)\\b/i",
+    "pattern": "/(?<=\\b[12]\\d{3}\\b).*(\\b|\\.)\\b(Extra(s)?|Bonus|Deleted[ ._-]Scene(s)?|Extended[ ._-]Clip|Special[ ._-]Feature(s)?)\\b/i",
     "score": 0
   },
   {
@@ -1010,6 +1045,11 @@
     "score": 0
   },
   {
+    "name": "NoVA",
+    "pattern": "/(?<=^|[\\s.-])NoVA\\b/i",
+    "score": 0
+  },
+  {
     "name": "Noir",
     "pattern": "/(?<=\\b[12]\\d{3}\\b).*\\b(Noir)\\b(?!$)/i",
     "score": 0
@@ -1032,6 +1072,11 @@
   {
     "name": "NyHD",
     "pattern": "/(?<=^|[\\s.-])NyHD\\b/i",
+    "score": 0
+  },
+  {
+    "name": "O2STK",
+    "pattern": "/(?<=^|[\\s.-])O2STK\\b/i",
     "score": 0
   },
   {
@@ -1325,6 +1370,11 @@
     "score": 0
   },
   {
+    "name": "Seal",
+    "pattern": "/(?<=^|[\\s.-])Seal\\b/i",
+    "score": 0
+  },
+  {
     "name": "ShieldBearer",
     "pattern": "/(?<=^|[\\s.-])ShieldBearer\\b/i",
     "score": 0
@@ -1400,8 +1450,18 @@
     "score": 0
   },
   {
+    "name": "SpaceHD",
+    "pattern": "/(?<=^|[\\s.-])SpaceHD\\b/i",
+    "score": 0
+  },
+  {
     "name": "Special Edition",
     "pattern": "/(?<=\\b[12]\\d{3}\\b).*\\b(Cut|Directors|DC|Extended|Special|Uncensored|Uncut|Unrated|Version|(?<!{)Edition)(\\b|\\d)/i",
+    "score": 0
+  },
+  {
+    "name": "Spekt0r",
+    "pattern": "/(?<=^|[\\s.-])Spekt0r\\b/i",
     "score": 0
   },
   {
@@ -1461,7 +1521,7 @@
   },
   {
     "name": "TV Extras",
-    "pattern": "/(?<=\\bS\\d+\\b).*\\b(Extras|Bonus|Extended[ ._-]Clip)\\b/i",
+    "pattern": "/(?<=\\bS\\d+\\b).*\\b(Extra(s)?|Bonus|Deleted[ ._-]Scene(s)?|Extended[ ._-]Clip)\\b/i",
     "score": 0
   },
   {
@@ -1526,7 +1586,7 @@
   },
   {
     "name": "UHD Bluray Release Groups",
-    "pattern": "/(?<=^|[\\s.-])(AJP69|ATELiER|BakedFEL|BMF|BRUTE|BSTD|BV|c0kE|CART|Chotab|CJ|coffee|CRiSC|CRX|CtrlHD|Dariush|de[42]|decibel|DON|D-Z0N3|E.N.D|E1|EA|EDPH|EbP|ESiR|EXCiSION|faBR|FoRM|FraMeSToR|GALAXY|Geek|GS88|GZ|hdalx|HDMaNiAcS|HiDt|HiFi|HiP|IDE|iFT|KASHMiR|Kitsune|LiNG|LolHD|LoRD|luvBB|NCmt|NiBuRu|nmd|NTb|NyHD|ORBiT|ORiGEN|Penumbra|playHD|Positive|PTer|PuTao|REBORN|RiCO|rightSIZE|RO|rttr|SA89|SaNcTi|SbR|SiMPLE|Softboat|SoLaR|SOP|SPHD|TayTo|TBB|TDD|TeamSyndicate|TnP|VD|VLAD|VietHD|W4NK3R|WiLF|WMING|xander|ZIMBO|ZoroSenpai|ZQ)\\b/i",
+    "pattern": "/(?<=^|[\\s.-])(AJP69|ATELiER|BakedFEL|BMF|BRUTE|BSTD|BV|c0kE|CART|Chotab|CJ|coffee|CRiSC|CRX|CtrlHD|Dariush|de[42]|decibel|DON|D-Z0N3|E.N.D|E1|EA|EDPH|EbP|ESiR|EXCiSION|faBR|FoRM|FraMeSToR|GALAXY|Geek|GS88|GZ|hdalx|HDMaNiAcS|HiDt|HiFi|HiP|IDE|iFT|JM|KASHMiR|Kitsune|LiNG|LolHD|LoRD|luvBB|NCmt|NiBuRu|nmd|NTb|NyHD|ORBiT|ORiGEN|Penumbra|playHD|Positive|PTer|PuTao|REBORN|RiCO|rightSIZE|RO|rttr|SA89|SaNcTi|SbR|SiMPLE|Softboat|SoLaR|SOP|SPHD|TayTo|TBB|TDD|TeamSyndicate|TnP|VD|VLAD|VietHD|W4NK3R|WiLF|WMING|xander|ZIMBO|ZoroSenpai|ZQ)\\b/i",
     "score": 0
   },
   {
@@ -1635,6 +1695,11 @@
     "score": 0
   },
   {
+    "name": "WiHD",
+    "pattern": "/(?<=^|[\\s.-])WiHD\\b/i",
+    "score": 0
+  },
+  {
     "name": "WiKi",
     "pattern": "/(?<=^|[\\s.-])WiKi\\b/i",
     "score": 0
@@ -1737,6 +1802,11 @@
   {
     "name": "eXterminator",
     "pattern": "/(?<=^|[\\s.-])eXterminator\\b/i",
+    "score": 0
+  },
+  {
+    "name": "eckomega",
+    "pattern": "/(?<=^|[\\s.-])eckomega\\b/i",
     "score": 0
   },
   {
