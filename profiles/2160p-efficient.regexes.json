@@ -246,7 +246,7 @@
   },
   {
     "name": "CAM",
-    "pattern": "/(?<=\\b[12]\\d{3}\\b).*(\\b(CAM[ ._-]?(Rip)?|DCP(RIP)?|DVD[ ._-]?(SCR(EENER)?)|HD[ ._-]?(CAM|SCR|TC|TS)|SCREENER|TELE(CINE|SYNC)|WORKPRINT)\\b)/i",
+    "pattern": "/(?<=\\b[12]\\d{3}\\b).*(\\b((AC3)?(LD|MD)|CAM[ ._-]?(Rip)?|DCP(RIP)?|DVD[ ._-]?(SCR(EENER)?)|HD[ ._-]?(CAM|SCR|TC|TS)|(LINE|MIC)[ ._-]?DUBBED|SCREENER|(TC|TS)(Rip)?|TELE(CINE|SYNC)|WORKPRINT)\\b)/i",
     "score": 0
   },
   {
@@ -455,6 +455,11 @@
     "score": 0
   },
   {
+    "name": "Discovery+",
+    "pattern": "/\\b(DSCP)\\b/i",
+    "score": 0
+  },
+  {
     "name": "Disney+",
     "pattern": "/\\b(dsnp|dsny(p)?|disney\\+)\\s*\\b/i",
     "score": 0
@@ -635,6 +640,11 @@
     "score": 0
   },
   {
+    "name": "GOLIATN",
+    "pattern": "/(?<=^|[\\s.-])GOLIATN\\b/i",
+    "score": 0
+  },
+  {
     "name": "GR",
     "pattern": "/(?<=^|[\\s.-])GR\\b/i",
     "score": 0
@@ -666,7 +676,7 @@
   },
   {
     "name": "Google TV",
-    "pattern": "/\\b(PLAY)\\b[ ._-]web[ ._-]?(dl|rip)?\\b/i",
+    "pattern": "/\\b(PLAY)\\b[ ._-]WEB[ ._-]?(DL|RIP)?\\b/i",
     "score": 0
   },
   {
@@ -695,8 +705,18 @@
     "score": 0
   },
   {
+    "name": "HBO",
+    "pattern": "/\\b(HBO)(?![ ._-]MAX)\\b(?=[ ._-]WEB[ ._-]?(DL|RIP)\\b)/i",
+    "score": 0
+  },
+  {
     "name": "HBO Max",
     "pattern": "/\\b(HMAX|HBOM)\\b|\\bHBO[ ._-]?MAX[ ._-]WEB[ ._-]?(DL|RIP)\\b/i",
+    "score": 0
+  },
+  {
+    "name": "HBO Rename",
+    "pattern": "/\\[(HBO)\\b|\\b(HBO)\\]/i",
     "score": 0
   },
   {
@@ -737,6 +757,11 @@
   {
     "name": "HDV",
     "pattern": "/(?<=^|[\\s.-])HDV\\b/i",
+    "score": 0
+  },
+  {
+    "name": "HDmonSK",
+    "pattern": "/(?<=^|[\\s.-])HDmonSK\\b/i",
     "score": 0
   },
   {
@@ -981,7 +1006,7 @@
   },
   {
     "name": "Max",
-    "pattern": "/\\b((?<!hbo[ ._-])max)\\b(?=[ ._-]web[ ._-]?(dl|rip)\\b)/i",
+    "pattern": "/\\b((?<!HBO[ ._-])MAX)\\b(?=[ ._-]WEB[ ._-]?(DL|RIP)\\b)/i",
     "score": 0
   },
   {
@@ -1006,7 +1031,7 @@
   },
   {
     "name": "Movies Anywhere",
-    "pattern": "/\\b(?<!dts[ .-]?hd[ .-]?)(MA|YKW)\\b(?=.*\\bweb[ ._-]?(dl|rip)\\b)/i",
+    "pattern": "/\\b(?<!DTS[ .-]?HD[ .-]?)(MA|YKW)\\b(?=.*\\bWEB[ ._-]?(DL|RIP)\\b)/i",
     "score": 0
   },
   {
@@ -1116,7 +1141,7 @@
   },
   {
     "name": "Now",
-    "pattern": "/\\b(now)\\b[ ._-]web[ ._-]?(dl|rip)?\\b/i",
+    "pattern": "/\\b(NOW)\\b[ ._-]WEB[ ._-]?(DL|RIP)?\\b/i",
     "score": 0
   },
   {
@@ -1217,6 +1242,11 @@
   {
     "name": "PMI",
     "pattern": "/(?<=^|[\\s.-])PMI\\b/i",
+    "score": 0
+  },
+  {
+    "name": "POH",
+    "pattern": "/(?<=^|[\\s.-])POH\\b/i",
     "score": 0
   },
   {
@@ -1456,7 +1486,7 @@
   },
   {
     "name": "Showtime",
-    "pattern": "/\\b(sho|showtime)\\b[ ._-]web[ ._-]?(dl|rip)?\\b/i",
+    "pattern": "/\\b(SHO|Showtime)\\b[ ._-]WEB[ ._-]?(DL|RIP)?\\b/i",
     "score": 0
   },
   {
@@ -1541,7 +1571,7 @@
   },
   {
     "name": "Stan",
-    "pattern": "/\\b(stan)\\b[ ._-]web[ ._-]?(dl|rip)?\\b/i",
+    "pattern": "/\\b(STAN)\\b[ ._-]WEB[ ._-]?(DL|RIP)?\\b/i",
     "score": 0
   },
   {
@@ -1692,6 +1722,16 @@
   {
     "name": "Upscale",
     "pattern": "/(Up[-\\.\\s]?scale|Re[-\\.\\s]?Grade|\\bAIUS\\b|AI[-\\.\\s]?enhanced)/i",
+    "score": 0
+  },
+  {
+    "name": "UxO",
+    "pattern": "/(?<=^|[\\s.-])UxO\\b/i",
+    "score": 0
+  },
+  {
+    "name": "VD",
+    "pattern": "/(?<=^|[\\s.-])VD\\b/i",
     "score": 0
   },
   {
@@ -1981,7 +2021,7 @@
   },
   {
     "name": "iTunes",
-    "pattern": "/\\b(it|itunes)\\b(?=[ ._-]web[ ._-]?(dl|rip)\\b)/i",
+    "pattern": "/\\b(iT|iTunes)\\b(?=[ ._-]WEB[ ._-]?(DL|RIP)\\b)/i",
     "score": 0
   },
   {

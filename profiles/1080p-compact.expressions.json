@@ -595,6 +595,16 @@
     "enabled": true
   },
   {
+    "expression": "/*#Radarr*/ /*DSCP*/ queryType=='movie' ? merge(quality(regexMatched(streams, \"Discovery+\"), \"WEB-DL\"), quality(regexMatched(streams, \"Discovery+\"), \"WEBRip\")) : []",
+    "score": 0,
+    "enabled": true
+  },
+  {
+    "expression": "/*#Sonarr*/ /*DSCP*/ queryType=='series' ? merge(quality(regexMatched(streams, \"Discovery+\"), \"WEB-DL\"), quality(regexMatched(streams, \"Discovery+\"), \"WEBRip\")) : []",
+    "score": 0,
+    "enabled": true
+  },
+  {
     "expression": "/*#Radarr*/ /*DSNP*/ queryType=='movie' ? merge(quality(regexMatched(streams, \"Disney+\"), \"WEB-DL\"), quality(regexMatched(streams, \"Disney+\"), \"WEBRip\")) : []",
     "score": 2000,
     "enabled": true
@@ -752,6 +762,16 @@
   {
     "expression": "/*#Sonarr*/ /*German DL*/ queryType=='series' ? regexMatched(streams, \"German DL\") : []",
     "score": -999999,
+    "enabled": true
+  },
+  {
+    "expression": "/*#Radarr*/ /*HBO*/ queryType=='movie' ? merge(quality(regexMatched(streams, \"HBO\", \"HBO Rename\"), \"WEB-DL\"), quality(regexMatched(streams, \"HBO\", \"HBO Rename\"), \"WEBRip\")) : []",
+    "score": 0,
+    "enabled": true
+  },
+  {
+    "expression": "/*#Sonarr*/ /*HBO*/ queryType=='series' ? merge(quality(regexMatched(streams, \"HBO\", \"HBO Rename\"), \"WEB-DL\"), quality(regexMatched(streams, \"HBO\", \"HBO Rename\"), \"WEBRip\")) : []",
+    "score": 0,
     "enabled": true
   },
   {

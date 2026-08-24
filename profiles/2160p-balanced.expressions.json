@@ -120,12 +120,12 @@
     "enabled": true
   },
   {
-    "expression": "/*#Radarr*/ /*1080p Quality Tier 6*/ queryType=='movie' ? merge(quality(resolution(negate(regexMatched(regexMatched(streams, \"ASD87\", \"BRUTE\", \"CHD\", \"EuReKA\", \"GALVANiZE\", \"HaB\", \"HANDJOB\", \"iON\", \"Ivandro\", \"j3rico\", \"KnG\", \"LEGi0N\", \"Lulz\", \"MaG\", \"MTeam\", \"NiP\", \"P0W4HD\", \"PTP\", \"PuTao\", \"ROCiNANTE\", \"Slappy\", \"WiKi\", \"WiLDCAT\", \"CART\", \"BakedFEL\", \"ORBiT\", \"BTN\", \"FraMeSToR\", \"MKu\", \"Uld\", \"ZAL\", \"eckomega\", \"CONSORTiUM\", \"HDC\", \"Spekt0r\", \"Seal\", \"SpaceHD\"), \"Remux\"), regexMatched(streams, \"ASD87\", \"BRUTE\", \"CHD\", \"EuReKA\", \"GALVANiZE\", \"HaB\", \"HANDJOB\", \"iON\", \"Ivandro\", \"j3rico\", \"KnG\", \"LEGi0N\", \"Lulz\", \"MaG\", \"MTeam\", \"NiP\", \"P0W4HD\", \"PTP\", \"PuTao\", \"ROCiNANTE\", \"Slappy\", \"WiKi\", \"WiLDCAT\", \"CART\", \"BakedFEL\", \"ORBiT\", \"BTN\", \"FraMeSToR\", \"MKu\", \"Uld\", \"ZAL\", \"eckomega\", \"CONSORTiUM\", \"HDC\", \"Spekt0r\", \"Seal\", \"SpaceHD\")), \"1080p\"), \"BluRay\", \"BluRay REMUX\"), quality(resolution(negate(regexMatched(regexMatched(streams, \"ASD87\", \"BRUTE\", \"CHD\", \"EuReKA\", \"GALVANiZE\", \"HaB\", \"HANDJOB\", \"iON\", \"Ivandro\", \"j3rico\", \"KnG\", \"LEGi0N\", \"Lulz\", \"MaG\", \"MTeam\", \"NiP\", \"P0W4HD\", \"PTP\", \"PuTao\", \"ROCiNANTE\", \"Slappy\", \"WiKi\", \"WiLDCAT\", \"CART\", \"BakedFEL\", \"ORBiT\", \"BTN\", \"FraMeSToR\", \"MKu\", \"Uld\", \"ZAL\", \"eckomega\", \"CONSORTiUM\", \"HDC\", \"Spekt0r\", \"Seal\", \"SpaceHD\"), \"Remux\"), regexMatched(streams, \"ASD87\", \"BRUTE\", \"CHD\", \"EuReKA\", \"GALVANiZE\", \"HaB\", \"HANDJOB\", \"iON\", \"Ivandro\", \"j3rico\", \"KnG\", \"LEGi0N\", \"Lulz\", \"MaG\", \"MTeam\", \"NiP\", \"P0W4HD\", \"PTP\", \"PuTao\", \"ROCiNANTE\", \"Slappy\", \"WiKi\", \"WiLDCAT\", \"CART\", \"BakedFEL\", \"ORBiT\", \"BTN\", \"FraMeSToR\", \"MKu\", \"Uld\", \"ZAL\", \"eckomega\", \"CONSORTiUM\", \"HDC\", \"Spekt0r\", \"Seal\", \"SpaceHD\")), \"1080p\"), \"WEBRip\")) : []",
+    "expression": "/*#Radarr*/ /*1080p Quality Tier 6*/ queryType=='movie' ? merge(quality(resolution(negate(regexMatched(regexMatched(streams, \"ASD87\", \"BRUTE\", \"CHD\", \"EuReKA\", \"GALVANiZE\", \"HaB\", \"HANDJOB\", \"iON\", \"Ivandro\", \"j3rico\", \"KnG\", \"LEGi0N\", \"Lulz\", \"MaG\", \"MTeam\", \"NiP\", \"P0W4HD\", \"PTP\", \"PuTao\", \"ROCiNANTE\", \"Slappy\", \"WiKi\", \"WiLDCAT\", \"CART\", \"BakedFEL\", \"ORBiT\", \"BTN\", \"FraMeSToR\", \"MKu\", \"Uld\", \"ZAL\", \"eckomega\", \"CONSORTiUM\", \"HDC\", \"Spekt0r\", \"Seal\", \"SpaceHD\", \"GOLIATN\"), \"Remux\"), regexMatched(streams, \"ASD87\", \"BRUTE\", \"CHD\", \"EuReKA\", \"GALVANiZE\", \"HaB\", \"HANDJOB\", \"iON\", \"Ivandro\", \"j3rico\", \"KnG\", \"LEGi0N\", \"Lulz\", \"MaG\", \"MTeam\", \"NiP\", \"P0W4HD\", \"PTP\", \"PuTao\", \"ROCiNANTE\", \"Slappy\", \"WiKi\", \"WiLDCAT\", \"CART\", \"BakedFEL\", \"ORBiT\", \"BTN\", \"FraMeSToR\", \"MKu\", \"Uld\", \"ZAL\", \"eckomega\", \"CONSORTiUM\", \"HDC\", \"Spekt0r\", \"Seal\", \"SpaceHD\", \"GOLIATN\")), \"1080p\"), \"BluRay\", \"BluRay REMUX\"), quality(resolution(negate(regexMatched(regexMatched(streams, \"ASD87\", \"BRUTE\", \"CHD\", \"EuReKA\", \"GALVANiZE\", \"HaB\", \"HANDJOB\", \"iON\", \"Ivandro\", \"j3rico\", \"KnG\", \"LEGi0N\", \"Lulz\", \"MaG\", \"MTeam\", \"NiP\", \"P0W4HD\", \"PTP\", \"PuTao\", \"ROCiNANTE\", \"Slappy\", \"WiKi\", \"WiLDCAT\", \"CART\", \"BakedFEL\", \"ORBiT\", \"BTN\", \"FraMeSToR\", \"MKu\", \"Uld\", \"ZAL\", \"eckomega\", \"CONSORTiUM\", \"HDC\", \"Spekt0r\", \"Seal\", \"SpaceHD\", \"GOLIATN\"), \"Remux\"), regexMatched(streams, \"ASD87\", \"BRUTE\", \"CHD\", \"EuReKA\", \"GALVANiZE\", \"HaB\", \"HANDJOB\", \"iON\", \"Ivandro\", \"j3rico\", \"KnG\", \"LEGi0N\", \"Lulz\", \"MaG\", \"MTeam\", \"NiP\", \"P0W4HD\", \"PTP\", \"PuTao\", \"ROCiNANTE\", \"Slappy\", \"WiKi\", \"WiLDCAT\", \"CART\", \"BakedFEL\", \"ORBiT\", \"BTN\", \"FraMeSToR\", \"MKu\", \"Uld\", \"ZAL\", \"eckomega\", \"CONSORTiUM\", \"HDC\", \"Spekt0r\", \"Seal\", \"SpaceHD\", \"GOLIATN\")), \"1080p\"), \"WEBRip\")) : []",
     "score": 180000,
     "enabled": true
   },
   {
-    "expression": "/*#Sonarr*/ /*1080p Quality Tier 6*/ queryType=='series' ? quality(resolution(negate(regexMatched(regexMatched(streams, \"ASD87\", \"BRUTE\", \"CHD\", \"EuReKA\", \"GALVANiZE\", \"HaB\", \"HANDJOB\", \"iON\", \"Ivandro\", \"j3rico\", \"KnG\", \"LEGi0N\", \"Lulz\", \"MaG\", \"MTeam\", \"NiP\", \"P0W4HD\", \"PTP\", \"PuTao\", \"ROCiNANTE\", \"Slappy\", \"WiKi\", \"WiLDCAT\", \"CART\", \"BakedFEL\", \"ORBiT\", \"BTN\", \"FraMeSToR\", \"MKu\", \"Uld\", \"ZAL\", \"eckomega\", \"CONSORTiUM\", \"HDC\", \"Spekt0r\", \"Seal\", \"SpaceHD\"), \"Remux\"), regexMatched(streams, \"ASD87\", \"BRUTE\", \"CHD\", \"EuReKA\", \"GALVANiZE\", \"HaB\", \"HANDJOB\", \"iON\", \"Ivandro\", \"j3rico\", \"KnG\", \"LEGi0N\", \"Lulz\", \"MaG\", \"MTeam\", \"NiP\", \"P0W4HD\", \"PTP\", \"PuTao\", \"ROCiNANTE\", \"Slappy\", \"WiKi\", \"WiLDCAT\", \"CART\", \"BakedFEL\", \"ORBiT\", \"BTN\", \"FraMeSToR\", \"MKu\", \"Uld\", \"ZAL\", \"eckomega\", \"CONSORTiUM\", \"HDC\", \"Spekt0r\", \"Seal\", \"SpaceHD\")), \"1080p\"), \"BluRay\", \"BluRay REMUX\") : []",
+    "expression": "/*#Sonarr*/ /*1080p Quality Tier 6*/ queryType=='series' ? quality(resolution(negate(regexMatched(regexMatched(streams, \"ASD87\", \"BRUTE\", \"CHD\", \"EuReKA\", \"GALVANiZE\", \"HaB\", \"HANDJOB\", \"iON\", \"Ivandro\", \"j3rico\", \"KnG\", \"LEGi0N\", \"Lulz\", \"MaG\", \"MTeam\", \"NiP\", \"P0W4HD\", \"PTP\", \"PuTao\", \"ROCiNANTE\", \"Slappy\", \"WiKi\", \"WiLDCAT\", \"CART\", \"BakedFEL\", \"ORBiT\", \"BTN\", \"FraMeSToR\", \"MKu\", \"Uld\", \"ZAL\", \"eckomega\", \"CONSORTiUM\", \"HDC\", \"Spekt0r\", \"Seal\", \"SpaceHD\", \"GOLIATN\"), \"Remux\"), regexMatched(streams, \"ASD87\", \"BRUTE\", \"CHD\", \"EuReKA\", \"GALVANiZE\", \"HaB\", \"HANDJOB\", \"iON\", \"Ivandro\", \"j3rico\", \"KnG\", \"LEGi0N\", \"Lulz\", \"MaG\", \"MTeam\", \"NiP\", \"P0W4HD\", \"PTP\", \"PuTao\", \"ROCiNANTE\", \"Slappy\", \"WiKi\", \"WiLDCAT\", \"CART\", \"BakedFEL\", \"ORBiT\", \"BTN\", \"FraMeSToR\", \"MKu\", \"Uld\", \"ZAL\", \"eckomega\", \"CONSORTiUM\", \"HDC\", \"Spekt0r\", \"Seal\", \"SpaceHD\", \"GOLIATN\")), \"1080p\"), \"BluRay\", \"BluRay REMUX\") : []",
     "score": 180000,
     "enabled": true
   },
@@ -645,6 +645,16 @@
     "enabled": true
   },
   {
+    "expression": "/*#Radarr*/ /*DSCP*/ queryType=='movie' ? merge(quality(regexMatched(streams, \"Discovery+\"), \"WEB-DL\"), quality(regexMatched(streams, \"Discovery+\"), \"WEBRip\")) : []",
+    "score": 0,
+    "enabled": true
+  },
+  {
+    "expression": "/*#Sonarr*/ /*DSCP*/ queryType=='series' ? merge(quality(regexMatched(streams, \"Discovery+\"), \"WEB-DL\"), quality(regexMatched(streams, \"Discovery+\"), \"WEBRip\")) : []",
+    "score": 0,
+    "enabled": true
+  },
+  {
     "expression": "/*#Radarr*/ /*DSNP*/ queryType=='movie' ? merge(quality(regexMatched(streams, \"Disney+\"), \"WEB-DL\"), quality(regexMatched(streams, \"Disney+\"), \"WEBRip\")) : []",
     "score": 2000,
     "enabled": true
@@ -832,6 +842,16 @@
   {
     "expression": "/*#Sonarr*/ /*German DL*/ queryType=='series' ? regexMatched(streams, \"German DL\") : []",
     "score": -999999,
+    "enabled": true
+  },
+  {
+    "expression": "/*#Radarr*/ /*HBO*/ queryType=='movie' ? merge(quality(regexMatched(streams, \"HBO\", \"HBO Rename\"), \"WEB-DL\"), quality(regexMatched(streams, \"HBO\", \"HBO Rename\"), \"WEBRip\")) : []",
+    "score": 0,
+    "enabled": true
+  },
+  {
+    "expression": "/*#Sonarr*/ /*HBO*/ queryType=='series' ? merge(quality(regexMatched(streams, \"HBO\", \"HBO Rename\"), \"WEB-DL\"), quality(regexMatched(streams, \"HBO\", \"HBO Rename\"), \"WEBRip\")) : []",
+    "score": 0,
     "enabled": true
   },
   {
