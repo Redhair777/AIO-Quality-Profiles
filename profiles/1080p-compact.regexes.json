@@ -600,6 +600,11 @@
     "score": 0
   },
   {
+    "name": "Gyroscope",
+    "pattern": "/(?<=^|[\\s.-])Gyroscope\\b/i",
+    "score": 0
+  },
+  {
     "name": "HANDJOB",
     "pattern": "/(?<=^|[\\s.-])HANDJOB\\b/i",
     "score": 0
@@ -795,6 +800,11 @@
     "score": 0
   },
   {
+    "name": "Kururun",
+    "pattern": "/(?<=^|[\\s.-])Kururun\\b/i",
+    "score": 0
+  },
+  {
     "name": "LAMA",
     "pattern": "/(?<=^|[\\s.-])LAMA\\b/i",
     "score": 0
@@ -962,6 +972,11 @@
   {
     "name": "NaNi",
     "pattern": "/(?<=^|[\\s.-])NaNi\\b/i",
+    "score": 0
+  },
+  {
+    "name": "Narkyy",
+    "pattern": "/(?<=^|[\\s.-])Narkyy\\b/i",
     "score": 0
   },
   {

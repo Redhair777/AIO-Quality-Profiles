@@ -5,6 +5,11 @@
     "score": 0
   },
   {
+    "name": "147",
+    "pattern": "/(?<=^|[\\s.-])147\\b/i",
+    "score": 0
+  },
+  {
     "name": "3D",
     "pattern": "/(?<=\\b[12]\\d{3}\\b).*\\b((Blu[-]?ray|BD)?3D|((H(alf)?|F(ull)?).?)?(O(ver)?.?U(nder)?|S(ide)?[\\W_]?B(y)?.?S(ide)?))\\b/i",
     "score": 0
@@ -85,6 +90,11 @@
     "score": 0
   },
   {
+    "name": "Aio",
+    "pattern": "/(?<=^|[\\s.-])Aio\\b/i",
+    "score": 0
+  },
+  {
     "name": "Amazon Prime",
     "pattern": "/\\bAMZN\\b|\\bAMAZON[ ._-]WEB[ ._-]?(DL|RIP)?\\b/i",
     "score": 0
@@ -157,6 +167,11 @@
   {
     "name": "BMF",
     "pattern": "/(?<=^|[\\s.-])BMF\\b/i",
+    "score": 0
+  },
+  {
+    "name": "BNL",
+    "pattern": "/(?<=^|[\\s.-])BNL\\b/i",
     "score": 0
   },
   {
@@ -685,6 +700,11 @@
     "score": 0
   },
   {
+    "name": "Gyroscope",
+    "pattern": "/(?<=^|[\\s.-])Gyroscope\\b/i",
+    "score": 0
+  },
+  {
     "name": "H@M",
     "pattern": "/(?<=^|[\\s.-])H@M\\b/i",
     "score": 0
@@ -840,6 +860,11 @@
     "score": 0
   },
   {
+    "name": "J2G",
+    "pattern": "/(?<=^|[\\s.-])J2G\\b/i",
+    "score": 0
+  },
+  {
     "name": "JM",
     "pattern": "/(?<=^|[\\s.-])JM\\b/i",
     "score": 0
@@ -887,6 +912,11 @@
   {
     "name": "Krispy",
     "pattern": "/(?<=^|[\\s.-])Krispy\\b/i",
+    "score": 0
+  },
+  {
+    "name": "Kururun",
+    "pattern": "/(?<=^|[\\s.-])Kururun\\b/i",
     "score": 0
   },
   {
@@ -942,6 +972,11 @@
   {
     "name": "MDR",
     "pattern": "/(?<=^|[\\s.-])MDR\\b/i",
+    "score": 0
+  },
+  {
+    "name": "MGs",
+    "pattern": "/(?<=^|[\\s.-])MGs\\b/i",
     "score": 0
   },
   {
@@ -1042,6 +1077,11 @@
   {
     "name": "NaNi",
     "pattern": "/(?<=^|[\\s.-])NaNi\\b/i",
+    "score": 0
+  },
+  {
+    "name": "Narkyy",
+    "pattern": "/(?<=^|[\\s.-])Narkyy\\b/i",
     "score": 0
   },
   {
