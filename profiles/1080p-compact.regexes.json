@@ -65,6 +65,11 @@
     "score": 0
   },
   {
+    "name": "ARiN",
+    "pattern": "/(?<=^|[\\s.-])ARiN\\b/i",
+    "score": 0
+  },
+  {
     "name": "ATELiER",
     "pattern": "/(?<=^|[\\s.-])ATELiER\\b/i",
     "score": 0
@@ -220,6 +225,11 @@
     "score": 0
   },
   {
+    "name": "CALiGARi",
+    "pattern": "/(?<=^|[\\s.-])CALiGARi\\b/i",
+    "score": 0
+  },
+  {
     "name": "CAM",
     "pattern": "/(?<=\\b[12]\\d{3}\\b).*(\\b((AC3)?(LD|MD)|CAM[ ._-]?(Rip)?|DCP(RIP)?|DVD[ ._-]?(SCR(EENER)?)|HD[ ._-]?(CAM|SCR|TC|TS)|(LINE|MIC)[ ._-]?DUBBED|SCREENER|(TC|TS)(Rip)?|TELE(CINE|SYNC)|WORKPRINT)\\b)/i",
     "score": 0
@@ -277,6 +287,11 @@
   {
     "name": "CYPHER",
     "pattern": "/(?<=^|[\\s.-])CYPHER\\b/i",
+    "score": 0
+  },
+  {
+    "name": "Cache",
+    "pattern": "/(?<=^|[\\s.-])Cache\\b/i",
     "score": 0
   },
   {
@@ -555,6 +570,11 @@
     "score": 0
   },
   {
+    "name": "Funner",
+    "pattern": "/(?<=^|[\\s.-])Funner\\b/i",
+    "score": 0
+  },
+  {
     "name": "GNOME",
     "pattern": "/(?<=^|[\\s.-])GNOME\\b/i",
     "score": 0
@@ -747,6 +767,11 @@
   {
     "name": "Ivandro",
     "pattern": "/(?<=^|[\\s.-])Ivandro\\b/i",
+    "score": 0
+  },
+  {
+    "name": "JKP",
+    "pattern": "/(?<=^|[\\s.-])JKP\\b/i",
     "score": 0
   },
   {
@@ -1140,6 +1165,11 @@
     "score": 0
   },
   {
+    "name": "PiG30N",
+    "pattern": "/(?<=^|[\\s.-])PiG30N\\b/i",
+    "score": 0
+  },
+  {
     "name": "PiPicK",
     "pattern": "/(?<=^|[\\s.-])PiPicK\\b/i",
     "score": 0
@@ -1250,6 +1280,11 @@
     "score": 0
   },
   {
+    "name": "RightSIZE",
+    "pattern": "/(?<=^|[\\s.-])RightSIZE\\b/i",
+    "score": 0
+  },
+  {
     "name": "Roku",
     "pattern": "/\\b(ROKU)\\b/i",
     "score": 0
@@ -1297,6 +1332,11 @@
   {
     "name": "STUTTERSHIT",
     "pattern": "/(?<=^|[\\s.-])STUTTERSHIT\\b/i",
+    "score": 0
+  },
+  {
+    "name": "SaL",
+    "pattern": "/(?<=^|[\\s.-])SaL\\b/i",
     "score": 0
   },
   {
@@ -1531,7 +1571,7 @@
   },
   {
     "name": "UHD WEBRip Release Groups",
-    "pattern": "/(?<=^|[\\s.-])(AJP69|ATELiER|BMF|BRUTE|BSTD|BV|c0kE|Chotab|CJ|coffee|CRiSC|CRX|CtrlHD|Dariush|de[42]|decibel|DON|D-Z0N3|E.N.D|E1|EA|EDPH|EbP|ESiR|EXCiSION|FoRM|FraMeSToR|GALAXY|Geek|GS88|hdalx|HDMaNiAcS|HiDt|HiFi|HiP|IDE|iFT|KASHMiR|Kitsune|LiNG|LolHD|LoRD|luvBB|NCmt|NiBuRu|nmd|NyHD|ORiGEN|Penumbra|playHD|Positive|PTer|REBORN|RiCO|rightSIZE|RO|rttr|SA89|SaNcTi|SbR|SiMPLE|SoLaR|SOP|SPHD|TayTo|TBB|TDD|TeamSyndicate|TnP|VD|VLAD|VietHD|W4NK3R|WiLF|WMING|xander|ZIMBO|ZoroSenpai|ZQ)\\b/i",
+    "pattern": "/(?<=^|[\\s.-])(0BSiDiAN|147|Aio|AJP69|aNDy|ARiN|ASD87|ATELiER|BakedFEL|BAT1|BBW|BMF|BNL|BRUTE|BSTD|BV|Cache|CALiGARi|CART|c0kE|Chotab|CJ|coffee|CONSORTiUM|CRiME|CRiSC|CRX|CtrlHD|D-Z0N3|Dariush|de[42]|decibeL|DiRTY|DON|E.N.D|E1|E76|EA|EBCP|EbP|Eby|EDPH|ENDSkY|ESiR|EXCiSION|eXterminator|faBR|FANDANGO|FoRM|FraMeSToR|FTO|GALAXY|Geek|GL|GR|GrapeHD|GS88|Gyroscope|GZ|H@M|hdalx|HDL|HDMaNiAcS|HDmonSK|HDV|HDv0T|HDxT|HiDt|HiFi|HiP|HQMUX|HR|IDE|iFT|iLL|iLoveHD|IMNEWHERE|J2G|JewelBox|JKP|JM|KASHMiR|Kitsune|Krispy|Kururun|LAZY|LiNG|LolHD|LoRD|luvBB|MCR|MGs|Narkyy|Natuyuki|NCmt|NiBuRu|NiP|nmd|NorTV|NoVA|NyHD|O2STK|OB1|OmertaHD|ORBiT|ORiGEN|Otaibi|pcroland|Penumbra|PerfectionHD|PiG30N|PiPicK|playHD|POH|Positive|Prestige|PTer|PuTao|RDK123|REBORN|REPTiLE|RiCO|RightSIZE|RO|Rose3Thorn|rttr|SA89|SaL|SaNcTi|SbR|SiMPLE|Skazhutin|Softboat|SoLaR|SOP|SPHD|SuBHD|TayTo|TBB|TDD|TeamSyndicate|ThD|TnP|ToK|UxO|VD|VietHD|ViSUM|VLAD|VorteX|W4NK3R|WiHD|WiLF|WMING|xander|ZIMBO|ZiNC|ZoroSenpai|ZQ)\\b/i",
     "score": 0
   },
   {
@@ -1852,11 +1892,6 @@
   {
     "name": "rbb",
     "pattern": "/(?<=^|[\\s.-])rbb\\b/i",
-    "score": 0
-  },
-  {
-    "name": "rightSIZE",
-    "pattern": "/(?<=^|[\\s.-])rightSIZE\\b/i",
     "score": 0
   },
   {
