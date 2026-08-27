@@ -676,12 +676,7 @@
   },
   {
     "name": "Google TV",
-    "pattern": "/\\b(PLAY)\\b[ ._-]WEB[ ._-]?(DL|RIP)?\\b/i",
-    "score": 0
-  },
-  {
-    "name": "Google TV Rename",
-    "pattern": "/\\[(PLAY)\\b|\\b(PLAY)\\]/i",
+    "pattern": "/\\b(PLAY)(?=[\\W_]+WEB[ ._-]?(DL|RIP)\\b)/i",
     "score": 0
   },
   {
@@ -711,17 +706,12 @@
   },
   {
     "name": "HBO",
-    "pattern": "/\\b(HBO)(?![ ._-]MAX)\\b(?=[ ._-]WEB[ ._-]?(DL|RIP)\\b)/i",
+    "pattern": "/\\b(HBO)(?=[\\W_]+WEB[ ._-]?(DL|RIP)\\b)/i",
     "score": 0
   },
   {
     "name": "HBO Max",
     "pattern": "/\\b(HMAX|HBOM)\\b|\\bHBO[ ._-]?MAX[ ._-]WEB[ ._-]?(DL|RIP)\\b/i",
-    "score": 0
-  },
-  {
-    "name": "HBO Rename",
-    "pattern": "/\\[(HBO)\\b|\\b(HBO)\\]/i",
     "score": 0
   },
   {
@@ -1020,6 +1010,11 @@
     "score": 0
   },
   {
+    "name": "Moshy",
+    "pattern": "/(?<=^|[\\s.-])Moshy\\b/i",
+    "score": 0
+  },
+  {
     "name": "Movie Extras",
     "pattern": "/(?<=\\b[12]\\d{3}\\b).*(\\b|\\.)\\b(Extra(s)?|Bonus|Deleted[ ._-]Scene(s)?|Extended[ ._-]Clip|Special[ ._-]Feature(s)?)\\b/i",
     "score": 0
@@ -1136,12 +1131,7 @@
   },
   {
     "name": "Now",
-    "pattern": "/\\b(NOW)\\b[ ._-]WEB[ ._-]?(DL|RIP)?\\b/i",
-    "score": 0
-  },
-  {
-    "name": "Now Rename",
-    "pattern": "/\\[(NOW)\\b|\\b(NOW)\\]/i",
+    "pattern": "/\\b(NOW)(?=[\\W_]+WEB[ ._-]?(DL|RIP)\\b)/i",
     "score": 0
   },
   {
@@ -1460,18 +1450,18 @@
     "score": 0
   },
   {
+    "name": "ShAnKs",
+    "pattern": "/(?<=^|[\\s.-])ShAnKs\\b/i",
+    "score": 0
+  },
+  {
     "name": "ShieldBearer",
     "pattern": "/(?<=^|[\\s.-])ShieldBearer\\b/i",
     "score": 0
   },
   {
     "name": "Showtime",
-    "pattern": "/\\b(SHO|Showtime)\\b[ ._-]WEB[ ._-]?(DL|RIP)?\\b/i",
-    "score": 0
-  },
-  {
-    "name": "Showtime Rename",
-    "pattern": "/\\[(SHO)\\b|\\b(SHO)\\]/i",
+    "pattern": "/\\b(SHO(WTIME)?)(?=[\\W_]+WEB[ ._-]?(DL|RIP)\\b)/i",
     "score": 0
   },
   {
@@ -1551,12 +1541,7 @@
   },
   {
     "name": "Stan",
-    "pattern": "/\\b(STAN)\\b[ ._-]WEB[ ._-]?(DL|RIP)?\\b/i",
-    "score": 0
-  },
-  {
-    "name": "Stan Rename",
-    "pattern": "/\\[(STAN)\\b|\\b(STAN)\\]/i",
+    "pattern": "/\\b(STAN)(?=[\\W_]+WEB[ ._-]?(DL|RIP)\\b)/i",
     "score": 0
   },
   {
@@ -1615,8 +1600,8 @@
     "score": 0
   },
   {
-    "name": "TayTo",
-    "pattern": "/(?<=^|[\\s.-])TayTo\\b/i",
+    "name": "TayTO",
+    "pattern": "/(?<=^|[\\s.-])TayTO\\b/i",
     "score": 0
   },
   {
@@ -1666,7 +1651,7 @@
   },
   {
     "name": "UHD WEBRip Release Groups",
-    "pattern": "/(?<=^|[\\s.-])(0BSiDiAN|147|Aio|AJP69|aNDy|ARiN|ASD87|ATELiER|BakedFEL|BAT1|BBW|BMF|BNL|BRUTE|BSTD|BV|Cache|CALiGARi|CART|c0kE|Chotab|CJ|coffee|CONSORTiUM|CRiME|CRiSC|CRX|CtrlHD|D-Z0N3|Dariush|de[42]|decibeL|DiRTY|DON|E.N.D|E1|E76|EA|EBCP|EbP|Eby|EDPH|ENDSkY|ESiR|EXCiSION|eXterminator|faBR|FANDANGO|FoRM|FraMeSToR|FTO|GALAXY|Geek|GL|GR|GrapeHD|GS88|Gyroscope|GZ|H@M|hdalx|HDL|HDMaNiAcS|HDmonSK|HDV|HDv0T|HDxT|HiDt|HiFi|HiP|HQMUX|HR|IDE|iFT|iLL|iLoveHD|IMNEWHERE|J2G|JewelBox|JKP|JM|KASHMiR|Kitsune|Krispy|Kururun|LAZY|LiNG|LolHD|LoRD|luvBB|MCR|MGs|Narkyy|Natuyuki|NCmt|NiBuRu|NiP|nmd|NorTV|NoVA|NyHD|O2STK|OB1|OmertaHD|ORBiT|ORiGEN|Otaibi|pcroland|Penumbra|PerfectionHD|PiG30N|PiPicK|playHD|POH|Positive|Prestige|PTer|PuTao|RDK123|REBORN|REPTiLE|RiCO|RightSIZE|RO|Rose3Thorn|rttr|SA89|SaL|SaNcTi|SbR|SiMPLE|Skazhutin|Softboat|SoLaR|SOP|SPHD|SuBHD|TayTo|TBB|TDD|TeamSyndicate|ThD|TnP|ToK|UxO|VD|VietHD|ViSUM|VLAD|VorteX|W4NK3R|WiHD|WiLF|WMING|xander|ZIMBO|ZiNC|ZoroSenpai|ZQ)\\b/i",
+    "pattern": "/(?<=^|[\\s.-])(0BSiDiAN|147|Aio|AJP69|aNDy|ARiN|ASD87|ATELiER|BakedFEL|BAT1|BBW|BMF|BNL|BRUTE|BSTD|BV|Cache|CALiGARi|CART|c0kE|Chotab|CJ|coffee|CONSORTiUM|CRiME|CRiSC|CRX|CtrlHD|D-Z0N3|Dariush|de[42]|decibeL|DiRTY|DON|E.N.D|E1|E76|EA|EBCP|EbP|Eby|EDPH|ENDSkY|ESiR|EXCiSION|eXterminator|faBR|FANDANGO|FoRM|FraMeSToR|FTO|GALAXY|Geek|GL|GR|GrapeHD|GS88|Gyroscope|GZ|H@M|hdalx|HDL|HDMaNiAcS|HDmonSK|HDV|HDv0T|HDxT|HiDt|HiFi|HiP|HQMUX|HR|IDE|iFT|iLL|iLoveHD|IMNEWHERE|J2G|JewelBox|JKP|JM|KASHMiR|Kitsune|Krispy|Kururun|LAZY|LiNG|LolHD|LoRD|luvBB|MCR|MGs|Narkyy|Natuyuki|NCmt|NiBuRu|NiP|nmd|NorTV|NoVA|NyHD|O2STK|OB1|OmertaHD|ORBiT|ORiGEN|Otaibi|pcroland|Penumbra|PerfectionHD|PiG30N|PiPicK|playHD|POH|Positive|Prestige|PTer|PuTao|RDK123|REBORN|REPTiLE|RiCO|RightSIZE|RO|Rose3Thorn|rttr|SA89|SaL|SaNcTi|SbR|ShAnKs|SiMPLE|Skazhutin|Softboat|SoLaR|SOP|SPHD|SuBHD|TayTO|TBB|TDD|TeamSyndicate|ThD|TnP|ToK|UxO|VD|VietHD|ViSUM|VLAD|VorteX|W4NK3R|WESTSiDE|WiHD|WiLF|WMING|xander|ZIMBO|ZiNC|ZoroSenpai|ZQ)\\b/i",
     "score": 0
   },
   {
@@ -1762,6 +1747,11 @@
   {
     "name": "WELP",
     "pattern": "/(?<=^|[\\s.-])WELP\\b/i",
+    "score": 0
+  },
+  {
+    "name": "WESTSiDE",
+    "pattern": "/(?<=^|[\\s.-])WESTSiDE\\b/i",
     "score": 0
   },
   {
@@ -1890,6 +1880,11 @@
     "score": 0
   },
   {
+    "name": "greenHD",
+    "pattern": "/(?<=^|[\\s.-])greenHD\\b/i",
+    "score": 0
+  },
+  {
     "name": "h265",
     "pattern": "/[h][ ._-]?265/i",
     "score": 0
@@ -1931,12 +1926,7 @@
   },
   {
     "name": "iTunes",
-    "pattern": "/\\b(iT|iTunes)\\b(?=[ ._-]WEB[ ._-]?(DL|RIP)\\b)/i",
-    "score": 0
-  },
-  {
-    "name": "iTunes Rename",
-    "pattern": "/\\[(iT)(?![+])\\b|\\b(?<![+])(iT)\\]/i",
+    "pattern": "/\\b(iT(unes)?)(?=[\\W_]+WEB[ ._-]?(DL|RIP)\\b)/i",
     "score": 0
   },
   {
