@@ -40,11 +40,6 @@
     "score": 0
   },
   {
-    "name": "AI Movie Upscale",
-    "pattern": "/(?<=\\b[12]\\d{3}\\b).*(\\b(AI)\\b)/i",
-    "score": 0
-  },
-  {
     "name": "AI TV Upscale",
     "pattern": "/(?<=\\bS\\d+\\b).*(\\b(AI)\\b)/i",
     "score": 0
@@ -1001,12 +996,7 @@
   },
   {
     "name": "Max",
-    "pattern": "/\\b((?<!HBO[ ._-])MAX)\\b(?=[ ._-]WEB[ ._-]?(DL|RIP)\\b)/i",
-    "score": 0
-  },
-  {
-    "name": "Max Rename",
-    "pattern": "/\\[(MAX)\\b|\\b(MAX)\\]/i",
+    "pattern": "/\\b((?<!HBO[ ._-]+)MAX)(?=[\\W_]+WEB[ ._-]?(DL|RIP)\\b)/i",
     "score": 0
   },
   {
@@ -1027,6 +1017,11 @@
   {
     "name": "Movie Extras",
     "pattern": "/(?<=\\b[12]\\d{3}\\b).*(\\b|\\.)\\b(Extra(s)?|Bonus|Deleted[ ._-]Scene(s)?|Extended[ ._-]Clip|Special[ ._-]Feature(s)?)\\b/i",
+    "score": 0
+  },
+  {
+    "name": "Movie Upscale",
+    "pattern": "/(?<=\\b[12]\\d{3}\\b).*(\\b(AI(US)?[ ._-]?(Enhanced)?|Up[ ._-]?scaled?|Re[ ._-]?Graded?|Topaz[ ._-]?Enhanced)\\b)/i",
     "score": 0
   },
   {

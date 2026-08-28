@@ -1025,12 +1025,12 @@
     "enabled": true
   },
   {
-    "expression": "/*#Radarr*/ /*MAX*/ queryType=='movie' ? merge(quality(regexMatched(streams, \"Max\", \"Max Rename\"), \"WEB-DL\"), quality(regexMatched(streams, \"Max\", \"Max Rename\"), \"WEBRip\")) : []",
+    "expression": "/*#Radarr*/ /*MAX*/ queryType=='movie' ? merge(quality(regexMatched(streams, \"Max\"), \"WEB-DL\"), quality(regexMatched(streams, \"Max\"), \"WEBRip\")) : []",
     "score": 2000,
     "enabled": true
   },
   {
-    "expression": "/*#Sonarr*/ /*MAX*/ queryType=='series' ? merge(quality(regexMatched(streams, \"Max\", \"Max Rename\"), \"WEB-DL\"), quality(regexMatched(streams, \"Max\", \"Max Rename\"), \"WEBRip\")) : []",
+    "expression": "/*#Sonarr*/ /*MAX*/ queryType=='series' ? merge(quality(regexMatched(streams, \"Max\"), \"WEB-DL\"), quality(regexMatched(streams, \"Max\"), \"WEBRip\")) : []",
     "score": 3000,
     "enabled": true
   },
@@ -1325,7 +1325,7 @@
     "enabled": true
   },
   {
-    "expression": "/*#Radarr*/ /*Upscale*/ queryType=='movie' ? regexMatched(streams, \"AI Movie Upscale\", \"Upscale\") : []",
+    "expression": "/*#Radarr*/ /*Upscale*/ queryType=='movie' ? regexMatched(streams, \"Movie Upscale\") : []",
     "score": -999999,
     "enabled": true
   },
