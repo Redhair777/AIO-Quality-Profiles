@@ -136,7 +136,7 @@
   },
   {
     "name": "Audio Description",
-    "pattern": "/\\b(Audio[ ._-]Description)\\b/i",
+    "pattern": "/\\b(Audio[ ._-]?Description)\\b/i",
     "score": 0
   },
   {
@@ -146,7 +146,7 @@
   },
   {
     "name": "BBC iPlayer",
-    "pattern": "/\\b(iP)\\b/i",
+    "pattern": "/\\b(iP(layer)?)(?=[\\W_]+WEB[ ._-]?(DL|RIP)\\b)/i",
     "score": 0
   },
   {
@@ -506,7 +506,7 @@
   },
   {
     "name": "Disney+",
-    "pattern": "/\\b(dsnp|dsny(p)?|disney\\+)\\s*\\b/i",
+    "pattern": "/\\b(DSNP|DSNY(P)?|Disney\\+)\\s*\\b/i",
     "score": 0
   },
   {
@@ -606,7 +606,7 @@
   },
   {
     "name": "Extended Clip",
-    "pattern": "/\\b(extended.?clip)\\b/i",
+    "pattern": "/\\bExtended[ ._-]?Clip(s)?\\b/i",
     "score": 0
   },
   {
@@ -1081,7 +1081,7 @@
   },
   {
     "name": "Movie Extras",
-    "pattern": "/(?<=\\b[12]\\d{3}\\b).*(\\b|\\.)\\b(Extra(s)?|Bonus|Deleted[ ._-]Scene(s)?|Extended[ ._-]Clip|Special[ ._-]Feature(s)?)\\b/i",
+    "pattern": "/(?<=\\b[12]\\d{3}\\b).*(\\b|\\.)\\b(Extra(s)?|Bonus|Deleted[ ._-]?Scene(s)?|Extended[ ._-]?Clip(s)?|Special[ ._-]?Feature(s)?)\\b/i",
     "score": 0
   },
   {

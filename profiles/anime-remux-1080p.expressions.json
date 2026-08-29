@@ -25,6 +25,16 @@
     "enabled": true
   },
   {
+    "expression": "/*#Sonarr*/ /*ATV*/ queryType=='anime.series' ? merge(quality(regexMatched(streams, \"Apple TV\"), \"WEB-DL\"), quality(regexMatched(streams, \"Apple TV\"), \"WEBRip\")) : []",
+    "score": 75,
+    "enabled": true
+  },
+  {
+    "expression": "/*#Sonarr*/ /*ATVP*/ queryType=='anime.series' ? merge(quality(regexMatched(streams, \"Apple TV+\"), \"WEB-DL\"), quality(regexMatched(streams, \"Apple TV+\"), \"WEBRip\")) : []",
+    "score": 75,
+    "enabled": true
+  },
+  {
     "expression": "/*#Radarr*/ /*AV1*/ queryType=='anime.movie' ? regexMatched(streams, \"AV1\") : []",
     "score": -10000,
     "enabled": true
@@ -125,12 +135,12 @@
     "enabled": true
   },
   {
-    "expression": "/*#Radarr*/ /*Anime LQ Groups*/ queryType=='anime.movie' ? regexMatched(streams, \"$tore-Chill\", \"0neshot\", \"224\", \"A-Destiny\", \"AceAres\", \"AhmadDev\", \"Anime Chap\", \"Anime Land\", \"Anime Time\", \"AnimeDynastyEN\", \"AnimeKuro\", \"AnimeRG\", \"Animesubs\", \"AnimeTR\", \"Anitsu\", \"AniVoid\", \"ArataEnc\", \"AREY\", \"Ari\", \"ASW\", \"BJX\", \"BlackLuster\", \"bonkai77\", \"CameEsp\", \"Cat66\", \"CBB\", \"Cerberus\", \"Cleo\", \"CuaP\", \"DaddySubs\", \"DARKFLiX\", \"DB\", \"DBArabic\", \"Deadmau- RAWS\", \"DKB\", \"DP\", \"DsunS\", \"Emmid\", \"ExREN\", \"FAV\", \"Fish\", \"FunArts\", \"GERMini\", \"Hakata Ramen\", \"Hall_of_C\", \"Hatsuyuki\", \"HAV1T\", \"HENiL\", \"Hitoku\", \"HollowRoxas\", \"HR\", \"ICEBLUE\", \"iPUNISHER\", \"JacobSwaggedUp\", \"Johnny-englishsubs\", \"Kallango\", \"Kanjouteki\", \"KEKMASTERS\", \"Kirion\", \"KQRM\", \"KRP\", \"LoliHouse\", \"M@nI\", \"mal lu zen\", \"Man.K\", \"Maximus\", \"MD\", \"mdcx\", \"Metaljerk\", \"MGD\", \"MiniFreeza\", \"MiniMTBB\", \"MinisCuba\", \"MiniTheatre\", \"Mites\", \"Modders Bay\", \"Mr. Deadpool\", \"NemDiggers\", \"neoHEVC\", \"Nokou\", \"NoobSubs\", \"NS\", \"Nyanpasu\", \"OldCastle\", \"Pantsu\", \"Pao\", \"phazer11\", \"Pixel\", \"Plex Friendly\", \"PnPSubs\", \"Polarwindz\", \"Project-gxs\", \"PuyaSubs\", \"QaS\", \"QCE\", \"Rando235\", \"Ranger\", \"Rapta\", \"Raw Files\", \"Raze\", \"Reaktor\", \"RightShiftBy2\", \"Rip Time\", \"SAD\", \"Salieri\", \"Samir755\", \"SanKyuu\", \"SEiN\", \"sekkusu&ok\", \"SHFS\", \"shincaps\", \"SLAX\", \"Sokudo\", \"SRW\", \"SSA\", \"StrayGods\", \"Suki Desu\", \"TeamTurquoize\", \"Tenrai Sensei\", \"TnF\", \"TOPKEK\", \"Trix\", \"U3-Web\", \"UNBIASED\", \"uP\", \"USD\", \"Valenciano\", \"VipapkStudios\", \"Wardevil\", \"WtF Anime\", \"xiao-av1\", \"Yabai_Desu_NeRandomRemux\", \"YakuboEncodes\", \"youshikibi\", \"YuiSubs\", \"Yun\", \"zza\") : []",
+    "expression": "/*#Radarr*/ /*Anime LQ Groups*/ queryType=='anime.movie' ? regexMatched(streams, \"$tore-Chill\", \"0neshot\", \"224\", \"A-Destiny\", \"AceAres\", \"AhmadDev\", \"Anime Chap\", \"Anime Land\", \"Anime Time\", \"AnimeDynastyEN\", \"AnimeKuro\", \"AnimeRG\", \"Animesubs\", \"AnimeTR\", \"Anitsu\", \"AniVoid\", \"ArataEnc\", \"AREY\", \"ASW\", \"BJX\", \"BlackLuster\", \"bonkai77\", \"CameEsp\", \"Cat66\", \"CBB\", \"Cerberus\", \"Cleo\", \"CuaP\", \"DaddySubs\", \"DARKFLiX\", \"DB\", \"DBArabic\", \"Deadmau- RAWS\", \"DKB\", \"DP\", \"DsunS\", \"Emmid\", \"ExREN\", \"FAV\", \"Fish\", \"FunArts\", \"GERMini\", \"Hakata Ramen\", \"Hall_of_C\", \"Hatsuyuki\", \"HAV1T\", \"HENiL\", \"Hitoku\", \"HollowRoxas\", \"HR\", \"ICEBLUE\", \"iPUNISHER\", \"JacobSwaggedUp\", \"Johnny-englishsubs\", \"Kallango\", \"Kanjouteki\", \"KEKMASTERS\", \"Kirion\", \"KQRM\", \"KRP\", \"LoliHouse\", \"M@nI\", \"mal lu zen\", \"Man.K\", \"Maximus\", \"MD\", \"mdcx\", \"Metaljerk\", \"MGD\", \"MiniFreeza\", \"MiniMTBB\", \"MinisCuba\", \"MiniTheatre\", \"Mites\", \"Modders Bay\", \"Mr. Deadpool\", \"NemDiggers\", \"neoHEVC\", \"Nokou\", \"NoobSubs\", \"NS\", \"Nyanpasu\", \"OldCastle\", \"Pantsu\", \"Pao\", \"phazer11\", \"Pixel\", \"Plex Friendly\", \"PnPSubs\", \"Polarwindz\", \"Project-gxs\", \"PuyaSubs\", \"QaS\", \"QCE\", \"Rando235\", \"Ranger\", \"Rapta\", \"Raw Files\", \"Raze\", \"Reaktor\", \"RightShiftBy2\", \"Rip Time\", \"SAD\", \"Salieri\", \"Samir755\", \"SanKyuu\", \"SEiN\", \"sekkusu&ok\", \"SHFS\", \"shincaps\", \"SLAX\", \"Sokudo\", \"SRW\", \"SSA\", \"StrayGods\", \"Suki Desu\", \"TeamTurquoize\", \"Tenrai Sensei\", \"TnF\", \"TOPKEK\", \"Trix\", \"U3-Web\", \"UNBIASED\", \"uP\", \"USD\", \"Valenciano\", \"VipapkStudios\", \"Wardevil\", \"WtF Anime\", \"xiao-av1\", \"Yabai_Desu_NeRandomRemux\", \"YakuboEncodes\", \"youshikibi\", \"YuiSubs\", \"Yun\", \"zza\", \"Ari (Radarr)\") : []",
     "score": -10000,
     "enabled": true
   },
   {
-    "expression": "/*#Sonarr*/ /*Anime LQ Groups*/ queryType=='anime.series' ? regexMatched(streams, \"$tore-Chill\", \"0neshot\", \"224\", \"A-Destiny\", \"AceAres\", \"AhmadDev\", \"Anime Chap\", \"Anime Land\", \"Anime Time\", \"AnimeDynastyEN\", \"AnimeKuro\", \"AnimeRG\", \"Animesubs\", \"AnimeTR\", \"Anitsu\", \"AniVoid\", \"ArataEnc\", \"AREY\", \"Ari\", \"ASW\", \"BJX\", \"BlackLuster\", \"bonkai77\", \"CameEsp\", \"Cat66\", \"CBB\", \"Cerberus\", \"Cleo\", \"CuaP\", \"DaddySubs\", \"DARKFLiX\", \"DB\", \"DBArabic\", \"Deadmau- RAWS\", \"DKB\", \"DP\", \"DsunS\", \"Emmid\", \"ExREN\", \"FAV\", \"Fish\", \"FunArts\", \"GERMini\", \"Hakata Ramen\", \"Hall_of_C\", \"Hatsuyuki\", \"HAV1T\", \"HENiL\", \"Hitoku\", \"HollowRoxas\", \"HR\", \"ICEBLUE\", \"iPUNISHER\", \"JacobSwaggedUp\", \"Johnny-englishsubs\", \"Kallango\", \"Kanjouteki\", \"KEKMASTERS\", \"Kirion\", \"KQRM\", \"KRP\", \"LoliHouse\", \"M@nI\", \"mal lu zen\", \"Man.K\", \"Maximus\", \"MD\", \"mdcx\", \"Metaljerk\", \"MGD\", \"MiniFreeza\", \"MiniMTBB\", \"MinisCuba\", \"MiniTheatre\", \"Mites\", \"Modders Bay\", \"Mr. Deadpool\", \"NemDiggers\", \"neoHEVC\", \"Nokou\", \"NoobSubs\", \"NS\", \"Nyanpasu\", \"OldCastle\", \"Pantsu\", \"Pao\", \"phazer11\", \"Pixel\", \"Plex Friendly\", \"PnPSubs\", \"Polarwindz\", \"Project-gxs\", \"PuyaSubs\", \"QaS\", \"QCE\", \"Rando235\", \"Ranger\", \"Rapta\", \"Raw Files\", \"Raze\", \"Reaktor\", \"RightShiftBy2\", \"Rip Time\", \"SAD\", \"Salieri\", \"Samir755\", \"SanKyuu\", \"SEiN\", \"sekkusu&ok\", \"SHFS\", \"shincaps\", \"SLAX\", \"Sokudo\", \"SRW\", \"SSA\", \"StrayGods\", \"Suki Desu\", \"TeamTurquoize\", \"Tenrai Sensei\", \"TnF\", \"TOPKEK\", \"Trix\", \"U3-Web\", \"UNBIASED\", \"uP\", \"USD\", \"Valenciano\", \"VipapkStudios\", \"Wardevil\", \"WtF Anime\", \"xiao-av1\", \"Yabai_Desu_NeRandomRemux\", \"YakuboEncodes\", \"youshikibi\", \"YuiSubs\", \"Yun\", \"zza\") : []",
+    "expression": "/*#Sonarr*/ /*Anime LQ Groups*/ queryType=='anime.series' ? regexMatched(streams, \"$tore-Chill\", \"0neshot\", \"224\", \"A-Destiny\", \"AceAres\", \"AhmadDev\", \"Anime Chap\", \"Anime Land\", \"Anime Time\", \"AnimeDynastyEN\", \"AnimeKuro\", \"AnimeRG\", \"Animesubs\", \"AnimeTR\", \"Anitsu\", \"AniVoid\", \"ArataEnc\", \"AREY\", \"ASW\", \"BJX\", \"BlackLuster\", \"bonkai77\", \"CameEsp\", \"Cat66\", \"CBB\", \"Cerberus\", \"Cleo\", \"CuaP\", \"DaddySubs\", \"DARKFLiX\", \"DB\", \"DBArabic\", \"Deadmau- RAWS\", \"DKB\", \"DP\", \"DsunS\", \"Emmid\", \"ExREN\", \"FAV\", \"Fish\", \"FunArts\", \"GERMini\", \"Hakata Ramen\", \"Hall_of_C\", \"Hatsuyuki\", \"HAV1T\", \"HENiL\", \"Hitoku\", \"HollowRoxas\", \"HR\", \"ICEBLUE\", \"iPUNISHER\", \"JacobSwaggedUp\", \"Johnny-englishsubs\", \"Kallango\", \"Kanjouteki\", \"KEKMASTERS\", \"Kirion\", \"KQRM\", \"KRP\", \"LoliHouse\", \"M@nI\", \"mal lu zen\", \"Man.K\", \"Maximus\", \"MD\", \"mdcx\", \"Metaljerk\", \"MGD\", \"MiniFreeza\", \"MiniMTBB\", \"MinisCuba\", \"MiniTheatre\", \"Mites\", \"Modders Bay\", \"Mr. Deadpool\", \"NemDiggers\", \"neoHEVC\", \"Nokou\", \"NoobSubs\", \"NS\", \"Nyanpasu\", \"OldCastle\", \"Pantsu\", \"Pao\", \"phazer11\", \"Pixel\", \"Plex Friendly\", \"PnPSubs\", \"Polarwindz\", \"Project-gxs\", \"PuyaSubs\", \"QaS\", \"QCE\", \"Rando235\", \"Ranger\", \"Rapta\", \"Raw Files\", \"Raze\", \"Reaktor\", \"RightShiftBy2\", \"Rip Time\", \"SAD\", \"Salieri\", \"Samir755\", \"SanKyuu\", \"SEiN\", \"sekkusu&ok\", \"SHFS\", \"shincaps\", \"SLAX\", \"Sokudo\", \"SRW\", \"SSA\", \"StrayGods\", \"Suki Desu\", \"TeamTurquoize\", \"Tenrai Sensei\", \"TnF\", \"TOPKEK\", \"Trix\", \"U3-Web\", \"UNBIASED\", \"uP\", \"USD\", \"Valenciano\", \"VipapkStudios\", \"Wardevil\", \"WtF Anime\", \"xiao-av1\", \"Yabai_Desu_NeRandomRemux\", \"YakuboEncodes\", \"youshikibi\", \"YuiSubs\", \"Yun\", \"zza\", \"Ari (Sonarr)\") : []",
     "score": -10000,
     "enabled": true
   },
@@ -185,12 +195,12 @@
     "enabled": true
   },
   {
-    "expression": "/*#Radarr*/ /*Anime Web Tier 05*/ queryType=='anime.movie' ? merge(quality(regexMatched(streams, \"BlueLobster\", \"GST\", \"HorribleRips\", \"HorribleSubs\", \"KAN3D2M\", \"KiyoshiStar\", \"Lia\", \"NanDesuKa\", \"SobsPlease\", \"Some-Stuffs\", \"SubsPlease\", \"URANIME\", \"ZigZag\", \"playWEB\"), \"WEB-DL\"), quality(regexMatched(streams, \"BlueLobster\", \"GST\", \"HorribleRips\", \"HorribleSubs\", \"KAN3D2M\", \"KiyoshiStar\", \"Lia\", \"NanDesuKa\", \"SobsPlease\", \"Some-Stuffs\", \"SubsPlease\", \"URANIME\", \"ZigZag\", \"playWEB\"), \"WEBRip\")) : []",
+    "expression": "/*#Radarr*/ /*Anime Web Tier 05*/ queryType=='anime.movie' ? merge(quality(regexMatched(streams, \"BlueLobster\", \"GST\", \"HorribleRips\", \"HorribleSubs\", \"KAN3D2M\", \"KiyoshiStar\", \"Lia\", \"NanDesuKa\", \"SobsPlease\", \"Some-Stuffs\", \"SubsPlease\", \"URANIME\", \"ZigZag\", \"playWEB (Title)\"), \"WEB-DL\"), quality(regexMatched(streams, \"BlueLobster\", \"GST\", \"HorribleRips\", \"HorribleSubs\", \"KAN3D2M\", \"KiyoshiStar\", \"Lia\", \"NanDesuKa\", \"SobsPlease\", \"Some-Stuffs\", \"SubsPlease\", \"URANIME\", \"ZigZag\", \"playWEB (Title)\"), \"WEBRip\")) : []",
     "score": 200,
     "enabled": true
   },
   {
-    "expression": "/*#Sonarr*/ /*Anime Web Tier 05*/ queryType=='anime.series' ? merge(quality(regexMatched(streams, \"BlueLobster\", \"GST\", \"HorribleRips\", \"HorribleSubs\", \"KAN3D2M\", \"KiyoshiStar\", \"Lia\", \"NanDesuKa\", \"SobsPlease\", \"Some-Stuffs\", \"SubsPlease\", \"URANIME\", \"ZigZag\", \"playWEB\"), \"HDTV\"), quality(regexMatched(streams, \"BlueLobster\", \"GST\", \"HorribleRips\", \"HorribleSubs\", \"KAN3D2M\", \"KiyoshiStar\", \"Lia\", \"NanDesuKa\", \"SobsPlease\", \"Some-Stuffs\", \"SubsPlease\", \"URANIME\", \"ZigZag\", \"playWEB\"), \"WEB-DL\"), quality(regexMatched(streams, \"BlueLobster\", \"GST\", \"HorribleRips\", \"HorribleSubs\", \"KAN3D2M\", \"KiyoshiStar\", \"Lia\", \"NanDesuKa\", \"SobsPlease\", \"Some-Stuffs\", \"SubsPlease\", \"URANIME\", \"ZigZag\", \"playWEB\"), \"WEBRip\")) : []",
+    "expression": "/*#Sonarr*/ /*Anime Web Tier 05*/ queryType=='anime.series' ? merge(quality(regexMatched(streams, \"BlueLobster\", \"GST\", \"HorribleRips\", \"HorribleSubs\", \"KAN3D2M\", \"KiyoshiStar\", \"Lia\", \"NanDesuKa\", \"SobsPlease\", \"Some-Stuffs\", \"SubsPlease\", \"URANIME\", \"ZigZag\", \"playWEB (Title)\"), \"HDTV\"), quality(regexMatched(streams, \"BlueLobster\", \"GST\", \"HorribleRips\", \"HorribleSubs\", \"KAN3D2M\", \"KiyoshiStar\", \"Lia\", \"NanDesuKa\", \"SobsPlease\", \"Some-Stuffs\", \"SubsPlease\", \"URANIME\", \"ZigZag\", \"playWEB (Title)\"), \"WEB-DL\"), quality(regexMatched(streams, \"BlueLobster\", \"GST\", \"HorribleRips\", \"HorribleSubs\", \"KAN3D2M\", \"KiyoshiStar\", \"Lia\", \"NanDesuKa\", \"SobsPlease\", \"Some-Stuffs\", \"SubsPlease\", \"URANIME\", \"ZigZag\", \"playWEB (Title)\"), \"WEBRip\")) : []",
     "score": 200,
     "enabled": true
   },
@@ -215,8 +225,18 @@
     "enabled": true
   },
   {
+    "expression": "/*#Sonarr*/ /*CC*/ queryType=='anime.series' ? merge(quality(regexMatched(streams, \"CC Rename\", \"Comedy Central\"), \"WEB-DL\"), quality(regexMatched(streams, \"CC Rename\", \"Comedy Central\"), \"WEBRip\")) : []",
+    "score": 75,
+    "enabled": true
+  },
+  {
     "expression": "/*#Sonarr*/ /*CR*/ queryType=='anime.series' ? merge(quality(regexMatched(streams, \"Crunchyroll\"), \"HDTV\"), quality(regexMatched(streams, \"Crunchyroll\"), \"WEB-DL\"), quality(regexMatched(streams, \"Crunchyroll\"), \"WEBRip\")) : []",
     "score": 6,
+    "enabled": true
+  },
+  {
+    "expression": "/*#Sonarr*/ /*DCU*/ queryType=='anime.series' ? merge(quality(regexMatched(streams, \"DC Universe\"), \"WEB-DL\"), quality(regexMatched(streams, \"DC Universe\"), \"WEBRip\")) : []",
+    "score": 75,
     "enabled": true
   },
   {
@@ -240,13 +260,53 @@
     "enabled": true
   },
   {
+    "expression": "/*#Sonarr*/ /*HBO*/ queryType=='anime.series' ? merge(quality(regexMatched(streams, \"HBO\", \"HBO Rename\"), \"WEB-DL\"), quality(regexMatched(streams, \"HBO\", \"HBO Rename\"), \"WEBRip\")) : []",
+    "score": 75,
+    "enabled": true
+  },
+  {
     "expression": "/*#Sonarr*/ /*HIDIVE*/ queryType=='anime.series' ? merge(quality(regexMatched(streams, \"HIDIVE\"), \"HDTV\"), quality(regexMatched(streams, \"HIDIVE\"), \"WEB-DL\"), quality(regexMatched(streams, \"HIDIVE\"), \"WEBRip\")) : []",
     "score": 0,
     "enabled": true
   },
   {
+    "expression": "/*#Sonarr*/ /*HMAX*/ queryType=='anime.series' ? merge(quality(regexMatched(streams, \"HBO Max\", \"HMAX Rename\"), \"WEB-DL\"), quality(regexMatched(streams, \"HBO Max\", \"HMAX Rename\"), \"WEBRip\")) : []",
+    "score": 75,
+    "enabled": true
+  },
+  {
+    "expression": "/*#Sonarr*/ /*Hulu*/ queryType=='anime.series' ? merge(quality(regexMatched(streams, \"Not Hulu\"), \"WEB-DL\"), quality(regexMatched(streams, \"Not Hulu\"), \"WEBRip\")) : []",
+    "score": 75,
+    "enabled": true
+  },
+  {
+    "expression": "/*#Sonarr*/ /*MAX*/ queryType=='anime.series' ? merge(quality(regexMatched(streams, \"Max\", \"MAX Rename\"), \"WEB-DL\"), quality(regexMatched(streams, \"Max\", \"MAX Rename\"), \"WEBRip\")) : []",
+    "score": 75,
+    "enabled": true
+  },
+  {
     "expression": "/*#Sonarr*/ /*NF*/ queryType=='anime.series' ? merge(quality(regexMatched(streams, \"Netflix\"), \"WEB-DL\"), quality(regexMatched(streams, \"Netflix\"), \"WEBRip\")) : []",
     "score": 4,
+    "enabled": true
+  },
+  {
+    "expression": "/*#Sonarr*/ /*PCOK*/ queryType=='anime.series' ? merge(quality(regexMatched(streams, \"Peacock TV (Sonarr)\"), \"WEB-DL\"), quality(regexMatched(streams, \"Peacock TV (Sonarr)\"), \"WEBRip\")) : []",
+    "score": 75,
+    "enabled": true
+  },
+  {
+    "expression": "/*#Sonarr*/ /*PLAY*/ queryType=='anime.series' ? merge(quality(regexMatched(streams, \"PLAY\", \"PLAY Rename\"), \"WEB-DL\"), quality(regexMatched(streams, \"PLAY\", \"PLAY Rename\"), \"WEBRip\")) : []",
+    "score": 75,
+    "enabled": true
+  },
+  {
+    "expression": "/*#Sonarr*/ /*PMTP*/ queryType=='anime.series' ? merge(quality(regexMatched(streams, \"Paramount+ (Sonarr)\"), \"WEB-DL\"), quality(regexMatched(streams, \"Paramount+ (Sonarr)\"), \"WEBRip\")) : []",
+    "score": 75,
+    "enabled": true
+  },
+  {
+    "expression": "/*#Sonarr*/ /*ROKU*/ queryType=='anime.series' ? merge(quality(regexMatched(streams, \"ROKU\"), \"WEB-DL\"), quality(regexMatched(streams, \"ROKU\"), \"WEBRip\")) : []",
+    "score": 75,
     "enabled": true
   },
   {
@@ -272,6 +332,21 @@
   {
     "expression": "/*#Radarr*/ /*Remux Tier 03*/ queryType=='anime.movie' ? merge(regexMatched(quality(streams, \"BluRay REMUX\", \"DVD REMUX\"), \"12GaugeShotgun\"), regexMatched(quality(streams, \"BluRay REMUX\", \"DVD REMUX\"), \"decibeL\"), regexMatched(quality(streams, \"BluRay REMUX\", \"DVD REMUX\"), \"EPSiLON\"), regexMatched(quality(streams, \"BluRay REMUX\", \"DVD REMUX\"), \"HiFi\"), regexMatched(quality(streams, \"BluRay REMUX\", \"DVD REMUX\"), \"iFT\"), regexMatched(quality(streams, \"BluRay REMUX\", \"DVD REMUX\"), \"KRaLiMaRKo\"), regexMatched(quality(streams, \"BluRay REMUX\", \"DVD REMUX\"), \"NTb\"), regexMatched(quality(streams, \"BluRay REMUX\", \"DVD REMUX\"), \"PTP\"), regexMatched(quality(streams, \"BluRay REMUX\", \"DVD REMUX\"), \"SumVision\"), regexMatched(quality(streams, \"BluRay REMUX\", \"DVD REMUX\"), \"TOA\"), regexMatched(quality(streams, \"BluRay REMUX\", \"DVD REMUX\"), \"TRiToN\")) : []",
     "score": 925,
+    "enabled": true
+  },
+  {
+    "expression": "/*#Sonarr*/ /*SHO*/ queryType=='anime.series' ? merge(quality(regexMatched(streams, \"SHO Rename\", \"SHOWTIME\"), \"WEB-DL\"), quality(regexMatched(streams, \"SHO Rename\", \"SHOWTIME\"), \"WEBRip\")) : []",
+    "score": 75,
+    "enabled": true
+  },
+  {
+    "expression": "/*#Sonarr*/ /*STAN*/ queryType=='anime.series' ? merge(quality(regexMatched(streams, \"Stan\", \"Stan Rename\"), \"WEB-DL\"), quality(regexMatched(streams, \"Stan\", \"Stan Rename\"), \"WEBRip\")) : []",
+    "score": 75,
+    "enabled": true
+  },
+  {
+    "expression": "/*#Sonarr*/ /*SYFY*/ queryType=='anime.series' ? merge(quality(regexMatched(streams, \"SYFY\"), \"WEB-DL\"), quality(regexMatched(streams, \"SYFY\"), \"WEBRip\")) : []",
+    "score": 75,
     "enabled": true
   },
   {
@@ -307,6 +382,11 @@
   {
     "expression": "/*#Sonarr*/ /*WKN*/ queryType=='anime.series' ? merge(quality(regexMatched(streams, \"WKN\"), \"HDTV\"), quality(regexMatched(streams, \"WKN\"), \"WEB-DL\"), quality(regexMatched(streams, \"WKN\"), \"WEBRip\")) : []",
     "score": 0,
+    "enabled": true
+  },
+  {
+    "expression": "/*#Sonarr*/ /*iT*/ queryType=='anime.series' ? merge(quality(regexMatched(streams, \"iT Rename\", \"iTunes\"), \"WEB-DL\"), quality(regexMatched(streams, \"iT Rename\", \"iTunes\"), \"WEBRip\")) : []",
+    "score": 75,
     "enabled": true
   },
   {
