@@ -997,6 +997,13 @@ def main() -> None:
         print(f"[convert] invalid regexes (referencing CFs degrade): "
               f"{sorted(invalid)}", file=sys.stderr)
 
+    if args.source != "dictionarry" and not args.profile:
+        sys.exit(
+            f"[convert] {args.source} requires --profile (only Dictionarry "
+            f"converts all profiles). Use --profile NAME to select one or "
+            f"more profiles."
+        )
+
     profiles = iter_profiles(db)
     if args.profile:
         wanted = set(args.profile)
