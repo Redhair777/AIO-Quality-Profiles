@@ -1,0 +1,147 @@
+[
+  {
+    "expression": "/*#Radarr*/ /*Accessibility*/ queryType=='movie' ? regexMatched(streams, \"Accessbility\") : []",
+    "score": -10000,
+    "enabled": true
+  },
+  {
+    "expression": "/*#Sonarr*/ /*Accessibility*/ queryType=='series' ? regexMatched(streams, \"Accessbility\") : []",
+    "score": -10000,
+    "enabled": true
+  },
+  {
+    "expression": "/*#Radarr*/ /*Atmos*/ queryType=='movie' ? regexMatched(streams, \"Atmos\") : []",
+    "score": -10000,
+    "enabled": true
+  },
+  {
+    "expression": "/*#Sonarr*/ /*Bad Multis*/ queryType=='series' ? regexMatched(streams, \"JOiNED\") : []",
+    "score": -10000,
+    "enabled": true
+  },
+  {
+    "expression": "/*#Sonarr*/ /*Bad Source*/ queryType=='series' ? regexMatched(streams, \"Parks and Recreation NTb Banned\", \"The Office (US) Banned Groups\", \"Family Guy Banned Groups\", \"Whose Line Not US Version\", \"Arthur Banned Groups\", \"Scrubs 2001 Approved Groups\", \"The Big Bang Theory Banned Groups\", \"The Office (US) Superfans Episodes\", \"Family Guy S13 Banned Groups\", \"Rick and Morty S09 Banned Groups\", \"1080i\", \"Phineas and Ferb Banned Groups\", \"The Four Seasons Banned Groups\", \"Adventure Time Season 8 Banned Groups\", \"House Season 6 Banned Groups\", \"The Office (US) S09 Extended Banned Groups\") : []",
+    "score": -10000,
+    "enabled": true
+  },
+  {
+    "expression": "/*#Radarr*/ /*DTS-HD HRA*/ queryType=='movie' ? negate(regexMatched(regexMatched(streams, \"DTS-HD HRA\"), \"AAC\", \"Dolby Digital\", \"Dolby Digital +\", \"Basic DTS\", \"DTS-ES\", \"DTS-X\", \"FLAC\", \"PCM\", \"TrueHD\"), regexMatched(streams, \"DTS-HD HRA\")) : []",
+    "score": -10000,
+    "enabled": true
+  },
+  {
+    "expression": "/*#Radarr*/ /*DTS-HD MA*/ queryType=='movie' ? negate(regexMatched(regexMatched(streams, \"DTS-HD MA\"), \"AAC\", \"Dolby Digital\", \"Dolby Digital +\", \"DTS-HD HRA-ES\", \"DTS-X\", \"FLAC\", \"PCM\", \"TrueHD\"), regexMatched(streams, \"DTS-HD MA\")) : []",
+    "score": -10000,
+    "enabled": true
+  },
+  {
+    "expression": "/*#Radarr*/ /*DTS-X*/ queryType=='movie' ? negate(regexMatched(regexMatched(streams, \"DTS-X\"), \"AAC\", \"Dolby Digital\", \"Dolby Digital +\", \"Basic DTS\", \"FLAC\", \"PCM\", \"TrueHD\"), regexMatched(streams, \"DTS-X\")) : []",
+    "score": -10000,
+    "enabled": true
+  },
+  {
+    "expression": "/*#Radarr*/ /*Dolby Vision*/ queryType=='movie' ? regexMatched(streams, \"Dolby Vision\") : []",
+    "score": -10000,
+    "enabled": true
+  },
+  {
+    "expression": "/*#Radarr*/ /*Dumpstarr LQ Groups*/ queryType=='movie' ? regexMatched(streams, \"E\", \"LUCY\", \"POWER\", \"TARDiS\", \"Tofu4U\", \"Pikanet128\", \"NLKIDS\", \"HiggsBoson\", \"JFF\", \"DUDU\") : []",
+    "score": -10000,
+    "enabled": true
+  },
+  {
+    "expression": "/*#Sonarr*/ /*Dumpstarr LQ Groups*/ queryType=='series' ? regexMatched(streams, \"E\", \"LUCY\", \"POWER\", \"TARDiS\", \"Tofu4U\", \"Pikanet128\", \"NLKIDS\", \"HiggsBoson\", \"JFF\", \"DUDU\") : []",
+    "score": -10000,
+    "enabled": true
+  },
+  {
+    "expression": "/*#Radarr*/ /*Dumpstarr LQ Groups (Automation)*/ queryType=='movie' ? regexMatched(streams, \"WADU\", \"FIEND\", \"T3KASHi\", \"GGEZ\") : []",
+    "score": -10,
+    "enabled": true
+  },
+  {
+    "expression": "/*#Radarr*/ /*Dumpstarr LQ Title*/ queryType=='movie' ? regexMatched(streams, \"DEiMOS\", \"MIRCrew\", \"MuTT\", \"OldT\", \"TiZU\", \"Tofu4U (Title)\", \"TVS\", \"ViSiON\") : []",
+    "score": -10000,
+    "enabled": true
+  },
+  {
+    "expression": "/*#Sonarr*/ /*Dumpstarr LQ Title*/ queryType=='series' ? regexMatched(streams, \"DEiMOS\", \"MIRCrew\", \"MuTT\", \"OldT\", \"TiZU\", \"Tofu4U (Title)\", \"TVS\", \"ViSiON\") : []",
+    "score": -10000,
+    "enabled": true
+  },
+  {
+    "expression": "/*#Radarr*/ /*Dumpstarr LQ Title (Automation)*/ queryType=='movie' ? regexMatched(streams, \"Reza\", \"VARYG\", \"Asenshi-MTBB\", \"MCR\", \"SEV\", \"Tsundere-Raws\") : []",
+    "score": -10,
+    "enabled": true
+  },
+  {
+    "expression": "/*#Sonarr*/ /*Dumpstarr LQ Title (Automation)*/ queryType=='series' ? regexMatched(streams, \"Reza\", \"VARYG\", \"Asenshi-MTBB\", \"MCR\", \"SEV\", \"Tsundere-Raws\") : []",
+    "score": -10,
+    "enabled": true
+  },
+  {
+    "expression": "/*#Radarr*/ /*Group Missing*/ queryType=='movie' ? negate(regexMatched(streams, \"Release Group Missing\"), streams) : []",
+    "score": -10000,
+    "enabled": true
+  },
+  {
+    "expression": "/*#Sonarr*/ /*Group Missing*/ queryType=='series' ? negate(regexMatched(streams, \"Release Group Missing\"), streams) : []",
+    "score": -10000,
+    "enabled": true
+  },
+  {
+    "expression": "/*#Radarr*/ /*HDR*/ queryType=='movie' ? regexMatched(streams, \"DV with HDR Fallback\", \"HDR\", \"HDR10\", \"HDR10+\", \"HLG\", \"PQ\", \"RlsGrp Missing HDR\") : []",
+    "score": -10000,
+    "enabled": true
+  },
+  {
+    "expression": "/*#Radarr*/ /*HDR10+*/ queryType=='movie' ? regexMatched(streams, \"HDR10+\") : []",
+    "score": -10000,
+    "enabled": true
+  },
+  {
+    "expression": "/*#Sonarr*/ /*HONE (Bad Name)*/ queryType=='series' ? regexMatched(negate(regexMatched(streams, \"HONE\"), streams), \"HONE Release Title\") : []",
+    "score": -10000,
+    "enabled": true
+  },
+  {
+    "expression": "/*#Radarr*/ /*SIDCA Tier 01*/ queryType=='movie' ? regexMatched(streams, \"PSA\") : []",
+    "score": 100,
+    "enabled": true
+  },
+  {
+    "expression": "/*#Sonarr*/ /*SIDCA Tier 01*/ queryType=='series' ? regexMatched(streams, \"MeGusta\") : []",
+    "score": 100,
+    "enabled": true
+  },
+  {
+    "expression": "/*#Radarr*/ /*SIDCA Tier 02*/ queryType=='movie' ? regexMatched(streams, \"iVy\", \"LAMA\") : []",
+    "score": 50,
+    "enabled": true
+  },
+  {
+    "expression": "/*#Sonarr*/ /*SIDCA Tier 02*/ queryType=='series' ? regexMatched(streams, \"ELiTE\", \"iVy\", \"Pahe\") : []",
+    "score": 50,
+    "enabled": true
+  },
+  {
+    "expression": "/*#Radarr*/ /*SIDCA Tier 03*/ queryType=='movie' ? regexMatched(streams, \"RARBG\") : []",
+    "score": 25,
+    "enabled": true
+  },
+  {
+    "expression": "/*#Sonarr*/ /*SIDCA Tier 03*/ queryType=='series' ? regexMatched(streams, \"AndreMor\", \"ASTRiD\", \"CBFM\", \"CHiLL\", \"CtrlHD\", \"EDPH\", \"HANDJOB\", \"HODL\", \"KONTRAST\", \"MacP\", \"PLUTONiUM\", \"PHOCiS\", \"YAWNiX\", \"ViETNAM\") : []",
+    "score": 25,
+    "enabled": true
+  },
+  {
+    "expression": "/*#Sonarr*/ /*Season Pack*/ queryType=='series' ? seasonPack(streams, \"seasonPack\") : []",
+    "score": 1,
+    "enabled": true
+  },
+  {
+    "expression": "/*#Radarr*/ /*TrueHD*/ queryType=='movie' ? negate(regexMatched(regexMatched(streams, \"TrueHD\"), \"Dolby Digital\", \"Dolby Digital +\", \"DTS\", \"FLAC\"), regexMatched(streams, \"TrueHD\")) : []",
+    "score": -10000,
+    "enabled": true
+  }
+]

@@ -1,0 +1,747 @@
+[
+  {
+    "name": "1080i",
+    "pattern": "/\\b(1080i)\\b/i",
+    "score": 0
+  },
+  {
+    "name": "1XBET",
+    "pattern": "/\\b(1XBET)\\b/i",
+    "score": 0
+  },
+  {
+    "name": "3D",
+    "pattern": "/(?<=\\b[12]\\d{3}\\b).*\\b((Bluray|BD)?3D|SBS|H[- .]?OU|H[- .]?SBS|Half[ .-]?OU|Half[ .-]?SBS)\\b/i",
+    "score": 0
+  },
+  {
+    "name": "4K",
+    "pattern": "/4K/i",
+    "score": 0
+  },
+  {
+    "name": "5.1 Surround",
+    "pattern": "/[^0-9]5[ .][0-1]\\b/i",
+    "score": 0
+  },
+  {
+    "name": "7.1 Surround",
+    "pattern": "/[^0-9][7-8][ .][0-1]\\b/i",
+    "score": 0
+  },
+  {
+    "name": "AAC",
+    "pattern": "/\\bAAC(\\b|\\d)/i",
+    "score": 0
+  },
+  {
+    "name": "AI Upscales",
+    "pattern": "/(?<=\\b\\d{3,4}p\\b)(?=.*\\b(HEVC)\\b)(?=.*\\b(AI)\\b)/i",
+    "score": 0
+  },
+  {
+    "name": "AIUS",
+    "pattern": "/\\b(AIUS)\\b/i",
+    "score": 0
+  },
+  {
+    "name": "AV1",
+    "pattern": "/\\bAV1\\b/i",
+    "score": 0
+  },
+  {
+    "name": "Accessbility",
+    "pattern": "/\\b(ASL|BASL|BSL|Audio[ ._-]Description)\\b/i",
+    "score": 0
+  },
+  {
+    "name": "Amazon Prime",
+    "pattern": "/\\b(amzn|amazon(hd)?)\\b/i",
+    "score": 0
+  },
+  {
+    "name": "Apple TV+",
+    "pattern": "/\\b(atvp|aptv|Apple TV\\+)\\b/i",
+    "score": 0
+  },
+  {
+    "name": "Asenshi-MTBB",
+    "pattern": "/\\b(Asenshi-MTBB)\\b/i",
+    "score": 0
+  },
+  {
+    "name": "Atmos",
+    "pattern": "/\\bATMOS|DDPA(\\b|\\d)/i",
+    "score": 0
+  },
+  {
+    "name": "B&W",
+    "pattern": "/(?<=\\b[12]\\d{3}\\b).*\\b((B(lack)?[ ._-]?(out|(and|[n&])?[ ._-]?(W(hite)?|Chrome))))\\b(?!$)/i",
+    "score": 0
+  },
+  {
+    "name": "BD3D",
+    "pattern": "/\\b(BD3D)\\b/i",
+    "score": 0
+  },
+  {
+    "name": "BEN THE MEN",
+    "pattern": "/\\b(BEN[ ._-]THE[ ._-]MEN)\\b/i",
+    "score": 0
+  },
+  {
+    "name": "BHDStudio",
+    "pattern": "/^(BHDStudio)$/i",
+    "score": 0
+  },
+  {
+    "name": "BR-DISK",
+    "pattern": "/^(?!.*\\b((?<!HD[._ -]|HD)DVD|BDRip|720p|MKV|XviD|WMV|d3g|(BD)?REMUX|^(?=.*1080p)(?=.*HEVC)|[xh][-_. ]?26[45]|German.*[DM]L|((?<=\\d{4}).*German.*([DM]L)?)(?=.*\\b(AVC|HEVC|VC[-_. ]?1|MVC|MPEG[-_. ]?2)\\b))\\b)(((?=.*\\b(Blu[-_. ]?ray|BD|HD[-_. ]?DVD)\\b)(?=.*\\b(AVC|HEVC|VC[-_. ]?1|MVC|MPEG[-_. ]?2|BDMV|ISO)\\b))|^((?=.*\\b(((?=.*\\b((.*_)?COMPLETE.*|Dis[ck])\\b)(?=.*(Blu[-_. ]?ray|HD[-_. ]?DVD)))|3D[-_. ]?BD|BR[-_. ]?DISK|Full[-_. ]?Blu[-_. ]?ray|^((?=.*((BD|UHD)[-_. ]?(25|50|66|100|ISO)))))))).*/i",
+    "score": 0
+  },
+  {
+    "name": "Basic DTS",
+    "pattern": "/DTS[ .]?[1-9]/i",
+    "score": 0
+  },
+  {
+    "name": "BiTOR",
+    "pattern": "/^(BiTOR)$/i",
+    "score": 0
+  },
+  {
+    "name": "Bluray 3D",
+    "pattern": "/\\b(BluRay3D)\\b/i",
+    "score": 0
+  },
+  {
+    "name": "Bravia Core",
+    "pattern": "/\\b((B)?CORE)\\b/i",
+    "score": 0
+  },
+  {
+    "name": "Criterion Channel",
+    "pattern": "/\\b(CRiT)\\b/i",
+    "score": 0
+  },
+  {
+    "name": "Criterion Group",
+    "pattern": "/^(Criterion)$/i",
+    "score": 0
+  },
+  {
+    "name": "D3US",
+    "pattern": "/(-D3US|D3US-)/i",
+    "score": 0
+  },
+  {
+    "name": "DEiMOS",
+    "pattern": "/\\b(DEiMOS)\\b/i",
+    "score": 0
+  },
+  {
+    "name": "DTS",
+    "pattern": "/\\bDTS(\\b|\\d)/i",
+    "score": 0
+  },
+  {
+    "name": "DTS-ES",
+    "pattern": "/dts[-. ]?es\\b/i",
+    "score": 0
+  },
+  {
+    "name": "DTS-HD HRA",
+    "pattern": "/dts[-. ]?(hd[. ]?)?(hra?|hi\\b)/i",
+    "score": 0
+  },
+  {
+    "name": "DTS-HD HRA-ES",
+    "pattern": "/dts[-. ]?(es|(hd[. ]?)?(hr|hi))/i",
+    "score": 0
+  },
+  {
+    "name": "DTS-HD MA",
+    "pattern": "/\\b(dts[-_. ]?(ma|hd([-_. ]?ma)?|xll))(\\b|\\d)/i",
+    "score": 0
+  },
+  {
+    "name": "DTS-X",
+    "pattern": "/\\b(dts[-_. :]?x)\\b(?!\\d)/i",
+    "score": 0
+  },
+  {
+    "name": "DUDU",
+    "pattern": "/^(DUDU)$/i",
+    "score": 0
+  },
+  {
+    "name": "DV with HDR Fallback",
+    "pattern": "/^(?=.*\\b(dv|dovi|dolby[ .]?v(ision)?)\\b)(?!(?=.*\\b(WEB[ ._-]?(DL|Rip)?)\\b)(?!.*\\b(hulu)\\b))/i",
+    "score": 0
+  },
+  {
+    "name": "Darkness and Light",
+    "pattern": "/(?<=\\b[12]\\d{3}\\b).*\\b(Darkness?[ ._-]?(and|&)[ ._-]?(Light))\\b(?!$)/i",
+    "score": 0
+  },
+  {
+    "name": "DepraveD",
+    "pattern": "/^(DepraveD)$/i",
+    "score": 0
+  },
+  {
+    "name": "Disney+",
+    "pattern": "/\\b(dsnp|dsny|disney|Disney\\+)\\b/i",
+    "score": 0
+  },
+  {
+    "name": "Dolby Digital",
+    "pattern": "/\\bDD[^a-z+]|(?<!e)ac3/i",
+    "score": 0
+  },
+  {
+    "name": "Dolby Digital +",
+    "pattern": "/\\bDD[P+]|\\b(e[-_. ]?ac3)\\b/i",
+    "score": 0
+  },
+  {
+    "name": "Dolby Vision",
+    "pattern": "/\\b(dv|dovi|dolby[ .]?v(ision)?)\\b/i",
+    "score": 0
+  },
+  {
+    "name": "Dumpstarr Baseline Groups",
+    "pattern": "/^(DarQ|DiscoD|PiRaTeS|SuccessfulCrab|Vyndros|Weasley)$/i",
+    "score": 0
+  },
+  {
+    "name": "E",
+    "pattern": "/^(E)$/i",
+    "score": 0
+  },
+  {
+    "name": "EVO no WEB-DL",
+    "pattern": "/(?<=\\b[12]\\d{3}\\b.*?)(?<!\\b(web[ ._-]?(dl|rip)?).*?)\\b(EVO)\\b/i",
+    "score": 0
+  },
+  {
+    "name": "Extended Clip",
+    "pattern": "/\\b(Extended[ ._-]Clip)\\b/i",
+    "score": 0
+  },
+  {
+    "name": "Extras",
+    "pattern": "/(?<=\\b[12]\\d{3}\\b).*(\\b|\\.)\\b(Extras?|Bonus|Extended[ ._-]Clip|Special Feature[s]?)\\b/i",
+    "score": 0
+  },
+  {
+    "name": "FIEND",
+    "pattern": "/^(FIEND)$/i",
+    "score": 0
+  },
+  {
+    "name": "FLAC",
+    "pattern": "/\\bFLAC(\\b|\\d)/i",
+    "score": 0
+  },
+  {
+    "name": "Feranki1980",
+    "pattern": "/\\b(Feranki1980)\\b/i",
+    "score": 0
+  },
+  {
+    "name": "Flights - Release Group",
+    "pattern": "/^(Flights)$/i",
+    "score": 0
+  },
+  {
+    "name": "Flights - Release Title",
+    "pattern": "/\\b(Flights)\\b/i",
+    "score": 0
+  },
+  {
+    "name": "GGEZ",
+    "pattern": "/^(GGEZ|GGEZ-ZI03)$/i",
+    "score": 0
+  },
+  {
+    "name": "GalaxyRG",
+    "pattern": "/\\b(GalaxyRG)\\b/i",
+    "score": 0
+  },
+  {
+    "name": "Grayscale",
+    "pattern": "/(?<=\\b[12]\\d{3}\\b).*\\b(Gr[ae]y([ ._-]?(scale))?)\\b(?!$)/i",
+    "score": 0
+  },
+  {
+    "name": "GuyZo - Release Group",
+    "pattern": "/^(GuyZo|BR-GuyZo)$/i",
+    "score": 0
+  },
+  {
+    "name": "GuyZo - Release Title",
+    "pattern": "/\\b(GuyZo|BR-GuyZo)\\b/i",
+    "score": 0
+  },
+  {
+    "name": "HBO Max",
+    "pattern": "/\\b(hmax|hbom|hbo[ ._-]?max)\\b(?=[ ._-]web[ ._-]?(dl|rip)\\b)/i",
+    "score": 0
+  },
+  {
+    "name": "HBO Max Rename",
+    "pattern": "/\\[(HMAX)\\b|\\b(HMAX)\\]/i",
+    "score": 0
+  },
+  {
+    "name": "HDR",
+    "pattern": "/\\b(HDR)\\b/i",
+    "score": 0
+  },
+  {
+    "name": "HDR10",
+    "pattern": "/\\b(HDR10(?![+]|P(lus)?))/i",
+    "score": 0
+  },
+  {
+    "name": "HDR10+",
+    "pattern": "/\\b(HDR10(?=[+]|P(lus)?))/i",
+    "score": 0
+  },
+  {
+    "name": "HHWEB (No MA)",
+    "pattern": "/^(?!.*\\bMA\\b.*\\bWEB-?DL\\b).*\\b(HHWEB)\\b/i",
+    "score": 0
+  },
+  {
+    "name": "HLG",
+    "pattern": "/\\b(HLG)\\b/i",
+    "score": 0
+  },
+  {
+    "name": "HONE",
+    "pattern": "/^(HONE)$/i",
+    "score": 0
+  },
+  {
+    "name": "HONE Release Title",
+    "pattern": "/[-\\s]HONE\\b/i",
+    "score": 0
+  },
+  {
+    "name": "HiggsBoson",
+    "pattern": "/^(HiggsBosson)$/i",
+    "score": 0
+  },
+  {
+    "name": "Hulu",
+    "pattern": "/\\b(hulu)\\b/i",
+    "score": 0
+  },
+  {
+    "name": "IMAX",
+    "pattern": "/\\b((?<!NON[ ._-])IMAX)\\b/i",
+    "score": 0
+  },
+  {
+    "name": "JFF",
+    "pattern": "/^(JFF)$/i",
+    "score": 0
+  },
+  {
+    "name": "LQ Sources",
+    "pattern": "/\\b(CAM|CAMRip|DVDSCR|HDCAM|HDSCR|HDTC|HDTS|PDVD|PreDVDRip|SCREENER|TELECINE|TELESYNC|TSRip|WORKPRINT)\\b/i",
+    "score": 0
+  },
+  {
+    "name": "LUCY",
+    "pattern": "/^(LUCY)$/i",
+    "score": 0
+  },
+  {
+    "name": "Low Channel Count",
+    "pattern": "/(?<=\\b[12]\\d{3}\\b.*?)(?<!repac)[^0-9][1-4][ .][0-1]\\b|\\b(Stereo|Mono)\\b/i",
+    "score": 0
+  },
+  {
+    "name": "MCR",
+    "pattern": "/\\b(MCR)\\b/i",
+    "score": 0
+  },
+  {
+    "name": "MIRCrew",
+    "pattern": "/\\b(MIRCrew)\\b/i",
+    "score": 0
+  },
+  {
+    "name": "Max",
+    "pattern": "/\\b((?<!hbo[ ._-])max)\\b(?=[ ._-]web[ ._-]?(dl|rip)\\b)/i",
+    "score": 0
+  },
+  {
+    "name": "Max Rename",
+    "pattern": "/\\[(MAX)\\b|\\b(MAX)\\]/i",
+    "score": 0
+  },
+  {
+    "name": "Monochrome",
+    "pattern": "/(?<=\\b[12]\\d{3}\\b).*\\b(Monochrome)\\b(?!$)/i",
+    "score": 0
+  },
+  {
+    "name": "Movies Anywhere",
+    "pattern": "/(?<!dts[ .-]?hd[ .-]?)\\b(ma|ykw)\\b(?=.*\\bweb[ ._-]?(dl|rip)\\b)/i",
+    "score": 0
+  },
+  {
+    "name": "MuTT",
+    "pattern": "/\\b(MuTT)\\b/i",
+    "score": 0
+  },
+  {
+    "name": "NLKIDS",
+    "pattern": "/^(NLKIDS)$/i",
+    "score": 0
+  },
+  {
+    "name": "Netflix",
+    "pattern": "/\\b(nf|netflix(u?hd)?)\\b/i",
+    "score": 0
+  },
+  {
+    "name": "No Minus Color",
+    "pattern": "/(?<=\\b[12]\\d{3}\\b).*\\b((No|Minus)[ ._-]?Colou?r)\\b(?!$)/i",
+    "score": 0
+  },
+  {
+    "name": "Noir",
+    "pattern": "/(?<=\\b[12]\\d{3}\\b).*\\b(Noir)\\b(?!$)/i",
+    "score": 0
+  },
+  {
+    "name": "Not HDR",
+    "pattern": "/\\bHDR(\\b|\\d)/i",
+    "score": 0
+  },
+  {
+    "name": "Not Higher Version Repack Proper",
+    "pattern": "/\\b((repack|proper)[23])\\b|\\bREAL\\.(REAL\\.)?(PROPER|REPACK)\\b/i",
+    "score": 0
+  },
+  {
+    "name": "Not Repack Proper 3",
+    "pattern": "/\\b((repack|proper)3)\\b|\\bREAL\\.(REAL\\.)(PROPER|REPACK)\\b/i",
+    "score": 0
+  },
+  {
+    "name": "OldT",
+    "pattern": "/\\b(OldT)\\b/i",
+    "score": 0
+  },
+  {
+    "name": "Open Matte",
+    "pattern": "/\\b(Open[ ._-]?Matte)\\b/i",
+    "score": 0
+  },
+  {
+    "name": "PCM",
+    "pattern": "/\\b(l?)PCM(\\b|\\d)/i",
+    "score": 0
+  },
+  {
+    "name": "POWER",
+    "pattern": "/^(POWER)$/i",
+    "score": 0
+  },
+  {
+    "name": "PQ",
+    "pattern": "/\\b(PQ)\\b/i",
+    "score": 0
+  },
+  {
+    "name": "PiRaTeS no WEB-DL",
+    "pattern": "/(?<=\\b[12]\\d{3}\\b.*?)(?<!\\b(web[ ._-]?(dl|rip)?).*?)\\b(PiRaTeS)\\b/i",
+    "score": 0
+  },
+  {
+    "name": "Pikanet128",
+    "pattern": "/^(Pikanet128)$/i",
+    "score": 0
+  },
+  {
+    "name": "QxR",
+    "pattern": "/^(QxR|afm72|Bandi|Bluespots|Celdra|FreetheFish|Garshasp|Ghost|Ime|Kappa|Langbard|LION|Panda|MONOLITH|Natty|r00t|RCVR|RZeroX|SAMPA|Silence|t3nzin|Tigole|YOGI)$/i",
+    "score": 0
+  },
+  {
+    "name": "R&H",
+    "pattern": "/\\b(R&H)\\b/i",
+    "score": 0
+  },
+  {
+    "name": "READ NOTE",
+    "pattern": "/\\b(READ(\\s|\\.)+NOTE)\\b/i",
+    "score": 0
+  },
+  {
+    "name": "RW",
+    "pattern": "/\\b(RW)\\b/i",
+    "score": 0
+  },
+  {
+    "name": "Regrade",
+    "pattern": "/\\b((Upscale)?Re-?graded?)\\b/i",
+    "score": 0
+  },
+  {
+    "name": "Release Group Missing",
+    "pattern": "/./i",
+    "score": 0
+  },
+  {
+    "name": "Remaster",
+    "pattern": "/Remaster/i",
+    "score": 0
+  },
+  {
+    "name": "Remux",
+    "pattern": "/Remux/i",
+    "score": 0
+  },
+  {
+    "name": "Repack Proper 2 or REAL.PROPER REPACK",
+    "pattern": "/\\b((repack|proper)2)\\b|\\b(REAL\\.(PROPER|REPACK))\\b/i",
+    "score": 0
+  },
+  {
+    "name": "Repack Proper 3 or REAL.REAL.PROPER REPACK",
+    "pattern": "/\\b((repack|proper)3)\\b|\\b(REAL\\.REAL\\.(PROPER|REPACK))\\b/i",
+    "score": 0
+  },
+  {
+    "name": "Repack Proper Rerip",
+    "pattern": "/\\b(Repack|Proper|Rerip)\\b/i",
+    "score": 0
+  },
+  {
+    "name": "Reza",
+    "pattern": "/\\b(Reza)\\b/i",
+    "score": 0
+  },
+  {
+    "name": "RlsGrp Missing HDR",
+    "pattern": "/^(?=.*\\b(FraMeSToR|HQMUX|SiCFoI)\\b)(?=.*\\b(2160p)\\b)(?!.*\\b(HDR10([+]|P(lus)?)))(?!.*\\b(SDR)\\b).*/i",
+    "score": 0
+  },
+  {
+    "name": "SEV",
+    "pattern": "/\\b(SEV|D0ct0rLew|Kira)\\b/i",
+    "score": 0
+  },
+  {
+    "name": "SWTYBLZ Release Title",
+    "pattern": "/\\b(SWTYBLZ)\\b/i",
+    "score": 0
+  },
+  {
+    "name": "SasukeducK",
+    "pattern": "/^(SasukeducK)$/i",
+    "score": 0
+  },
+  {
+    "name": "Shush Cut",
+    "pattern": "/(?<=\\b[12]\\d{3}\\b).*\\b(Shush[ ._-]?Cut)\\b(?!$)/i",
+    "score": 0
+  },
+  {
+    "name": "Sing Along",
+    "pattern": "/(?<=\\b[12]\\d{3}\\b).*\\b(Sing[-_. ]Along)\\b/i",
+    "score": 0
+  },
+  {
+    "name": "Special Edition",
+    "pattern": "/(?<!^)\\b(extended|uncut|directors|special|unrated|cut|version|(?<!{)edition)(\\b|\\d)/i",
+    "score": 0
+  },
+  {
+    "name": "T3KASHi",
+    "pattern": "/^(T3KASHi)$/i",
+    "score": 0
+  },
+  {
+    "name": "TARDiS",
+    "pattern": "/^(TARDiS)$/i",
+    "score": 0
+  },
+  {
+    "name": "TEKNO3D",
+    "pattern": "/\\b(TEKNO3D)\\b/i",
+    "score": 0
+  },
+  {
+    "name": "TRaSH HD Bluray Tier 01 (Radarr)",
+    "pattern": "/^(BBQ|BMF|c0kE|Chotab|CRiSC|CtrlHD|D-Z0N3|Dariush|decibeL|DON|EbP|EDPH|Geek|LolHD|NCmt|PTer|TayTO|TDD|TnP|VietHD|ZQ|ZoroSenpai)$/i",
+    "score": 0
+  },
+  {
+    "name": "TRaSH HD Bluray Tier 02 (Radarr)",
+    "pattern": "/^(EA|HiDt|HiSD|iFT|NTb|QOQ|SA89|sbR)$/i",
+    "score": 0
+  },
+  {
+    "name": "TRaSH HD Bluray Tier 03",
+    "pattern": "/^(ATELiER|BHDStudio|hallowed|HiFi|HONE|LoRD|playHD|SPHD|W4NK3R)$/i",
+    "score": 0
+  },
+  {
+    "name": "TRaSH LQ (Radarr)",
+    "pattern": "/^(24xHD|41RGB|4K4U|AOC|AROMA|aXXo|AZAZE|BARC0DE|BAUCKLEY|BdC|beAst|BTM|C1NEM4|C4K|CDDHD|CHAOS|CHD|CiNE|CLEANUP|COLLECTiVE|CREATiVE24|CrEwSaDe|CTFOH|d3g|DDR|DNL|DRX|E|EPiC|EuReKA|FaNGDiNG0|Feranki1980|FGT|FMD|FRDS|FS|FZHD|GalaxyRG|GHD|GPTHD|HDHUB4U|HDS|HDT|HDTime|HDWinG|iNTENSO|iPlanet|iVy|jennaortega(UHD)?|JFF|KC|KiNGDOM|KIRA|L0SERNIGHT|LAMA|Leffe|Liber8|LiGaS|LUCY|MarkII|MeGusta|Mesc|mHD|mSD|MTeam|MT|MySiLU|NhaNc3|nHD|nikt0|NoGr(ou)?p|nSD|OFT|Pahe(\\.(ph|in))?\\b|PATOMiEL|PRODJi|PSA|PTNK|RARBG|RBB|RDN|Rifftrax|RU4HD|SANTi|Scene|SHD|ShieldBearer|STUTTERSHIT|SUNSCREEN|SyncUP|TBS|TEKNO3D|Tigole|TIKO|VISIONPLUSHDR(-X|1000)?|WAF|WiKi|x0r|YIFY|YTS(.(MX|LT|AG))?|Zeus)$/i",
+    "score": 0
+  },
+  {
+    "name": "TRaSH UHD Bluray Tier 01",
+    "pattern": "/^(CtrlHD|MainFrame|DON|W4NK3R)$/i",
+    "score": 0
+  },
+  {
+    "name": "TRaSH UHD Bluray Tier 02",
+    "pattern": "/^(HiDt|HQMUX|RandomBytes)$/i",
+    "score": 0
+  },
+  {
+    "name": "TRaSH UHD Bluray Tier 03",
+    "pattern": "/^(BHDStudio|hallowed|HONE|PTer|SPHD|WEBDV)$/i",
+    "score": 0
+  },
+  {
+    "name": "TRaSH WEB Tier 01 (Radarr)",
+    "pattern": "/^(ABBIE|AJP69|APEX|PAXA|PEXA|XEPA|BLUTONiUM|BYNDR|CMRG|CRFW|CRUD|FLUX|GNOME|HONE|KiNGS|Kitsune|MADSKY|NOSiViD|NTb|NTG|RAWR|SiC|TEPES|TheFarm|ZoroSenpai)$/i",
+    "score": 0
+  },
+  {
+    "name": "TRaSH WEB Tier 02 (Radarr)",
+    "pattern": "/^(dB|Flights|MiU|monkee|MZABI|PHOENiX|playWEB|SbR|SMURF|TOMMY|XEBEC|4KBEC|CEBEX)$/i",
+    "score": 0
+  },
+  {
+    "name": "TRaSH WEB Tier 03 (Radarr)",
+    "pattern": "/^(BLOOM|Dooky|GNOMiSSiON|HHWEB|NINJACENTRAL|NPMS|ROCCaT|SiGMA|SLiGNOME|SwAgLaNdEr)$/i",
+    "score": 0
+  },
+  {
+    "name": "TVS",
+    "pattern": "/\\b(TVS)\\b/i",
+    "score": 0
+  },
+  {
+    "name": "TeeWee",
+    "pattern": "/\\b(TeeWee)\\b/i",
+    "score": 0
+  },
+  {
+    "name": "The Upscaler",
+    "pattern": "/\\b(The[ ._-]?Upscaler)\\b/i",
+    "score": 0
+  },
+  {
+    "name": "Theatrical Edition",
+    "pattern": "/(?<!^|{)\\b(theatrical)(\\b|\\d)/i",
+    "score": 0
+  },
+  {
+    "name": "TiZU",
+    "pattern": "/\\b(TiZU)\\b/i",
+    "score": 0
+  },
+  {
+    "name": "Tofu4U",
+    "pattern": "/^(Tofu4U)$/i",
+    "score": 0
+  },
+  {
+    "name": "Tofu4U (Title)",
+    "pattern": "/\\b(Tofu4U)\\b/i",
+    "score": 0
+  },
+  {
+    "name": "TrueHD",
+    "pattern": "/True[ .-]?HD[ .-]?/i",
+    "score": 0
+  },
+  {
+    "name": "TrueHD Missing Groups",
+    "pattern": "/\\b(CtrlHD|DON|EPSiLON|JustWatch|NoGroup|PmP|TRiToN|W4NK3R)\\b/i",
+    "score": 0
+  },
+  {
+    "name": "Tsundere-Raws",
+    "pattern": "/\\b(Tsundere-Raws)\\b/i",
+    "score": 0
+  },
+  {
+    "name": "UnKn0wn (NoRemux)",
+    "pattern": "/(?<!\\b(remux).*?)\\b(unkn0wn)\\b/i",
+    "score": 0
+  },
+  {
+    "name": "Upscaled",
+    "pattern": "/(?<=\\b\\d{3,4}p\\b).*\\b(AI[ ._-]?Enhanced?|UPS(UHD)?|Upscaled?([ ._-]?UHD)?|UpRez)\\b/i",
+    "score": 0
+  },
+  {
+    "name": "VARYG",
+    "pattern": "/\\b(VARYG)\\b/i",
+    "score": 0
+  },
+  {
+    "name": "VD0N",
+    "pattern": "/^(VD0N)$/i",
+    "score": 0
+  },
+  {
+    "name": "ViSiON",
+    "pattern": "/\\b(ViSiON)\\b/i",
+    "score": 0
+  },
+  {
+    "name": "VisionXpert",
+    "pattern": "/^(VisionXpert)$/i",
+    "score": 0
+  },
+  {
+    "name": "WADU",
+    "pattern": "/^(WADU)$/i",
+    "score": 0
+  },
+  {
+    "name": "Will1969",
+    "pattern": "/\\b(Will1869)\\b/i",
+    "score": 0
+  },
+  {
+    "name": "hallowed",
+    "pattern": "/^(hallowed)$/i",
+    "score": 0
+  },
+  {
+    "name": "iTunes",
+    "pattern": "/\\b(it|itunes)\\b(?=[ ._-]web[ ._-]?(dl|rip)\\b)/i",
+    "score": 0
+  },
+  {
+    "name": "iTunes Rename",
+    "pattern": "/\\[(iT)(?![+])\\b|\\b(?<![+])(iT)\\]/i",
+    "score": 0
+  },
+  {
+    "name": "jennaortega",
+    "pattern": "/(?<!-)\\b(jennaortega(UHD)?)\\b/i",
+    "score": 0
+  },
+  {
+    "name": "tarunk9c",
+    "pattern": "/^(tarunk9c)$/i",
+    "score": 0
+  }
+]

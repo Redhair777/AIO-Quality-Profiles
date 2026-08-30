@@ -552,7 +552,7 @@ def _collapse_negate_chain(node: _SelNode) -> bool:
         rm, base = cur.args
         if not (rm.kind == "call" and rm.name == "regexMatched"):
             break
-        if len(rm.args) != 2:  # already-collapsed multi-name rm is not a fresh link
+        if len(rm.args) != 2:
             break
         if _render_sel(rm.args[0]) != _render_sel(base):
             break
@@ -574,6 +574,40 @@ def _collapse_negate_chain(node: _SelNode) -> bool:
     return True
 
 
+def _collapse_negate_duplicate(node: _SelNode) -> bool:
+    """Collapse negate(regexMatched(regexMatched(X, *L1), *L2), regexMatched(X, *L1))
+    into negate(regexMatched(X, *L2), regexMatched(X, *L1))."""
+    first, second = node.args
+    if first.kind != "call" or first.name != "regexMatched":
+        return False
+    if second.kind != "call" or second.name != "regexMatched":
+        return False
+    if len(first.args) < 2 or len(second.args) < 2:
+        return False
+    inner = first.args[0]
+    if inner.kind != "call" or inner.name != "regexMatched":
+        return False
+    if len(inner.args) < 2:
+        return False
+    L2 = first.args[1:]
+    X1 = inner.args[0]
+    L1 = inner.args[1:]
+    X2 = second.args[0]
+    L1b = second.args[1:]
+    if _render_sel(X1) != _render_sel(X2):
+        return False
+    if len(L1) != len(L1b):
+        return False
+    for a, b in zip(L1, L1b):
+        if _render_sel(a) != _render_sel(b):
+            return False
+    node.args = [
+        _SelNode("call", name="regexMatched", args=[X1] + list(L2)),
+        _SelNode("call", name="regexMatched", args=[X2] + list(L1)),
+    ]
+    return True
+
+
 def _optimize_sel_node(node: _SelNode) -> None:
     if node.kind != "call":
         return
@@ -583,6 +617,8 @@ def _optimize_sel_node(node: _SelNode) -> None:
         return
     for a in node.args:
         _optimize_sel_node(a)
+    if node.name == "negate" and len(node.args) == 2:
+        _collapse_negate_duplicate(node)
     if node.name == "merge":
         names = [_regex_name(a) for a in node.args]
         if len(node.args) >= 2 and all(n is not None for n in names):
@@ -693,6 +729,166 @@ def js_validate_regexes(node: Path | None, regexes: dict[str, str]) -> set[str]:
         return set()
 
 
+# --------------------------------------------------------------- precompile
+
+def _find_regex_matched_lists(expr_body: str) -> list[tuple[int, int, tuple[str, ...]]]:
+    """Find all regexMatched(streams, "name1", "name2", ...) with 3+ names.
+    Returns list of (start, end, name_tuple) in descending start order."""
+    results: list[tuple[int, int, tuple[str, ...]]] = []
+    i = 0
+    while True:
+        idx = expr_body.find("regexMatched(", i)
+        if idx < 0:
+            break
+        start = idx
+        paren = start + len("regexMatched")
+        depth = 0
+        j = paren
+        while j < len(expr_body):
+            if expr_body[j] == '(':
+                depth += 1
+            elif expr_body[j] == ')':
+                depth -= 1
+                if depth == 0:
+                    j += 1
+                    break
+            j += 1
+        inner = expr_body[paren+1:j-1]
+        args: list[str] = []
+        arg_depth = 0
+        arg_start = 0
+        for k, ch in enumerate(inner):
+            if ch == ',' and arg_depth == 0:
+                args.append(inner[arg_start:k].strip())
+                arg_start = k + 1
+            elif ch == '(':
+                arg_depth += 1
+            elif ch == ')':
+                arg_depth -= 1
+        args.append(inner[arg_start:].strip())
+        if len(args) >= 2 and args[0].strip() == "streams":
+            names = tuple(a.strip('" ') for a in args[1:] if a.strip().startswith('"') and a.strip().endswith('"'))
+            if len(names) >= 3:
+                results.append((start, j, names))
+        i = j
+    results.reverse()
+    return results
+
+
+def _patterns_share_shape(patterns: list[str]) -> str | None:
+    """If all patterns share the same shape prefix+GROUP+suffix, return the
+    combined pattern with an OR group. Otherwise return None."""
+    if not patterns:
+        return None
+    template = patterns[0]
+    for p in patterns:
+        if len(p) != len(template):
+            return None
+        mismatch = [i for i in range(len(p)) if p[i] != template[i] and not (p[i].isalnum() or template[i].isalnum())]
+        if mismatch:
+            return None
+
+    all_names: list[str] = []
+    for p in patterns:
+        name_part = ""
+        for i, ch in enumerate(p):
+            if ch != template[i]:
+                name_part += ch
+        if name_part:
+            all_names.append(name_part)
+
+    if len(all_names) == len(patterns):
+        prefix, suffix = "", ""
+        for i in range(len(template)):
+            if any(p[i] != template[i] for p in patterns):
+                prefix = template[:i]
+                suffix = template[i + len(all_names[0]):] if len(all_names[0]) > 0 else template[i+1:]
+                break
+        if prefix or suffix:
+            combined = f"(?:{prefix}(?:{'|'.join(all_names)}){suffix})"
+            return combined
+
+    return None
+
+
+def _combine_patterns(names: tuple[str, ...], full_patterns: dict[str, str]) -> str | None:
+    """Combine multiple regex patterns into one OR pattern.
+    Returns the combined pattern body (without /i wrapper)."""
+    patterns = [full_patterns[n] for n in names if n in full_patterns]
+    if len(patterns) != len(names):
+        return None
+
+    combined = _patterns_share_shape(patterns)
+    if combined:
+        return combined
+
+    return "(?:" + "|".join(patterns) + ")"
+
+
+def _slug_for_names(names: tuple[str, ...], slug: str) -> str:
+    """Generate a readable name for a consolidated regex pattern."""
+    first = names[0][:20]
+    last = names[-1][:20]
+    if first == last:
+        return f"Precompiled-{first}"
+    return f"Precompiled-{first}-to-{last}"
+
+
+def _hash_names(names: tuple[str, ...]) -> str:
+    """Deterministic short hash for a tuple of names."""
+    import hashlib
+    return hashlib.md5("|".join(names).encode()).hexdigest()[:8]
+
+
+def _precompile_repeated_groups(items: list[dict], regexes: dict[str, str],
+                                 used_regex_names: set[str], slug: str) -> None:
+    """Find all regexMatched(streams, "name1", "name2", ...) with 3+ names
+    that appear multiple times within an expression and pre-compile them
+    into a single named regex pattern. Modifies items and used_regex_names in place."""
+    import hashlib
+
+    for item in items:
+        expr = item["expression"]
+        m = re.search(r"\?(.*):\s*\[\]", expr)
+        if not m:
+            continue
+        body = m.group(1).strip()
+        prefix = expr[:m.start(1)]
+        suffix = expr[m.end(1):]
+
+        calls = _find_regex_matched_lists(body)
+        if not calls:
+            continue
+
+        by_names: dict[tuple[str, ...], list[tuple[int, int]]] = {}
+        for start, end, names in calls:
+            by_names.setdefault(names, []).append((start, end))
+
+        replacements: list[tuple[int, int, str, str]] = []
+        for names, positions in by_names.items():
+            if len(positions) < 2:
+                continue
+            combined_pattern = _combine_patterns(names, regexes)
+            if combined_pattern is None:
+                continue
+
+            combined_name = f"Precompiled-{_hash_names(names)}"
+            combined_call = f"regexMatched(streams, {json.dumps(combined_name)})"
+
+            for start, end in positions:
+                old_text = body[start:end]
+                replacements.append((start, end, old_text, combined_call))
+
+            used_regex_names.add(combined_name)
+            regexes[combined_name] = combined_pattern
+
+        if replacements:
+            new_body = body
+            for start, end, old_text, new_text in sorted(replacements, reverse=True):
+                new_body = new_body[:start] + new_text + new_body[end:]
+            item["expression"] = prefix + new_body + suffix
+
+
 # ------------------------------------------------------------------- main
 
 def convert_profile(db: sqlite3.Connection, profile: str, out_dir: Path,
@@ -738,6 +934,8 @@ def convert_profile(db: sqlite3.Connection, profile: str, out_dir: Path,
 
             items.append(item)
             stats[f"{side}_items"] += 1
+
+    _precompile_repeated_groups(items, regexes, used_regex_names, slug)
 
     write_json(out_dir / f"{slug}.expressions.json", items)
 

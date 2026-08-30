@@ -200,16 +200,6 @@
     "score": 0
   },
   {
-    "name": "Apple TV",
-    "pattern": "/\\b(ATV)\\b/i",
-    "score": 0
-  },
-  {
-    "name": "Apple TV+",
-    "pattern": "/\\b(atvp|aptv|Apple TV\\+)\\b/i",
-    "score": 0
-  },
-  {
     "name": "ArataEnc",
     "pattern": "/\\b(ArataEnc)\\b/i",
     "score": 0
@@ -220,12 +210,7 @@
     "score": 0
   },
   {
-    "name": "Ari (Radarr)",
-    "pattern": "/\\[Ari\\]|-Ari\\b/i",
-    "score": 0
-  },
-  {
-    "name": "Ari (Sonarr)",
+    "name": "Ari",
     "pattern": "/^\\[Ari\\]|-Ari$/i",
     "score": 0
   },
@@ -370,11 +355,6 @@
     "score": 0
   },
   {
-    "name": "CC Rename",
-    "pattern": "/\\[(CC)\\b|\\b(CC)\\]/i",
-    "score": 0
-  },
-  {
     "name": "CRUCiBLE",
     "pattern": "/\\[CRUCiBLE\\]|-CRUCiBLE\\b/i",
     "score": 0
@@ -432,11 +412,6 @@
   {
     "name": "Cleo",
     "pattern": "/\\[Cleo\\]|-Cleo/i",
-    "score": 0
-  },
-  {
-    "name": "Comedy Central",
-    "pattern": "/\\b(CC)\\b[ ._-]web[ ._-]?(dl|rip)?\\b/i",
     "score": 0
   },
   {
@@ -502,11 +477,6 @@
   {
     "name": "DBArabic",
     "pattern": "/\\b(DBArabic)\\b/i",
-    "score": 0
-  },
-  {
-    "name": "DC Universe",
-    "pattern": "/\\b(dcu|DC Universe)\\b/i",
     "score": 0
   },
   {
@@ -785,21 +755,6 @@
     "score": 0
   },
   {
-    "name": "HBO",
-    "pattern": "/\\b(hbo)(?![ ._-]max)\\b(?=[ ._-]web[ ._-]?(dl|rip)\\b)/i",
-    "score": 0
-  },
-  {
-    "name": "HBO Max",
-    "pattern": "/\\b(hmax|hbom|hbo[ ._-]?max)\\b(?=[ ._-]web[ ._-]?(dl|rip)\\b)/i",
-    "score": 0
-  },
-  {
-    "name": "HBO Rename",
-    "pattern": "/\\[(HBO)\\b|\\b(HBO)\\]/i",
-    "score": 0
-  },
-  {
     "name": "HENiL",
     "pattern": "/\\b(HENiL)\\b/i",
     "score": 0
@@ -807,11 +762,6 @@
   {
     "name": "HIDIVE",
     "pattern": "/\\b(HIDI(VE)?)\\b/i",
-    "score": 0
-  },
-  {
-    "name": "HMAX Rename",
-    "pattern": "/\\[(HMAX)\\b|\\b(HMAX)\\]/i",
     "score": 0
   },
   {
@@ -1125,11 +1075,6 @@
     "score": 0
   },
   {
-    "name": "MAX Rename",
-    "pattern": "/\\[(MAX)\\b|\\b(MAX)\\]/i",
-    "score": 0
-  },
-  {
     "name": "MC",
     "pattern": "/\\b(MC)\\b/i",
     "score": 0
@@ -1157,11 +1102,6 @@
   {
     "name": "Man.K",
     "pattern": "/\\b(Man\\.K)\\b/i",
-    "score": 0
-  },
-  {
-    "name": "Max",
-    "pattern": "/\\b((?<!hbo[ ._-])max)\\b(?=[ ._-]web[ ._-]?(dl|rip)\\b)/i",
     "score": 0
   },
   {
@@ -1350,11 +1290,6 @@
     "score": 0
   },
   {
-    "name": "Not Hulu",
-    "pattern": "/\\b(hulu)\\b/i",
-    "score": 0
-  },
-  {
     "name": "Not Single Language Only",
     "pattern": "/\\[(JA|ZH|KO)\\]/i",
     "score": 0
@@ -1400,16 +1335,6 @@
     "score": 0
   },
   {
-    "name": "PLAY",
-    "pattern": "/\\b(Play)\\b(?=[ ._-]web[ ._-]?(dl|rip)\\b)/i",
-    "score": 0
-  },
-  {
-    "name": "PLAY Rename",
-    "pattern": "/\\[(Play)\\b|\\b(Play)\\]/i",
-    "score": 0
-  },
-  {
     "name": "PMR",
     "pattern": "/^(?=.*\\b(PMR)\\b)(?=.*\\b(Remux)\\b)/i",
     "score": 0
@@ -1437,16 +1362,6 @@
   {
     "name": "Pao",
     "pattern": "/\\[Pao\\]|-Pao\\b/i",
-    "score": 0
-  },
-  {
-    "name": "Paramount+ (Sonarr)",
-    "pattern": "/\\b(pmtp|Paramount\\+)\\b/i",
-    "score": 0
-  },
-  {
-    "name": "Peacock TV (Sonarr)",
-    "pattern": "/\\b(pcok|Peacock TV)\\b/i",
     "score": 0
   },
   {
@@ -1487,6 +1402,71 @@
   {
     "name": "Pookie",
     "pattern": "/\\b(Pookie)\\b/i",
+    "score": 0
+  },
+  {
+    "name": "Precompiled-14012e04",
+    "pattern": "/(?:\\b(AnoZu)\\b|\\b(Dooky)\\b|\\[Kitsune\\]|-Kitsune\\b|\\b(SubsPlus\\+?)\\b|\\b(ZR)\\b)/i",
+    "score": 0
+  },
+  {
+    "name": "Precompiled-168ac0cf",
+    "pattern": "/(?:\\b(Arg0)\\b|\\[Arid\\]|-Arid\\b|\\b(Baws)\\b|\\b(FLE)\\b|\\b(LostYears)\\b|\\b(LYS1TH3A)\\b|\\b(McBalls)\\b|\\[sam\\]|-sam\\b|\\b(SCY)\\b|\\b(Setsugen)\\b|\\[smol\\]|-smol\\b|\\[SoM\\]|-SoM\\b|\\[Vodes\\]|(?<!Not)-Vodes\\b|\\b(Z4ST1N)\\b|\\b(ZeroBuild)\\b)/i",
+    "score": 0
+  },
+  {
+    "name": "Precompiled-40234c8f",
+    "pattern": "/(?:\\b(Erai-raws)\\b|\\b(ToonsHub)\\b|\\b(VARYG)\\b)/i",
+    "score": 0
+  },
+  {
+    "name": "Precompiled-5adb940b",
+    "pattern": "/(?:\\[ARC\\]|-ARC\\b|\\b(BBT-RMX)\\b|\\[cappybara\\]|-cappybara\\b|\\b(ChucksMux)\\b|\\[CRUCiBLE\\]|-CRUCiBLE\\b|\\b(CUNNY)\\b|\\b(Cunnysseur)\\b|\\[Doc\\]|-Doc\\b|\\[fig\\]|-fig\\b|\\[Headpatter\\]|-Headpatter\\b|\\b(Inka-Subs)\\b|\\b(LaCroiX)\\b|\\[Legion\\]|-Legion\\b|\\[Mehul\\]|-Mehul\\b|\\b(MTBB)\\b|\\[Mysteria\\]|-Mysteria\\b|\\b(Netaro)\\b|\\b(Noiy)\\b|\\b(npz)\\b|\\b(NTRX)\\b|\\b(Okay-Subs)\\b|\\b(P9)\\b|\\[RaiN\\]|-RaiN\\b|\\b(RMX)\\b|\\[RUDY\\]|-RUDY\\b|\\b(Sekkon)\\b|\\[Serendipity\\]|-Serendipity\\b|\\[sgt\\]|-sgt\\b|\\b(SubsMix)\\b|\\[uba\\]|-uba\\b|(?<=remux).*\\b(NAN0)\\b|^(?=.*\\b(PMR)\\b)(?=.*\\b(Remux)\\b)|\\b(ZR)\\b|-ZR-|\\b(Sylvar)\\b|\\b(nekotan)\\b)/i",
+    "score": 0
+  },
+  {
+    "name": "Precompiled-5f191ec2",
+    "pattern": "/(?:\\b(Animorphs)\\b|\\b(AOmundson)\\b|\\b(ASC)\\b|\\b(B00BA)\\b|\\b(Baws|McBalls)\\b|\\[Beatrice\\]|-Beatrice(?!-raws)\\b|\\b(Cait-Sidhe)\\b|\\b(CsS)\\b|\\b(CTR)\\b|\\b(D4C)\\b|\\b(deanzel)\\b|\\[Drag\\]|-Drag\\b|\\b(eldon)\\b|\\b(Freehold)\\b|\\b(GHS)\\b|\\b(Hark0N)\\b|\\b(Holomux)\\b|\\[Judgment\\]|-Judgment\\b|\\b(MC)\\b|\\b(mottoj)\\b|\\b(NH)\\b|\\b(NTRM)\\b|\\b(o7)\\b|\\b(QM)\\b|\\[Thighs\\]|-Thighs\\b|\\b(TTGA)\\b|\\b(UltraRemux)\\b|\\b(WBDP)\\b|\\b(WSE)\\b|\\[Yuki\\]|-Yuki\\b)/i",
+    "score": 0
+  },
+  {
+    "name": "Precompiled-635a09c9",
+    "pattern": "/(?:\\b(9volt)\\b|\\b(Asenshi)\\b|\\[Chihiro\\]|-Chihiro\\b|\\b(Commie)\\b|\\b(DameDesuYo)\\b|\\[Doki\\]|-Doki\\b|\\b(GJM)\\b|\\b(Kaleido)\\b|\\[Kantai\\]|-Kantai\\b|\\b(KawaSubs)\\b|\\[Tsundere\\]|-Tsundere(?!-)\\b)/i",
+    "score": 0
+  },
+  {
+    "name": "Precompiled-67012523",
+    "pattern": "/(?:\\b(9volt)\\b|\\[AC\\]|-AC$|\\[Almighty\\]|-Almighty\\b|\\[Asakura\\]|-Asakura\\b|\\b(Asenshi)\\b|\\b(BlurayDesuYo)\\b|\\[Bolshevik\\]|-Bolshevik\\b|\\b(Brrrrrrr)\\b|\\[Chihiro\\]|-Chihiro\\b|\\b(Commie)\\b|\\[Crow\\]|-Crow\\b|\\b(Dae)\\b|\\[Dekinai\\]|-Dekinai\\b|\\b(Dragon-Releases)\\b|\\b(DragsterPS)\\b|\\b(Exiled-Destiny|E-D)\\b|\\b(FFF)\\b|\\b(Final8)\\b|\\b(Geonope)\\b|\\b(GJM)\\b|\\b(iAHD)\\b|\\b(inid4c)\\b|\\b(Koten[ ._-]Gars)\\b|\\b(kuchikirukia)\\b|\\b(LCE)\\b|\\b(NTW)\\b|\\b(orz)\\b|\\b(RAI)\\b|\\b(REVO)\\b|\\b(SCP-2223)\\b|\\[Senjou\\]|-Senjou\\b|\\b(SEV)\\b|\\b(THORA)\\b|\\[Vivid\\]|-Vivid\\b)/i",
+    "score": 0
+  },
+  {
+    "name": "Precompiled-7c4b9305",
+    "pattern": "/(?:\\[Aergia\\]|-Aergia(?!-raws)\\b|\\b(Arg0)\\b|\\[Arid\\]|-Arid\\b|\\b(FateSucks)\\b|\\b(hchcsen)\\b|\\b(hydes)\\b|\\b(JOHNTiTOR)\\b|\\b(JySzE)\\b|\\[koala\\]|-koala\\b|\\b(Kulot)\\b|\\b(LostYears)\\b|\\[Lulu\\]|-Lulu\\b|\\b(Meakes)\\b|\\[Orphan\\]|-Orphan\\b|\\[Vodes\\]|(?<!Not)-Vodes\\b|\\b(WAP)\\b|\\[YURI\\]|-YURI\\b|\\b(ZeroBuild)\\b|\\b(BlackRose)\\b)/i",
+    "score": 0
+  },
+  {
+    "name": "Precompiled-8db1eaae",
+    "pattern": "/(?:\\[ANE\\]|-ANE$|\\b(Bunny-Apocalypse)\\b|\\b(CyC)\\b|\\b(Datte13)\\b|\\b(EJF)\\b|\\b(GetItTwisted)\\b|\\b(GSK[._-]kun)\\b|\\b(iKaos)\\b|\\b(karios)\\b|\\b(Pookie)\\b|\\b(RASETSU)\\b|\\b(Starbez)\\b|\\[Tsundere\\]|-Tsundere(?!-)\\b|\\b(Yoghurt)\\b|\\[YURASUKA\\]|-YURASUKA\\b)/i",
+    "score": 0
+  },
+  {
+    "name": "Precompiled-8f964fbf",
+    "pattern": "/(?:\\b(BlueLobster)\\b|\\b(GST)\\b|\\b(HorribleRips)\\b|\\b(HorribleSubs)\\b|\\b(KAN3D2M)\\b|\\b(KS|KiyoshiStar)\\b|\\[Lia\\]|-Lia\\b|\\b(NanDesuKa)\\b|\\b(SobsPlease)\\b|\\b(Some-Stuffs)\\b|\\b(SubsPlease)\\b|\\b(URANIME)\\b|\\[ZigZag\\]|-ZigZab\b|\\b(playWEB)\\b)/i",
+    "score": 0
+  },
+  {
+    "name": "Precompiled-948d1742",
+    "pattern": "/(?:\\b(ABdex)\\b|\\[Afro\\]|-Afro\\b|\\b(aRMX)\\b|\\b(BiRJU)\\b|\\b(BKC)\\b|\\b(CBT)\\b|\\[Chimera\\]|-Chimera\\b|\\[derp\\]|-derp\\b|\\[DIY\\]|-DIY\\b|\\[EXP\\]|-EXP\\b|\\[Foxtrot\\]|-Foxtrot\\b|\\b(grimf)\\b|\\b(IK)\\b|\\b(Iznjie[ .-]Biznjie)\\b|\\b(Kaleido-subs)\\b|\\b(Kametsu)\\b|\\[Kawatare\\]|-Kawatare\\b|\\b(KH)\\b|\\b(LazyRemux)\\b|\\[Metal\\]|-Metal\\b|\\b(MK)\\b|\\b(neko-kBaraka)\\b|\\b(OZR)\\b|\\[Pizza\\]|-Pizza\\b|\\b(pog42)\\b|\\b(Quetzal)\\b|\\b(Reza)\\b|\\b(SCY)\\b|\\b(Shimatta)\\b|\\[Smoke\\]|-Smoke\\b|\\b(Spirale)\\b|\\b(UDF)\\b|\\b(UQW)\\b|\\[Vanilla\\]|-Vanilla\\b|\\b(Virtuality)\\b|\\[VULCAN\\]|-VULCAN\\b)/i",
+    "score": 0
+  },
+  {
+    "name": "Precompiled-d5447afc",
+    "pattern": "/(?:\\b(0x539)\\b|\\[Asakura\\]|-Asakura\\b|\\[Cyan\\]|-Cyan\\b|\\b(Cytox)\\b|\\[Dae\\]|-Dae\\b|\\[Foxtrot\\]|-Foxtrot\\b|\\[Gao\\]|-Gao\\b|\\b(GSK[._-]kun)\\b|\\b(Half-Baked)\\b|\\b(HatSubs)\\b|\\b(MALD)\\b|\\b(MTBB)\\b|\\[Not-Vodes\\]|-Not-Vodes\\b|\\b(Okay-Subs)\\b|\\[Pizza\\]|-Pizza\\b|\\b(Reza)\\b|\\b(Slyfox)\\b|\\b(SoLCE)\\b|\\[tenshi\\]|-tenshi$|\\b(BlackRose)\\b)/i",
+    "score": 0
+  },
+  {
+    "name": "Precompiled-f7afcf68",
+    "pattern": "/(?:\\b(DemiHuman)\\b|\\b(FLE)\\b|\\b(Flugel)\\b|\\b(LYS1TH3A)\\b|\\[Moxie\\]|-Moxie\\b|\\[sam\\]|-sam\\b|\\[smol\\]|-smol\\b|\\[SoM\\]|-SoM\\b)/i",
     "score": 0
   },
   {
@@ -1542,11 +1522,6 @@
   {
     "name": "RMX",
     "pattern": "/\\b(RMX)\\b/i",
-    "score": 0
-  },
-  {
-    "name": "ROKU",
-    "pattern": "/\\b(ROKU)\\b/i",
     "score": 0
   },
   {
@@ -1645,16 +1620,6 @@
     "score": 0
   },
   {
-    "name": "SHO Rename",
-    "pattern": "/\\[(SHO)\\b|\\b(SHO)\\]/i",
-    "score": 0
-  },
-  {
-    "name": "SHOWTIME",
-    "pattern": "/\\b(sho|showtime)\\b[ ._-]web[ ._-]?(dl|rip)?\\b/i",
-    "score": 0
-  },
-  {
     "name": "SLAX",
     "pattern": "/\\b(SLAX)\\b/i",
     "score": 0
@@ -1677,11 +1642,6 @@
   {
     "name": "SURFINBIRD",
     "pattern": "/^(SURFINBIRD)$/i",
-    "score": 0
-  },
-  {
-    "name": "SYFY",
-    "pattern": "/\\b(SYFY)\\b/i",
     "score": 0
   },
   {
@@ -1787,16 +1747,6 @@
   {
     "name": "Spirale",
     "pattern": "/\\b(Spirale)\\b/i",
-    "score": 0
-  },
-  {
-    "name": "Stan",
-    "pattern": "/\\b(stan)\\b[ ._-]web[ ._-]?(dl|rip)?\\b/i",
-    "score": 0
-  },
-  {
-    "name": "Stan Rename",
-    "pattern": "/\\[(STAN)\\b|\\b(STAN)\\]/i",
     "score": 0
   },
   {
@@ -2190,16 +2140,6 @@
     "score": 0
   },
   {
-    "name": "iT Rename",
-    "pattern": "/\\[(iT)(?![+])\\b|\\b(?<![+])(iT)\\]/i",
-    "score": 0
-  },
-  {
-    "name": "iTunes",
-    "pattern": "/\\b(it|itunes)\\b(?=[ ._-]web[ ._-]?(dl|rip)\\b)/i",
-    "score": 0
-  },
-  {
     "name": "inid4c",
     "pattern": "/\\b(inid4c)\\b/i",
     "score": 0
@@ -2290,7 +2230,7 @@
     "score": 0
   },
   {
-    "name": "playWEB (Title)",
+    "name": "playWEB",
     "pattern": "/\\b(playWEB)\\b/i",
     "score": 0
   },
