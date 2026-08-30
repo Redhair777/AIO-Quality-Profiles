@@ -50,11 +50,6 @@
     "score": 0
   },
   {
-    "name": "ACEM",
-    "pattern": "/^(ACEM)$/i",
-    "score": 0
-  },
-  {
     "name": "ADN",
     "pattern": "/\\b(ADN)\\b/i",
     "score": 0
@@ -205,11 +200,6 @@
     "score": 0
   },
   {
-    "name": "Anne of Green Gables Banned Groups",
-    "pattern": "/^anne[ ._-]+of[ ._-]+green[ ._-]+gables.*-(EGEN)\\b/i",
-    "score": 0
-  },
-  {
     "name": "AnoZu",
     "pattern": "/\\b(AnoZu)\\b/i",
     "score": 0
@@ -277,6 +267,11 @@
   {
     "name": "BKC",
     "pattern": "/\\b(BKC)\\b/i",
+    "score": 0
+  },
+  {
+    "name": "BR-DISK",
+    "pattern": "/^(?!.*\\b((?<!HD[._ -]|HD)DVD|BDRip|720p|MKV|XviD|WMV|d3g|(BD)?REMUX|^(?=.*1080p)(?=.*HEVC)|[xh][-_. ]?26[45]|German.*[DM]L|((?<=\\d{4}).*German.*([DM]L)?)(?=.*\\b(AVC|HEVC|VC[-_. ]?1|MVC|MPEG[-_. ]?2)\\b))\\b)(((?=.*\\b(Blu[-_. ]?ray|BD|HD[-_. ]?DVD)\\b)(?=.*\\b(AVC|HEVC|VC[-_. ]?1|MVC|MPEG[-_. ]?2|BDMV|ISO)\\b))|^((?=.*\\b(((?=.*\\b((.*_)?COMPLETE.*|Dis[ck])\\b)(?=.*(Blu[-_. ]?ray|HD[-_. ]?DVD)))|3D[-_. ]?BD|BR[-_. ]?DISK|Full[-_. ]?Blu[-_. ]?ray|^((?=.*((BD|UHD)[-_. ]?(25|50|66|100|ISO)))))))).*/i",
     "score": 0
   },
   {
@@ -402,11 +397,6 @@
   {
     "name": "Commie",
     "pattern": "/\\b(Commie)\\b/i",
-    "score": 0
-  },
-  {
-    "name": "Courage the Cowardly Dog Banned Groups",
-    "pattern": "/^courage[ ._-]+the[ ._-]+cowardly[ ._-]+dog.*-(mSD|Reaperza|ReiDoBregaBR|SKYFiRE)\\b/i",
     "score": 0
   },
   {
@@ -1435,11 +1425,6 @@
     "score": 0
   },
   {
-    "name": "ProRes",
-    "pattern": "/\\b(ProRes)\\b/i",
-    "score": 0
-  },
-  {
     "name": "Prof",
     "pattern": "/\\[Prof\\]|-Prof\\b/i",
     "score": 0
@@ -1555,11 +1540,6 @@
     "score": 0
   },
   {
-    "name": "Ryuu",
-    "pattern": "/\\b(Ryuu)\\b/i",
-    "score": 0
-  },
-  {
     "name": "SAD",
     "pattern": "/\\[SAD\\]|-SAD\\b/i",
     "score": 0
@@ -1626,7 +1606,7 @@
   },
   {
     "name": "Scrubs 2001 Approved Groups",
-    "pattern": "/\\bScrubs\\b(?![.\\s(]*2026)(?!.*-(BoOk|BMF|CMCTV|DBTV|DEFiANCE|FoV|GAMEOVER|NTROPiC-FTP|PlayWEB|SiNNERS|THESYNDiCATE|WELP)(\\b|$)).*/i",
+    "pattern": "/\\bScrubs\\b(?![.\\s(]*2026)(?!.*-(BoOk|BMF|DBTV|DEFiANCE|FoV|GAMEOVER|NTROPiC-FTP|SiNNERS|WELP)(\\b|$)).*/i",
     "score": 0
   },
   {
@@ -1752,11 +1732,6 @@
   {
     "name": "TTGA",
     "pattern": "/\\b(TTGA)\\b/i",
-    "score": 0
-  },
-  {
-    "name": "TURG",
-    "pattern": "/^(TURG)$/i",
     "score": 0
   },
   {
@@ -1937,6 +1912,11 @@
   {
     "name": "Vodes",
     "pattern": "/\\[Vodes\\]|(?<!Not)-Vodes\\b/i",
+    "score": 0
+  },
+  {
+    "name": "WADU",
+    "pattern": "/^(WADU)$/i",
     "score": 0
   },
   {
