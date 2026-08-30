@@ -1416,7 +1416,7 @@
   },
   {
     "name": "Precompiled-40234c8f",
-    "pattern": "/(?:\\b(Erai-raws)\\b|\\b(ToonsHub)\\b|\\b(VARYG)\\b)/i",
+    "pattern": "/(?:\\b((?:Erai-raws|ToonsHub|VARYG))\\b)/i",
     "score": 0
   },
   {

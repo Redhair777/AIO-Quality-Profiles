@@ -1101,62 +1101,62 @@
   },
   {
     "name": "Precompiled-0cfc1251",
-    "pattern": "/(?:(?<=^|[\\s.-])coffee\\b|(?<=^|[\\s.-])DON\\b|(?<=^|[\\s.-])TeamSyndicate\\b|(?<=^|[\\s.-])REBORN\\b|(?<=^|[\\s.-])SA89\\b|(?<=^|[\\s.-])SoLaR\\b|(?<=^|[\\s.-])ZoroSenpai\\b)/i",
+    "pattern": "/(?:(?<=^|[\\s.-])(?:coffee|DON|TeamSyndicate|REBORN|SA89|SoLaR|ZoroSenpai)\\b)/i",
     "score": 0
   },
   {
     "name": "Precompiled-2bd84885",
-    "pattern": "/(?:(?<=^|[\\s.-])EuReKA\\b|(?<=^|[\\s.-])HANDJOB\\b|(?<=^|[\\s.-])Ivandro\\b|(?<=^|[\\s.-])KnG\\b|(?<=^|[\\s.-])LEGi0N\\b|(?<=^|[\\s.-])Lulz\\b|(?<=^|[\\s.-])MaG\\b|(?<=^|[\\s.-])MTeam\\b|(?<=^|[\\s.-])NiP\\b|(?<=^|[\\s.-])PTP\\b|(?<=^|[\\s.-])PuTao\\b|(?<=^|[\\s.-])Slappy\\b|(?<=^|[\\s.-])WiKi\\b)/i",
+    "pattern": "/(?:(?<=^|[\\s.-])(?:EuReKA|HANDJOB|Ivandro|KnG|LEGi0N|Lulz|MaG|MTeam|NiP|PTP|PuTao|Slappy|WiKi)\\b)/i",
     "score": 0
   },
   {
     "name": "Precompiled-2fdf77e9",
-    "pattern": "/(?:(?<=^|[\\s.-])BMF\\b|(?<=^|[\\s.-])de[42]\\b|(?<=^|[\\s.-])HDMaNiAcS\\b|(?<=^|[\\s.-])IDE\\b|(?<=^|[\\s.-])LolHD\\b|(?<=^|[\\s.-])NCmt\\b|(?<=^|[\\s.-])Skazhutin\\b|(?<=^|[\\s.-])NTb\\b|(?<=^|[\\s.-])eXterminator\\b)/i",
+    "pattern": "/(?:(?<=^|[\\s.-])(?:BMF|de[42]|HDMaNiAcS|IDE|LolHD|NCmt|Skazhutin|NTb|eXterminator)\\b)/i",
     "score": 0
   },
   {
     "name": "Precompiled-3b258054",
-    "pattern": "/(?:(?<=^|[\\s.-])c0kE\\b|(?<=^|[\\s.-])CRiSC\\b|(?<=^|[\\s.-])CtrlHD\\b|(?<=^|[\\s.-])EbP\\b|(?<=^|[\\s.-])HiDt\\b|(?<=^|[\\s.-])HiFi\\b|(?<=^|[\\s.-])IDE\\b|(?<=^|[\\s.-])SbR\\b|(?<=^|[\\s.-])TayTo\\b|(?<=^|[\\s.-])VietHD\\b|(?<=^|[\\s.-])ZQ\\b)/i",
+    "pattern": "/(?:(?<=^|[\\s.-])(?:c0kE|CRiSC|CtrlHD|EbP|HiDt|HiFi|IDE|SbR|TayTo|VietHD|ZQ)\\b)/i",
     "score": 0
   },
   {
     "name": "Precompiled-494a820f",
-    "pattern": "/(?:(?<=^|[\\s.-])ATELiER\\b|(?<=^|[\\s.-])BV\\b|(?<=^|[\\s.-])Chotab\\b|(?<=^|[\\s.-])de[42]\\b|(?<=^|[\\s.-])EA\\b|(?<=^|[\\s.-])EDPH\\b|(?<=^|[\\s.-])E.N.D\\b|(?<=^|[\\s.-])ESiR\\b|(?<=^|[\\s.-])FraMeSToR\\b|(?<=^|[\\s.-])GS88\\b|(?<=^|[\\s.-])HDMaNiAcS\\b|(?<=^|[\\s.-])HiP\\b|(?<=^|[\\s.-])iFT\\b|(?<=^|[\\s.-])KASHMiR\\b|(?<=^|[\\s.-])LiNG\\b|(?<=^|[\\s.-])LoRD\\b|(?<=^|[\\s.-])nmd\\b|(?<=^|[\\s.-])NyHD\\b|(?<=^|[\\s.-])ORiGEN\\b|(?<=^|[\\s.-])playHD\\b|(?<=^|[\\s.-])RiCO\\b|(?<=^|[\\s.-])RO\\b|(?<=^|[\\s.-])rttr\\b|(?<=^|[\\s.-])SaNcTi\\b|(?<=^|[\\s.-])SPHD\\b|(?<=^|[\\s.-])TnP\\b|(?<=^|[\\s.-])W4NK3R\\b|(?<=^|[\\s.-])WiLF\\b|(?<=^|[\\s.-])WMING\\b|(?<=^|[\\s.-])ZIMBO\\b|(?<=^|[\\s.-])IMNEWHERE\\b|(?<=^|[\\s.-])LAZY\\b|(?<=^|[\\s.-])ENDSkY\\b|(?<=^|[\\s.-])BAT1\\b)/i",
+    "pattern": "/(?:(?<=^|[\\s.-])(?:ATELiER|BV|Chotab|de[42]|EA|EDPH|E.N.D|ESiR|FraMeSToR|GS88|HDMaNiAcS|HiP|iFT|KASHMiR|LiNG|LoRD|nmd|NyHD|ORiGEN|playHD|RiCO|RO|rttr|SaNcTi|SPHD|TnP|W4NK3R|WiLF|WMING|ZIMBO|IMNEWHERE|LAZY|ENDSkY|BAT1)\\b)/i",
     "score": 0
   },
   {
     "name": "Precompiled-636f2dfd",
-    "pattern": "/(?:(?<=^|[\\s.-])BV\\b|(?<=^|[\\s.-])CRiSC\\b|(?<=^|[\\s.-])decibeL\\b|(?<=^|[\\s.-])FoRM\\b|(?<=^|[\\s.-])HiDt\\b|(?<=^|[\\s.-])HiP\\b|(?<=^|[\\s.-])iFT\\b|(?<=^|[\\s.-])SbR\\b|(?<=^|[\\s.-])WMING\\b)/i",
+    "pattern": "/(?:(?<=^|[\\s.-])(?:BV|CRiSC|decibeL|FoRM|HiDt|HiP|iFT|SbR|WMING)\\b)/i",
     "score": 0
   },
   {
     "name": "Precompiled-8bae7610",
-    "pattern": "/(?:(?<=^|[\\s.-])ASD87\\b|(?<=^|[\\s.-])BRUTE\\b|(?<=^|[\\s.-])CHD\\b|(?<=^|[\\s.-])EuReKA\\b|(?<=^|[\\s.-])GALVANiZE\\b|(?<=^|[\\s.-])HaB\\b|(?<=^|[\\s.-])HANDJOB\\b|(?<=^|[\\s.-])HDC\\b|(?<=^|[\\s.-])iON\\b|(?<=^|[\\s.-])Ivandro\\b|(?<=^|[\\s.-])j3rico\\b|(?<=^|[\\s.-])KnG\\b|(?<=^|[\\s.-])LEGi0N\\b|(?<=^|[\\s.-])Lulz\\b|(?<=^|[\\s.-])MaG\\b|(?<=^|[\\s.-])MTeam\\b|(?<=^|[\\s.-])NiP\\b|(?<=^|[\\s.-])P0W4HD\\b|(?<=^|[\\s.-])PTP\\b|(?<=^|[\\s.-])PuTao\\b|(?<=^|[\\s.-])ROCiNANTE\\b|(?<=^|[\\s.-])Slappy\\b|(?<=^|[\\s.-])ThD\\b|(?<=^|[\\s.-])WiKi\\b|(?<=^|[\\s.-])WiLDCAT\\b|(?<=^|[\\s.-])CART\\b|(?<=^|[\\s.-])BakedFEL\\b|(?<=^|[\\s.-])ORBiT\\b|(?<=^|[\\s.-])BTN\\b)/i",
+    "pattern": "/(?:(?<=^|[\\s.-])(?:ASD87|BRUTE|CHD|EuReKA|GALVANiZE|HaB|HANDJOB|HDC|iON|Ivandro|j3rico|KnG|LEGi0N|Lulz|MaG|MTeam|NiP|P0W4HD|PTP|PuTao|ROCiNANTE|Slappy|ThD|WiKi|WiLDCAT|CART|BakedFEL|ORBiT|BTN)\\b)/i",
     "score": 0
   },
   {
     "name": "Precompiled-9c3f4158",
-    "pattern": "/(?:(?<=^|[\\s.-])AJP69\\b|(?<=^|[\\s.-])ATELiER\\b|(?<=^|[\\s.-])BSTD\\b|(?<=^|[\\s.-])Chotab\\b|(?<=^|[\\s.-])CJ\\b|(?<=^|[\\s.-])CRX\\b|(?<=^|[\\s.-])Dariush\\b|(?<=^|[\\s.-])E1\\b|(?<=^|[\\s.-])EA\\b|(?<=^|[\\s.-])E.N.D\\b|(?<=^|[\\s.-])EDPH\\b|(?<=^|[\\s.-])ESiR\\b|(?<=^|[\\s.-])EXCiSION\\b|(?<=^|[\\s.-])FraMeSToR\\b|(?<=^|[\\s.-])GALAXY\\b|(?<=^|[\\s.-])GS88\\b|(?<=^|[\\s.-])hdalx\\b|(?<=^|[\\s.-])HQMUX\\b|(?<=^|[\\s.-])KASHMiR\\b|(?<=^|[\\s.-])Kitsune\\b|(?<=^|[\\s.-])LiNG\\b|(?<=^|[\\s.-])luvBB\\b|(?<=^|[\\s.-])NiBuRu\\b|(?<=^|[\\s.-])nmd\\b|(?<=^|[\\s.-])NyHD\\b|(?<=^|[\\s.-])ORiGEN\\b|(?<=^|[\\s.-])Penumbra\\b|(?<=^|[\\s.-])playHD\\b|(?<=^|[\\s.-])Positive\\b|(?<=^|[\\s.-])PTer\\b|(?<=^|[\\s.-])RiCO\\b|(?<=^|[\\s.-])rightSIZE\\b|(?<=^|[\\s.-])RO\\b|(?<=^|[\\s.-])rttr\\b|(?<=^|[\\s.-])SaNcTi\\b|(?<=^|[\\s.-])SiMPLE\\b|(?<=^|[\\s.-])SOP\\b|(?<=^|[\\s.-])SPHD\\b|(?<=^|[\\s.-])TBB\\b|(?<=^|[\\s.-])TDD\\b|(?<=^|[\\s.-])TnP\\b|(?<=^|[\\s.-])VLAD\\b|(?<=^|[\\s.-])W4NK3R\\b|(?<=^|[\\s.-])WiLF\\b|(?<=^|[\\s.-])xander\\b|(?<=^|[\\s.-])ZIMBO\\b|(?<=^|[\\s.-])GZ\\b|(?<=^|[\\s.-])iLoveHD\\b|(?<=^|[\\s.-])ViSUM\\b|(?<=^|[\\s.-])Softboat\\b|(?<=^|[\\s.-])Natuyuki\\b|(?<=^|[\\s.-])IMNEWHERE\\b|(?<=^|[\\s.-])LAZY\\b|(?<=^|[\\s.-])pcroland\\b|(?<=^|[\\s.-])HR\\b|(?<=^|[\\s.-])Rose3Thorn\\b|(?<=^|[\\s.-])Prestige\\b|(?<=^|[\\s.-])ENDSkY\\b|(?<=^|[\\s.-])faBR\\b|(?<=^|[\\s.-])BAT1\\b|(?<=^|[\\s.-])0BSiDiAN\\b)/i",
+    "pattern": "/(?:(?<=^|[\\s.-])(?:AJP69|ATELiER|BSTD|Chotab|CJ|CRX|Dariush|E1|EA|E.N.D|EDPH|ESiR|EXCiSION|FraMeSToR|GALAXY|GS88|hdalx|HQMUX|KASHMiR|Kitsune|LiNG|luvBB|NiBuRu|nmd|NyHD|ORiGEN|Penumbra|playHD|Positive|PTer|RiCO|rightSIZE|RO|rttr|SaNcTi|SiMPLE|SOP|SPHD|TBB|TDD|TnP|VLAD|W4NK3R|WiLF|xander|ZIMBO|GZ|iLoveHD|ViSUM|Softboat|Natuyuki|IMNEWHERE|LAZY|pcroland|HR|Rose3Thorn|Prestige|ENDSkY|faBR|BAT1|0BSiDiAN)\\b)/i",
     "score": 0
   },
   {
     "name": "Precompiled-9df88d79",
-    "pattern": "/(?:(?<=^|[\\s.-])BMF\\b|(?<=^|[\\s.-])Geek\\b|(?<=^|[\\s.-])LolHD\\b|(?<=^|[\\s.-])NCmt\\b|(?<=^|[\\s.-])Positive\\b|(?<=^|[\\s.-])rightSIZE\\b|(?<=^|[\\s.-])TBB\\b)/i",
+    "pattern": "/(?:(?<=^|[\\s.-])(?:BMF|Geek|LolHD|NCmt|Positive|rightSIZE|TBB)\\b)/i",
     "score": 0
   },
   {
     "name": "Precompiled-d8d9fd45",
-    "pattern": "/(?:(?<=^|[\\s.-])c0kE\\b|(?<=^|[\\s.-])CtrlHD\\b|(?<=^|[\\s.-])D-Z0N3\\b|(?<=^|[\\s.-])EbP\\b|(?<=^|[\\s.-])Geek\\b|(?<=^|[\\s.-])HiFi\\b|(?<=^|[\\s.-])LoRD\\b|(?<=^|[\\s.-])TayTo\\b|(?<=^|[\\s.-])VietHD\\b|(?<=^|[\\s.-])ZQ\\b)/i",
+    "pattern": "/(?:(?<=^|[\\s.-])(?:c0kE|CtrlHD|D-Z0N3|EbP|Geek|HiFi|LoRD|TayTo|VietHD|ZQ)\\b)/i",
     "score": 0
   },
   {
     "name": "Precompiled-f4725b00",
-    "pattern": "/(?:(?<=^|[\\s.-])DON\\b|(?<=^|[\\s.-])REBORN\\b|(?<=^|[\\s.-])SoLaR\\b|(?<=^|[\\s.-])TeamSyndicate\\b|(?<=^|[\\s.-])ZoroSenpai\\b)/i",
+    "pattern": "/(?:(?<=^|[\\s.-])(?:DON|REBORN|SoLaR|TeamSyndicate|ZoroSenpai)\\b)/i",
     "score": 0
   },
   {
     "name": "Precompiled-fd91549c",
-    "pattern": "/(?:(?<=^|[\\s.-])Dariush\\b|(?<=^|[\\s.-])decibeL\\b|(?<=^|[\\s.-])D-Z0N3\\b|(?<=^|[\\s.-])EA\\b|(?<=^|[\\s.-])FoRM\\b|(?<=^|[\\s.-])NTb\\b|(?<=^|[\\s.-])PTer\\b|(?<=^|[\\s.-])Skazhutin\\b|(?<=^|[\\s.-])TDD\\b|(?<=^|[\\s.-])ThD\\b)/i",
+    "pattern": "/(?:(?<=^|[\\s.-])(?:Dariush|decibeL|D-Z0N3|EA|FoRM|NTb|PTer|Skazhutin|TDD|ThD)\\b)/i",
     "score": 0
   },
   {

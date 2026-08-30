@@ -811,6 +811,64 @@ def _patterns_share_shape(patterns: list[str]) -> str | None:
     return None
 
 
+def _common_string_prefix(strings: list[str]) -> str:
+    if not strings:
+        return ""
+    prefix = strings[0]
+    for s in strings[1:]:
+        while not s.startswith(prefix):
+            prefix = prefix[:-1]
+            if not prefix:
+                return ""
+    return prefix
+
+
+def _common_string_suffix(strings: list[str]) -> str:
+    if not strings:
+        return ""
+    suffix = strings[0]
+    for s in strings[1:]:
+        while not s.endswith(suffix):
+            suffix = suffix[1:]
+            if not suffix:
+                return ""
+    return suffix
+
+
+def _factor_common_boundary(patterns: list[str]) -> str | None:
+    """If all patterns share a common prefix and/or suffix, factor them out.
+    Returns None when factoring would provide no savings or would be unsafe.
+
+    Safety: prefix must not end with '\\' (which would escape the '(?:' wrapper)
+    and suffix must not end with '\\' (which would escape the closing ')').
+    These constraints mirror the regex requirement that a backslash must not
+    be separated from the character it escapes; the wrappers are fixed text
+    injected by this function, so any trailing backslash in an extracted
+    prefix/suffix would change the meaning of those wrappers.
+    """
+    if len(patterns) < 2:
+        return None
+    prefix = _common_string_prefix(patterns)
+    suffix = _common_string_suffix(patterns)
+    if not prefix and not suffix:
+        return None
+    # Reject unsafe boundaries that would escape the injected wrappers.
+    if prefix and prefix.endswith("\\"):
+        return None
+    if suffix and suffix.endswith("\\"):
+        return None
+    cores: list[str] = []
+    for p in patterns:
+        core = p
+        if prefix:
+            core = core[len(prefix):]
+        if suffix:
+            core = core[:-len(suffix)]
+        cores.append(core)
+    combined = f"(?:{prefix}(?:{'|'.join(cores)}){suffix})"
+    return combined
+
+
 def _combine_patterns(names: tuple[str, ...], full_patterns: dict[str, str]) -> str | None:
     """Combine multiple regex patterns into one OR pattern.
     Returns the combined pattern body (without /i wrapper)."""
@@ -819,6 +877,10 @@ def _combine_patterns(names: tuple[str, ...], full_patterns: dict[str, str]) -> 
         return None
 
     combined = _patterns_share_shape(patterns)
+    if combined:
+        return combined
+
+    combined = _factor_common_boundary(patterns)
     if combined:
         return combined
 
