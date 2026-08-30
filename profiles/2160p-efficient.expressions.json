@@ -1270,7 +1270,7 @@
     "enabled": true
   },
   {
-    "expression": "/*#Sonarr*/ /*Upscale*/ queryType=='series' ? regexMatched(streams, \"Upscale\", \"AI TV Upscale\") : []",
+    "expression": "/*#Sonarr*/ /*Upscale*/ queryType=='series' ? regexMatched(streams, \"TV Upscale\") : []",
     "score": -999999,
     "enabled": true
   },

@@ -1556,7 +1556,7 @@
   },
   {
     "name": "Scrubs 2001 Approved Groups",
-    "pattern": "/\\bScrubs\\b(?![.\\s(]*2026)(?!.*-(BoOk|BMF|DBTV|DEFiANCE|FoV|GAMEOVER|NTROPiC-FTP|SiNNERS|WELP)(\\b|$)).*/i",
+    "pattern": "/\\bScrubs\\b(?![.\\s(]*2026)(?!.*-(BoOk|BMF|CMCTV|DBTV|DEFiANCE|FoV|GAMEOVER|HHWEB|NTROPiC-FTP|PlayWEB|SiNNERS|THESYNDiCATE|TURG|WELP)(\\b|$)).*/i",
     "score": 0
   },
   {
