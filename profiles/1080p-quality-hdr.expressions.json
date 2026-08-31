@@ -120,12 +120,12 @@
     "enabled": true
   },
   {
-    "expression": "/*#Radarr*/ /*1080p Quality Tier 6*/ queryType=='movie' ?merge(quality(resolution(negate(regexMatched(streams, \"Remux\"), regexMatched(streams, \"Precompiled-a44cc1be\")), \"1080p\"), \"BluRay\", \"BluRay REMUX\"), quality(resolution(negate(regexMatched(streams, \"Remux\"), regexMatched(streams, \"Precompiled-a44cc1be\")), \"1080p\"), \"WEBRip\")): []",
+    "expression": "/*#Radarr*/ /*1080p Quality Tier 6*/ queryType=='movie' ?merge(quality(resolution(negate(regexMatched(streams, \"Remux\"), regexMatched(streams, \"Precompiled-9686c0ee\")), \"1080p\"), \"BluRay\", \"BluRay REMUX\"), quality(resolution(negate(regexMatched(streams, \"Remux\"), regexMatched(streams, \"Precompiled-9686c0ee\")), \"1080p\"), \"WEBRip\")): []",
     "score": 180000,
     "enabled": true
   },
   {
-    "expression": "/*#Sonarr*/ /*1080p Quality Tier 6*/ queryType=='series' ? quality(resolution(negate(regexMatched(streams, \"Remux\"), regexMatched(streams, \"ASD87\", \"BRUTE\", \"CHD\", \"EuReKA\", \"GALVANiZE\", \"HaB\", \"HANDJOB\", \"iON\", \"Ivandro\", \"j3rico\", \"KnG\", \"LEGi0N\", \"Lulz\", \"MaG\", \"MTeam\", \"P0W4HD\", \"PTP\", \"PuTao\", \"ROCiNANTE\", \"Slappy\", \"WiKi\", \"WiLDCAT\", \"CART\", \"BakedFEL\", \"ORBiT\", \"BTN\", \"FraMeSToR\", \"MKu\", \"Uld\", \"ZAL\", \"eckomega\", \"CONSORTiUM\", \"HDC\", \"Spekt0r\", \"Seal\", \"SpaceHD\", \"GOLIATN\", \"Gyroscope\", \"147\", \"PiG30N\", \"SaL\", \"Funner\")), \"1080p\"), \"BluRay\", \"BluRay REMUX\") : []",
+    "expression": "/*#Sonarr*/ /*1080p Quality Tier 6*/ queryType=='series' ? quality(resolution(negate(regexMatched(streams, \"Remux\"), regexMatched(streams, \"ASD87\", \"BRUTE\", \"CHD\", \"EuReKA\", \"GALVANiZE\", \"HaB\", \"HANDJOB\", \"iON\", \"Ivandro\", \"j3rico\", \"KnG\", \"LEGi0N\", \"Lulz\", \"MaG\", \"MTeam\", \"P0W4HD\", \"PTP\", \"PuTao\", \"ROCiNANTE\", \"Slappy\", \"WiKi\", \"WiLDCAT\", \"CART\", \"BakedFEL\", \"ORBiT\", \"BTN\", \"FraMeSToR\", \"MKu\", \"Uld\", \"ZAL\", \"eckomega\", \"CONSORTiUM\", \"HDC\", \"Spekt0r\", \"Seal\", \"SpaceHD\", \"GOLIATN\", \"Gyroscope\", \"147\", \"PiG30N\", \"SaL\", \"Funner\", \"PiMP\", \"XFR\", \"PriMeHD\")), \"1080p\"), \"BluRay\", \"BluRay REMUX\") : []",
     "score": 180000,
     "enabled": true
   },
