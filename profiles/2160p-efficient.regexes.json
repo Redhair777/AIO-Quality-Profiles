@@ -90,6 +90,11 @@
     "score": 0
   },
   {
+    "name": "AZVD",
+    "pattern": "/(?<=^|[\\s.-])AZVD\\b/i",
+    "score": 0
+  },
+  {
     "name": "Aio",
     "pattern": "/(?<=^|[\\s.-])Aio\\b/i",
     "score": 0
@@ -210,6 +215,11 @@
     "score": 0
   },
   {
+    "name": "Baer",
+    "pattern": "/(?<=^|[\\s.-])Baer\\b/i",
+    "score": 0
+  },
+  {
     "name": "BakedFEL",
     "pattern": "/(?<=^|[\\s.-])BakedFEL\\b/i",
     "score": 0
@@ -302,6 +312,11 @@
   {
     "name": "CPTN5DW",
     "pattern": "/(?<=^|[\\s.-])CPTN5DW\\b/i",
+    "score": 0
+  },
+  {
+    "name": "CREATiVE",
+    "pattern": "/(?<=^|[\\s.-])CREATiVE\\b/i",
     "score": 0
   },
   {
@@ -585,6 +600,11 @@
     "score": 0
   },
   {
+    "name": "EwT",
+    "pattern": "/(?<=^|[\\s.-])EwT\\b/i",
+    "score": 0
+  },
+  {
     "name": "Extended Clip",
     "pattern": "/\\bExtended[ ._-]?Clip(s)?\\b/i",
     "score": 0
@@ -712,6 +732,11 @@
   {
     "name": "Grayscale",
     "pattern": "/(?<=\\b[12]\\d{3}\\b).*\\b(Gr[ae]y([ ._-]?(scale))?)\\b(?!$)/i",
+    "score": 0
+  },
+  {
+    "name": "GutS",
+    "pattern": "/(?<=^|[\\s.-])GutS\\b/i",
     "score": 0
   },
   {
@@ -925,6 +950,11 @@
     "score": 0
   },
   {
+    "name": "KamiKaze",
+    "pattern": "/(?<=^|[\\s.-])KamiKaze\\b/i",
+    "score": 0
+  },
+  {
     "name": "KiNGS",
     "pattern": "/(?<=^|[\\s.-])KiNGS\\b/i",
     "score": 0
@@ -1082,6 +1112,11 @@
   {
     "name": "Mubi",
     "pattern": "/\\b(MUBI)\\b/i",
+    "score": 0
+  },
+  {
+    "name": "MySiLU",
+    "pattern": "/(?<=^|[\\s.-])MySiLU\\b/i",
     "score": 0
   },
   {
@@ -1305,6 +1340,11 @@
     "score": 0
   },
   {
+    "name": "Palm",
+    "pattern": "/(?<=^|[\\s.-])Palm\\b/i",
+    "score": 0
+  },
+  {
     "name": "Paramount+",
     "pattern": "/\\b(PMTP|Paramount Plus)\\b/i",
     "score": 0
@@ -1345,8 +1385,8 @@
     "score": 0
   },
   {
-    "name": "Precompiled-78d2a955",
-    "pattern": "/(?:(?<=^|[\\s.-])(?:EuReKA|HANDJOB|Ivandro|KnG|LEGi0N|Lulz|MaG|MTeam|PTP|PuTao|Slappy|WiKi|MKu|Uld|ZAL|eckomega|CONSORTiUM|Spekt0r|SpaceHD|Gyroscope|PiG30N|SaL|Funner)\\b)/i",
+    "name": "Precompiled-7f024551",
+    "pattern": "/(?:(?<=^|[\\s.-])(?:EuReKA|HANDJOB|KnG|LEGi0N|Lulz|MaG|MTeam|PTP|PuTao|Slappy|WiKi|MKu|Uld|ZAL|eckomega|CONSORTiUM|Spekt0r|SpaceHD|Gyroscope|PiG30N|SaL|Funner|CREATiVE|MySiLU|EwT)\\b)/i",
     "score": 0
   },
   {
@@ -1355,13 +1395,13 @@
     "score": 0
   },
   {
-    "name": "Precompiled-96303350",
-    "pattern": "/(?:(?<=^|[\\s.-])(?:BMF|Geek|LolHD|NCmt|Positive|RightSIZE|TBB)\\b)/i",
+    "name": "Precompiled-954e361b",
+    "pattern": "/(?:(?<=^|[\\s.-])(?:ATELiER|BV|Chotab|de[42]|EA|EDPH|E.N.D|ESiR|FraMeSToR|GS88|HDMaNiAcS|HiP|iFT|KASHMiR|LiNG|LoRD|nmd|NyHD|ORiGEN|playHD|RiCO|RO|rttr|SaNcTi|SPHD|TnP|W4NK3R|WiLF|WMING|ZIMBO|IMNEWHERE|LAZY|ENDSkY|BAT1|CRiME|HDL|REPTiLE|SuBHD|OmertaHD|SillyBird|FANDANGO|NorTV|iNFLiKTED|PiPicK|MDR|HDV|HDv0T|Krispy|Eby|ToK|PerfectionHD|OB1|ZiNC|BBW|iLL|RDK123|E76|JewelBox|HDxT|FTO|IMF|GrapeHD|O2STK|DiRTY|WiHD|NoVA|MCR|Narkyy|Kururun|ARiN|JKP|NiP|Cache|CALiGARi|greenHD|Moshy|ShAnKs|WESTSiDE|KamiKaze|AZVD|SPEED|GutS|Ivandro)\\b)/i",
     "score": 0
   },
   {
-    "name": "Precompiled-aacb4aca",
-    "pattern": "/(?:(?<=^|[\\s.-])(?:ATELiER|BV|Chotab|de[42]|EA|EDPH|E.N.D|ESiR|FraMeSToR|GS88|HDMaNiAcS|HiP|iFT|KASHMiR|LiNG|LoRD|nmd|NyHD|ORiGEN|playHD|RiCO|RO|rttr|SaNcTi|SPHD|TnP|W4NK3R|WiLF|WMING|ZIMBO|IMNEWHERE|LAZY|ENDSkY|BAT1|CRiME|HDL|REPTiLE|SuBHD|OmertaHD|SillyBird|FANDANGO|NorTV|iNFLiKTED|PiPicK|MDR|HDV|HDv0T|Krispy|Eby|ToK|PerfectionHD|OB1|ZiNC|BBW|iLL|RDK123|E76|JewelBox|HDxT|FTO|IMF|GrapeHD|O2STK|DiRTY|WiHD|NoVA|MCR|Narkyy|Kururun|ARiN|JKP|NiP|Cache|CALiGARi|greenHD|Moshy|ShAnKs|WESTSiDE)\\b)/i",
+    "name": "Precompiled-96303350",
+    "pattern": "/(?:(?<=^|[\\s.-])(?:BMF|Geek|LolHD|NCmt|Positive|RightSIZE|TBB)\\b)/i",
     "score": 0
   },
   {
@@ -1537,6 +1577,11 @@
   {
     "name": "SOP",
     "pattern": "/(?<=^|[\\s.-])SOP\\b/i",
+    "score": 0
+  },
+  {
+    "name": "SPEED",
+    "pattern": "/(?<=^|[\\s.-])SPEED\\b/i",
     "score": 0
   },
   {
@@ -1811,7 +1856,7 @@
   },
   {
     "name": "UHD WEBRip Release Groups",
-    "pattern": "/(?<=^|[\\s.-])(0BSiDiAN|147|Aio|AJP69|aNDy|ARiN|ASD87|ATELiER|BakedFEL|BAT1|BBW|BMF|BNL|BRUTE|BSTD|BV|Cache|CALiGARi|CART|c0kE|Chotab|CJ|coffee|CONSORTiUM|CRiME|CRiSC|CRX|D-Z0N3|Dariush|de[42]|decibeL|DiRTY|DON|E.N.D|E1|E76|EA|EBCP|EbP|Eby|EDPH|ENDSkY|ESiR|EXCiSION|eXterminator|faBR|FANDANGO|FoRM|FraMeSToR|FTO|GALAXY|Geek|GL|GR|GrapeHD|GS88|Gyroscope|GZ|H@M|hdalx|HDL|HDMaNiAcS|HDmonSK|HDV|HDv0T|HDxT|HiDt|HiFi|HiP|HQMUX|HR|IDE|iFT|iLL|iLoveHD|IMNEWHERE|J2G|JewelBox|JKP|JM|KASHMiR|Krispy|Kururun|LiNG|LolHD|LoRD|luvBB|MCR|MGs|Narkyy|Natuyuki|NCmt|NiBuRu|NiP|nmd|NorTV|NoVA|NyHD|O2STK|OB1|OmertaHD|ORBiT|ORiGEN|Otaibi|pcroland|Penumbra|PerfectionHD|PiG30N|PiMP|PiPicK|playHD|POH|Positive|Prestige|PTer|PuTao|RDK123|REBORN|REPTiLE|RiCO|RightSIZE|RO|Rose3Thorn|rttr|SA89|SaL|SaNcTi|ShAnKs|SiMPLE|Skazhutin|Softboat|SoLaR|SOP|SPHD|SuBHD|TayTO|TBB|TDD|TeamSyndicate|ThD|TnP|ToK|UxO|VD|VietHD|VLAD|VorteX|W4NK3R|WESTSiDE|WiHD|WiLF|WMING|xander|XFR|ZIMBO|ZiNC|ZoroSenpai|ZQ)\\b/i",
+    "pattern": "/(?<=^|[\\s.-])(0BSiDiAN|147|Aio|AJP69|aNDy|ARiN|ASD87|ATELiER|AZVD|BakedFEL|BAT1|BBW|BMF|BNL|BRUTE|BSTD|BV|Cache|CALiGARi|CART|c0kE|Chotab|CJ|coffee|CONSORTiUM|CRiME|CRiSC|CRX|D-Z0N3|Dariush|de[42]|decibeL|DiRTY|DON|E.N.D|E1|E76|EA|EBCP|EbP|Eby|EDPH|ENDSkY|ESiR|EXCiSION|eXterminator|faBR|FANDANGO|FoRM|FraMeSToR|FTO|GALAXY|Geek|GL|GR|GrapeHD|GS88|GutS|Gyroscope|GZ|H@M|hdalx|HDL|HDMaNiAcS|HDmonSK|HDV|HDv0T|HDxT|HiDt|HiFi|HiP|HQMUX|HR|IDE|iFT|iLL|iLoveHD|IMNEWHERE|Ivandro|J2G|JewelBox|JKP|JM|KamiKaze|KASHMiR|Krispy|Kururun|LiNG|LolHD|LoRD|luvBB|MCR|MGs|Narkyy|Natuyuki|NCmt|NiBuRu|NiP|nmd|NorTV|NoVA|NyHD|O2STK|OB1|OmertaHD|ORBiT|ORiGEN|Otaibi|Palm|pcroland|Penumbra|PerfectionHD|PiG30N|PiMP|PiPicK|playHD|POH|Positive|Prestige|PTer|PuTao|RDK123|REBORN|REPTiLE|RiCO|RightSIZE|RO|Rose3Thorn|rttr|SA89|SaL|SaNcTi|ShAnKs|SiMPLE|Skazhutin|Softboat|SoLaR|SOP|SPHD|SPEED|SuBHD|TayTO|TBB|TDD|TeamSyndicate|ThD|TnP|ToK|UxO|VD|VietHD|VLAD|VorteX|W4NK3R|WESTSiDE|WiHD|WiLF|WMING|xander|XFR|ZIMBO|ZiNC|ZoroSenpai|ZQ)\\b/i",
     "score": 0
   },
   {
@@ -2010,6 +2055,11 @@
     "score": 0
   },
   {
+    "name": "aBa",
+    "pattern": "/(?<=^|[\\s.-])aBa\\b/i",
+    "score": 0
+  },
+  {
     "name": "aNDy",
     "pattern": "/(?<=^|[\\s.-])aNDy\\b/i",
     "score": 0
@@ -2032,6 +2082,11 @@
   {
     "name": "c0kE",
     "pattern": "/(?<=^|[\\s.-])c0kE\\b/i",
+    "score": 0
+  },
+  {
+    "name": "cFc",
+    "pattern": "/(?<=^|[\\s.-])cFc\\b/i",
     "score": 0
   },
   {
