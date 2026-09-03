@@ -1600,6 +1600,11 @@
     "score": 0
   },
   {
+    "name": "SUPER",
+    "pattern": "/(?<=^|[\\s.-])SUPER\\b/i",
+    "score": 0
+  },
+  {
     "name": "SaL",
     "pattern": "/(?<=^|[\\s.-])SaL\\b/i",
     "score": 0
