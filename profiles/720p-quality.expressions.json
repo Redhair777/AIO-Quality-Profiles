@@ -235,12 +235,12 @@
     "enabled": true
   },
   {
-    "expression": "/*#Radarr*/ /*720p Quality Tier 2*/ queryType=='movie' ?merge(quality(resolution(negate(regexMatched(streams, \"Remux\"), regexMatched(streams, \"Precompiled-e5a1deb7\")), \"720p\"), \"BluRay\", \"BluRay REMUX\"), quality(resolution(negate(regexMatched(streams, \"Remux\"), regexMatched(streams, \"Precompiled-e5a1deb7\")), \"720p\"), \"WEBRip\")): []",
+    "expression": "/*#Radarr*/ /*720p Quality Tier 2*/ queryType=='movie' ?merge(quality(resolution(negate(regexMatched(streams, \"Remux\"), regexMatched(streams, \"Precompiled-d4c689c4\")), \"720p\"), \"BluRay\", \"BluRay REMUX\"), quality(resolution(negate(regexMatched(streams, \"Remux\"), regexMatched(streams, \"Precompiled-d4c689c4\")), \"720p\"), \"WEBRip\")): []",
     "score": 144000,
     "enabled": true
   },
   {
-    "expression": "/*#Sonarr*/ /*720p Quality Tier 2*/ queryType=='series' ? quality(resolution(negate(regexMatched(streams, \"Remux\"), regexMatched(streams, \"c0kE\", \"CRiSC\", \"CtrlHD\", \"EbP\", \"HiDt\", \"HiFi\", \"IDE\", \"SbR\", \"VietHD\", \"ZQ\", \"TayTO\")), \"720p\"), \"BluRay\", \"BluRay REMUX\") : []",
+    "expression": "/*#Sonarr*/ /*720p Quality Tier 2*/ queryType=='series' ? quality(resolution(negate(regexMatched(streams, \"Remux\"), regexMatched(streams, \"c0kE\", \"CRiSC\", \"CtrlHD\", \"EbP\", \"HiDt\", \"HiFi\", \"IDE\", \"SbR\", \"VietHD\", \"ZQ\", \"TayTO\", \"0BSiDiAN\")), \"720p\"), \"BluRay\", \"BluRay REMUX\") : []",
     "score": 144000,
     "enabled": true
   },
