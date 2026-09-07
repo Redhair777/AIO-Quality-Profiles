@@ -1340,11 +1340,6 @@
     "score": 0
   },
   {
-    "name": "Precompiled-954e361b",
-    "pattern": "/(?:(?<=^|[\\s.-])(?:ATELiER|BV|Chotab|de[42]|EA|EDPH|E.N.D|ESiR|FraMeSToR|GS88|HDMaNiAcS|HiP|iFT|KASHMiR|LiNG|LoRD|nmd|NyHD|ORiGEN|playHD|RiCO|RO|rttr|SaNcTi|SPHD|TnP|W4NK3R|WiLF|WMING|ZIMBO|IMNEWHERE|LAZY|ENDSkY|BAT1|CRiME|HDL|REPTiLE|SuBHD|OmertaHD|SillyBird|FANDANGO|NorTV|iNFLiKTED|PiPicK|MDR|HDV|HDv0T|Krispy|Eby|ToK|PerfectionHD|OB1|ZiNC|BBW|iLL|RDK123|E76|JewelBox|HDxT|FTO|IMF|GrapeHD|O2STK|DiRTY|WiHD|NoVA|MCR|Narkyy|Kururun|ARiN|JKP|NiP|Cache|CALiGARi|greenHD|Moshy|ShAnKs|WESTSiDE|KamiKaze|AZVD|SPEED|GutS|Ivandro)\\b)/i",
-    "score": 0
-  },
-  {
     "name": "Precompiled-96303350",
     "pattern": "/(?:(?<=^|[\\s.-])(?:BMF|Geek|LolHD|NCmt|Positive|RightSIZE|TBB)\\b)/i",
     "score": 0
@@ -1360,13 +1355,18 @@
     "score": 0
   },
   {
+    "name": "Precompiled-c55a6c5a",
+    "pattern": "/(?:(?<=^|[\\s.-])(?:ATELiER|BV|Chotab|de[42]|EA|EDPH|E.N.D|ESiR|FraMeSToR|GS88|HDMaNiAcS|HiP|iFT|KASHMiR|LiNG|LoRD|nmd|NyHD|ORiGEN|playHD|RiCO|RO|rttr|SaNcTi|SPHD|TnP|W4NK3R|WiLF|WMING|ZIMBO|IMNEWHERE|LAZY|ENDSkY|BAT1|CRiME|HDL|REPTiLE|SuBHD|OmertaHD|SillyBird|FANDANGO|NorTV|iNFLiKTED|PiPicK|MDR|HDV|HDv0T|Krispy|Eby|ToK|PerfectionHD|OB1|ZiNC|BBW|iLL|RDK123|E76|JewelBox|HDxT|FTO|IMF|GrapeHD|O2STK|DiRTY|WiHD|NoVA|MCR|Narkyy|Kururun|ARiN|JKP|NiP|Cache|CALiGARi|greenHD|Moshy|ShAnKs|WESTSiDE|KamiKaze|AZVD|SPEED|GutS|Ivandro|TAiCHi)\\b)/i",
+    "score": 0
+  },
+  {
     "name": "Precompiled-d4c689c4",
     "pattern": "/(?:(?<=^|[\\s.-])(?:c0kE|CRiSC|CtrlHD|EbP|HiDt|HiFi|IDE|SbR|VietHD|ZQ|TayTO|0BSiDiAN)\\b)/i",
     "score": 0
   },
   {
-    "name": "Precompiled-ed9e6f45",
-    "pattern": "/(?:(?<=^|[\\s.-])(?:AJP69|ATELiER|BSTD|Chotab|CJ|CRX|Dariush|E1|EA|E.N.D|EDPH|ESiR|EXCiSION|GALAXY|GS88|hdalx|HQMUX|KASHMiR|Kitsune|LiNG|luvBB|NiBuRu|nmd|NyHD|ORiGEN|Penumbra|playHD|Positive|PTer|RiCO|RO|rttr|SaNcTi|SiMPLE|SOP|SPHD|TBB|TDD|TnP|VLAD|W4NK3R|WiLF|xander|ZIMBO|GZ|iLoveHD|ViSUM|Softboat|Natuyuki|IMNEWHERE|LAZY|pcroland|HR|Rose3Thorn|Prestige|ENDSkY|faBR|BAT1|VD|HDmonSK|CRiME|ThD|HDL|REPTiLE|POH|UxO|SuBHD|OmertaHD|FANDANGO|NorTV|PiPicK|H@M|aNDy|HDV|HDv0T|GL|EBCP|VorteX|Krispy|Eby|ToK|PerfectionHD|OB1|ZiNC|BBW|iLL|RDK123|E76|Otaibi|JewelBox|HDxT|FTO|GR|GrapeHD|O2STK|DiRTY|WiHD|NoVA|MCR|JM|Narkyy|Aio|MGs|J2G|BNL|Kururun|ARiN|JKP|NiP|RightSIZE|Cache|CALiGARi|ShAnKs|WESTSiDE|KamiKaze|AZVD|Palm|SPEED|GutS|Ivandro|SUPER)\\b)/i",
+    "name": "Precompiled-e141e47d",
+    "pattern": "/(?:(?<=^|[\\s.-])(?:AJP69|ATELiER|BSTD|Chotab|CJ|CRX|Dariush|E1|EA|E.N.D|EDPH|ESiR|EXCiSION|GALAXY|GS88|hdalx|HQMUX|KASHMiR|Kitsune|LiNG|luvBB|NiBuRu|nmd|NyHD|ORiGEN|Penumbra|playHD|Positive|PTer|RiCO|RO|rttr|SaNcTi|SiMPLE|SOP|SPHD|TBB|TDD|TnP|VLAD|W4NK3R|WiLF|xander|ZIMBO|GZ|iLoveHD|ViSUM|Softboat|Natuyuki|IMNEWHERE|LAZY|pcroland|HR|Rose3Thorn|Prestige|ENDSkY|faBR|BAT1|VD|HDmonSK|CRiME|ThD|HDL|REPTiLE|POH|UxO|SuBHD|OmertaHD|FANDANGO|NorTV|PiPicK|H@M|aNDy|HDV|HDv0T|GL|EBCP|VorteX|Krispy|Eby|ToK|PerfectionHD|OB1|ZiNC|BBW|iLL|RDK123|E76|Otaibi|JewelBox|HDxT|FTO|GR|GrapeHD|O2STK|DiRTY|WiHD|NoVA|MCR|JM|Narkyy|Aio|MGs|J2G|BNL|Kururun|ARiN|JKP|NiP|RightSIZE|Cache|CALiGARi|ShAnKs|WESTSiDE|KamiKaze|AZVD|Palm|SPEED|GutS|Ivandro|SUPER|TAiCHi)\\b)/i",
     "score": 0
   },
   {
@@ -1682,6 +1682,11 @@
   {
     "name": "SwAgLaNdEr",
     "pattern": "/(?<=^|[\\s.-])SwAgLaNdEr\\b/i",
+    "score": 0
+  },
+  {
+    "name": "TAiCHi",
+    "pattern": "/(?<=^|[\\s.-])TAiCHi\\b/i",
     "score": 0
   },
   {
