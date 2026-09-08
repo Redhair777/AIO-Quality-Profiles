@@ -531,7 +531,7 @@
   },
   {
     "name": "DaddySubs",
-    "pattern": "/\\[Daddy(Subs)?\\]|-Daddy(Subs)?\\b/i",
+    "pattern": "/\\[Daddy(Subs)?\\]|-Daddy(Subs)?$/i",
     "score": 0
   },
   {
@@ -1216,7 +1216,7 @@
   },
   {
     "name": "Mites",
-    "pattern": "/\\b(Mites)\\b/i",
+    "pattern": "/\\[Mites\\]|-Mites$/i",
     "score": 0
   },
   {
@@ -1681,7 +1681,7 @@
   },
   {
     "name": "SAD",
-    "pattern": "/\\[SAD\\]|-SAD\\b/i",
+    "pattern": "/\\[SAD\\]|-SAD$/i",
     "score": 0
   },
   {
