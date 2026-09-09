@@ -655,6 +655,11 @@
     "score": 0
   },
   {
+    "name": "Friday",
+    "pattern": "/(?<=^|[\\s.-])Friday\\b/i",
+    "score": 0
+  },
+  {
     "name": "Full Disc",
     "pattern": "/^(?!.*\\b((?<!HD[._ -]|HD)DVD|BDRip|MKV|XviD|WMV|d3g|BDREMUX|REMUX|^(?=.*1080p)(?=.*HEVC)|[xh][-_. ]?26[45]|German.*DL|((?<=\\d{4}).*German.*(DL)?)(?=.*\\b(AVC|HEVC|VC[-_. ]?1|MVC|MPEG[-_. ]?2)\\b))\\b)(((?=.*\\b(Blu[-_. ]?ray|BD|HD[-_. ]?DVD)\\b)(?=.*\\b(AVC|HEVC|VC[-_. ]?1|MVC|MPEG[-_. ]?2|BDMV|ISO)\\b))|^((?=.*\\b(^((?=.*\\b((.*_)?COMPLETE.*|Dis[ck])\\b)(?=.*(Blu[-_. ]?ray|HD[-_. ]?DVD)))|3D[-_. ]?BD|BR[-_. ]?DISK|Full[-_. ]?Blu[-_. ]?ray|^((?=.*((BD|UHD)[-_. ]?(25|50|66|100|ISO)))))))).*|(DVD9|DVD5|NTSC|PAL|VOB IFO|VC-1|AVC|MPEG-2|\\bCOMPLETE[-.\\s]?(?:UHD[-.\\s])?BLU[-.\\s]?RAY\\b|\\bCOMPLETE BLU[-]?RAY\\b|\\bBR-Disk\\b)/i",
     "score": 0
@@ -1390,6 +1395,11 @@
     "score": 0
   },
   {
+    "name": "Precompiled-83f13a79",
+    "pattern": "/(?:(?<=^|[\\s.-])(?:ATELiER|BV|Chotab|de[42]|EA|EDPH|E.N.D|ESiR|FraMeSToR|GS88|HDMaNiAcS|HiP|iFT|KASHMiR|LiNG|LoRD|nmd|NyHD|ORiGEN|playHD|RiCO|RO|rttr|SaNcTi|SPHD|TnP|W4NK3R|WiLF|WMING|ZIMBO|IMNEWHERE|LAZY|ENDSkY|BAT1|CRiME|HDL|REPTiLE|SuBHD|OmertaHD|SillyBird|FANDANGO|NorTV|iNFLiKTED|PiPicK|MDR|HDV|HDv0T|Krispy|Eby|ToK|PerfectionHD|OB1|ZiNC|BBW|iLL|RDK123|E76|JewelBox|HDxT|FTO|IMF|GrapeHD|O2STK|DiRTY|WiHD|NoVA|MCR|Narkyy|Kururun|ARiN|JKP|NiP|Cache|CALiGARi|greenHD|Moshy|ShAnKs|WESTSiDE|KamiKaze|AZVD|SPEED|GutS|Ivandro|TAiCHi|Friday)\\b)/i",
+    "score": 0
+  },
+  {
     "name": "Precompiled-8e9b04f9",
     "pattern": "/(?:\\b(dts[-_. ]?(ma|hd([-_. ]?ma)?|xll))(\\b|\\d)|\\b(dts[-_. :]?x)\\b(?!\\d)|\\b(l?)PCM(\\b|\\d)|True[ .-]?HD[ .-]?)/i",
     "score": 0
@@ -1397,11 +1407,6 @@
   {
     "name": "Precompiled-96303350",
     "pattern": "/(?:(?<=^|[\\s.-])(?:BMF|Geek|LolHD|NCmt|Positive|RightSIZE|TBB)\\b)/i",
-    "score": 0
-  },
-  {
-    "name": "Precompiled-c55a6c5a",
-    "pattern": "/(?:(?<=^|[\\s.-])(?:ATELiER|BV|Chotab|de[42]|EA|EDPH|E.N.D|ESiR|FraMeSToR|GS88|HDMaNiAcS|HiP|iFT|KASHMiR|LiNG|LoRD|nmd|NyHD|ORiGEN|playHD|RiCO|RO|rttr|SaNcTi|SPHD|TnP|W4NK3R|WiLF|WMING|ZIMBO|IMNEWHERE|LAZY|ENDSkY|BAT1|CRiME|HDL|REPTiLE|SuBHD|OmertaHD|SillyBird|FANDANGO|NorTV|iNFLiKTED|PiPicK|MDR|HDV|HDv0T|Krispy|Eby|ToK|PerfectionHD|OB1|ZiNC|BBW|iLL|RDK123|E76|JewelBox|HDxT|FTO|IMF|GrapeHD|O2STK|DiRTY|WiHD|NoVA|MCR|Narkyy|Kururun|ARiN|JKP|NiP|Cache|CALiGARi|greenHD|Moshy|ShAnKs|WESTSiDE|KamiKaze|AZVD|SPEED|GutS|Ivandro|TAiCHi)\\b)/i",
     "score": 0
   },
   {
