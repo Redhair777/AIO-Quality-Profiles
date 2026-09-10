@@ -200,16 +200,6 @@
     "score": 0
   },
   {
-    "name": "Apple TV",
-    "pattern": "/\\b(ATV)\\b/i",
-    "score": 0
-  },
-  {
-    "name": "Apple TV+",
-    "pattern": "/\\b(atvp|aptv|Apple TV\\+)\\b/i",
-    "score": 0
-  },
-  {
     "name": "ArataEnc",
     "pattern": "/\\b(ArataEnc)\\b/i",
     "score": 0
@@ -370,11 +360,6 @@
     "score": 0
   },
   {
-    "name": "CC Rename",
-    "pattern": "/\\[(CC)\\b|\\b(CC)\\]/i",
-    "score": 0
-  },
-  {
     "name": "CRUCiBLE",
     "pattern": "/\\[CRUCiBLE\\]|-CRUCiBLE\\b/i",
     "score": 0
@@ -432,11 +417,6 @@
   {
     "name": "Cleo",
     "pattern": "/\\[Cleo\\]|-Cleo/i",
-    "score": 0
-  },
-  {
-    "name": "Comedy Central",
-    "pattern": "/\\b(CC)\\b[ ._-]web[ ._-]?(dl|rip)?\\b/i",
     "score": 0
   },
   {
@@ -502,11 +482,6 @@
   {
     "name": "DBArabic",
     "pattern": "/\\b(DBArabic)\\b/i",
-    "score": 0
-  },
-  {
-    "name": "DC Universe",
-    "pattern": "/\\b(dcu|DC Universe)\\b/i",
     "score": 0
   },
   {
@@ -785,21 +760,6 @@
     "score": 0
   },
   {
-    "name": "HBO",
-    "pattern": "/\\b(hbo)(?![ ._-]max)\\b(?=[ ._-]web[ ._-]?(dl|rip)\\b)/i",
-    "score": 0
-  },
-  {
-    "name": "HBO Max",
-    "pattern": "/\\b(hmax|hbom|hbo[ ._-]?max)\\b(?=[ ._-]web[ ._-]?(dl|rip)\\b)/i",
-    "score": 0
-  },
-  {
-    "name": "HBO Rename",
-    "pattern": "/\\[(HBO)\\b|\\b(HBO)\\]/i",
-    "score": 0
-  },
-  {
     "name": "HENiL",
     "pattern": "/\\b(HENiL)\\b/i",
     "score": 0
@@ -807,11 +767,6 @@
   {
     "name": "HIDIVE",
     "pattern": "/\\b(HIDI(VE)?)\\b/i",
-    "score": 0
-  },
-  {
-    "name": "HMAX Rename",
-    "pattern": "/\\[(HMAX)\\b|\\b(HMAX)\\]/i",
     "score": 0
   },
   {
@@ -1125,11 +1080,6 @@
     "score": 0
   },
   {
-    "name": "MAX Rename",
-    "pattern": "/\\[(MAX)\\b|\\b(MAX)\\]/i",
-    "score": 0
-  },
-  {
     "name": "MC",
     "pattern": "/\\b(MC)\\b/i",
     "score": 0
@@ -1157,11 +1107,6 @@
   {
     "name": "Man.K",
     "pattern": "/\\b(Man\\.K)\\b/i",
-    "score": 0
-  },
-  {
-    "name": "Max",
-    "pattern": "/\\b((?<!hbo[ ._-])max)\\b(?=[ ._-]web[ ._-]?(dl|rip)\\b)/i",
     "score": 0
   },
   {
@@ -1350,11 +1295,6 @@
     "score": 0
   },
   {
-    "name": "Not Hulu",
-    "pattern": "/\\b(hulu)\\b/i",
-    "score": 0
-  },
-  {
     "name": "Not Single Language Only",
     "pattern": "/\\[(JA|ZH|KO)\\]/i",
     "score": 0
@@ -1400,16 +1340,6 @@
     "score": 0
   },
   {
-    "name": "PLAY",
-    "pattern": "/\\b(Play)\\b(?=[ ._-]web[ ._-]?(dl|rip)\\b)/i",
-    "score": 0
-  },
-  {
-    "name": "PLAY Rename",
-    "pattern": "/\\[(Play)\\b|\\b(Play)\\]/i",
-    "score": 0
-  },
-  {
     "name": "PMR",
     "pattern": "/^(?=.*\\b(PMR)\\b)(?=.*\\b(Remux)\\b)/i",
     "score": 0
@@ -1437,16 +1367,6 @@
   {
     "name": "Pao",
     "pattern": "/\\[Pao\\]|-Pao\\b/i",
-    "score": 0
-  },
-  {
-    "name": "Paramount+ (Sonarr)",
-    "pattern": "/\\b(pmtp|Paramount\\+)\\b/i",
-    "score": 0
-  },
-  {
-    "name": "Peacock TV (Sonarr)",
-    "pattern": "/\\b(pcok|Peacock TV)\\b/i",
     "score": 0
   },
   {
@@ -1610,11 +1530,6 @@
     "score": 0
   },
   {
-    "name": "ROKU",
-    "pattern": "/\\b(ROKU)\\b/i",
-    "score": 0
-  },
-  {
     "name": "RUDY",
     "pattern": "/\\[RUDY\\]|-RUDY\\b/i",
     "score": 0
@@ -1710,16 +1625,6 @@
     "score": 0
   },
   {
-    "name": "SHO Rename",
-    "pattern": "/\\[(SHO)\\b|\\b(SHO)\\]/i",
-    "score": 0
-  },
-  {
-    "name": "SHOWTIME",
-    "pattern": "/\\b(sho|showtime)\\b[ ._-]web[ ._-]?(dl|rip)?\\b/i",
-    "score": 0
-  },
-  {
     "name": "SLAX",
     "pattern": "/\\b(SLAX)\\b/i",
     "score": 0
@@ -1742,11 +1647,6 @@
   {
     "name": "SURFINBIRD",
     "pattern": "/^(SURFINBIRD)$/i",
-    "score": 0
-  },
-  {
-    "name": "SYFY",
-    "pattern": "/\\b(SYFY)\\b/i",
     "score": 0
   },
   {
@@ -1852,16 +1752,6 @@
   {
     "name": "Spirale",
     "pattern": "/\\b(Spirale)\\b/i",
-    "score": 0
-  },
-  {
-    "name": "Stan",
-    "pattern": "/\\b(stan)\\b[ ._-]web[ ._-]?(dl|rip)?\\b/i",
-    "score": 0
-  },
-  {
-    "name": "Stan Rename",
-    "pattern": "/\\[(STAN)\\b|\\b(STAN)\\]/i",
     "score": 0
   },
   {
@@ -2252,16 +2142,6 @@
   {
     "name": "iPUNISHER",
     "pattern": "/\\b(iPUNISHER)\\b/i",
-    "score": 0
-  },
-  {
-    "name": "iT Rename",
-    "pattern": "/\\[(iT)(?![+])\\b|\\b(?<![+])(iT)\\]/i",
-    "score": 0
-  },
-  {
-    "name": "iTunes",
-    "pattern": "/\\b(it|itunes)\\b(?=[ ._-]web[ ._-]?(dl|rip)\\b)/i",
     "score": 0
   },
   {

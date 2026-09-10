@@ -1321,7 +1321,7 @@
   },
   {
     "name": "Phineas and Ferb Banned Groups",
-    "pattern": "/^phineas[ ._-]+and[ ._-]+ferb.*-(KAiZEN|PHOENiX)\\b/i",
+    "pattern": "/^phineas[ ._-]+and[ ._-]+ferb.*-(KAiZEN|PHOENiX|RakuFIN)\\b/i",
     "score": 0
   },
   {
