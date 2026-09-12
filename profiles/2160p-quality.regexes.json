@@ -741,7 +741,7 @@
   },
   {
     "name": "Google TV",
-    "pattern": "/\\b(PLAY)(?=[\\W_]+WEB[ ._-]?(DL|RIP)\\b)/i",
+    "pattern": "/\\bPLAY[ ._-]WEB[ ._-]?(DL|RIP)\\b|\\[[^\\]]*\\bPLAY\\b[^\\]]*\\]/i",
     "score": 0
   },
   {
@@ -1091,7 +1091,7 @@
   },
   {
     "name": "Max",
-    "pattern": "/\\b((?<!HBO[ ._-]+)MAX)(?=[\\W_]+WEB[ ._-]?(DL|RIP)\\b)/i",
+    "pattern": "/\\b((?<!HBO[ ._-])MAX)[ ._-]WEB[ ._-]?(DL|RIP)\\b|\\[[^\\]]*\\bMAX\\b[^\\]]*\\]/i",
     "score": 0
   },
   {
@@ -1236,7 +1236,7 @@
   },
   {
     "name": "Now",
-    "pattern": "/\\b(NOW)(?=[\\W_]+WEB[ ._-]?(DL|RIP)\\b)/i",
+    "pattern": "/\\bNOW[ ._-]WEB[ ._-]?(DL|RIP)\\b|\\[[^\\]]*\\bNOW\\b[^\\]]*\\]/i",
     "score": 0
   },
   {
@@ -1671,7 +1671,7 @@
   },
   {
     "name": "Showtime",
-    "pattern": "/\\b(SHO(WTIME)?)(?=[\\W_]+WEB[ ._-]?(DL|RIP)\\b)/i",
+    "pattern": "/\\b(SHO(WTIME)?)[ ._-]WEB[ ._-]?(DL|RIP)\\b|\\[[^\\]]*\\bSHO\\b[^\\]]*\\]/i",
     "score": 0
   },
   {
@@ -2181,7 +2181,7 @@
   },
   {
     "name": "iTunes",
-    "pattern": "/\\b(iT(unes)?)(?=[\\W_]+WEB[ ._-]?(DL|RIP)\\b)/i",
+    "pattern": "/\\b(iT(unes)?)[ ._-]WEB[ ._-]?(DL|RIP)\\b|\\[[^\\]]*\\biT\\b[^\\]]*\\]/i",
     "score": 0
   },
   {
