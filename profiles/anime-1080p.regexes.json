@@ -1540,11 +1540,6 @@
     "score": 0
   },
   {
-    "name": "Rick and Morty S09 Banned Groups",
-    "pattern": "/^rick[ ._-]+and[ ._-]+morty.*s09e05.*-(FLUX)\\b/i",
-    "score": 0
-  },
-  {
     "name": "RightShiftBy2",
     "pattern": "/\\b(RightShiftBy2)\\b/i",
     "score": 0

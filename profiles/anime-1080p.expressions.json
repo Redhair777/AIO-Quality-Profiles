@@ -235,7 +235,7 @@
     "enabled": true
   },
   {
-    "expression": "/*#Sonarr*/ /*Bad Source*/ queryType=='anime.series' ? regexMatched(streams, \"Parks and Recreation NTb Banned\", \"The Office (US) Banned Groups\", \"Family Guy Banned Groups\", \"Whose Line Not US Version\", \"Arthur Banned Groups\", \"Scrubs 2001 Approved Groups\", \"The Big Bang Theory Banned Groups\", \"The Office (US) Superfans Episodes\", \"Family Guy S13 Banned Groups\", \"Rick and Morty S09 Banned Groups\", \"1080i\", \"Phineas and Ferb Banned Groups\", \"The Four Seasons Banned Groups\", \"Adventure Time Season 8 Banned Groups\", \"House Season 6 Banned Groups\", \"The Office (US) S09 Extended Banned Groups\", \"Courage the Cowardly Dog Banned Groups\", \"Anne of Green Gables Banned Groups\") : []",
+    "expression": "/*#Sonarr*/ /*Bad Source*/ queryType=='anime.series' ? regexMatched(streams, \"Parks and Recreation NTb Banned\", \"The Office (US) Banned Groups\", \"Family Guy Banned Groups\", \"Whose Line Not US Version\", \"Arthur Banned Groups\", \"Scrubs 2001 Approved Groups\", \"The Big Bang Theory Banned Groups\", \"The Office (US) Superfans Episodes\", \"Family Guy S13 Banned Groups\", \"1080i\", \"Phineas and Ferb Banned Groups\", \"The Four Seasons Banned Groups\", \"Adventure Time Season 8 Banned Groups\", \"House Season 6 Banned Groups\", \"The Office (US) S09 Extended Banned Groups\", \"Courage the Cowardly Dog Banned Groups\", \"Anne of Green Gables Banned Groups\") : []",
     "score": -10000,
     "enabled": true
   },
