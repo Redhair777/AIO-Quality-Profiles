@@ -505,7 +505,12 @@
     "score": 0
   },
   {
-    "name": "DaddySubs",
+    "name": "DaddySubs (Radarr)",
+    "pattern": "/\\[Daddy(Subs)?\\]|-Daddy(Subs)?\\b/i",
+    "score": 0
+  },
+  {
+    "name": "DaddySubs (Sonarr)",
     "pattern": "/\\[Daddy(Subs)?\\]|-Daddy(Subs)?$/i",
     "score": 0
   },
@@ -1160,7 +1165,12 @@
     "score": 0
   },
   {
-    "name": "Mites",
+    "name": "Mites (Radarr)",
+    "pattern": "/\\b(Mites)\\b/i",
+    "score": 0
+  },
+  {
+    "name": "Mites (Sonarr)",
     "pattern": "/\\[Mites\\]|-Mites$/i",
     "score": 0
   },
@@ -1595,7 +1605,12 @@
     "score": 0
   },
   {
-    "name": "SAD",
+    "name": "SAD (Radarr)",
+    "pattern": "/\\[SAD\\]|-SAD\\b/i",
+    "score": 0
+  },
+  {
+    "name": "SAD (Sonarr)",
     "pattern": "/\\[SAD\\]|-SAD$/i",
     "score": 0
   },
