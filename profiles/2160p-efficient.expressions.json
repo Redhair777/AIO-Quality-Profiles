@@ -620,12 +620,12 @@
     "enabled": true
   },
   {
-    "expression": "/*#Radarr*/ /*Banned Groups*/ queryType=='movie' ? regexMatched(streams, \"4K4U\", \"AOC\", \"AROMA\", \"BeyondHD\", \"BiTOR\", \"BLASPHEMY\", \"BOLS\", \"BTM\", \"CLASSiCALHD\", \"CREATiVE24\", \"d3g\", \"DepraveD\", \"DeViSiVE\", \"DRX\", \"E\", \"FGT\", \"Flights\", \"HDS\", \"jennaortegaUHD\", \"KC\", \"LAMA\", \"MgB\", \"NAHOM\", \"NhaNc3\", \"NoGroup\", \"OEPlus\", \"SasukeducK\", \"SHD\", \"ShieldBearer\", \"STUTTERSHIT\", \"tarunk9c\", \"TEKNO3D\", \"Telly\", \"UnKn0wn\", \"VD0N\", \"VECTOR\", \"VisionXpert\", \"x0r\", \"YIFY\", \"YTS\", \"OFT\", \"nikt0\", \"SM737\", \"SumVision\", \"MAMA\", \"jff\", \"rbb\", \"Casius08\", \"NaNi\", \"NiCEHEVC\") : []",
+    "expression": "/*#Radarr*/ /*Banned Groups*/ queryType=='movie' ? regexMatched(streams, \"4K4U\", \"AOC\", \"AROMA\", \"BeyondHD\", \"BiTOR\", \"BLASPHEMY\", \"BOLS\", \"BTM\", \"CLASSiCALHD\", \"CREATiVE24\", \"d3g\", \"DepraveD\", \"DeViSiVE\", \"DRX\", \"E\", \"FGT\", \"Flights\", \"HDS\", \"jennaortegaUHD\", \"KC\", \"LAMA\", \"MgB\", \"NAHOM\", \"NhaNc3\", \"NoGroup\", \"OEPlus\", \"SasukeducK\", \"SHD\", \"ShieldBearer\", \"STUTTERSHIT\", \"tarunk9c\", \"TEKNO3D\", \"Telly\", \"UnKn0wn\", \"VD0N\", \"VECTOR\", \"VisionXpert\", \"x0r\", \"YIFY\", \"YTS\", \"OFT\", \"nikt0\", \"SM737\", \"SumVision\", \"MAMA\", \"jff\", \"rbb\", \"Casius08\", \"NaNi\", \"NiCEHEVC\", \"Nostromo\") : []",
     "score": -999999,
     "enabled": true
   },
   {
-    "expression": "/*#Sonarr*/ /*Banned Groups*/ queryType=='series' ? regexMatched(streams, \"4K4U\", \"AOC\", \"AROMA\", \"BeyondHD\", \"BiTOR\", \"BLASPHEMY\", \"BOLS\", \"BTM\", \"CLASSiCALHD\", \"CREATiVE24\", \"d3g\", \"DepraveD\", \"DeViSiVE\", \"DRX\", \"E\", \"FGT\", \"Flights\", \"HDS\", \"jennaortegaUHD\", \"KC\", \"LAMA\", \"MgB\", \"NAHOM\", \"NhaNc3\", \"NoGroup\", \"OEPlus\", \"SasukeducK\", \"SHD\", \"ShieldBearer\", \"STUTTERSHIT\", \"tarunk9c\", \"TEKNO3D\", \"Telly\", \"UnKn0wn\", \"VD0N\", \"VECTOR\", \"VisionXpert\", \"x0r\", \"YIFY\", \"YTS\", \"OFT\", \"nikt0\", \"SM737\", \"SumVision\", \"MAMA\", \"jff\", \"rbb\", \"Casius08\", \"NaNi\", \"NiCEHEVC\") : []",
+    "expression": "/*#Sonarr*/ /*Banned Groups*/ queryType=='series' ? regexMatched(streams, \"4K4U\", \"AOC\", \"AROMA\", \"BeyondHD\", \"BiTOR\", \"BLASPHEMY\", \"BOLS\", \"BTM\", \"CLASSiCALHD\", \"CREATiVE24\", \"d3g\", \"DepraveD\", \"DeViSiVE\", \"DRX\", \"E\", \"FGT\", \"Flights\", \"HDS\", \"jennaortegaUHD\", \"KC\", \"LAMA\", \"MgB\", \"NAHOM\", \"NhaNc3\", \"NoGroup\", \"OEPlus\", \"SasukeducK\", \"SHD\", \"ShieldBearer\", \"STUTTERSHIT\", \"tarunk9c\", \"TEKNO3D\", \"Telly\", \"UnKn0wn\", \"VD0N\", \"VECTOR\", \"VisionXpert\", \"x0r\", \"YIFY\", \"YTS\", \"OFT\", \"nikt0\", \"SM737\", \"SumVision\", \"MAMA\", \"jff\", \"rbb\", \"Casius08\", \"NaNi\", \"NiCEHEVC\", \"Nostromo\") : []",
     "score": -999999,
     "enabled": true
   },

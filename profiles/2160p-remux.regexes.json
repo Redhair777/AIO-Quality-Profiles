@@ -1270,6 +1270,11 @@
     "score": 0
   },
   {
+    "name": "Nostromo",
+    "pattern": "/(?<=^|[\\s.-])Nostromo\\b/i",
+    "score": 0
+  },
+  {
     "name": "Now",
     "pattern": "/\\bNOW[ ._-]WEB[ ._-]?(DL|RIP)\\b|\\[[^\\]]*\\bNOW\\b[^\\]]*\\]/i",
     "score": 0
