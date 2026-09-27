@@ -1245,6 +1245,11 @@
     "score": 0
   },
   {
+    "name": "ProRes",
+    "pattern": "/\\b(ProRes)\\b/i",
+    "score": 0
+  },
+  {
     "name": "PuTao",
     "pattern": "/(?<=^|[\\s.-])PuTao\\b/i",
     "score": 0
