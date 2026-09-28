@@ -526,7 +526,7 @@
   },
   {
     "name": "E",
-    "pattern": "/(?<=^|[\\s.-])E\\b/i",
+    "pattern": "/(?<=^|[\\s.-])E(?![.\\w])/i",
     "score": 0
   },
   {
@@ -1355,6 +1355,11 @@
     "score": 0
   },
   {
+    "name": "Precompiled-5a8aac10",
+    "pattern": "/(?:(?<=^|[\\s.-])(?:Dariush|decibeL|D-Z0N3|FoRM|NTb|PTer|Skazhutin|TDD|ThD)\\b)/i",
+    "score": 0
+  },
+  {
     "name": "Precompiled-6c21be8b",
     "pattern": "/(?:(?<=^|[\\s.-])(?:DON|TeamSyndicate|REBORN|SA89|SoLaR|ZoroSenpai|coffee)\\b)/i",
     "score": 0
@@ -1397,11 +1402,6 @@
   {
     "name": "Precompiled-f4725b00",
     "pattern": "/(?:(?<=^|[\\s.-])(?:DON|REBORN|SoLaR|TeamSyndicate|ZoroSenpai)\\b)/i",
-    "score": 0
-  },
-  {
-    "name": "Precompiled-fd91549c",
-    "pattern": "/(?:(?<=^|[\\s.-])(?:Dariush|decibeL|D-Z0N3|EA|FoRM|NTb|PTer|Skazhutin|TDD|ThD)\\b)/i",
     "score": 0
   },
   {

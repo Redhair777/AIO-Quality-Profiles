@@ -1391,7 +1391,7 @@
   },
   {
     "name": "Precompiled-67012523",
-    "pattern": "/(?:\\b(9volt)\\b|\\[AC\\]|-AC$|\\[Almighty\\]|-Almighty\\b|\\[Asakura\\]|-Asakura\\b|\\b(Asenshi)\\b|\\b(BlurayDesuYo)\\b|\\[Bolshevik\\]|-Bolshevik\\b|\\b(Brrrrrrr)\\b|\\[Chihiro\\]|-Chihiro\\b|\\b(Commie)\\b|\\[Crow\\]|-Crow\\b|\\b(Dae)\\b|\\[Dekinai\\]|-Dekinai\\b|\\b(Dragon-Releases)\\b|\\b(DragsterPS)\\b|\\b(Exiled-Destiny|E-D)\\b|\\b(FFF)\\b|\\b(Final8)\\b|\\b(Geonope)\\b|\\b(GJM)\\b|\\b(iAHD)\\b|\\b(inid4c)\\b|\\b(Koten[ ._-]Gars)\\b|\\b(kuchikirukia)\\b|\\b(LCE)\\b|\\b(NTW)\\b|\\b(orz)\\b|\\b(RAI)\\b|\\b(REVO)\\b|\\b(SCP-2223)\\b|\\[Senjou\\]|-Senjou\\b|\\b(SEV|D0ct0rLew|Kira)\\b|\\b(THORA)\\b|\\[Vivid\\]|-Vivid\\b)/i",
+    "pattern": "/(?:\\b(9volt)\\b|\\[AC\\]|-AC$|\\[Almighty\\]|-Almighty\\b|\\[Asakura\\]|-Asakura\\b|\\b(Asenshi)\\b|\\b(BlurayDesuYo)\\b|\\[Bolshevik\\]|-Bolshevik\\b|\\b(Brrrrrrr)\\b|\\[Chihiro\\]|-Chihiro\\b|\\b(Commie)\\b|\\[Crow\\]|-Crow\\b|\\b(Dae)\\b|\\[Dekinai\\]|-Dekinai\\b|\\b(Dragon-Releases)\\b|\\b(DragsterPS)\\b|\\b(Exiled-Destiny|E-D)\\b|\\b(FFF)\\b|\\b(Final8)\\b|\\b(Geonope)\\b|\\b(GJM)\\b|\\b(iAHD)\\b|\\b(inid4c)\\b|\\b(Koten[ ._-]Gars)\\b|\\b(kuchikirukia)\\b|\\b(LCE)\\b|\\b(NTW)\\b|\\b(orz)\\b|\\b(RAI)\\b|\\b(REVO)\\b|\\b(SCP-2223)\\b|\\[Senjou\\]|-Senjou\\b|\\b(SEV)\\b|\\b(THORA)\\b|\\[Vivid\\]|-Vivid\\b)/i",
     "score": 0
   },
   {
@@ -1571,7 +1571,7 @@
   },
   {
     "name": "SEV",
-    "pattern": "/\\b(SEV|D0ct0rLew|Kira)\\b/i",
+    "pattern": "/\\b(SEV)\\b/i",
     "score": 0
   },
   {

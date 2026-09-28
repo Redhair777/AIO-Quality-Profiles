@@ -531,7 +531,7 @@
   },
   {
     "name": "E",
-    "pattern": "/(?<=^|[\\s.-])E\\b/i",
+    "pattern": "/(?<=^|[\\s.-])E(?![.\\w])/i",
     "score": 0
   },
   {
@@ -1395,6 +1395,11 @@
     "score": 0
   },
   {
+    "name": "Precompiled-5a8aac10",
+    "pattern": "/(?:(?<=^|[\\s.-])(?:Dariush|decibeL|D-Z0N3|FoRM|NTb|PTer|Skazhutin|TDD|ThD)\\b)/i",
+    "score": 0
+  },
+  {
     "name": "Precompiled-7f024551",
     "pattern": "/(?:(?<=^|[\\s.-])(?:EuReKA|HANDJOB|KnG|LEGi0N|Lulz|MaG|MTeam|PTP|PuTao|Slappy|WiKi|MKu|Uld|ZAL|eckomega|CONSORTiUM|Spekt0r|SpaceHD|Gyroscope|PiG30N|SaL|Funner|CREATiVE|MySiLU|EwT)\\b)/i",
     "score": 0
@@ -1422,11 +1427,6 @@
   {
     "name": "Precompiled-f4725b00",
     "pattern": "/(?:(?<=^|[\\s.-])(?:DON|REBORN|SoLaR|TeamSyndicate|ZoroSenpai)\\b)/i",
-    "score": 0
-  },
-  {
-    "name": "Precompiled-fd91549c",
-    "pattern": "/(?:(?<=^|[\\s.-])(?:Dariush|decibeL|D-Z0N3|EA|FoRM|NTb|PTer|Skazhutin|TDD|ThD)\\b)/i",
     "score": 0
   },
   {
