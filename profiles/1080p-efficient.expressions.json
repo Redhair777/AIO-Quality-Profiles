@@ -200,12 +200,12 @@
     "enabled": true
   },
   {
-    "expression": "/*#Radarr*/ /*1080p WEB-DL (Efficient)*/ queryType=='movie' ? quality(resolution(regexMatched(streams, \"AVC\"), \"1080p\"), \"WEB-DL\") : []",
+    "expression": "/*#Radarr*/ /*1080p WEB-DL (Efficient)*/ queryType=='movie' ? quality(resolution(negate(regexMatched(streams, \"ProRes\"), regexMatched(streams, \"AVC\")), \"1080p\"), \"WEB-DL\") : []",
     "score": 880000,
     "enabled": true
   },
   {
-    "expression": "/*#Sonarr*/ /*1080p WEB-DL (Efficient)*/ queryType=='series' ? quality(resolution(regexMatched(streams, \"AVC\"), \"1080p\"), \"WEB-DL\") : []",
+    "expression": "/*#Sonarr*/ /*1080p WEB-DL (Efficient)*/ queryType=='series' ? quality(resolution(negate(regexMatched(streams, \"ProRes\"), regexMatched(streams, \"AVC\")), \"1080p\"), \"WEB-DL\") : []",
     "score": 860000,
     "enabled": true
   },

@@ -200,12 +200,12 @@
     "enabled": true
   },
   {
-    "expression": "/*#Radarr*/ /*1080p WEB-DL (Efficient)*/ queryType=='movie' ? quality(resolution(regexMatched(streams, \"AVC\"), \"1080p\"), \"WEB-DL\") : []",
+    "expression": "/*#Radarr*/ /*1080p WEB-DL (Efficient)*/ queryType=='movie' ? quality(resolution(negate(regexMatched(streams, \"ProRes\"), regexMatched(streams, \"AVC\")), \"1080p\"), \"WEB-DL\") : []",
     "score": 880000,
     "enabled": true
   },
   {
-    "expression": "/*#Sonarr*/ /*1080p WEB-DL (Efficient)*/ queryType=='series' ? quality(resolution(regexMatched(streams, \"AVC\"), \"1080p\"), \"WEB-DL\") : []",
+    "expression": "/*#Sonarr*/ /*1080p WEB-DL (Efficient)*/ queryType=='series' ? quality(resolution(negate(regexMatched(streams, \"ProRes\"), regexMatched(streams, \"AVC\")), \"1080p\"), \"WEB-DL\") : []",
     "score": 860000,
     "enabled": true
   },
@@ -255,12 +255,12 @@
     "enabled": true
   },
   {
-    "expression": "/*#Radarr*/ /*2160p WEB-DL (Efficient)*/ queryType=='movie' ? quality(resolution(negate(regexMatched(streams, \"QxR\", \"TAoE\", \"Vyndros\", \"QxR (Title)\", \"TAoE (Title)\"), streams), \"2160p\"), \"WEB-DL\") : []",
+    "expression": "/*#Radarr*/ /*2160p WEB-DL (Efficient)*/ queryType=='movie' ? quality(resolution(negate(regexMatched(streams, \"QxR\", \"TAoE\", \"Vyndros\", \"QxR (Title)\", \"TAoE (Title)\", \"ProRes\"), streams), \"2160p\"), \"WEB-DL\") : []",
     "score": 980000,
     "enabled": true
   },
   {
-    "expression": "/*#Sonarr*/ /*2160p WEB-DL (Efficient)*/ queryType=='series' ? quality(resolution(negate(regexMatched(streams, \"QxR\", \"TAoE\", \"Vyndros\", \"QxR (Title)\", \"TAoE (Title)\"), streams), \"2160p\"), \"WEB-DL\") : []",
+    "expression": "/*#Sonarr*/ /*2160p WEB-DL (Efficient)*/ queryType=='series' ? quality(resolution(negate(regexMatched(streams, \"QxR\", \"TAoE\", \"Vyndros\", \"QxR (Title)\", \"TAoE (Title)\", \"ProRes\"), streams), \"2160p\"), \"WEB-DL\") : []",
     "score": 960000,
     "enabled": true
   },
