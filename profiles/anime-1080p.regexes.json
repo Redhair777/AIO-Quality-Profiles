@@ -1775,6 +1775,11 @@
     "score": 0
   },
   {
+    "name": "The Comeback 2004 Boston Red Sox",
+    "pattern": "/\\b(The[ ._-]+Comeback[ ._-]+2004.*?Part[ ._-]*(?:I|II|III))\\b/i",
+    "score": 0
+  },
+  {
     "name": "The Four Seasons Banned Groups",
     "pattern": "/^the[ ._-]+four[ ._-]+seasons.*-(HiggsBoson|iVy|KONTRAST|TFA)\\b/i",
     "score": 0
