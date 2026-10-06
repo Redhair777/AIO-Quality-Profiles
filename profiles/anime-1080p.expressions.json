@@ -230,6 +230,11 @@
     "enabled": true
   },
   {
+    "expression": "/*#Sonarr*/ /*Bad Dual Groups*/ queryType=='anime.series' ? regexMatched(streams, \"TRaSH Bad Dual Groups (Sonarr)\") : []",
+    "score": -10000,
+    "enabled": true
+  },
+  {
     "expression": "/*#Sonarr*/ /*Bad Multis*/ queryType=='anime.series' ? regexMatched(streams, \"JOiNED\") : []",
     "score": -10000,
     "enabled": true

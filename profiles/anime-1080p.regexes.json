@@ -1745,6 +1745,11 @@
     "score": 0
   },
   {
+    "name": "TRaSH Bad Dual Groups (Sonarr)",
+    "pattern": "/^(alfaHD.*|BAT|BiOMA|BlackBit|BNd|C\\.A\\.A|C76|Cory|CYPHER|EniaHD|EXTREME|FF|FOXX|G4RiS|GUEIRA|LCD|MLH|N3G4N|OldT|PD|PTHome|RiPER|RK|SiGLA|Tars|tokar86a|TURG|vnlls|WTV|XiQUEXiQUE|Yatogam1|YusukeFLA|ZigZag|ZNM)$/i",
+    "score": 0
+  },
+  {
     "name": "TTGA",
     "pattern": "/\\b(TTGA)\\b/i",
     "score": 0
