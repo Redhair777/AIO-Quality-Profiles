@@ -1750,6 +1750,11 @@
     "score": 0
   },
   {
+    "name": "SiCFoI CMv4",
+    "pattern": "/(?=.*\\bSiCFoI\\b)(?=.*\\bCMv4\\b).*/i",
+    "score": 0
+  },
+  {
     "name": "SiGLA",
     "pattern": "/(?<=^|[\\s.-])SiGLA\\b/i",
     "score": 0

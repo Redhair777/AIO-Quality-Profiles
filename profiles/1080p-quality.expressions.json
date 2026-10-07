@@ -520,6 +520,16 @@
     "enabled": true
   },
   {
+    "expression": "/*#Radarr*/ /*Banned Groups (Release Title)*/ queryType=='movie' ? regexMatched(streams, \"SiCFoI CMv4\") : []",
+    "score": -999999,
+    "enabled": true
+  },
+  {
+    "expression": "/*#Sonarr*/ /*Banned Groups (Release Title)*/ queryType=='series' ? regexMatched(streams, \"SiCFoI CMv4\") : []",
+    "score": -999999,
+    "enabled": true
+  },
+  {
     "expression": "/*#Radarr*/ /*Banned Language Groups*/ queryType=='movie' ? regexMatched(streams, \"CYPHER\", \"TURG\", \"NIMA4K\", \"pmHD\", \"TvR\", \"tokar86a\", \"KiNGSMAN\", \"4kHdHub\", \"CPTN5DW\", \"PMI\", \"ViSTA\") : []",
     "score": -999999,
     "enabled": true
