@@ -840,6 +840,11 @@
     "score": 0
   },
   {
+    "name": "IMF",
+    "pattern": "/\\b(IMF)\\b/i",
+    "score": 0
+  },
+  {
     "name": "Inka-Subs",
     "pattern": "/\\b(Inka-Subs)\\b/i",
     "score": 0
@@ -1000,6 +1005,11 @@
     "score": 0
   },
   {
+    "name": "LQ Sources",
+    "pattern": "/\\b(CAM|CAMRip|DVDSCR|HDCAM|HDSCR|HDTC|HDTS|PDVD|PreDVDRip|SCREENER|TELECINE|TELESYNC|TSRip|WORKPRINT)\\b/i",
+    "score": 0
+  },
+  {
     "name": "LUCY",
     "pattern": "/^(LUCY)$/i",
     "score": 0
@@ -1027,6 +1037,11 @@
   {
     "name": "Lia",
     "pattern": "/\\[Lia\\]|-Lia\\b/i",
+    "score": 0
+  },
+  {
+    "name": "Line Dubbed",
+    "pattern": "/\\b(LD|AC3LD|Line[ .-]?Dubbed)\\b/i",
     "score": 0
   },
   {
@@ -1117,6 +1132,11 @@
   {
     "name": "Metaljerk",
     "pattern": "/\\b(Metaljerk)\\b/i",
+    "score": 0
+  },
+  {
+    "name": "Mic Dubbed",
+    "pattern": "/\\b(MD|AC3MD|Mic[ .-]?Dubbed)\\b/i",
     "score": 0
   },
   {
@@ -1621,7 +1641,7 @@
   },
   {
     "name": "Scrubs 2001 Approved Groups",
-    "pattern": "/\\bScrubs\\b(?![.\\s(]*2026)(?!.*-(BoOk|BMF|DEFiANCE|FoV|NTROPiC-FTP|SiNNERS)(\\b|$)).*/i",
+    "pattern": "/\\bScrubs\\b(?![.\\s(]*2026)(?!.*-(BoOk|BMF|DEFiANCE|FoV|NTROPiC-FTP|ORPHEUS|SAiNTS|SAiNTS-3|SiNNERS|WAT)(\\b|$)).*/i",
     "score": 0
   },
   {

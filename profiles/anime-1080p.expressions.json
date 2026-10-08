@@ -240,7 +240,12 @@
     "enabled": true
   },
   {
-    "expression": "/*#Sonarr*/ /*Bad Source*/ queryType=='anime.series' ? regexMatched(streams, \"Parks and Recreation NTb Banned\", \"The Office (US) Banned Groups\", \"Family Guy Banned Groups\", \"Whose Line Not US Version\", \"Arthur Banned Groups\", \"Scrubs 2001 Approved Groups\", \"The Big Bang Theory Banned Groups\", \"The Office (US) Superfans Episodes\", \"Family Guy S13 Banned Groups\", \"1080i\", \"Phineas and Ferb Banned Groups\", \"The Four Seasons Banned Groups\", \"Adventure Time Season 8 Banned Groups\", \"House Season 6 Banned Groups\", \"The Office (US) S09 Extended Banned Groups\", \"Courage the Cowardly Dog Banned Groups\", \"Anne of Green Gables Banned Groups\", \"The Comeback 2004 Boston Red Sox\") : []",
+    "expression": "/*#Radarr*/ /*Bad Source*/ queryType=='anime.movie' ? regexMatched(streams, \"LQ Sources\", \"1080i\", \"Mic Dubbed\", \"Line Dubbed\", \"ProRes\", \"IMF\") : []",
+    "score": -10000,
+    "enabled": true
+  },
+  {
+    "expression": "/*#Sonarr*/ /*Bad Source*/ queryType=='anime.series' ? regexMatched(streams, \"Parks and Recreation NTb Banned\", \"The Office (US) Banned Groups\", \"Family Guy Banned Groups\", \"Whose Line Not US Version\", \"Arthur Banned Groups\", \"Scrubs 2001 Approved Groups\", \"The Big Bang Theory Banned Groups\", \"The Office (US) Superfans Episodes\", \"Family Guy S13 Banned Groups\", \"1080i\", \"Phineas and Ferb Banned Groups\", \"The Four Seasons Banned Groups\", \"Adventure Time Season 8 Banned Groups\", \"House Season 6 Banned Groups\", \"The Office (US) S09 Extended Banned Groups\", \"Courage the Cowardly Dog Banned Groups\", \"Anne of Green Gables Banned Groups\", \"The Comeback 2004 Boston Red Sox\", \"ProRes\") : []",
     "score": -10000,
     "enabled": true
   },
@@ -332,16 +337,6 @@
   {
     "expression": "/*#Sonarr*/ /*NF*/ queryType=='anime.series' ? merge(quality(regexMatched(streams, \"Netflix\"), \"WEB-DL\"), quality(regexMatched(streams, \"Netflix\"), \"WEBRip\")) : []",
     "score": 4,
-    "enabled": true
-  },
-  {
-    "expression": "/*#Radarr*/ /*ProRes*/ queryType=='anime.movie' ? regexMatched(streams, \"ProRes\") : []",
-    "score": -10000,
-    "enabled": true
-  },
-  {
-    "expression": "/*#Sonarr*/ /*ProRes*/ queryType=='anime.series' ? regexMatched(streams, \"ProRes\") : []",
-    "score": -10000,
     "enabled": true
   },
   {
