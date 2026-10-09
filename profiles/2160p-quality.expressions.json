@@ -930,11 +930,6 @@
     "enabled": true
   },
   {
-    "expression": "/*#Sonarr*/ /*HBO Max Enhancement*/ queryType=='series' ? negate(resolution(regexMatched(streams, \"HBO Max\", \"Max\"), \"2160p\"), regexMatched(streams, \"HBO Max\", \"Max\")) : []",
-    "score": -1000,
-    "enabled": true
-  },
-  {
     "expression": "/*#Radarr*/ /*HDR*/ queryType=='movie' ? negate(regexMatched(streams, \"HDR10+\"), regexMatched(streams, \"HDR\")) : []",
     "score": 1000,
     "enabled": true
@@ -981,7 +976,7 @@
   },
   {
     "expression": "/*#Sonarr*/ /*HMAX*/ queryType=='series' ? merge(quality(regexMatched(streams, \"HBO Max\"), \"WEB-DL\"), quality(regexMatched(streams, \"HBO Max\"), \"WEBRip\")) : []",
-    "score": 3000,
+    "score": 2000,
     "enabled": true
   },
   {
@@ -1026,7 +1021,7 @@
   },
   {
     "expression": "/*#Sonarr*/ /*MAX*/ queryType=='series' ? merge(quality(regexMatched(streams, \"Max\"), \"WEB-DL\"), quality(regexMatched(streams, \"Max\"), \"WEBRip\")) : []",
-    "score": 3000,
+    "score": 2000,
     "enabled": true
   },
   {
