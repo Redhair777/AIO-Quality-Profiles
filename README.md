@@ -1,6 +1,6 @@
 # AIO Quality Profiles
 
-Dictionarry quality profiles, converted into [AIOStreams](https://github.com/Viren070/AIOStreams) **Stream Expression Language (SEL)** and **Regex Filter** synced JSON. Source custom-format scores are preserved — nothing rescaled, nothing re-weighted. Known condition-type corrections are documented below.
+Dictionarry quality profiles, converted into [AIOStreams](https://github.com/Viren070/AIOStreams) **Stream Expression Language (SEL)** and **Regex Filter** synced JSON. Each profile below is a direct 1:1 conversion of its source quality profile's custom formats and scores — nothing rescaled, nothing re-weighted.
 
 Sources:
 - **Dictionarry** (11 profiles) — [github.com/Dictionarry-Hub/database](https://github.com/Dictionarry-Hub/database)
@@ -154,42 +154,6 @@ Regex: `https://raw.githubusercontent.com/Redhair777/AIO-Quality-Profiles/main/p
 ---
 
 ## Automation
-
-### Condition-type correction and regression checks
-
-Dictionarry commit `d5fa005beb` (2026-10-07) moved SiCFoI from Remux Tier 3
-to Tier 4 but inserted it as an optional `release_title` condition. Tier 4
-already requires the `Remux` release-title condition. Within a condition type,
-Radarr and Sonarr require every required condition to pass; optional conditions
-only determine the result when none are required. The optional SiCFoI title
-condition therefore does not add SiCFoI to Tier 4's release-group selection.
-See the [Radarr implementation](https://github.com/Radarr/Radarr/blob/develop/src/NzbDrone.Core/CustomFormats/SpecificationMatchesGroup.cs)
-and [Sonarr implementation](https://github.com/Sonarr/Sonarr/blob/develop/src/NzbDrone.Core/CustomFormats/SpecificationMatchesGroup.cs).
-
-`convert.py` corrects this specific condition to `release_group` in its
-conversion view. It does not modify upstream SQL or the stored snapshot, and
-the correction becomes a no-op if upstream fixes the type. This is an explicit
-exception to source condition fidelity; scores remain unchanged.
-
-Conversion stops for review if another optional release-title condition uses a
-regex tagged `Release Group` and would be shadowed by required title conditions
-on the same Arr side. Skipped custom formats also cause a nonzero exit status,
-preventing the workflow from committing incomplete output.
-
-The sync workflow builds the vendored AIOStreams evaluator and runs the
-regression suite before rebuilding snapshots. To run these checks locally:
-
-```sh
-cd tools/verify
-npm ci
-npm run build
-cd ../..
-python3 -m unittest discover -s tests -v
-```
-
-The regression suite replays the original SiCFoI migration in memory and checks
-movie/series scoring, existing tier groups, non-remux and DVD exclusion, future
-shadowed conditions, and an upstream-corrected type.
 
 `.github/workflows/sync.yml` runs once a day (`0 3 * * *` UTC, plus manual `workflow_dispatch`):
 1. Rebuilds a SQLite snapshot from each source's PCD ops (Dictionarry, Dumpstarr, trash-pcd), replayed against the shared [Dictionarry-Hub/schema](https://github.com/Dictionarry-Hub/schema)
