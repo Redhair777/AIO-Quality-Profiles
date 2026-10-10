@@ -5,13 +5,16 @@ For every quality profile in the Dictionarry snapshot this emits:
   profiles/<slug>.expressions.json   -> rankedStreamExpressions  (per-arr-side items)
   profiles/<slug>.regexes.json       -> rankedRegexPatterns      (named regexes used)
 
-Condition semantics mirror Profilarr's evaluator (and Radarr/Sonarr):
+Condition combination follows Radarr/Sonarr's SpecificationMatchesGroup:
   - conditions are filtered per target arr type ('all' or matching side;
     'quality_modifier' is dropped for sonarr, 'release_type' for radarr)
   - conditions are grouped by type; between types -> AND
   - within a type: if any condition is required, ALL required must pass and
     optionals are IGNORED; otherwise at least ONE must pass (OR, via merge)
   - a condition's negate flag inverts its own match
+
+prepare_condition_types() applies the documented SiCFoI condition-type
+correction and rejects similar shadowed release-group conditions for review.
 
 Scoring: a profile/CF can carry a per-side score; each side is emitted as a
 separate ranked expression item guarded by queryType ('movie'/'series') carrying
@@ -188,7 +191,52 @@ def load_conditions(db: sqlite3.Connection) -> dict[str, list[dict]]:
                 for v in c["values"]:
                     v.setdefault("except", False)
 
+    prepare_condition_types(by_cf, load_patterns(db), {
+        row[0] for row in db.execute(
+            "SELECT regular_expression_name FROM regular_expression_tags"
+            " WHERE tag_name = 'Release Group'"
+        )
+    })
     return by_cf
+
+
+def prepare_condition_types(conditions: dict[str, list[dict]],
+                            patterns: dict[str, str],
+                            release_group_regexes: set[str]) -> None:
+    """Correct the known upstream typo and reject similar silent omissions.
+
+    Dictionarry d5fa005beb (2026-10-07) moved SiCFoI to Remux Tier 4 as
+    optional release_title. That type's required Remux predicate shadows it.
+    Keep the correction here so rebuilding upstream snapshots preserves it.
+    Other suspicious conditions require review rather than automatic retyping.
+    """
+    for cf, cf_conditions in conditions.items():
+        for condition in cf_conditions:
+            if (cf == "Remux Tier 4" and condition["name"] == "SiCFoI"
+                    and condition["type"] == "release_title"
+                    and condition["arr_type"] == "all"
+                    and not condition["required"] and not condition["negate"]
+                    and patterns.get(f"{cf}\x00SiCFoI") == "SiCFoI"):
+                condition["type"] = "release_group"
+                print("[convert] corrected Remux Tier 4 / SiCFoI:"
+                      " release_title -> release_group", file=sys.stderr)
+
+        for side in ("radarr", "sonarr"):
+            kept = filter_for_side(cf_conditions, side)
+            if not any(c["type"] == "release_title" and c["required"]
+                       for c in kept):
+                continue
+            for condition in kept:
+                regex = patterns.get(f"{cf}\x00{condition['name']}")
+                if (condition["type"] == "release_title"
+                        and not condition["required"]
+                        and regex in release_group_regexes):
+                    raise CFError(
+                        f"{cf} [{side}]: optional release_title condition"
+                        f" '{condition['name']}' references release-group regex"
+                        f" '{regex}' but is ignored by required release_title"
+                        " conditions; review its type before syncing"
+                    )
 
 
 def load_patterns(db: sqlite3.Connection) -> dict[str, str]:
@@ -1050,7 +1098,10 @@ def main() -> None:
     db = sqlite3.connect(args.db)
     db.row_factory = sqlite3.Row
 
-    all_conditions = load_conditions(db)
+    try:
+        all_conditions = load_conditions(db)
+    except CFError as exc:
+        sys.exit(f"[convert] {exc}")
     patterns = load_patterns(db)
     regexes = load_regexes(db)
     invalid = js_validate_regexes(args.node, regexes)
@@ -1092,6 +1143,8 @@ def main() -> None:
     print(f"[convert] wrote profiles to {args.out}")
     print(f"[convert] totals: {total['expressions']} expressions, "
           f"{total['regexes']} regex entries, {total['skipped']} skipped sides")
+    if total["skipped"]:
+        sys.exit("[convert] incomplete conversion: refusing to sync skipped custom formats")
 
 
 if __name__ == "__main__":

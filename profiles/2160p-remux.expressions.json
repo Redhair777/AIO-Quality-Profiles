@@ -1200,12 +1200,12 @@
     "enabled": true
   },
   {
-    "expression": "/*#Radarr*/ /*Remux Tier 4*/ queryType=='movie' ? negate(quality(regexMatched(regexMatched(streams, \"BTN\", \"iFT\", \"KRaLiMaRKo\", \"playBD\", \"PTP\", \"TRiToN\"), \"Remux\"), \"DVDRip\", \"DVD REMUX\"), regexMatched(regexMatched(streams, \"BTN\", \"iFT\", \"KRaLiMaRKo\", \"playBD\", \"PTP\", \"TRiToN\"), \"Remux\")) : []",
+    "expression": "/*#Radarr*/ /*Remux Tier 4*/ queryType=='movie' ? negate(quality(regexMatched(regexMatched(streams, \"BTN\", \"iFT\", \"KRaLiMaRKo\", \"playBD\", \"PTP\", \"TRiToN\", \"SiCFoI\"), \"Remux\"), \"DVDRip\", \"DVD REMUX\"), regexMatched(regexMatched(streams, \"BTN\", \"iFT\", \"KRaLiMaRKo\", \"playBD\", \"PTP\", \"TRiToN\", \"SiCFoI\"), \"Remux\")) : []",
     "score": 40,
     "enabled": true
   },
   {
-    "expression": "/*#Sonarr*/ /*Remux Tier 4*/ queryType=='series' ? negate(quality(regexMatched(regexMatched(streams, \"BTN\", \"iFT\", \"KRaLiMaRKo\", \"playBD\", \"PTP\", \"TRiToN\"), \"Remux\"), \"DVDRip\", \"DVD REMUX\"), regexMatched(regexMatched(streams, \"BTN\", \"iFT\", \"KRaLiMaRKo\", \"playBD\", \"PTP\", \"TRiToN\"), \"Remux\")) : []",
+    "expression": "/*#Sonarr*/ /*Remux Tier 4*/ queryType=='series' ? negate(quality(regexMatched(regexMatched(streams, \"BTN\", \"iFT\", \"KRaLiMaRKo\", \"playBD\", \"PTP\", \"TRiToN\", \"SiCFoI\"), \"Remux\"), \"DVDRip\", \"DVD REMUX\"), regexMatched(regexMatched(streams, \"BTN\", \"iFT\", \"KRaLiMaRKo\", \"playBD\", \"PTP\", \"TRiToN\", \"SiCFoI\"), \"Remux\")) : []",
     "score": 40,
     "enabled": true
   },
