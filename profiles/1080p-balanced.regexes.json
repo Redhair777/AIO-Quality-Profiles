@@ -730,6 +730,11 @@
     "score": 0
   },
   {
+    "name": "Interoperable Master Format",
+    "pattern": "/\\bIMF\\b/i",
+    "score": 0
+  },
+  {
     "name": "Ivandro",
     "pattern": "/(?<=^|[\\s.-])Ivandro\\b/i",
     "score": 0

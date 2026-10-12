@@ -715,6 +715,11 @@
     "enabled": true
   },
   {
+    "expression": "/*#Radarr*/ /*IMF*/ queryType=='movie' ? quality(regexMatched(streams, \"Interoperable Master Format\"), \"WEBRip\") : []",
+    "score": 0,
+    "enabled": true
+  },
+  {
     "expression": "/*#Radarr*/ /*MA*/ queryType=='movie' ? quality(regexMatched(streams, \"Movies Anywhere\"), \"WEB-DL\") : []",
     "score": 3000,
     "enabled": true

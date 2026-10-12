@@ -945,6 +945,11 @@
     "score": 0
   },
   {
+    "name": "Interoperable Master Format",
+    "pattern": "/\\bIMF\\b/i",
+    "score": 0
+  },
+  {
     "name": "Ivandro",
     "pattern": "/(?<=^|[\\s.-])Ivandro\\b/i",
     "score": 0
@@ -1132,6 +1137,11 @@
   {
     "name": "MgB",
     "pattern": "/(?<=^|[\\s.-])MgB\\b/i",
+    "score": 0
+  },
+  {
+    "name": "MiLQ",
+    "pattern": "/(?<=^|[\\s.-])MiLQ\\b/i",
     "score": 0
   },
   {

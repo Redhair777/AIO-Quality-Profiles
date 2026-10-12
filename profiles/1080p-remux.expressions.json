@@ -905,6 +905,11 @@
     "enabled": true
   },
   {
+    "expression": "/*#Radarr*/ /*IMF*/ queryType=='movie' ? quality(regexMatched(streams, \"Interoperable Master Format\"), \"WEBRip\") : []",
+    "score": 0,
+    "enabled": true
+  },
+  {
     "expression": "/*#Radarr*/ /*MA*/ queryType=='movie' ? quality(regexMatched(streams, \"Movies Anywhere\"), \"WEB-DL\") : []",
     "score": 3000,
     "enabled": true
@@ -1030,12 +1035,12 @@
     "enabled": true
   },
   {
-    "expression": "/*#Radarr*/ /*Remux Tier 1*/ queryType=='movie' ? negate(quality(regexMatched(regexMatched(streams, \"3L\", \"BiZKiT\", \"BLURANiUM\", \"CiNEPHiLES\", \"WiLDCAT\", \"ZoroSenpai\", \"LM\"), \"Remux\"), \"DVDRip\", \"DVD REMUX\"), regexMatched(regexMatched(streams, \"3L\", \"BiZKiT\", \"BLURANiUM\", \"CiNEPHiLES\", \"WiLDCAT\", \"ZoroSenpai\", \"LM\"), \"Remux\")) : []",
+    "expression": "/*#Radarr*/ /*Remux Tier 1*/ queryType=='movie' ? negate(quality(regexMatched(regexMatched(streams, \"3L\", \"BiZKiT\", \"BLURANiUM\", \"CiNEPHiLES\", \"WiLDCAT\", \"ZoroSenpai\", \"LM\", \"MiLQ\"), \"Remux\"), \"DVDRip\", \"DVD REMUX\"), regexMatched(regexMatched(streams, \"3L\", \"BiZKiT\", \"BLURANiUM\", \"CiNEPHiLES\", \"WiLDCAT\", \"ZoroSenpai\", \"LM\", \"MiLQ\"), \"Remux\")) : []",
     "score": 100,
     "enabled": true
   },
   {
-    "expression": "/*#Sonarr*/ /*Remux Tier 1*/ queryType=='series' ? negate(quality(regexMatched(regexMatched(streams, \"3L\", \"BiZKiT\", \"BLURANiUM\", \"CiNEPHiLES\", \"WiLDCAT\", \"ZoroSenpai\", \"LM\"), \"Remux\"), \"DVDRip\", \"DVD REMUX\"), regexMatched(regexMatched(streams, \"3L\", \"BiZKiT\", \"BLURANiUM\", \"CiNEPHiLES\", \"WiLDCAT\", \"ZoroSenpai\", \"LM\"), \"Remux\")) : []",
+    "expression": "/*#Sonarr*/ /*Remux Tier 1*/ queryType=='series' ? negate(quality(regexMatched(regexMatched(streams, \"3L\", \"BiZKiT\", \"BLURANiUM\", \"CiNEPHiLES\", \"WiLDCAT\", \"ZoroSenpai\", \"LM\", \"MiLQ\"), \"Remux\"), \"DVDRip\", \"DVD REMUX\"), regexMatched(regexMatched(streams, \"3L\", \"BiZKiT\", \"BLURANiUM\", \"CiNEPHiLES\", \"WiLDCAT\", \"ZoroSenpai\", \"LM\", \"MiLQ\"), \"Remux\")) : []",
     "score": 100,
     "enabled": true
   },

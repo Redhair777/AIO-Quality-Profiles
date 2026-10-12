@@ -850,6 +850,11 @@
     "enabled": true
   },
   {
+    "expression": "/*#Radarr*/ /*IMF*/ queryType=='movie' ? quality(regexMatched(streams, \"Interoperable Master Format\"), \"WEBRip\") : []",
+    "score": 0,
+    "enabled": true
+  },
+  {
     "expression": "/*#Radarr*/ /*Lossless Audio*/ queryType=='movie' ?negate(resolution(regexMatched(streams, \"Precompiled-8e9b04f9\"), \"2160p\"), regexMatched(streams, \"Precompiled-8e9b04f9\")): []",
     "score": -999999,
     "enabled": true
