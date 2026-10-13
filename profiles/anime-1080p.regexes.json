@@ -841,7 +841,7 @@
   },
   {
     "name": "IMF",
-    "pattern": "/\\b(IMF)\\b/i",
+    "pattern": "/(\\b(IMF)\\b(?=.*\\b(web[ ._-]?rip))\\b)/i",
     "score": 0
   },
   {
