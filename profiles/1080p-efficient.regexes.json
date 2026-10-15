@@ -665,6 +665,11 @@
     "score": 0
   },
   {
+    "name": "G4MBiT",
+    "pattern": "/(?<=^|[\\s.-])G4MBiT\\b/i",
+    "score": 0
+  },
+  {
     "name": "GALAXY",
     "pattern": "/(?<=^|[\\s.-])GALAXY\\b/i",
     "score": 0
@@ -1610,6 +1615,11 @@
     "score": 0
   },
   {
+    "name": "SPx",
+    "pattern": "/(?<=^|[\\s.-])SPx\\b/i",
+    "score": 0
+  },
+  {
     "name": "SQS",
     "pattern": "/(?<=^|[\\s.-])SQS\\b/i",
     "score": 0
@@ -2302,6 +2312,11 @@
   {
     "name": "rttr",
     "pattern": "/(?<=^|[\\s.-])rttr\\b/i",
+    "score": 0
+  },
+  {
+    "name": "seedpool",
+    "pattern": "/(?<=^|[\\s.-])seedpool\\b/i",
     "score": 0
   },
   {

@@ -1300,6 +1300,11 @@
     "score": 0
   },
   {
+    "name": "SPx",
+    "pattern": "/(?<=^|[\\s.-])SPx\\b/i",
+    "score": 0
+  },
+  {
     "name": "STUTTERSHIT",
     "pattern": "/(?<=^|[\\s.-])STUTTERSHIT\\b/i",
     "score": 0
@@ -1797,6 +1802,11 @@
   {
     "name": "rttr",
     "pattern": "/(?<=^|[\\s.-])rttr\\b/i",
+    "score": 0
+  },
+  {
+    "name": "seedpool",
+    "pattern": "/(?<=^|[\\s.-])seedpool\\b/i",
     "score": 0
   },
   {

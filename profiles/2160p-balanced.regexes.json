@@ -660,6 +660,11 @@
     "score": 0
   },
   {
+    "name": "G4MBiT",
+    "pattern": "/(?<=^|[\\s.-])G4MBiT\\b/i",
+    "score": 0
+  },
+  {
     "name": "GALAXY",
     "pattern": "/(?<=^|[\\s.-])GALAXY\\b/i",
     "score": 0
@@ -1395,8 +1400,8 @@
     "score": 0
   },
   {
-    "name": "Precompiled-ab3d8eb3",
-    "pattern": "/(?:(?<=^|[\\s.-])(?:ASD87|BRUTE|CHD|EuReKA|GALVANiZE|HaB|HANDJOB|iON|j3rico|KnG|LEGi0N|Lulz|MaG|MTeam|P0W4HD|PTP|PuTao|ROCiNANTE|Slappy|WiKi|WiLDCAT|CART|BakedFEL|ORBiT|BTN|FraMeSToR|MKu|Uld|ZAL|eckomega|CONSORTiUM|HDC|Spekt0r|Seal|SpaceHD|GOLIATN|Gyroscope|147|PiG30N|SaL|Funner|PiMP|XFR|PriMeHD|CREATiVE|aBa|cFc|Baer|MySiLU|EwT)\\b)/i",
+    "name": "Precompiled-c37c829f",
+    "pattern": "/(?:(?<=^|[\\s.-])(?:ASD87|BRUTE|CHD|EuReKA|GALVANiZE|HaB|HANDJOB|iON|j3rico|KnG|LEGi0N|Lulz|MaG|MTeam|P0W4HD|PTP|PuTao|ROCiNANTE|Slappy|WiKi|WiLDCAT|CART|BakedFEL|ORBiT|BTN|FraMeSToR|MKu|Uld|ZAL|eckomega|CONSORTiUM|HDC|Spekt0r|Seal|SpaceHD|GOLIATN|Gyroscope|147|PiG30N|SaL|Funner|PiMP|XFR|PriMeHD|CREATiVE|aBa|cFc|Baer|MySiLU|EwT|G4MBiT)\\b)/i",
     "score": 0
   },
   {
@@ -1572,6 +1577,11 @@
   {
     "name": "SPiRiT",
     "pattern": "/(?<=^|[\\s.-])SPiRiT\\b/i",
+    "score": 0
+  },
+  {
+    "name": "SPx",
+    "pattern": "/(?<=^|[\\s.-])SPx\\b/i",
     "score": 0
   },
   {
@@ -2197,6 +2207,11 @@
   {
     "name": "rttr",
     "pattern": "/(?<=^|[\\s.-])rttr\\b/i",
+    "score": 0
+  },
+  {
+    "name": "seedpool",
+    "pattern": "/(?<=^|[\\s.-])seedpool\\b/i",
     "score": 0
   },
   {

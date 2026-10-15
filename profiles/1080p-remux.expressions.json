@@ -125,12 +125,12 @@
     "enabled": true
   },
   {
-    "expression": "/*#Radarr*/ /*1080p Quality Tier 6*/ queryType=='movie' ?merge(quality(resolution(negate(regexMatched(streams, \"Remux\"), regexMatched(streams, \"Precompiled-ab3d8eb3\")), \"1080p\"), \"BluRay\", \"BluRay REMUX\"), quality(resolution(negate(regexMatched(streams, \"Remux\"), regexMatched(streams, \"Precompiled-ab3d8eb3\")), \"1080p\"), \"WEBRip\")): []",
+    "expression": "/*#Radarr*/ /*1080p Quality Tier 6*/ queryType=='movie' ?merge(quality(resolution(negate(regexMatched(streams, \"Remux\"), regexMatched(streams, \"Precompiled-c37c829f\")), \"1080p\"), \"BluRay\", \"BluRay REMUX\"), quality(resolution(negate(regexMatched(streams, \"Remux\"), regexMatched(streams, \"Precompiled-c37c829f\")), \"1080p\"), \"WEBRip\")): []",
     "score": 180000,
     "enabled": true
   },
   {
-    "expression": "/*#Sonarr*/ /*1080p Quality Tier 6*/ queryType=='series' ? quality(resolution(negate(regexMatched(streams, \"Remux\"), regexMatched(streams, \"ASD87\", \"BRUTE\", \"CHD\", \"EuReKA\", \"GALVANiZE\", \"HaB\", \"HANDJOB\", \"iON\", \"j3rico\", \"KnG\", \"LEGi0N\", \"Lulz\", \"MaG\", \"MTeam\", \"P0W4HD\", \"PTP\", \"PuTao\", \"ROCiNANTE\", \"Slappy\", \"WiKi\", \"WiLDCAT\", \"CART\", \"BakedFEL\", \"ORBiT\", \"BTN\", \"FraMeSToR\", \"MKu\", \"Uld\", \"ZAL\", \"eckomega\", \"CONSORTiUM\", \"HDC\", \"Spekt0r\", \"Seal\", \"SpaceHD\", \"GOLIATN\", \"Gyroscope\", \"147\", \"PiG30N\", \"SaL\", \"Funner\", \"PiMP\", \"XFR\", \"PriMeHD\", \"CREATiVE\", \"aBa\", \"cFc\", \"Baer\", \"MySiLU\", \"EwT\")), \"1080p\"), \"BluRay\", \"BluRay REMUX\") : []",
+    "expression": "/*#Sonarr*/ /*1080p Quality Tier 6*/ queryType=='series' ? quality(resolution(negate(regexMatched(streams, \"Remux\"), regexMatched(streams, \"ASD87\", \"BRUTE\", \"CHD\", \"EuReKA\", \"GALVANiZE\", \"HaB\", \"HANDJOB\", \"iON\", \"j3rico\", \"KnG\", \"LEGi0N\", \"Lulz\", \"MaG\", \"MTeam\", \"P0W4HD\", \"PTP\", \"PuTao\", \"ROCiNANTE\", \"Slappy\", \"WiKi\", \"WiLDCAT\", \"CART\", \"BakedFEL\", \"ORBiT\", \"BTN\", \"FraMeSToR\", \"MKu\", \"Uld\", \"ZAL\", \"eckomega\", \"CONSORTiUM\", \"HDC\", \"Spekt0r\", \"Seal\", \"SpaceHD\", \"GOLIATN\", \"Gyroscope\", \"147\", \"PiG30N\", \"SaL\", \"Funner\", \"PiMP\", \"XFR\", \"PriMeHD\", \"CREATiVE\", \"aBa\", \"cFc\", \"Baer\", \"MySiLU\", \"EwT\", \"G4MBiT\")), \"1080p\"), \"BluRay\", \"BluRay REMUX\") : []",
     "score": 180000,
     "enabled": true
   },
@@ -530,12 +530,12 @@
     "enabled": true
   },
   {
-    "expression": "/*#Radarr*/ /*Banned Groups*/ queryType=='movie' ? regexMatched(streams, \"4K4U\", \"AOC\", \"AROMA\", \"BeyondHD\", \"BiTOR\", \"BLASPHEMY\", \"BOLS\", \"BTM\", \"CLASSiCALHD\", \"CREATiVE24\", \"d3g\", \"DepraveD\", \"DeViSiVE\", \"DRX\", \"E\", \"FGT\", \"Flights\", \"HDS\", \"jennaortegaUHD\", \"KC\", \"LAMA\", \"MgB\", \"NAHOM\", \"NhaNc3\", \"NoGroup\", \"OEPlus\", \"SasukeducK\", \"SHD\", \"ShieldBearer\", \"STUTTERSHIT\", \"tarunk9c\", \"TEKNO3D\", \"Telly\", \"UnKn0wn\", \"VD0N\", \"VECTOR\", \"VisionXpert\", \"x0r\", \"YIFY\", \"YTS\", \"OFT\", \"nikt0\", \"SM737\", \"SumVision\", \"MAMA\", \"jff\", \"rbb\", \"Casius08\", \"NaNi\", \"NiCEHEVC\", \"Nostromo\") : []",
+    "expression": "/*#Radarr*/ /*Banned Groups*/ queryType=='movie' ? regexMatched(streams, \"4K4U\", \"AOC\", \"AROMA\", \"BeyondHD\", \"BiTOR\", \"BLASPHEMY\", \"BOLS\", \"BTM\", \"CLASSiCALHD\", \"CREATiVE24\", \"d3g\", \"DepraveD\", \"DeViSiVE\", \"DRX\", \"E\", \"FGT\", \"Flights\", \"HDS\", \"jennaortegaUHD\", \"KC\", \"LAMA\", \"MgB\", \"NAHOM\", \"NhaNc3\", \"NoGroup\", \"OEPlus\", \"SasukeducK\", \"SHD\", \"ShieldBearer\", \"STUTTERSHIT\", \"tarunk9c\", \"TEKNO3D\", \"Telly\", \"UnKn0wn\", \"VD0N\", \"VECTOR\", \"VisionXpert\", \"x0r\", \"YIFY\", \"YTS\", \"OFT\", \"nikt0\", \"SM737\", \"SumVision\", \"MAMA\", \"jff\", \"rbb\", \"Casius08\", \"NaNi\", \"NiCEHEVC\", \"Nostromo\", \"SPx\", \"seedpool\") : []",
     "score": -999999,
     "enabled": true
   },
   {
-    "expression": "/*#Sonarr*/ /*Banned Groups*/ queryType=='series' ? regexMatched(streams, \"4K4U\", \"AOC\", \"AROMA\", \"BeyondHD\", \"BiTOR\", \"BLASPHEMY\", \"BOLS\", \"BTM\", \"CLASSiCALHD\", \"CREATiVE24\", \"d3g\", \"DepraveD\", \"DeViSiVE\", \"DRX\", \"E\", \"FGT\", \"Flights\", \"HDS\", \"jennaortegaUHD\", \"KC\", \"LAMA\", \"MgB\", \"NAHOM\", \"NhaNc3\", \"NoGroup\", \"OEPlus\", \"SasukeducK\", \"SHD\", \"ShieldBearer\", \"STUTTERSHIT\", \"tarunk9c\", \"TEKNO3D\", \"Telly\", \"UnKn0wn\", \"VD0N\", \"VECTOR\", \"VisionXpert\", \"x0r\", \"YIFY\", \"YTS\", \"OFT\", \"nikt0\", \"SM737\", \"SumVision\", \"MAMA\", \"jff\", \"rbb\", \"Casius08\", \"NaNi\", \"NiCEHEVC\", \"Nostromo\") : []",
+    "expression": "/*#Sonarr*/ /*Banned Groups*/ queryType=='series' ? regexMatched(streams, \"4K4U\", \"AOC\", \"AROMA\", \"BeyondHD\", \"BiTOR\", \"BLASPHEMY\", \"BOLS\", \"BTM\", \"CLASSiCALHD\", \"CREATiVE24\", \"d3g\", \"DepraveD\", \"DeViSiVE\", \"DRX\", \"E\", \"FGT\", \"Flights\", \"HDS\", \"jennaortegaUHD\", \"KC\", \"LAMA\", \"MgB\", \"NAHOM\", \"NhaNc3\", \"NoGroup\", \"OEPlus\", \"SasukeducK\", \"SHD\", \"ShieldBearer\", \"STUTTERSHIT\", \"tarunk9c\", \"TEKNO3D\", \"Telly\", \"UnKn0wn\", \"VD0N\", \"VECTOR\", \"VisionXpert\", \"x0r\", \"YIFY\", \"YTS\", \"OFT\", \"nikt0\", \"SM737\", \"SumVision\", \"MAMA\", \"jff\", \"rbb\", \"Casius08\", \"NaNi\", \"NiCEHEVC\", \"Nostromo\", \"SPx\", \"seedpool\") : []",
     "score": -999999,
     "enabled": true
   },
@@ -570,12 +570,12 @@
     "enabled": true
   },
   {
-    "expression": "/*#Radarr*/ /*Banned Remux*/ queryType=='movie' ? negate(quality(regexMatched(regexMatched(streams, \"LEGi0N\"), \"Remux\"), \"DVDRip\", \"DVD REMUX\"), regexMatched(regexMatched(streams, \"LEGi0N\"), \"Remux\")) : []",
+    "expression": "/*#Radarr*/ /*Banned Remux*/ queryType=='movie' ? negate(quality(regexMatched(regexMatched(streams, \"LEGi0N\", \"HDT\"), \"Remux\"), \"DVDRip\", \"DVD REMUX\"), regexMatched(regexMatched(streams, \"LEGi0N\", \"HDT\"), \"Remux\")) : []",
     "score": -999999,
     "enabled": true
   },
   {
-    "expression": "/*#Sonarr*/ /*Banned Remux*/ queryType=='series' ? negate(quality(regexMatched(regexMatched(streams, \"LEGi0N\"), \"Remux\"), \"DVDRip\", \"DVD REMUX\"), regexMatched(regexMatched(streams, \"LEGi0N\"), \"Remux\")) : []",
+    "expression": "/*#Sonarr*/ /*Banned Remux*/ queryType=='series' ? negate(quality(regexMatched(regexMatched(streams, \"LEGi0N\", \"HDT\"), \"Remux\"), \"DVDRip\", \"DVD REMUX\"), regexMatched(regexMatched(streams, \"LEGi0N\", \"HDT\"), \"Remux\")) : []",
     "score": -999999,
     "enabled": true
   },
