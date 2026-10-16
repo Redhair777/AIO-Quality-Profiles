@@ -75,6 +75,11 @@
     "score": 0
   },
   {
+    "name": "Aisha",
+    "pattern": "/(?<=^|[\\s.-])Aisha\\b/i",
+    "score": 0
+  },
+  {
     "name": "Amazon Prime",
     "pattern": "/\\bAMZN\\b|\\bAMAZON[ ._-]WEB[ ._-]?(DL|RIP)?\\b/i",
     "score": 0
@@ -737,6 +742,11 @@
   {
     "name": "Ivandro",
     "pattern": "/(?<=^|[\\s.-])Ivandro\\b/i",
+    "score": 0
+  },
+  {
+    "name": "JFF",
+    "pattern": "/(?<=^|[\\s.-])JFF\\b/i",
     "score": 0
   },
   {
@@ -1752,11 +1762,6 @@
   {
     "name": "jennaortegaUHD",
     "pattern": "/(?<=^|[\\s.-])jennaortega(UHD)?\\b/i",
-    "score": 0
-  },
-  {
-    "name": "jff",
-    "pattern": "/(?<=^|[\\s.-])jff\\b/i",
     "score": 0
   },
   {
