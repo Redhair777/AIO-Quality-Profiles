@@ -2020,6 +2020,11 @@
     "score": 0
   },
   {
+    "name": "WKS",
+    "pattern": "/(?<=^|[\\s.-])WKS\\b/i",
+    "score": 0
+  },
+  {
     "name": "WMING",
     "pattern": "/(?<=^|[\\s.-])WMING\\b/i",
     "score": 0
@@ -2127,11 +2132,6 @@
   {
     "name": "bluegreeen",
     "pattern": "/(?<=^|[\\s.-])bluegreeen\\b/i",
-    "score": 0
-  },
-  {
-    "name": "bluespots",
-    "pattern": "/(?<=^|[\\s.-])bluespots\\b/i",
     "score": 0
   },
   {
