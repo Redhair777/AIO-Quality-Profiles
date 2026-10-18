@@ -500,12 +500,12 @@
     "enabled": true
   },
   {
-    "expression": "/*#Radarr*/ /*Banned Groups*/ queryType=='movie' ? regexMatched(streams, \"4K4U\", \"AOC\", \"AROMA\", \"BeyondHD\", \"BiTOR\", \"BLASPHEMY\", \"BOLS\", \"BTM\", \"CLASSiCALHD\", \"CREATiVE24\", \"d3g\", \"DepraveD\", \"DeViSiVE\", \"DRX\", \"E\", \"FGT\", \"Flights\", \"HDS\", \"jennaortegaUHD\", \"KC\", \"LAMA\", \"MgB\", \"NAHOM\", \"NhaNc3\", \"NoGroup\", \"OEPlus\", \"SasukeducK\", \"SHD\", \"ShieldBearer\", \"STUTTERSHIT\", \"tarunk9c\", \"TEKNO3D\", \"Telly\", \"UnKn0wn\", \"VD0N\", \"VECTOR\", \"VisionXpert\", \"x0r\", \"YIFY\", \"YTS\", \"OFT\", \"nikt0\", \"SM737\", \"SumVision\", \"MAMA\", \"JFF\", \"rbb\", \"Casius08\", \"NaNi\", \"NiCEHEVC\", \"Nostromo\", \"SPx\", \"seedpool\", \"Aisha\", \"WKS\") : []",
+    "expression": "/*#Radarr*/ /*Banned Groups*/ queryType=='movie' ? regexMatched(streams, \"4K4U\", \"AOC\", \"AROMA\", \"BeyondHD\", \"BiTOR\", \"BLASPHEMY\", \"BOLS\", \"BTM\", \"CLASSiCALHD\", \"CREATiVE24\", \"d3g\", \"DepraveD\", \"DeViSiVE\", \"DRX\", \"E\", \"FGT\", \"Flights\", \"HDS\", \"jennaortegaUHD\", \"KC\", \"LAMA\", \"MgB\", \"NAHOM\", \"NhaNc3\", \"NoGroup\", \"OEPlus\", \"SasukeducK\", \"SHD\", \"ShieldBearer\", \"STUTTERSHIT\", \"tarunk9c\", \"TEKNO3D\", \"Telly\", \"UnKn0wn\", \"VD0N\", \"VECTOR\", \"VisionXpert\", \"x0r\", \"YIFY\", \"YTS\", \"OFT\", \"nikt0\", \"SM737\", \"SumVision\", \"MAMA\", \"JFF\", \"rbb\", \"Casius08\", \"NaNi\", \"NiCEHEVC\", \"Nostromo\", \"SPx\", \"seedpool\", \"Aisha\", \"WKS\", \"SPiRiT\") : []",
     "score": -999999,
     "enabled": true
   },
   {
-    "expression": "/*#Sonarr*/ /*Banned Groups*/ queryType=='series' ? regexMatched(streams, \"4K4U\", \"AOC\", \"AROMA\", \"BeyondHD\", \"BiTOR\", \"BLASPHEMY\", \"BOLS\", \"BTM\", \"CLASSiCALHD\", \"CREATiVE24\", \"d3g\", \"DepraveD\", \"DeViSiVE\", \"DRX\", \"E\", \"FGT\", \"Flights\", \"HDS\", \"jennaortegaUHD\", \"KC\", \"LAMA\", \"MgB\", \"NAHOM\", \"NhaNc3\", \"NoGroup\", \"OEPlus\", \"SasukeducK\", \"SHD\", \"ShieldBearer\", \"STUTTERSHIT\", \"tarunk9c\", \"TEKNO3D\", \"Telly\", \"UnKn0wn\", \"VD0N\", \"VECTOR\", \"VisionXpert\", \"x0r\", \"YIFY\", \"YTS\", \"OFT\", \"nikt0\", \"SM737\", \"SumVision\", \"MAMA\", \"JFF\", \"rbb\", \"Casius08\", \"NaNi\", \"NiCEHEVC\", \"Nostromo\", \"SPx\", \"seedpool\", \"Aisha\", \"WKS\") : []",
+    "expression": "/*#Sonarr*/ /*Banned Groups*/ queryType=='series' ? regexMatched(streams, \"4K4U\", \"AOC\", \"AROMA\", \"BeyondHD\", \"BiTOR\", \"BLASPHEMY\", \"BOLS\", \"BTM\", \"CLASSiCALHD\", \"CREATiVE24\", \"d3g\", \"DepraveD\", \"DeViSiVE\", \"DRX\", \"E\", \"FGT\", \"Flights\", \"HDS\", \"jennaortegaUHD\", \"KC\", \"LAMA\", \"MgB\", \"NAHOM\", \"NhaNc3\", \"NoGroup\", \"OEPlus\", \"SasukeducK\", \"SHD\", \"ShieldBearer\", \"STUTTERSHIT\", \"tarunk9c\", \"TEKNO3D\", \"Telly\", \"UnKn0wn\", \"VD0N\", \"VECTOR\", \"VisionXpert\", \"x0r\", \"YIFY\", \"YTS\", \"OFT\", \"nikt0\", \"SM737\", \"SumVision\", \"MAMA\", \"JFF\", \"rbb\", \"Casius08\", \"NaNi\", \"NiCEHEVC\", \"Nostromo\", \"SPx\", \"seedpool\", \"Aisha\", \"WKS\", \"SPiRiT\") : []",
     "score": -999999,
     "enabled": true
   },
@@ -1130,32 +1130,32 @@
     "enabled": true
   },
   {
-    "expression": "/*#Radarr*/ /*WEB-DL Tier 2*/ queryType=='movie' ? quality(regexMatched(streams, \"BYNDR\", \"CMRG\", \"HONE\", \"Kitsune\", \"playWEB\", \"TEPES\"), \"WEB-DL\") : []",
+    "expression": "/*#Radarr*/ /*WEB-DL Tier 2*/ queryType=='movie' ? quality(regexMatched(streams, \"BYNDR\", \"CMRG\", \"HONE\", \"Kitsune\", \"playWEB\", \"TEPES\", \"RAWR\"), \"WEB-DL\") : []",
     "score": 80,
     "enabled": true
   },
   {
-    "expression": "/*#Sonarr*/ /*WEB-DL Tier 2*/ queryType=='series' ? quality(regexMatched(streams, \"BYNDR\", \"CMRG\", \"HONE\", \"Kitsune\", \"playWEB\", \"TEPES\"), \"WEB-DL\") : []",
+    "expression": "/*#Sonarr*/ /*WEB-DL Tier 2*/ queryType=='series' ? quality(regexMatched(streams, \"BYNDR\", \"CMRG\", \"HONE\", \"Kitsune\", \"playWEB\", \"TEPES\", \"RAWR\"), \"WEB-DL\") : []",
     "score": 80,
     "enabled": true
   },
   {
-    "expression": "/*#Radarr*/ /*WEB-DL Tier 3*/ queryType=='movie' ? quality(regexMatched(streams, \"ABM\", \"AJP69\", \"BLUTONiUM\", \"BTW\", \"CasStudio\", \"Cinefeel\", \"CRFW\", \"CtrlHD\", \"HHWEB\", \"KHN\", \"KiNGS\", \"LAZY\", \"monkee\", \"MZABI\", \"NOSiViD\", \"NPMS\", \"NTG\", \"QOQ\", \"RAWR\", \"SA89\", \"SbR\", \"SMURF\", \"TeamSyndicate\", \"TOMMY\", \"TVSmash\", \"WELP\", \"XEBEC\", \"ZoroSenpai\", \"MADSKY\"), \"WEB-DL\") : []",
+    "expression": "/*#Radarr*/ /*WEB-DL Tier 3*/ queryType=='movie' ? quality(regexMatched(streams, \"ABM\", \"AJP69\", \"BLUTONiUM\", \"BTW\", \"CasStudio\", \"Cinefeel\", \"CRFW\", \"CtrlHD\", \"HHWEB\", \"KHN\", \"KiNGS\", \"LAZY\", \"monkee\", \"MZABI\", \"NOSiViD\", \"NPMS\", \"NTG\", \"QOQ\", \"SA89\", \"SbR\", \"SMURF\", \"TeamSyndicate\", \"TOMMY\", \"TVSmash\", \"WELP\", \"XEBEC\", \"ZoroSenpai\", \"MADSKY\"), \"WEB-DL\") : []",
     "score": 60,
     "enabled": true
   },
   {
-    "expression": "/*#Sonarr*/ /*WEB-DL Tier 3*/ queryType=='series' ? quality(regexMatched(streams, \"ABM\", \"AJP69\", \"BLUTONiUM\", \"BTW\", \"CasStudio\", \"Cinefeel\", \"CRFW\", \"CtrlHD\", \"HHWEB\", \"KHN\", \"KiNGS\", \"LAZY\", \"monkee\", \"MZABI\", \"NOSiViD\", \"NPMS\", \"NTG\", \"QOQ\", \"RAWR\", \"SA89\", \"SbR\", \"SMURF\", \"TeamSyndicate\", \"TOMMY\", \"TVSmash\", \"WELP\", \"XEBEC\", \"ZoroSenpai\", \"MADSKY\"), \"WEB-DL\") : []",
+    "expression": "/*#Sonarr*/ /*WEB-DL Tier 3*/ queryType=='series' ? quality(regexMatched(streams, \"ABM\", \"AJP69\", \"BLUTONiUM\", \"BTW\", \"CasStudio\", \"Cinefeel\", \"CRFW\", \"CtrlHD\", \"HHWEB\", \"KHN\", \"KiNGS\", \"LAZY\", \"monkee\", \"MZABI\", \"NOSiViD\", \"NPMS\", \"NTG\", \"QOQ\", \"SA89\", \"SbR\", \"SMURF\", \"TeamSyndicate\", \"TOMMY\", \"TVSmash\", \"WELP\", \"XEBEC\", \"ZoroSenpai\", \"MADSKY\"), \"WEB-DL\") : []",
     "score": 60,
     "enabled": true
   },
   {
-    "expression": "/*#Radarr*/ /*WEB-DL Tier 4*/ queryType=='movie' ? quality(regexMatched(streams, \"APEX\", \"BTN\", \"dB\", \"PTP\", \"RTN\", \"SiC\", \"SPiRiT\", \"ViSUM\", \"BLOOM\"), \"WEB-DL\") : []",
+    "expression": "/*#Radarr*/ /*WEB-DL Tier 4*/ queryType=='movie' ? quality(regexMatched(streams, \"APEX\", \"BTN\", \"dB\", \"PTP\", \"RTN\", \"SiC\", \"ViSUM\", \"BLOOM\"), \"WEB-DL\") : []",
     "score": 40,
     "enabled": true
   },
   {
-    "expression": "/*#Sonarr*/ /*WEB-DL Tier 4*/ queryType=='series' ? quality(regexMatched(streams, \"APEX\", \"BTN\", \"dB\", \"PTP\", \"RTN\", \"SiC\", \"SPiRiT\", \"ViSUM\", \"BLOOM\"), \"WEB-DL\") : []",
+    "expression": "/*#Sonarr*/ /*WEB-DL Tier 4*/ queryType=='series' ? quality(regexMatched(streams, \"APEX\", \"BTN\", \"dB\", \"PTP\", \"RTN\", \"SiC\", \"ViSUM\", \"BLOOM\"), \"WEB-DL\") : []",
     "score": 40,
     "enabled": true
   },
