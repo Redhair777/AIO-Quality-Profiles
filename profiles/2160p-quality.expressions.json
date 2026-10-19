@@ -210,22 +210,22 @@
     "enabled": true
   },
   {
-    "expression": "/*#Radarr*/ /*2160p Quality Tier 4*/ queryType=='movie' ? quality(resolution(negate(regexMatched(streams, \"Remux\"), regexMatched(streams, \"BlzT\", \"BSTD\", \"EDPH\", \"ESiR\", \"HiDt\", \"iFT\", \"Kitsune\", \"NCmt\", \"NTb\", \"SPHD\", \"TDD\", \"ATELiER\", \"LESTiN\", \"RandomBytes\", \"faBR\", \"Softboat\", \"TRUNKS\")), \"2160p\"), \"BluRay\", \"BluRay REMUX\") : []",
+    "expression": "/*#Radarr*/ /*2160p Quality Tier 4*/ queryType=='movie' ? quality(resolution(negate(regexMatched(streams, \"Remux\"), regexMatched(streams, \"BlzT\", \"BSTD\", \"EDPH\", \"ESiR\", \"HiDt\", \"iFT\", \"Kitsune\", \"NCmt\", \"NTb\", \"SPHD\", \"TDD\", \"ATELiER\", \"LESTiN\", \"RandomBytes\", \"faBR\", \"Softboat\")), \"2160p\"), \"BluRay\", \"BluRay REMUX\") : []",
     "score": 942000,
     "enabled": true
   },
   {
-    "expression": "/*#Sonarr*/ /*2160p Quality Tier 4*/ queryType=='series' ? quality(resolution(negate(regexMatched(streams, \"Remux\"), regexMatched(streams, \"BlzT\", \"BSTD\", \"EDPH\", \"ESiR\", \"HiDt\", \"iFT\", \"Kitsune\", \"NCmt\", \"NTb\", \"SPHD\", \"TDD\", \"ATELiER\", \"LESTiN\", \"RandomBytes\", \"faBR\", \"Softboat\", \"TRUNKS\")), \"2160p\"), \"BluRay\", \"BluRay REMUX\") : []",
+    "expression": "/*#Sonarr*/ /*2160p Quality Tier 4*/ queryType=='series' ? quality(resolution(negate(regexMatched(streams, \"Remux\"), regexMatched(streams, \"BlzT\", \"BSTD\", \"EDPH\", \"ESiR\", \"HiDt\", \"iFT\", \"Kitsune\", \"NCmt\", \"NTb\", \"SPHD\", \"TDD\", \"ATELiER\", \"LESTiN\", \"RandomBytes\", \"faBR\", \"Softboat\")), \"2160p\"), \"BluRay\", \"BluRay REMUX\") : []",
     "score": 942000,
     "enabled": true
   },
   {
-    "expression": "/*#Radarr*/ /*2160p Quality Tier 5*/ queryType=='movie' ? quality(resolution(negate(regexMatched(streams, \"Remux\"), regexMatched(streams, \"4KDVS\", \"b0mbardiers\", \"DEFLATE\", \"DEPTH\", \"j3rico\", \"JustWatch\", \"ORBiT\", \"SURCODE\", \"WATCHABLE\", \"WiKi\", \"BakedFEL\")), \"2160p\"), \"BluRay\", \"BluRay REMUX\") : []",
+    "expression": "/*#Radarr*/ /*2160p Quality Tier 5*/ queryType=='movie' ? quality(resolution(negate(regexMatched(streams, \"Remux\"), regexMatched(streams, \"4KDVS\", \"b0mbardiers\", \"DEFLATE\", \"DEPTH\", \"j3rico\", \"JustWatch\", \"ORBiT\", \"SURCODE\", \"WATCHABLE\", \"WiKi\", \"BakedFEL\", \"TRUNKS\")), \"2160p\"), \"BluRay\", \"BluRay REMUX\") : []",
     "score": 940000,
     "enabled": true
   },
   {
-    "expression": "/*#Sonarr*/ /*2160p Quality Tier 5*/ queryType=='series' ? quality(resolution(negate(regexMatched(streams, \"Remux\"), regexMatched(streams, \"4KDVS\", \"b0mbardiers\", \"DEFLATE\", \"DEPTH\", \"j3rico\", \"JustWatch\", \"ORBiT\", \"SURCODE\", \"WATCHABLE\", \"WiKi\", \"BakedFEL\")), \"2160p\"), \"BluRay\", \"BluRay REMUX\") : []",
+    "expression": "/*#Sonarr*/ /*2160p Quality Tier 5*/ queryType=='series' ? quality(resolution(negate(regexMatched(streams, \"Remux\"), regexMatched(streams, \"4KDVS\", \"b0mbardiers\", \"DEFLATE\", \"DEPTH\", \"j3rico\", \"JustWatch\", \"ORBiT\", \"SURCODE\", \"WATCHABLE\", \"WiKi\", \"BakedFEL\", \"TRUNKS\")), \"2160p\"), \"BluRay\", \"BluRay REMUX\") : []",
     "score": 940000,
     "enabled": true
   },

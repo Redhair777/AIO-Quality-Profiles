@@ -2175,6 +2175,11 @@
     "score": 0
   },
   {
+    "name": "ZnP",
+    "pattern": "/(?<=^|[\\s.-])ZnP\\b/i",
+    "score": 0
+  },
+  {
     "name": "ZoroSenpai",
     "pattern": "/(?<=^|[\\s.-])ZoroSenpai\\b/i",
     "score": 0
