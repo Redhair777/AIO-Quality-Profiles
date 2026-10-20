@@ -840,11 +840,6 @@
     "score": 0
   },
   {
-    "name": "IMF",
-    "pattern": "/(\\b(IMF)\\b(?=.*\\b(web[ ._-]?rip))\\b)/i",
-    "score": 0
-  },
-  {
     "name": "Inka-Subs",
     "pattern": "/\\b(Inka-Subs)\\b/i",
     "score": 0

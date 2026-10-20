@@ -240,7 +240,7 @@
     "enabled": true
   },
   {
-    "expression": "/*#Radarr*/ /*Bad Source*/ queryType=='anime.movie' ? regexMatched(streams, \"LQ Sources\", \"1080i\", \"Mic Dubbed\", \"Line Dubbed\", \"ProRes\", \"IMF\") : []",
+    "expression": "/*#Radarr*/ /*Bad Source*/ queryType=='anime.movie' ? regexMatched(streams, \"LQ Sources\", \"1080i\", \"Mic Dubbed\", \"Line Dubbed\", \"ProRes\") : []",
     "score": -10000,
     "enabled": true
   },
