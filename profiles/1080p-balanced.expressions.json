@@ -660,12 +660,12 @@
     "enabled": true
   },
   {
-    "expression": "/*#Radarr*/ /*Full Disc*/ queryType=='movie' ? negate(quality(negate(quality(negate(quality(negate(regexMatched(regexMatched(streams, \"Full Disc\"), \"Remux\", \"x264\", \"x265\"), regexMatched(streams, \"Full Disc\")), \"WEB-DL\"), negate(regexMatched(regexMatched(streams, \"Full Disc\"), \"Remux\", \"x264\", \"x265\"), regexMatched(streams, \"Full Disc\"))), \"WEBRip\"), negate(quality(negate(regexMatched(regexMatched(streams, \"Full Disc\"), \"Remux\", \"x264\", \"x265\"), regexMatched(streams, \"Full Disc\")), \"WEB-DL\"), negate(regexMatched(regexMatched(streams, \"Full Disc\"), \"Remux\", \"x264\", \"x265\"), regexMatched(streams, \"Full Disc\")))), \"HDTV\"), negate(quality(negate(quality(negate(regexMatched(regexMatched(streams, \"Full Disc\"), \"Remux\", \"x264\", \"x265\"), regexMatched(streams, \"Full Disc\")), \"WEB-DL\"), negate(regexMatched(regexMatched(streams, \"Full Disc\"), \"Remux\", \"x264\", \"x265\"), regexMatched(streams, \"Full Disc\"))), \"WEBRip\"), negate(quality(negate(regexMatched(regexMatched(streams, \"Full Disc\"), \"Remux\", \"x264\", \"x265\"), regexMatched(streams, \"Full Disc\")), \"WEB-DL\"), negate(regexMatched(regexMatched(streams, \"Full Disc\"), \"Remux\", \"x264\", \"x265\"), regexMatched(streams, \"Full Disc\"))))) : []",
+    "expression": "/*#Radarr*/ /*Full Disc*/ queryType=='movie' ? negate(quality(negate(quality(negate(quality(negate(regexMatched(regexMatched(streams, \"Full Disc\"), \"Remux\", \"AVC\", \"HEVC\"), regexMatched(streams, \"Full Disc\")), \"WEB-DL\"), negate(regexMatched(regexMatched(streams, \"Full Disc\"), \"Remux\", \"AVC\", \"HEVC\"), regexMatched(streams, \"Full Disc\"))), \"WEBRip\"), negate(quality(negate(regexMatched(regexMatched(streams, \"Full Disc\"), \"Remux\", \"AVC\", \"HEVC\"), regexMatched(streams, \"Full Disc\")), \"WEB-DL\"), negate(regexMatched(regexMatched(streams, \"Full Disc\"), \"Remux\", \"AVC\", \"HEVC\"), regexMatched(streams, \"Full Disc\")))), \"HDTV\"), negate(quality(negate(quality(negate(regexMatched(regexMatched(streams, \"Full Disc\"), \"Remux\", \"AVC\", \"HEVC\"), regexMatched(streams, \"Full Disc\")), \"WEB-DL\"), negate(regexMatched(regexMatched(streams, \"Full Disc\"), \"Remux\", \"AVC\", \"HEVC\"), regexMatched(streams, \"Full Disc\"))), \"WEBRip\"), negate(quality(negate(regexMatched(regexMatched(streams, \"Full Disc\"), \"Remux\", \"AVC\", \"HEVC\"), regexMatched(streams, \"Full Disc\")), \"WEB-DL\"), negate(regexMatched(regexMatched(streams, \"Full Disc\"), \"Remux\", \"AVC\", \"HEVC\"), regexMatched(streams, \"Full Disc\"))))) : []",
     "score": -999999,
     "enabled": true
   },
   {
-    "expression": "/*#Sonarr*/ /*Full Disc*/ queryType=='series' ? negate(quality(negate(quality(negate(quality(negate(regexMatched(regexMatched(streams, \"Full Disc\"), \"Remux\", \"x264\", \"x265\"), regexMatched(streams, \"Full Disc\")), \"WEB-DL\"), negate(regexMatched(regexMatched(streams, \"Full Disc\"), \"Remux\", \"x264\", \"x265\"), regexMatched(streams, \"Full Disc\"))), \"WEBRip\"), negate(quality(negate(regexMatched(regexMatched(streams, \"Full Disc\"), \"Remux\", \"x264\", \"x265\"), regexMatched(streams, \"Full Disc\")), \"WEB-DL\"), negate(regexMatched(regexMatched(streams, \"Full Disc\"), \"Remux\", \"x264\", \"x265\"), regexMatched(streams, \"Full Disc\")))), \"HDTV\"), negate(quality(negate(quality(negate(regexMatched(regexMatched(streams, \"Full Disc\"), \"Remux\", \"x264\", \"x265\"), regexMatched(streams, \"Full Disc\")), \"WEB-DL\"), negate(regexMatched(regexMatched(streams, \"Full Disc\"), \"Remux\", \"x264\", \"x265\"), regexMatched(streams, \"Full Disc\"))), \"WEBRip\"), negate(quality(negate(regexMatched(regexMatched(streams, \"Full Disc\"), \"Remux\", \"x264\", \"x265\"), regexMatched(streams, \"Full Disc\")), \"WEB-DL\"), negate(regexMatched(regexMatched(streams, \"Full Disc\"), \"Remux\", \"x264\", \"x265\"), regexMatched(streams, \"Full Disc\"))))) : []",
+    "expression": "/*#Sonarr*/ /*Full Disc*/ queryType=='series' ? negate(quality(negate(quality(negate(quality(negate(regexMatched(regexMatched(streams, \"Full Disc\"), \"Remux\", \"AVC\", \"HEVC\"), regexMatched(streams, \"Full Disc\")), \"WEB-DL\"), negate(regexMatched(regexMatched(streams, \"Full Disc\"), \"Remux\", \"AVC\", \"HEVC\"), regexMatched(streams, \"Full Disc\"))), \"WEBRip\"), negate(quality(negate(regexMatched(regexMatched(streams, \"Full Disc\"), \"Remux\", \"AVC\", \"HEVC\"), regexMatched(streams, \"Full Disc\")), \"WEB-DL\"), negate(regexMatched(regexMatched(streams, \"Full Disc\"), \"Remux\", \"AVC\", \"HEVC\"), regexMatched(streams, \"Full Disc\")))), \"HDTV\"), negate(quality(negate(quality(negate(regexMatched(regexMatched(streams, \"Full Disc\"), \"Remux\", \"AVC\", \"HEVC\"), regexMatched(streams, \"Full Disc\")), \"WEB-DL\"), negate(regexMatched(regexMatched(streams, \"Full Disc\"), \"Remux\", \"AVC\", \"HEVC\"), regexMatched(streams, \"Full Disc\"))), \"WEBRip\"), negate(quality(negate(regexMatched(regexMatched(streams, \"Full Disc\"), \"Remux\", \"AVC\", \"HEVC\"), regexMatched(streams, \"Full Disc\")), \"WEB-DL\"), negate(regexMatched(regexMatched(streams, \"Full Disc\"), \"Remux\", \"AVC\", \"HEVC\"), regexMatched(streams, \"Full Disc\"))))) : []",
     "score": -999999,
     "enabled": true
   },
@@ -1060,16 +1060,6 @@
     "enabled": true
   },
   {
-    "expression": "/*#Radarr*/ /*h265*/ queryType=='movie' ? negate(resolution(regexMatched(streams, \"h265\"), \"2160p\"), regexMatched(streams, \"h265\")) : []",
-    "score": -999999,
-    "enabled": true
-  },
-  {
-    "expression": "/*#Sonarr*/ /*h265*/ queryType=='series' ? negate(resolution(regexMatched(streams, \"h265\"), \"2160p\"), regexMatched(streams, \"h265\")) : []",
-    "score": -999999,
-    "enabled": true
-  },
-  {
     "expression": "/*#Radarr*/ /*iP*/ queryType=='movie' ? quality(regexMatched(streams, \"BBC iPlayer\"), \"WEB-DL\") : []",
     "score": 0,
     "enabled": true
@@ -1090,12 +1080,12 @@
     "enabled": true
   },
   {
-    "expression": "/*#Radarr*/ /*x265*/ queryType=='movie' ? negate(resolution(regexMatched(streams, \"x265\"), \"2160p\"), regexMatched(streams, \"x265\")) : []",
+    "expression": "/*#Radarr*/ /*x265*/ queryType=='movie' ? negate(resolution(regexMatched(streams, \"HEVC\"), \"2160p\"), regexMatched(streams, \"HEVC\")) : []",
     "score": -999999,
     "enabled": true
   },
   {
-    "expression": "/*#Sonarr*/ /*x265*/ queryType=='series' ? negate(resolution(regexMatched(streams, \"x265\"), \"2160p\"), regexMatched(streams, \"x265\")) : []",
+    "expression": "/*#Sonarr*/ /*x265*/ queryType=='series' ? negate(resolution(regexMatched(streams, \"HEVC\"), \"2160p\"), regexMatched(streams, \"HEVC\")) : []",
     "score": -999999,
     "enabled": true
   }

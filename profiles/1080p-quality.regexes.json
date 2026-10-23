@@ -80,6 +80,11 @@
     "score": 0
   },
   {
+    "name": "AVC",
+    "pattern": "/[xh][ ._-]?264|\\bAVC(\\b|\\d)/i",
+    "score": 0
+  },
+  {
     "name": "AZVD",
     "pattern": "/(?<=^|[\\s.-])AZVD\\b/i",
     "score": 0
@@ -797,6 +802,11 @@
   {
     "name": "HDxT",
     "pattern": "/(?<=^|[\\s.-])HDxT\\b/i",
+    "score": 0
+  },
+  {
+    "name": "HEVC",
+    "pattern": "/[xh][ ._-]?265|\\bHEVC(\\b|\\d)/i",
     "score": 0
   },
   {
@@ -2065,11 +2075,6 @@
     "score": 0
   },
   {
-    "name": "h265",
-    "pattern": "/[h][ ._-]?265/i",
-    "score": 0
-  },
-  {
     "name": "hallowed",
     "pattern": "/(?<=^|[\\s.-])hallowed\\b/i",
     "score": 0
@@ -2192,16 +2197,6 @@
   {
     "name": "x0r",
     "pattern": "/(?<=^|[\\s.-])x0r\\b/i",
-    "score": 0
-  },
-  {
-    "name": "x264",
-    "pattern": "/^(?!.*remux).*[xh][ ._-]?264/i",
-    "score": 0
-  },
-  {
-    "name": "x265",
-    "pattern": "/^(?!.*remux).*([x][ ._-]?265|\\bHEVC(\\b|\\d))/i",
     "score": 0
   },
   {
