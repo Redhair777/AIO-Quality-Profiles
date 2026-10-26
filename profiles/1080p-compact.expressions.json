@@ -180,7 +180,7 @@
     "enabled": true
   },
   {
-    "expression": "/*#Radarr*/ /*1080p WEB-DL HEVC*/ queryType=='movie' ? quality(resolution(negate(regexMatched(regexMatched(streams, \"BYNDR\", \"CMRG\", \"FLUX\", \"HHWEB\", \"HONE\", \"Kitsune\", \"NTb\", \"MZABI\", \"playWEB\", \"SMURF\", \"TEPES\", \"XEBEC\", \"DUSKLiGHT\"), \"Weasley\"), regexMatched(regexMatched(streams, \"BYNDR\", \"CMRG\", \"FLUX\", \"HHWEB\", \"HONE\", \"Kitsune\", \"NTb\", \"MZABI\", \"playWEB\", \"SMURF\", \"TEPES\", \"XEBEC\", \"DUSKLiGHT\"), \"h265\")), \"1080p\"), \"WEB-DL\") : []",
+    "expression": "/*#Radarr*/ /*1080p WEB-DL HEVC*/ queryType=='movie' ? quality(resolution(regexMatched(negate(regexMatched(streams, \"Weasley\"), regexMatched(streams, \"BYNDR\", \"CMRG\", \"FLUX\", \"HHWEB\", \"HONE\", \"Kitsune\", \"NTb\", \"MZABI\", \"playWEB\", \"SMURF\", \"TEPES\", \"XEBEC\", \"DUSKLiGHT\")), \"HEVC\"), \"1080p\"), \"WEB-DL\") : []",
     "score": 920000,
     "enabled": true
   },
@@ -960,22 +960,22 @@
     "enabled": true
   },
   {
-    "expression": "/*#Radarr*/ /*QxR Bluray*/ queryType=='movie' ? quality(resolution(regexMatched(regexMatched(negate(regexMatched(streams, \"QxR\", \"HONE\"), streams), \"QxR (Title)\"), \"x265\"), \"1080p\"), \"BluRay\", \"BluRay REMUX\") : []",
+    "expression": "/*#Radarr*/ /*QxR Bluray*/ queryType=='movie' ? quality(resolution(regexMatched(regexMatched(negate(regexMatched(streams, \"HONE\", \"QxR\"), streams), \"x265\"), \"QxR (Radarr)\"), \"1080p\"), \"BluRay\", \"BluRay REMUX\") : []",
     "score": 940000,
     "enabled": true
   },
   {
-    "expression": "/*#Sonarr*/ /*QxR Bluray*/ queryType=='series' ? quality(resolution(regexMatched(regexMatched(negate(regexMatched(streams, \"QxR\", \"HONE\"), streams), \"QxR (Title)\"), \"x265\"), \"1080p\"), \"BluRay\", \"BluRay REMUX\") : []",
+    "expression": "/*#Sonarr*/ /*QxR Bluray*/ queryType=='series' ? quality(resolution(regexMatched(regexMatched(negate(regexMatched(streams, \"HONE\", \"QxR\"), streams), \"x265\"), \"QxR (Sonarr)\"), \"1080p\"), \"BluRay\", \"BluRay REMUX\") : []",
     "score": 900000,
     "enabled": true
   },
   {
-    "expression": "/*#Radarr*/ /*QxR WEB*/ queryType=='movie' ? merge(quality(resolution(regexMatched(regexMatched(negate(regexMatched(streams, \"QxR\", \"HONE\"), streams), \"QxR (Title)\"), \"HEVC\"), \"1080p\"), \"WEB-DL\"), quality(resolution(regexMatched(regexMatched(negate(regexMatched(streams, \"QxR\", \"HONE\"), streams), \"QxR (Title)\"), \"HEVC\"), \"1080p\"), \"WEBRip\")) : []",
+    "expression": "/*#Radarr*/ /*QxR WEB*/ queryType=='movie' ? merge(quality(resolution(regexMatched(regexMatched(negate(regexMatched(streams, \"HONE\", \"QxR\"), streams), \"HEVC\"), \"QxR (Radarr)\"), \"1080p\"), \"WEB-DL\"), quality(resolution(regexMatched(regexMatched(negate(regexMatched(streams, \"HONE\", \"QxR\"), streams), \"HEVC\"), \"QxR (Radarr)\"), \"1080p\"), \"WEBRip\")) : []",
     "score": 883000,
     "enabled": true
   },
   {
-    "expression": "/*#Sonarr*/ /*QxR WEB*/ queryType=='series' ? merge(quality(resolution(regexMatched(regexMatched(negate(regexMatched(streams, \"QxR\", \"HONE\"), streams), \"QxR (Title)\"), \"HEVC\"), \"1080p\"), \"WEB-DL\"), quality(resolution(regexMatched(regexMatched(negate(regexMatched(streams, \"QxR\", \"HONE\"), streams), \"QxR (Title)\"), \"HEVC\"), \"1080p\"), \"WEBRip\")) : []",
+    "expression": "/*#Sonarr*/ /*QxR WEB*/ queryType=='series' ? merge(quality(resolution(regexMatched(regexMatched(negate(regexMatched(streams, \"HONE\", \"QxR\"), streams), \"HEVC\"), \"QxR (Sonarr)\"), \"1080p\"), \"WEB-DL\"), quality(resolution(regexMatched(regexMatched(negate(regexMatched(streams, \"HONE\", \"QxR\"), streams), \"HEVC\"), \"QxR (Sonarr)\"), \"1080p\"), \"WEBRip\")) : []",
     "score": 924000,
     "enabled": true
   },
@@ -1095,22 +1095,22 @@
     "enabled": true
   },
   {
-    "expression": "/*#Radarr*/ /*TAoE Bluray*/ queryType=='movie' ? quality(resolution(regexMatched(regexMatched(negate(regexMatched(streams, \"TAoE\"), streams), \"TAoE (Title)\"), \"x265\"), \"1080p\"), \"BluRay\", \"BluRay REMUX\") : []",
+    "expression": "/*#Radarr*/ /*TAoE Bluray*/ queryType=='movie' ? quality(resolution(regexMatched(regexMatched(negate(regexMatched(streams, \"TAoE\"), streams), \"x265\"), \"TAoE (Radarr)\"), \"1080p\"), \"BluRay\", \"BluRay REMUX\") : []",
     "score": 940000,
     "enabled": true
   },
   {
-    "expression": "/*#Sonarr*/ /*TAoE Bluray*/ queryType=='series' ? quality(resolution(regexMatched(regexMatched(negate(regexMatched(streams, \"TAoE\"), streams), \"TAoE (Title)\"), \"x265\"), \"1080p\"), \"BluRay\", \"BluRay REMUX\") : []",
+    "expression": "/*#Sonarr*/ /*TAoE Bluray*/ queryType=='series' ? quality(resolution(regexMatched(regexMatched(negate(regexMatched(streams, \"TAoE\"), streams), \"x265\"), \"TAoE (Sonarr)\"), \"1080p\"), \"BluRay\", \"BluRay REMUX\") : []",
     "score": 900000,
     "enabled": true
   },
   {
-    "expression": "/*#Radarr*/ /*TAoE WEB*/ queryType=='movie' ? merge(quality(resolution(regexMatched(regexMatched(negate(regexMatched(streams, \"TAoE\"), streams), \"TAoE (Title)\"), \"HEVC\"), \"1080p\"), \"WEB-DL\"), quality(resolution(regexMatched(regexMatched(negate(regexMatched(streams, \"TAoE\"), streams), \"TAoE (Title)\"), \"HEVC\"), \"1080p\"), \"WEBRip\")) : []",
+    "expression": "/*#Radarr*/ /*TAoE WEB*/ queryType=='movie' ? merge(quality(resolution(regexMatched(regexMatched(negate(regexMatched(streams, \"TAoE\"), streams), \"HEVC\"), \"TAoE (Radarr)\"), \"1080p\"), \"WEB-DL\"), quality(resolution(regexMatched(regexMatched(negate(regexMatched(streams, \"TAoE\"), streams), \"HEVC\"), \"TAoE (Radarr)\"), \"1080p\"), \"WEBRip\")) : []",
     "score": 883000,
     "enabled": true
   },
   {
-    "expression": "/*#Sonarr*/ /*TAoE WEB*/ queryType=='series' ? merge(quality(resolution(regexMatched(regexMatched(negate(regexMatched(streams, \"TAoE\"), streams), \"TAoE (Title)\"), \"HEVC\"), \"1080p\"), \"WEB-DL\"), quality(resolution(regexMatched(regexMatched(negate(regexMatched(streams, \"TAoE\"), streams), \"TAoE (Title)\"), \"HEVC\"), \"1080p\"), \"WEBRip\")) : []",
+    "expression": "/*#Sonarr*/ /*TAoE WEB*/ queryType=='series' ? merge(quality(resolution(regexMatched(regexMatched(negate(regexMatched(streams, \"TAoE\"), streams), \"HEVC\"), \"TAoE (Sonarr)\"), \"1080p\"), \"WEB-DL\"), quality(resolution(regexMatched(regexMatched(negate(regexMatched(streams, \"TAoE\"), streams), \"HEVC\"), \"TAoE (Sonarr)\"), \"1080p\"), \"WEBRip\")) : []",
     "score": 924000,
     "enabled": true
   },

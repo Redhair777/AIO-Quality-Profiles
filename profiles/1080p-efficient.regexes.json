@@ -1485,8 +1485,13 @@
     "score": 0
   },
   {
-    "name": "QxR (Title)",
-    "pattern": "/QxR/i",
+    "name": "QxR (Radarr)",
+    "pattern": "/(?<=\\b[12]\\d{3}\\b).*(\\b(QxR|afm72|Bandi|Bluespots|Celdra|FreetheFish|Garshasp|Ghost|Ime|Kappa|Langbard|LION|Panda|MONOLITH|Natty|r00t|RCVR|RZeroX|SAMPA|Silence|t3nzin|Tigole|YOGI)\\b)/i",
+    "score": 0
+  },
+  {
+    "name": "QxR (Sonarr)",
+    "pattern": "/(?<=\\b(?:S\\d{1,3}|\\d{3,4}p)\\b).*(\\b(QxR|afm72|Bandi|Bluespots|Celdra|FreetheFish|Garshasp|Ghost|Ime|Kappa|Langbard|LION|Panda|MONOLITH|Natty|r00t|RCVR|RZeroX|SAMPA|Silence|t3nzin|Tigole|YOGI)\\b)/i",
     "score": 0
   },
   {
@@ -1800,8 +1805,13 @@
     "score": 0
   },
   {
-    "name": "TAoE (Title)",
-    "pattern": "/TAoE/i",
+    "name": "TAoE (Radarr)",
+    "pattern": "/(?<=\\b[12]\\d{3}\\b).*(\\b(TAoE|Ainz|AJJMIN|ANONAZ|ArcX|bccornfo|DNU|DrainedDay|DUHIT|Erie|Frys|Goki|HxD|jb2049|JBENT|Nostradamus|r0b0t|Species180|TheSickle|xtrem3x|WEM)\\b)/i",
+    "score": 0
+  },
+  {
+    "name": "TAoE (Sonarr)",
+    "pattern": "/(?<=\\b(?:S\\d{1,3}|\\d{3,4}p)\\b).*(\\b(TAoE|Ainz|AJJMIN|ANONAZ|ArcX|bccornfo|DNU|DrainedDay|DUHIT|Erie|Frys|Goki|HxD|jb2049|JBENT|Nostradamus|r0b0t|Species180|TheSickle|xtrem3x|WEM)\\b)/i",
     "score": 0
   },
   {
@@ -2202,11 +2212,6 @@
   {
     "name": "greenHD",
     "pattern": "/(?<=^|[\\s.-])greenHD\\b/i",
-    "score": 0
-  },
-  {
-    "name": "h265",
-    "pattern": "/[h][ ._-]?265|\\bHEVC(\\b|\\d)/i",
     "score": 0
   },
   {
