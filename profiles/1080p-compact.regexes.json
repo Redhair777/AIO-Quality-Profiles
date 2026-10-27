@@ -21,7 +21,7 @@
   },
   {
     "name": "576p",
-    "pattern": "/\\b(576p)\\b/i",
+    "pattern": "/\\b(540p|576p)\\b/i",
     "score": 0
   },
   {
