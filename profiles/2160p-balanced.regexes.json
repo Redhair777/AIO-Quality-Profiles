@@ -90,6 +90,11 @@
     "score": 0
   },
   {
+    "name": "AVC (Full Disc)",
+    "pattern": "/[xh][ ._-]?264/i",
+    "score": 0
+  },
+  {
     "name": "AZVD",
     "pattern": "/(?<=^|[\\s.-])AZVD\\b/i",
     "score": 0
@@ -245,11 +250,6 @@
     "score": 0
   },
   {
-    "name": "Better Theatricals",
-    "pattern": "/^\\b(terminator.?2|alien[^s].*?1979|star.wars.*?(4k|19)(77)|.*?\\bempire.strikes.back|.*?\\breturn.of.the.jedi|apocalypse.now|the.exorcist.*?1973|donnie.darko|amadeus|payback.*?1999|payback.straight.up.*?2006|almost.famous)\\b/i",
-    "score": 0
-  },
-  {
     "name": "BeyondHD",
     "pattern": "/(?<=^|[\\s.-])BeyondHD\\b/i",
     "score": 0
@@ -286,7 +286,7 @@
   },
   {
     "name": "CAM",
-    "pattern": "/(?<=\\b[12]\\d{3}\\b).*(\\b((AC3)?(LD|MD)|CAM[ ._-]?(Rip)?|DCP(RIP)?|DVD[ ._-]?(SCR(EENER)?)|HD[ ._-]?(CAM|SCR|TC|TS)|(LINE|MIC)[ ._-]?DUBBED|SCREENER|(TC|TS)(Rip)?|TELE(CINE|SYNC)|WORKPRINT)\\b)/i",
+    "pattern": "/(?<=\\b[12]\\d{3}\\b).*\\b((AC3)?(LD|MD)|CAM[ ._-]?(Rip)?|DCP(RIP)?|DVD[ ._-]?(SCR(EENER)?)|HD[ ._-]?(CAM|SCR|TC|TS)|(LINE|MIC)[ ._-]?DUBBED|SCREENER|(TC|TS)(Rip)?|TELE(CINE|SYNC)|WORKPRINT)\\b/i",
     "score": 0
   },
   {
@@ -611,7 +611,7 @@
   },
   {
     "name": "Extended Edition",
-    "pattern": "/(?<=\\b[12]\\d{3}\\b).*\\b(Extended)(\\b|\\d)/i",
+    "pattern": "/(?<=\\b[12]\\d{3}\\b).*\\b(Extended)\\b/i",
     "score": 0
   },
   {
@@ -832,6 +832,11 @@
   {
     "name": "HEVC",
     "pattern": "/[xh][ ._-]?265|\\bHEVC(\\b|\\d)/i",
+    "score": 0
+  },
+  {
+    "name": "HEVC (Full Disc)",
+    "pattern": "/[xh][ ._-]?265/i",
     "score": 0
   },
   {
@@ -1091,12 +1096,12 @@
   },
   {
     "name": "Movie Extras",
-    "pattern": "/(?<=\\b[12]\\d{3}\\b).*(\\b(Extra(s)?|Bonus|Deleted[ ._-]?Scene(s)?|Extended[ ._-]?Clip(s)?|Special[ ._-]?Feature(s)?)\\b)/i",
+    "pattern": "/(?<=\\b[12]\\d{3}\\b).*\\b(Extra(s)?|Bonus|Deleted[ ._-]?Scene(s)?|Extended[ ._-]?Clip(s)?|Special[ ._-]?Feature(s)?)\\b/i",
     "score": 0
   },
   {
     "name": "Movie Upscale",
-    "pattern": "/(?<=\\b[12]\\d{3}\\b).*(\\b(AI(US)?[ ._-]?(Enhanced)?|Up[ ._-]?scale(d)?|Re[ ._-]?Grade(d)?|Topaz[ ._-]?Enhanced)\\b)/i",
+    "pattern": "/(?<=\\b[12]\\d{3}\\b).*\\b(AI(US)?[ ._-]?(Enhanced)?|Up[ ._-]?scale(d)?|Re[ ._-]?Grade(d)?|Topaz[ ._-]?Enhanced)\\b/i",
     "score": 0
   },
   {
@@ -1791,12 +1796,12 @@
   },
   {
     "name": "TV Extras",
-    "pattern": "/(?<=\\b(?:S\\d{1,3}|\\d{3,4}p)\\b).*(\\b(Extra(s)?|Bonus|Deleted[ ._-]?Scene(s)?|Extended[ ._-]?Clip(s)?|Special[ ._-]?Feature(s)?)\\b)/i",
+    "pattern": "/(?<=\\b(?:S\\d{1,3}|\\d{3,4}p)\\b).*\\b(Extra(s)?|Bonus|Deleted[ ._-]?Scene(s)?|Extended[ ._-]?Clip(s)?|Special[ ._-]?Feature(s)?)\\b/i",
     "score": 0
   },
   {
     "name": "TV Upscale",
-    "pattern": "/(?<=\\b(?:S\\d{1,3}|\\d{3,4}p)\\b).*(\\b(AI(US)?[ ._-]?(Enhanced)?|Up[ ._-]?scale(d)?|Re[ ._-]?Grade(d)?|Topaz[ ._-]?Enhanced)\\b)/i",
+    "pattern": "/(?<=\\b(?:S\\d{1,3}|\\d{3,4}p)\\b).*\\b(AI(US)?[ ._-]?(Enhanced)?|Up[ ._-]?scale(d)?|Re[ ._-]?Grade(d)?|Topaz[ ._-]?Enhanced)\\b/i",
     "score": 0
   },
   {
@@ -1831,7 +1836,7 @@
   },
   {
     "name": "Theatrical Edition",
-    "pattern": "/(?<=\\b[12]\\d{3}\\b).*\\b(Theatrical)(\\b|\\d)/i",
+    "pattern": "/(?<=\\b[12]\\d{3}\\b).*\\b(Theatrical)\\b/i",
     "score": 0
   },
   {
