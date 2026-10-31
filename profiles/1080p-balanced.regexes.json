@@ -106,7 +106,7 @@
   },
   {
     "name": "Atmos",
-    "pattern": "/\\bATMOS|DDPA(\\b|\\d)/i",
+    "pattern": "/\\b(ATMOS|DDPA)(\\b|\\d)/i",
     "score": 0
   },
   {
@@ -586,7 +586,7 @@
   },
   {
     "name": "German DL",
-    "pattern": "/(?=.*\\bGERMAN\\b)(?=.*\\b(?<!WEB-)[DM]L\\b).*/i",
+    "pattern": "/(?=.*\\bGERMAN\\b)(?=.*\\b(?<!WEB[ ._-])[DM]L\\b).*/i",
     "score": 0
   },
   {
