@@ -600,12 +600,12 @@
     "enabled": true
   },
   {
-    "expression": "/*#Radarr*/ /*Banned Language Groups*/ queryType=='movie' ? regexMatched(streams, \"CYPHER\", \"TURG\", \"NIMA4K\", \"pmHD\", \"TvR\", \"tokar86a\", \"KiNGSMAN\", \"4kHdHub\", \"CPTN5DW\", \"PMI\", \"ViSTA\") : []",
+    "expression": "/*#Radarr*/ /*Banned Language Groups*/ queryType=='movie' ? regexMatched(streams, \"CYPHER\", \"TURG\", \"NIMA4K\", \"pmHD\", \"TvR\", \"tokar86a\", \"KiNGSMAN\", \"4kHdHub\", \"CPTN5DW\", \"PMI\", \"ViSTA\", \"LACTATO\") : []",
     "score": -999999,
     "enabled": true
   },
   {
-    "expression": "/*#Sonarr*/ /*Banned Language Groups*/ queryType=='series' ? regexMatched(streams, \"CYPHER\", \"TURG\", \"NIMA4K\", \"pmHD\", \"TvR\", \"tokar86a\", \"KiNGSMAN\", \"4kHdHub\", \"CPTN5DW\", \"PMI\", \"ViSTA\") : []",
+    "expression": "/*#Sonarr*/ /*Banned Language Groups*/ queryType=='series' ? regexMatched(streams, \"CYPHER\", \"TURG\", \"NIMA4K\", \"pmHD\", \"TvR\", \"tokar86a\", \"KiNGSMAN\", \"4kHdHub\", \"CPTN5DW\", \"PMI\", \"ViSTA\", \"LACTATO\") : []",
     "score": -999999,
     "enabled": true
   },

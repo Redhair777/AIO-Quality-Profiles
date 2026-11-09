@@ -1025,6 +1025,11 @@
     "score": 0
   },
   {
+    "name": "LACTATO",
+    "pattern": "/(?<=^|[\\s.-])LACTATO\\b/i",
+    "score": 0
+  },
+  {
     "name": "LAMA",
     "pattern": "/(?<=^|[\\s.-])LAMA\\b/i",
     "score": 0
