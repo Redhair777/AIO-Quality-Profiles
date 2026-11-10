@@ -210,12 +210,12 @@
     "enabled": true
   },
   {
-    "expression": "/*#Radarr*/ /*2160p Quality Tier 4*/ queryType=='movie' ? quality(resolution(negate(regexMatched(streams, \"Remux\"), regexMatched(streams, \"BlzT\", \"BSTD\", \"EDPH\", \"ESiR\", \"HiDt\", \"iFT\", \"Kitsune\", \"NCmt\", \"NTb\", \"SPHD\", \"TDD\", \"ATELiER\", \"LESTiN\", \"RandomBytes\", \"faBR\", \"Softboat\")), \"2160p\"), \"BluRay\", \"BluRay REMUX\") : []",
+    "expression": "/*#Radarr*/ /*2160p Quality Tier 4*/ queryType=='movie' ? quality(resolution(negate(regexMatched(streams, \"Remux\"), regexMatched(streams, \"BlzT\", \"BSTD\", \"EDPH\", \"ESiR\", \"HiDt\", \"iFT\", \"Kitsune\", \"NCmt\", \"NTb\", \"SPHD\", \"TDD\", \"ATELiER\", \"LESTiN\", \"RandomBytes\", \"faBR\", \"Softboat\", \"RoJYA\")), \"2160p\"), \"BluRay\", \"BluRay REMUX\") : []",
     "score": 942000,
     "enabled": true
   },
   {
-    "expression": "/*#Sonarr*/ /*2160p Quality Tier 4*/ queryType=='series' ? quality(resolution(negate(regexMatched(streams, \"Remux\"), regexMatched(streams, \"BlzT\", \"BSTD\", \"EDPH\", \"ESiR\", \"HiDt\", \"iFT\", \"Kitsune\", \"NCmt\", \"NTb\", \"SPHD\", \"TDD\", \"ATELiER\", \"LESTiN\", \"RandomBytes\", \"faBR\", \"Softboat\")), \"2160p\"), \"BluRay\", \"BluRay REMUX\") : []",
+    "expression": "/*#Sonarr*/ /*2160p Quality Tier 4*/ queryType=='series' ? quality(resolution(negate(regexMatched(streams, \"Remux\"), regexMatched(streams, \"BlzT\", \"BSTD\", \"EDPH\", \"ESiR\", \"HiDt\", \"iFT\", \"Kitsune\", \"NCmt\", \"NTb\", \"SPHD\", \"TDD\", \"ATELiER\", \"LESTiN\", \"RandomBytes\", \"faBR\", \"Softboat\", \"RoJYA\")), \"2160p\"), \"BluRay\", \"BluRay REMUX\") : []",
     "score": 942000,
     "enabled": true
   },
