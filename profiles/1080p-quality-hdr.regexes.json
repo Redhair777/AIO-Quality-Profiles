@@ -610,6 +610,11 @@
     "score": 0
   },
   {
+    "name": "FIEND",
+    "pattern": "/(?<=^|[\\s.-])FIEND\\b/i",
+    "score": 0
+  },
+  {
     "name": "FLAC",
     "pattern": "/\\bFLAC(\\b|\\d)/i",
     "score": 0

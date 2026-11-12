@@ -1015,12 +1015,12 @@
     "enabled": true
   },
   {
-    "expression": "/*#Radarr*/ /*WEB-DL Tier 3*/ queryType=='movie' ? quality(regexMatched(streams, \"ABM\", \"AJP69\", \"BLUTONiUM\", \"BTW\", \"CasStudio\", \"Cinefeel\", \"CRFW\", \"CtrlHD\", \"HHWEB\", \"KHN\", \"KiNGS\", \"LAZY\", \"monkee\", \"MZABI\", \"NOSiViD\", \"NPMS\", \"NTG\", \"QOQ\", \"SA89\", \"SbR\", \"SMURF\", \"TeamSyndicate\", \"TOMMY\", \"TVSmash\", \"WELP\", \"XEBEC\", \"ZoroSenpai\", \"MADSKY\"), \"WEB-DL\") : []",
+    "expression": "/*#Radarr*/ /*WEB-DL Tier 3*/ queryType=='movie' ? quality(regexMatched(streams, \"ABM\", \"AJP69\", \"BLUTONiUM\", \"BTW\", \"CasStudio\", \"Cinefeel\", \"CRFW\", \"CtrlHD\", \"HHWEB\", \"KHN\", \"KiNGS\", \"LAZY\", \"monkee\", \"MZABI\", \"NOSiViD\", \"NPMS\", \"NTG\", \"QOQ\", \"SA89\", \"SbR\", \"SMURF\", \"TeamSyndicate\", \"TOMMY\", \"TVSmash\", \"WELP\", \"XEBEC\", \"ZoroSenpai\", \"MADSKY\", \"FIEND\"), \"WEB-DL\") : []",
     "score": 60,
     "enabled": true
   },
   {
-    "expression": "/*#Sonarr*/ /*WEB-DL Tier 3*/ queryType=='series' ? quality(regexMatched(streams, \"ABM\", \"AJP69\", \"BLUTONiUM\", \"BTW\", \"CasStudio\", \"Cinefeel\", \"CRFW\", \"CtrlHD\", \"HHWEB\", \"KHN\", \"KiNGS\", \"LAZY\", \"monkee\", \"MZABI\", \"NOSiViD\", \"NPMS\", \"NTG\", \"QOQ\", \"SA89\", \"SbR\", \"SMURF\", \"TeamSyndicate\", \"TOMMY\", \"TVSmash\", \"WELP\", \"XEBEC\", \"ZoroSenpai\", \"MADSKY\"), \"WEB-DL\") : []",
+    "expression": "/*#Sonarr*/ /*WEB-DL Tier 3*/ queryType=='series' ? quality(regexMatched(streams, \"ABM\", \"AJP69\", \"BLUTONiUM\", \"BTW\", \"CasStudio\", \"Cinefeel\", \"CRFW\", \"CtrlHD\", \"HHWEB\", \"KHN\", \"KiNGS\", \"LAZY\", \"monkee\", \"MZABI\", \"NOSiViD\", \"NPMS\", \"NTG\", \"QOQ\", \"SA89\", \"SbR\", \"SMURF\", \"TeamSyndicate\", \"TOMMY\", \"TVSmash\", \"WELP\", \"XEBEC\", \"ZoroSenpai\", \"MADSKY\", \"FIEND\"), \"WEB-DL\") : []",
     "score": 60,
     "enabled": true
   },
