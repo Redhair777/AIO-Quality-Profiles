@@ -240,6 +240,11 @@
     "score": 0
   },
   {
+    "name": "Basic HDR Formats",
+    "pattern": "/\\bHDR(\\b|\\d)|\\b(DV|Dovi|Dolby[ .]?Vision|HLG|PQ(10)?)\\b/i",
+    "score": 0
+  },
+  {
     "name": "BeyondHD",
     "pattern": "/(?<=^|[\\s.-])BeyondHD\\b/i",
     "score": 0

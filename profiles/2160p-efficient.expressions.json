@@ -210,12 +210,22 @@
     "enabled": true
   },
   {
-    "expression": "/*#Radarr*/ /*1080p WEB-DL HEVC*/ queryType=='movie' ? quality(resolution(regexMatched(negate(regexMatched(streams, \"Weasley\"), regexMatched(streams, \"BYNDR\", \"CMRG\", \"FLUX\", \"HHWEB\", \"HONE\", \"Kitsune\", \"NTb\", \"MZABI\", \"playWEB\", \"SMURF\", \"TEPES\", \"XEBEC\", \"DUSKLiGHT\")), \"HEVC\"), \"1080p\"), \"WEB-DL\") : []",
+    "expression": "/*#Radarr*/ /*1080p WEB-DL HEVC (HDR)*/ queryType=='movie' ? quality(resolution(negate(regexMatched(regexMatched(regexMatched(streams, \"BYNDR\", \"CMRG\", \"DUSKLiGHT\", \"FLUX\", \"HHWEB\", \"HONE\", \"Kitsune\", \"MZABI\", \"NTb\", \"SMURF\", \"TEPES\", \"XEBEC\", \"playWEB\"), \"Basic HDR Formats\"), \"Weasley\"), regexMatched(regexMatched(regexMatched(streams, \"BYNDR\", \"CMRG\", \"DUSKLiGHT\", \"FLUX\", \"HHWEB\", \"HONE\", \"Kitsune\", \"MZABI\", \"NTb\", \"SMURF\", \"TEPES\", \"XEBEC\", \"playWEB\"), \"Basic HDR Formats\"), \"HEVC\")), \"1080p\"), \"WEB-DL\") : []",
     "score": 940000,
     "enabled": true
   },
   {
-    "expression": "/*#Sonarr*/ /*1080p WEB-DL HEVC*/ queryType=='series' ? quality(resolution(regexMatched(negate(regexMatched(streams, \"Weasley\"), regexMatched(streams, \"BYNDR\", \"CMRG\", \"FLUX\", \"HHWEB\", \"HONE\", \"Kitsune\", \"NTb\", \"MZABI\", \"playWEB\", \"SMURF\", \"TEPES\", \"XEBEC\", \"DUSKLiGHT\")), \"HEVC\"), \"1080p\"), \"WEB-DL\") : []",
+    "expression": "/*#Sonarr*/ /*1080p WEB-DL HEVC (HDR)*/ queryType=='series' ? quality(resolution(negate(regexMatched(regexMatched(regexMatched(streams, \"BYNDR\", \"CMRG\", \"DUSKLiGHT\", \"FLUX\", \"HHWEB\", \"HONE\", \"Kitsune\", \"MZABI\", \"NTb\", \"SMURF\", \"TEPES\", \"XEBEC\", \"playWEB\"), \"Basic HDR Formats\"), \"Weasley\"), regexMatched(regexMatched(regexMatched(streams, \"BYNDR\", \"CMRG\", \"DUSKLiGHT\", \"FLUX\", \"HHWEB\", \"HONE\", \"Kitsune\", \"MZABI\", \"NTb\", \"SMURF\", \"TEPES\", \"XEBEC\", \"playWEB\"), \"Basic HDR Formats\"), \"HEVC\")), \"1080p\"), \"WEB-DL\") : []",
+    "score": 920000,
+    "enabled": true
+  },
+  {
+    "expression": "/*#Radarr*/ /*1080p WEB-DL HEVC (SDR)*/ queryType=='movie' ? quality(resolution(negate(regexMatched(negate(regexMatched(streams, \"Weasley\"), regexMatched(streams, \"BYNDR\", \"CMRG\", \"FLUX\", \"HHWEB\", \"HONE\", \"Kitsune\", \"NTb\", \"playWEB\", \"SMURF\", \"TEPES\", \"XEBEC\", \"DUSKLiGHT\")), \"Basic HDR Formats\"), regexMatched(negate(regexMatched(streams, \"Weasley\"), regexMatched(streams, \"BYNDR\", \"CMRG\", \"FLUX\", \"HHWEB\", \"HONE\", \"Kitsune\", \"NTb\", \"playWEB\", \"SMURF\", \"TEPES\", \"XEBEC\", \"DUSKLiGHT\")), \"HEVC\")), \"1080p\"), \"WEB-DL\") : []",
+    "score": 940000,
+    "enabled": true
+  },
+  {
+    "expression": "/*#Sonarr*/ /*1080p WEB-DL HEVC (SDR)*/ queryType=='series' ? quality(resolution(negate(regexMatched(negate(regexMatched(streams, \"Weasley\"), regexMatched(streams, \"BYNDR\", \"CMRG\", \"FLUX\", \"HHWEB\", \"HONE\", \"Kitsune\", \"NTb\", \"playWEB\", \"SMURF\", \"TEPES\", \"XEBEC\", \"DUSKLiGHT\")), \"Basic HDR Formats\"), regexMatched(negate(regexMatched(streams, \"Weasley\"), regexMatched(streams, \"BYNDR\", \"CMRG\", \"FLUX\", \"HHWEB\", \"HONE\", \"Kitsune\", \"NTb\", \"playWEB\", \"SMURF\", \"TEPES\", \"XEBEC\", \"DUSKLiGHT\")), \"HEVC\")), \"1080p\"), \"WEB-DL\") : []",
     "score": 920000,
     "enabled": true
   },
