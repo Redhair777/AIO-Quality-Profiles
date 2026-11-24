@@ -1755,6 +1755,11 @@
     "score": 0
   },
   {
+    "name": "SWEY",
+    "pattern": "/(?<=^|[\\s.-])SWEY\\b/i",
+    "score": 0
+  },
+  {
     "name": "SaL",
     "pattern": "/(?<=^|[\\s.-])SaL\\b/i",
     "score": 0
