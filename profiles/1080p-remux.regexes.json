@@ -1875,6 +1875,11 @@
     "score": 0
   },
   {
+    "name": "TOSSATO",
+    "pattern": "/(?<=^|[\\s.-])TOSSATO\\b/i",
+    "score": 0
+  },
+  {
     "name": "TRiToN",
     "pattern": "/(?<=^|[\\s.-])TRiToN\\b/i",
     "score": 0

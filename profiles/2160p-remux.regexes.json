@@ -1940,6 +1940,11 @@
     "score": 0
   },
   {
+    "name": "TOSSATO",
+    "pattern": "/(?<=^|[\\s.-])TOSSATO\\b/i",
+    "score": 0
+  },
+  {
     "name": "TRUNKS",
     "pattern": "/(?<=^|[\\s.-])TRUNKS\\b/i",
     "score": 0

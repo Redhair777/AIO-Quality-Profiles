@@ -1630,6 +1630,11 @@
     "score": 0
   },
   {
+    "name": "TOSSATO",
+    "pattern": "/(?<=^|[\\s.-])TOSSATO\\b/i",
+    "score": 0
+  },
+  {
     "name": "TURG",
     "pattern": "/(?<=^|[\\s.-])TURG\\b/i",
     "score": 0
